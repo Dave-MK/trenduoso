@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg:           #111c2e;
+  --color-surface:      #141820;
+  --color-border:       #1E2530;
+  --color-accent-blue:  #2B7FFF;
+  --color-accent-teal:  #00C4A0;
+  --color-text:         #E8EDF4;
+  --color-text-muted:   #8B95A4;
+  --color-bull:         #00C4A0;
+  --color-bear:         #FF6B6B;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: unset;
+}
