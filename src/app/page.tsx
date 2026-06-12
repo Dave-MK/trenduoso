@@ -72,7 +72,7 @@ export default function LandingPage() {
 
         <div className="flex items-center gap-4 flex-wrap">
           <a
-            href="#"
+            href="/signup"
             className="bg-acuity-blue text-white font-display font-medium text-sm px-6 py-3 rounded-lg hover:bg-acuity-blue/90 transition-colors"
           >
             Start learning — it&apos;s free
@@ -180,11 +180,22 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-steel px-6 md:px-16 py-8">
-        <div className="flex items-center justify-between flex-wrap gap-4">
+        <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
           <span className="font-display font-bold tracking-[-0.03em] text-xl">
             <span className="text-chalk">trade</span><span className="text-acuity-blue">cuity</span>
           </span>
-          <span className="text-ghost text-xs font-body">© 2026 tradecuity. Trading Intelligence.</span>
+          <div className="flex items-center gap-6 text-ghost text-xs font-body">
+            <a href="/terms" className="hover:text-chalk transition-colors">Terms of Service</a>
+            <a href="/privacy" className="hover:text-chalk transition-colors">Privacy Policy</a>
+            <a href="mailto:hello@tradecuity.com" className="hover:text-chalk transition-colors">Contact</a>
+          </div>
+          <span className="text-ghost text-xs font-body">© 2026 tradecuity.</span>
+        </div>
+        {/* Legal disclaimer */}
+        <div className="border-t border-steel/50 pt-5">
+          <p className="text-[11px] text-muted font-body leading-relaxed max-w-4xl">
+            <strong className="text-ghost font-medium">Important:</strong> tradecuity is an educational platform only. All content is provided for learning purposes and does not constitute financial advice, investment advice, or a recommendation to buy or sell any financial instrument. Trading financial markets involves a significant risk of loss and is not suitable for all investors. Past performance shown in examples is not indicative of future results. You should not invest money you cannot afford to lose. Always seek independent financial advice before making investment decisions. tradecuity is not authorised or regulated by the Financial Conduct Authority (FCA). If you are unsure about any aspect of trading, please consult a qualified financial adviser. Users must be 18 or over to register.
+          </p>
         </div>
       </footer>
     </>

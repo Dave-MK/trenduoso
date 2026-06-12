@@ -3,15 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --color-bg:           #111c2e;
-  --color-surface:      #141820;
-  --color-border:       #1E2530;
-  --color-accent-blue:  #2B7FFF;
-  --color-accent-teal:  #00C4A0;
+  --color-bg:           #0B1219;
+  --color-surface:      #111820;
+  --color-border:       #1A2330;
+  --color-accent-blue:  #00C4DC;
+  --color-accent-teal:  #00A090;
+  --color-accent-deep:  #007888;
   --color-text:         #E8EDF4;
   --color-text-muted:   #8B95A4;
-  --color-bull:         #00C4A0;
-  --color-bear:         #FF6B6B;
+  --color-bull:         #00A090;
+  --color-bear:         #FF5A5A;
 }
 
 * {
@@ -36,3 +37,12 @@ a {
 img {
   height: unset;
 }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(-8px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.25s ease-out both; }

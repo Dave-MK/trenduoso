@@ -137,9 +137,9 @@ export default function SignupPage() {
 
           <p className="text-ghost text-[11px] font-body text-center mt-4 leading-relaxed">
             By signing up you agree to our{' '}
-            <Link href="#" className="text-acuity-blue hover:underline">Terms</Link>
+            <Link href="/terms" className="text-acuity-blue hover:underline">Terms</Link>
             {' '}and{' '}
-            <Link href="#" className="text-acuity-blue hover:underline">Privacy Policy</Link>
+            <Link href="/privacy" className="text-acuity-blue hover:underline">Privacy Policy</Link>
           </p>
         </div>
 

@@ -1,6 +1,19 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import Image from 'next/image'
 import { Navbar } from '@/components/nav/Navbar'
+import { levelFromXp } from '@/lib/xp'
+
+const LEVEL_NAMES: Record<number, string> = {
+  1: 'The Apprentice', 2: 'The Operator', 3: 'The Analyst', 4: 'The Allocator',
+  5: 'The Tactician', 6: 'The Quant', 7: 'The Macro Trader', 8: 'The Volatility Trader',
+  9: 'The Book Runner', 10: 'The General Partner',
+}
+const LEVEL_COLORS: Record<number, string> = {
+  1: '#4DD9EC', 2: '#00C4DC', 3: '#00A8BE', 4: '#00A090',
+  5: '#009480', 6: '#007888', 7: '#5AADBE', 8: '#A8D8DF',
+  9: '#E0B84A', 10: '#F5C842',
+}
 
 const ACHIEVEMENT_META: Record<string, { icon: string; label: string; color: string }> = {
   course_complete:   { icon: '🏆', label: 'Course complete',   color: 'text-amber' },
@@ -55,21 +68,19 @@ export default async function ProfilePage() {
 
   const xp = profile?.xp ?? 0
   const streak = profile?.streak ?? 0
+  const { level } = levelFromXp(xp)
+  const clampedLevel = Math.min(Math.max(level, 1), 10)
   const displayName = profile?.display_name ?? user.email?.split('@')[0] ?? 'Learner'
   const plan = profile?.plan ?? 'free'
   const joinDate = profile?.created_at ? formatJoinDate(profile.created_at) : ''
 
-  // Completed lesson count + avg score
   const completed = (allProgress ?? []).filter(p => p.completed)
   const scoresWithValue = completed.filter(p => p.score != null).map(p => p.score as number)
   const avgScore = scoresWithValue.length
     ? Math.round(scoresWithValue.reduce((a, b) => a + b, 0) / scoresWithValue.length)
     : null
-
-  // Estimated hours (assume 20 min per completed lesson)
   const hoursSpent = (completed.length * 20 / 60).toFixed(1)
 
-  // Course progress aggregation
   type CourseRow = { id: string; title: string; slug: string; track: string; lesson_count: number; completed: number }
   const courseMap = new Map<string, CourseRow>()
   for (const p of (allProgress ?? [])) {
@@ -85,7 +96,6 @@ export default async function ProfilePage() {
   }
   const courseList = Array.from(courseMap.values())
 
-  // Score history sparkline
   const scorePoints = (scoreHistory ?? []).map(r => r.score as number)
 
   const stats = [
@@ -103,7 +113,6 @@ export default async function ProfilePage() {
     strategy:    'text-acuity-blue',
   }
 
-  // SVG sparkline
   const maxScore = scorePoints.length ? Math.max(...scorePoints) : 100
   const minScore = scorePoints.length ? Math.min(...scorePoints) : 0
   const range = maxScore - minScore || 1
@@ -112,20 +121,39 @@ export default async function ProfilePage() {
   return (
     <>
       <Navbar />
-      <main className="flex min-h-[calc(100vh-53px)]">
-        {/* Left sidebar */}
-        <aside className="w-64 border-r border-steel bg-slate flex-shrink-0 px-6 py-8">
-          <div className="flex flex-col items-center text-center mb-6">
-            <div className="w-20 h-20 rounded-full bg-acuity-blue flex items-center justify-center text-white text-2xl font-display font-bold mb-3">
-              {getInitials(displayName)}
+      <main className="flex flex-col lg:flex-row min-h-[calc(100vh-53px)]">
+        {/* Sidebar — stacks on top on mobile, left on desktop */}
+        <aside className="w-full lg:w-64 border-b lg:border-b-0 lg:border-r border-steel bg-slate flex-shrink-0 px-4 sm:px-6 py-6 lg:py-8">
+          {/* Identity block — row on mobile, column on desktop */}
+          <div className="flex flex-row lg:flex-col items-center lg:text-center gap-4 lg:gap-0 mb-6">
+            <div className="flex items-center gap-3 lg:flex-col lg:gap-0 lg:mb-0">
+              <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-acuity-blue flex items-center justify-center text-white text-xl lg:text-2xl font-display font-bold flex-shrink-0 lg:mb-3">
+                {getInitials(displayName)}
+              </div>
+              <div className="flex flex-col lg:items-center">
+                <h2 className="font-display font-bold text-chalk text-base lg:text-lg">{displayName}</h2>
+                <p className="text-ghost text-[11px] font-body capitalize">
+                  {plan} member{joinDate ? ` · since ${joinDate}` : ''}
+                </p>
+              </div>
             </div>
-            <h2 className="font-display font-bold text-chalk text-lg">{displayName}</h2>
-            <p className="text-ghost text-[12px] font-body mt-0.5 capitalize">
-              {plan} member{joinDate ? ` · since ${joinDate}` : ''}
-            </p>
+            <div className="flex items-center gap-2 lg:flex-col lg:items-center ml-auto lg:ml-0 lg:mt-3">
+              <Image
+                src={`/level-${clampedLevel}.png`}
+                alt={LEVEL_NAMES[clampedLevel] ?? ''}
+                width={56}
+                height={56}
+                style={{ width: 56, height: 56 }}
+                className="rounded lg:w-[72px] lg:h-[72px] lg:mb-2"
+              />
+              <p className="font-display font-semibold text-[12px] lg:text-[13px]" style={{ color: LEVEL_COLORS[clampedLevel] }}>
+                {LEVEL_NAMES[clampedLevel]}
+              </p>
+            </div>
           </div>
 
-          <div className="flex justify-center gap-6 py-4 border-y border-steel mb-6">
+          {/* XP / Streak / Lessons — always row */}
+          <div className="flex justify-around lg:justify-center gap-4 lg:gap-6 py-4 border-y border-steel mb-6">
             {[
               { v: xp.toLocaleString(), l: 'XP',      c: 'text-acuity-blue' },
               { v: String(streak),       l: 'Streak',  c: 'text-chalk' },
@@ -138,9 +166,10 @@ export default async function ProfilePage() {
             ))}
           </div>
 
+          {/* Achievements */}
           <p className="text-[10px] font-display font-medium tracking-widest text-ghost uppercase mb-3">Achievements</p>
           {achievements && achievements.length > 0 ? (
-            <div className="space-y-3">
+            <div className="grid grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-0">
               {achievements.map((a) => {
                 const meta = ACHIEVEMENT_META[a.type] ?? { icon: '🎖️', label: a.type, color: 'text-chalk' }
                 return (
@@ -162,11 +191,11 @@ export default async function ProfilePage() {
         </aside>
 
         {/* Main content */}
-        <div className="flex-1 px-8 py-8">
+        <div className="flex-1 px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
           {/* Stat cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4 mb-8">
             {stats.map((s) => (
-              <div key={s.label} className="bg-slate border border-steel rounded-xl p-5">
+              <div key={s.label} className="bg-slate border border-steel rounded-xl p-4 lg:p-5">
                 <p className="text-[10px] font-display font-medium tracking-widest text-ghost uppercase mb-2">{s.label}</p>
                 <p className={`font-mono font-medium text-2xl ${s.color}`}>{s.value}</p>
               </div>
@@ -174,14 +203,14 @@ export default async function ProfilePage() {
           </div>
 
           {/* Score history chart */}
-          <div className="bg-slate border border-steel rounded-xl p-6 mb-8">
+          <div className="bg-slate border border-steel rounded-xl p-4 lg:p-6 mb-8">
             <p className="text-[10px] font-display font-medium tracking-widest text-ghost uppercase mb-4">Score history</p>
             {scorePoints.length < 2 ? (
               <p className="text-ghost text-sm font-body py-6 text-center">
                 Complete more exercises to see your score trend.
               </p>
             ) : (
-              <div className="relative h-40">
+              <div className="relative h-36 lg:h-40">
                 <svg viewBox={`0 0 ${svgW} 120`} className="w-full h-full" preserveAspectRatio="none">
                   <defs>
                     <linearGradient id="scoreGrad" x1="0" y1="0" x2="0" y2="1">
@@ -231,14 +260,14 @@ export default async function ProfilePage() {
                   const pct = c.lesson_count > 0 ? Math.round((c.completed / c.lesson_count) * 100) : 0
                   const color = trackColors[c.track] ?? 'text-acuity-blue'
                   return (
-                    <div key={c.id} className="flex items-center gap-4">
-                      <span className={`text-[9px] font-display font-medium tracking-widest uppercase px-2 py-1 rounded w-24 text-center flex-shrink-0 ${color} ${color.replace('text-', 'bg-')}/10`}>
+                    <div key={c.id} className="flex items-center gap-3 lg:gap-4">
+                      <span className={`hidden sm:inline text-[9px] font-display font-medium tracking-widest uppercase px-2 py-1 rounded w-24 text-center flex-shrink-0 ${color} ${color.replace('text-', 'bg-')}/10`}>
                         {c.track}
                       </span>
-                      <div className="flex-1">
-                        <div className="flex items-center justify-between mb-1">
-                          <span className="font-body text-chalk text-sm">{c.title}</span>
-                          <span className={`font-display font-medium text-[12px] ${pct === 100 ? 'text-acuity-teal' : 'text-acuity-blue'}`}>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center justify-between mb-1 gap-2">
+                          <span className="font-body text-chalk text-sm truncate">{c.title}</span>
+                          <span className={`font-display font-medium text-[12px] flex-shrink-0 ${pct === 100 ? 'text-acuity-teal' : 'text-acuity-blue'}`}>
                             {pct === 100 ? 'Complete' : `${pct}%`}
                           </span>
                         </div>

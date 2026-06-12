@@ -34,9 +34,10 @@ export function LoginForm() {
 
   return (
     <>
-      {searchParams.get('error') && (
-        <div className="bg-bear-red/10 border border-bear-red/20 rounded-lg px-4 py-3 mb-4">
-          <p className="text-bear-red text-sm font-body">Authentication failed. Please try again.</p>
+      {searchParams.get('error') === 'auth_failed' && (
+        <div className="bg-amber/10 border border-amber/20 rounded-lg px-4 py-3 mb-4">
+          <p className="text-amber text-sm font-body font-medium mb-0.5">Confirmation link expired</p>
+          <p className="text-amber/80 text-[12px] font-body">Your email link was already used or has expired — this is normal. If you have an account, sign in below.</p>
         </div>
       )}
 

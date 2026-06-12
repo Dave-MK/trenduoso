@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google'
+import { CookieBanner } from '@/components/CookieBanner'
 import '@/styles/globals.css'
 
 const spaceGrotesk = Space_Grotesk({
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="bg-obsidian text-chalk font-body antialiased">
         {children}
+        <CookieBanner />
       </body>
     </html>
   )
