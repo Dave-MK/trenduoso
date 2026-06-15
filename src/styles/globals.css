@@ -77,3 +77,11 @@ img {
   to   { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 .animate-fade-in { animation: fade-in 0.25s ease-out both; }
+
+@layer components {
+  .input-field {
+    @apply bg-muted border border-steel/80 rounded-lg px-3 py-2 text-sm text-chalk font-body
+           focus:outline-none focus:border-acuity-blue/60 focus:ring-1 focus:ring-acuity-blue/20
+           transition-colors placeholder:text-ghost/40;
+  }
+}

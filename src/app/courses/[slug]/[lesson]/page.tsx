@@ -52,12 +52,12 @@ export default async function LessonPage({
   const currentIndex = (allLessons ?? []).findIndex((l) => l.slug === lessonSlug)
   const nextLesson = currentIndex >= 0 ? (allLessons ?? [])[currentIndex + 1] : null
 
-  // Merge DB content with static activity map — DB wins if activity_type is already set,
-  // otherwise the static map provides topic-specific content for every lesson.
+  // Merge DB content with static activity map — DB wins when it has content (set via admin),
+  // otherwise fall back to the static map for topic-specific defaults.
   const dbContent = lesson?.content as LessonContent | null
   const staticContent = LESSON_ACTIVITIES[slug]?.[lessonSlug] ?? null
   const content: LessonContent | null =
-    dbContent?.activity_type ? dbContent : (staticContent ?? dbContent)
+    (dbContent && Object.keys(dbContent).length > 0) ? dbContent : (staticContent ?? dbContent)
 
   // Build steps from lesson content, or default
   const steps: LessonStep[] = content?.steps ?? [

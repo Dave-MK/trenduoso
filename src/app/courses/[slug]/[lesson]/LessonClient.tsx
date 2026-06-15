@@ -12,6 +12,8 @@ import { StepTracker } from '@/components/lessons/StepTracker'
 import { LessonPrompt } from '@/components/lessons/LessonPrompt'
 import { MultiChoiceActivity } from '@/components/lessons/MultiChoiceActivity'
 import { CalculationActivity } from '@/components/lessons/CalculationActivity'
+import { VideoPlayer } from '@/components/lessons/VideoPlayer'
+import { FreeTextActivity } from '@/components/lessons/FreeTextActivity'
 import { LevelUpModal } from '@/components/LevelUpModal'
 import { AchievementToast, checkAchievements } from '@/components/AchievementToast'
 import type { Achievement } from '@/components/AchievementToast'
@@ -82,13 +84,13 @@ export function LessonClient({
 }: Props) {
   const router = useRouter()
   const [phase, setPhase] = useState<'intro' | 'activity'>(() =>
-    content?.intro_text ? 'intro' : 'activity'
+    content?.intro_text || content?.video_url ? 'intro' : 'activity'
   )
 
   // Sync phase when content changes (handles HMR and client-side lesson navigation)
   useEffect(() => {
-    setPhase(content?.intro_text ? 'intro' : 'activity')
-  }, [lessonSlug, content?.intro_text])
+    setPhase(content?.intro_text || content?.video_url ? 'intro' : 'activity')
+  }, [lessonSlug, content?.intro_text, content?.video_url])
 
   const [candles, setCandles] = useState<Candle[]>(DEMO_CANDLES)
   const [graded, setGraded] = useState(false)
@@ -258,11 +260,20 @@ export function LessonClient({
               <h1 className="font-display font-bold text-chalk text-2xl md:text-3xl leading-tight mb-6">{lessonTitle}</h1>
 
               {/* Body text */}
-              <div className="space-y-4 mb-8">
-                {content.intro_text.split('\n\n').map((para, i) => (
-                  <p key={i} className="font-body text-ghost text-[15px] leading-[1.75]">{para}</p>
-                ))}
-              </div>
+              {content.intro_text && (
+                <div className="space-y-4 mb-8">
+                  {content.intro_text.split('\n\n').map((para, i) => (
+                    <p key={i} className="font-body text-ghost text-[15px] leading-[1.75]">{para}</p>
+                  ))}
+                </div>
+              )}
+
+              {/* Video player */}
+              {content.video_url && content.video_provider && (
+                <div className="mb-8">
+                  <VideoPlayer url={content.video_url} provider={content.video_provider} />
+                </div>
+              )}
 
               {/* Key points */}
               {content.key_points && content.key_points.length > 0 && (
@@ -349,6 +360,12 @@ export function LessonClient({
                 unit={content?.unit ?? ''}
                 hint={content?.hint}
                 solutionSteps={content?.solution_steps}
+                onComplete={(score) => handleActivityComplete(score)}
+              />
+            )}
+            {activityType === 'free_text' && (
+              <FreeTextActivity
+                prompt={content?.reflection_prompt ?? 'What did you learn from this lesson?'}
                 onComplete={(score) => handleActivityComplete(score)}
               />
             )}

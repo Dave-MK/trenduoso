@@ -978,7 +978,68 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   // ════════════════════════════════════════════════════════
 
   'technical-analysis-in-depth': {
+    'lesson-1': {
+      intro_text: 'A trendline is only as reliable as the logic used to draw it. Most traders draw trendlines wrong — connecting random highs and lows and hoping they mean something. A valid trendline requires precision: at least two confirmed swing points, with the third acting as confirmation. More touches make it stronger, but each touch must be clean.\n\nFor an uptrend, you draw the trendline along the swing lows — the floor the market keeps bouncing off. For a downtrend, you draw along the swing highs — the ceiling price keeps failing at. The angle matters too. Very steep trendlines (above 60°) are fragile and almost always break. Shallow trendlines under 30° often just track noise. A moderate 30–50° slope on a trendline usually signals sustainable momentum.\n\nThe real skill is knowing when a trendline break is genuine versus a false breach. Price frequently wicks through a trendline on a candle body but closes back on the correct side — that is not a break. A break requires a full candle body close beyond the line, ideally on elevated volume.',
+      key_points: [
+        'Valid trendlines need a minimum of two touch points — a third touch confirms it',
+        'Uptrend lines connect swing lows; downtrend lines connect swing highs',
+        'Angle matters: 30–50° slopes indicate sustainable trends; steeper angles break quickly',
+        'A trendline break requires a candle body close beyond the line, not just a wick',
+        'More touches = more significant level, but also means a break will be more impactful',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'When a trendline has a parallel counterpart, you have a channel. Channels are powerful because they give you both the floor and the ceiling — you can trade bounces from each wall, or look for breakouts when price escapes the range.\n\nTo draw a channel, first draw your primary trendline (connecting the swing lows in an uptrend). Then draw a parallel line from the opposite side that touches the most significant swing high. That parallel line is the channel upper boundary. The distance between the two lines is constant — price should oscillate between them.\n\nChannels give you a measured move target: if price breaks above an upward channel, the expected extension is the width of the channel projected from the breakout point. If price breaks below a downward channel, same principle applies. The strongest channel signals come when both the upper and lower lines have multiple clean touches — each confirming institutional participation at both boundaries.',
+      key_points: [
+        'A channel is a trendline plus a parallel line drawn at the opposite swing extreme',
+        'Trade bounces from the channel walls with targets at the opposite wall',
+        'Channel breakouts give a measured move equal to the channel width',
+        'Both walls must have multiple clean touches for the channel to be reliable',
+        'Upward channels are bullish continuation structures; downward channels are bearish',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Support and resistance zones are not single lines — they are areas. Price does not reverse at an exact pip, it reverses within a zone. Drawing a line is a simplification; thinking in zones is the professional approach.\n\nA support zone is a price area where demand has historically exceeded supply — where buyers stepped in and price bounced. A resistance zone is where supply exceeded demand — where sellers repeatedly appeared and price fell. These zones are established by prior swing highs and lows, but also by round numbers, prior highs and lows on higher timeframes, and heavy volume nodes.\n\nThe strength of a zone increases with: (1) the number of times price has tested and respected it, (2) the strength of the move away from it each time — explosive moves away indicate institutional conviction, (3) the time elapsed since the last touch — fresh zones that have not been tested many times retain their original significance. Once a zone is breached convincingly, it typically flips — former support becomes resistance, and vice versa. This flip behaviour is one of the most reliable patterns in all of technical analysis.',
+      key_points: [
+        'S/R zones are areas of price, not single lines — draw them as boxes or bands',
+        'Strength of a zone increases with number of tests and magnitude of bounces',
+        'Round numbers (1.2000, 1.2500) are natural S/R levels due to order clustering',
+        'Zone flip: broken support becomes resistance, broken resistance becomes support',
+        'Higher timeframe S/R zones dominate — always mark weekly and daily levels first',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Static horizontal levels are just one type of support and resistance. Dynamic support and resistance moves with price — the most common forms are moving averages. The 20 EMA, 50 EMA, and 200 EMA are the most widely watched moving averages globally, and because so many traders use them, they become self-fulfilling at key moments.\n\nIn an uptrend, the 20 EMA often acts as a first line of dynamic support — price pulls back to it and bounces. The 50 EMA is the secondary support in a stronger uptrend. The 200 EMA is the major dividing line between bull and bear: price above it favours long setups; price below it favours short setups. These are not magic lines — they are consensus points where enough traders are watching and reacting to create real price behaviour.\n\nThe key difference between static and dynamic levels: static levels are fixed in price (1.2000 stays at 1.2000). Dynamic levels move with price as new candles form. This means your analysis must be updated continuously — a level that was support at the start of the week may be in a completely different price location by Friday.',
+      key_points: [
+        'Moving averages act as dynamic S/R because they follow price as it evolves',
+        '20 EMA = short-term dynamic support in trends; 50 EMA = medium-term; 200 EMA = major bias divider',
+        'Price above 200 EMA = bullish bias; below 200 EMA = bearish bias',
+        'Dynamic levels must be re-checked on every new session — they change location daily',
+        'EMAs react faster to recent price than SMAs, making them preferred for active trading',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'Confluence is where multiple independent pieces of technical evidence align at the same price level. A single signal has moderate probability. Two independent signals pointing to the same level dramatically increases probability. Three or more is considered a high-conviction zone.\n\nExample: EUR/USD is approaching 1.0850. At that level you have: (1) a static resistance zone from three prior rejections, (2) the 200 EMA sitting exactly at 1.0850, (3) a descending trendline intersecting at 1.0850, (4) the daily RSI at 72, approaching overbought. Each signal alone is interesting. All four aligning is a high-probability short setup.\n\nThe reason confluence works is statistical independence. Each piece of evidence is derived from a different calculation using different data. When independent signals agree, the probability of the signal being genuine increases multiplicatively, not additively. Professional traders do not trade unless they have at least two confluent reasons. Beginners chase every single pattern in isolation — this is why their win rates are poor.',
+      key_points: [
+        'Confluence = multiple independent signals aligning at the same price level',
+        'Each additional aligned signal increases probability multiplicatively, not additively',
+        'Minimum two confluent signals before considering a trade; three is stronger',
+        'Common confluences: horizontal S/R + trendline + EMA + oscillator extreme',
+        'Trade only the highest-confluence setups — frequency matters less than quality',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-6': {
+      intro_text: 'You have studied confluence and support/resistance zones. Now you will identify the single most significant resistance level on a chart and mark it precisely. This is the practical application of everything covered in lessons 1–5. Take your time — scan the chart across its entire visible history, identify where price has reacted most strongly and most consistently.',
+      key_points: [
+        'Look for the level with the most clean, repeated price rejections',
+        'A horizontal zone that price has tested multiple times is more significant than one tested once',
+        'Mark where the most candle bodies clustered — that is the true zone, not the wick tips',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'NAS100',
       timeframe: 'H4',
@@ -986,7 +1047,24 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       reference_line: { x1: 0, y1: 30, x2: 100, y2: 30 },
       steps: [{ id: '1', label: 'Identify the dominant resistance', completed: false }, { id: '2', label: 'Draw your horizontal level', completed: false }, { id: '3', label: 'Review feedback', completed: false }],
     },
+    'lesson-7': {
+      intro_text: 'A false breakout — also called a stop hunt or liquidity grab — occurs when price pushes through a well-known support or resistance level, triggers the stops sitting beyond it, then reverses sharply back in the original direction. Understanding this is essential because false breakouts catch out more traders than almost any other pattern.\n\nWhy do they happen? Institutions know exactly where retail stop losses are clustered — just below support, just above resistance. By briefly pushing price through those levels, they trigger a cascade of orders that gives them the liquidity to fill large opposing positions at excellent prices. After filling, price reverses, leaving the trapped traders with losses and the institution with a great entry.\n\nHow to identify and trade them: (1) A candle closes beyond the level but immediately closes back — a wick through the level on a candle that closes back inside it. (2) Volume spikes on the wick candle — institutions absorbing orders. (3) Price rapidly accelerates back in the opposite direction. The false breakout candle itself becomes a setup: entry on the reversal, stop beyond the wick extreme, target back to the opposing S/R level.',
+      key_points: [
+        'False breakouts occur when price briefly pierces a level then reverses sharply',
+        'They are deliberate liquidity grabs — institutions triggering retail stops to fill large orders',
+        'Identification: wick through the level with candle body closing back inside it',
+        'Volume spike on the false breakout candle confirms institutional order absorption',
+        'Trade the reversal: entry back through the level, stop beyond the wick extreme',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-8': {
+      intro_text: 'This exercise combines trendlines with confluence. You will draw a trendline that also intersects with a prior support/resistance zone — creating a high-probability area where two signals agree. The goal is precision: the trendline should be drawn from the most relevant swing highs, angled so that it meets the horizontal zone at the current price area.',
+      key_points: [
+        'Trendlines gain significance when they intersect with horizontal S/R zones',
+        'Draw from the most significant swing highs — use the candle body closes, not wick tips',
+        'The convergence point is your high-probability entry or decision zone',
+      ],
       activity_type: 'draw_trendline',
       ticker: 'GBPUSD',
       timeframe: 'H4',
@@ -997,7 +1075,79 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'chart-patterns': {
+    'lesson-1': {
+      intro_text: 'Chart patterns fall into two categories: reversal patterns signal the end of a trend and the beginning of a move in the opposite direction; continuation patterns signal a temporary pause in the trend before it resumes in the original direction. Knowing which category a pattern belongs to changes everything about how you trade it.\n\nReversal patterns include head and shoulders, double tops/bottoms, and triple tops/bottoms. They form at the exhaustion point of a trend after an extended move. The longer and stronger the preceding trend, the more powerful the reversal signal when these patterns complete. Continuation patterns include flags, pennants, triangles, and wedges. They form mid-trend as the market consolidates before the next leg.\n\nThe critical mistake beginners make is trying to trade patterns in isolation from trend context. A double bottom in a strong downtrend is a continuation attempt more often than a reversal. The same pattern at the end of a 6-month downtrend on the daily chart after RSI hits 25 is a genuine reversal signal. Context determines probability — pattern shape alone does not.',
+      key_points: [
+        'Reversal patterns form at trend exhaustion; continuation patterns form mid-trend',
+        'Same pattern shape can have opposite meaning depending on its position in the trend',
+        'Reversal patterns are more powerful after extended, mature trends',
+        'Continuation patterns are most reliable when volume contracts during formation',
+        'Always classify the pattern before deciding direction — reversal vs continuation',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The head and shoulders pattern is one of the most reliable reversal patterns in technical analysis, with decades of statistical backing. It forms at the top of an uptrend and consists of three peaks: a left shoulder, a higher head, and a right shoulder roughly equal in height to the left shoulder. The two troughs between the peaks form the neckline.\n\nThe psychology is compelling: the left shoulder forms as bulls push price up then profit-take. The head forms as bulls make one more push to a new high — but selling increases. The right shoulder forms as bulls try again but cannot even reach the head level — selling overwhelms buying at a lower price than before. When price breaks below the neckline, the last bulls are trapped and the reversal is confirmed.\n\nMeasured move: the distance from the head to the neckline is projected downward from the neckline break. This gives the minimum expected price target. Volume typically confirms: highest on left shoulder, lower on head (divergence forming), lower still on right shoulder, then spike on the neckline break. The inverse head and shoulders is the mirror image and signals bullish reversals at the bottom of downtrends.',
+      key_points: [
+        'Head and shoulders: left shoulder, head (highest peak), right shoulder, neckline connecting troughs',
+        'Right shoulder lower than head = momentum loss = warning sign for bulls',
+        'Confirmation: daily close below the neckline with expanding volume',
+        'Measured move = head-to-neckline distance projected down from the break point',
+        'Inverse H&S is the bullish mirror image — forms at downtrend bottoms',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Double tops and double bottoms are among the most common and tradable reversal patterns. A double top forms when price reaches a high, pulls back, then rallies to approximately the same high but fails to break above it — forming two roughly equal peaks. A double bottom is the mirror: two roughly equal lows with a rally between them.\n\nThe key is "approximately the same." The two peaks or troughs do not need to be at the exact same price — within 1–2% is close enough. In fact, if the second peak is slightly lower than the first, the reversal signal is actually stronger, because price is showing lower highs on a retest — momentum has weakened further.\n\nThe confirmation trigger for both patterns is the break of the swing point between the two peaks/troughs — called the confirmation level or the neckline equivalent. For a double top, it is the low between the two peaks. For a double bottom, it is the high between the two lows. Measured move = the height of the pattern (from the peaks/troughs to the confirmation level) projected from the break.',
+      key_points: [
+        'Double top: two roughly equal highs, then break of the trough between them — bearish',
+        'Double bottom: two roughly equal lows, then break of the peak between them — bullish',
+        'Second peak slightly lower than first = stronger reversal signal',
+        'Confirmation requires a close beyond the mid-point between the two extremes',
+        'Measured move = pattern height projected from the confirmation break',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Triangle patterns occur when price makes converging highs and lows — the range narrows progressively as buyers and sellers reach equilibrium. There are three types: ascending, descending, and symmetrical. Each has a different directional bias.\n\nAscending triangle: flat upper resistance line with rising lows. Buyers are progressively stepping in at higher prices (rising lows) but hitting a ceiling of consistent selling at the same resistance. When buying pressure finally overwhelms that resistance, the breakout is typically bullish. Descending triangle: flat lower support with declining highs. Sellers are consistently capping rallies at lower levels — bearish bias, with a likely downside breakout.\n\nSymmetrical triangle: both converging highs and lows with no flat side. Genuinely neutral — the breakout direction is the signal. Trade the breakout side, with a target equal to the widest part of the triangle projected from the break point. One critical rule for all triangles: the breakout should occur within the final 50–75% of the triangle\'s length. Breakouts near the apex (the very tip) are unreliable — the market runs out of energy rather than building explosive pressure.',
+      key_points: [
+        'Ascending triangle: flat top + rising lows = bullish bias',
+        'Descending triangle: flat bottom + declining highs = bearish bias',
+        'Symmetrical triangle: converging without flat side = wait for breakout direction',
+        'Measured move: project the widest part of the triangle from the breakout point',
+        'Breakouts near the apex are unreliable — expect them in the final 50–75% of triangle length',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'Flags and pennants are short-term continuation patterns that form after a sharp, impulsive move — the flagpole. They represent a brief pause and consolidation before the trend continues. They are among the highest-probability and fastest-resolving patterns in technical analysis.\n\nA flag is a rectangular consolidation channel that slopes against the prior trend. After a sharp rally (bullish flagpole), a bull flag slopes slightly downward — a controlled pullback. After a sharp decline (bearish flagpole), a bear flag slopes slightly upward. Volume should contract during the flag formation and expand on the breakout. A pennant is similar but the consolidation forms as a small symmetrical triangle rather than a rectangular channel.\n\nThe measured move target for both is the flagpole height added from the breakout point — this is the "pole and flag" measured move. The most reliable flags form after a strong, clear flagpole (at least 1.5–2× the average daily range), consolidate for 5–15 candles, and break out in the original direction with an expanding volume candle.',
+      key_points: [
+        'Flag: rectangular consolidation sloping against the prior trend, then continuation breakout',
+        'Pennant: small symmetrical triangle consolidation after an impulsive move',
+        'Volume contracts during flag/pennant formation — expansion on breakout confirms',
+        'Measured move = flagpole height added from the breakout point',
+        'Most reliable after impulsive moves of at least 1.5–2× average daily range',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'Wedges look similar to triangles but have one crucial difference: both boundary lines slope in the same direction. A rising wedge has both the highs and lows sloping upward, but the lows are rising faster than the highs — the range is narrowing as price climbs. A falling wedge has both sloping downward, with lows falling faster than highs.\n\nRising wedges are bearish patterns — despite price moving up, the contracting range and rising lows signal weakening buying pressure. Each new high is bought with less conviction. A close below the lower wedge line is the bearish trigger. Falling wedges are bullish — the contracting range signals selling exhaustion. A close above the upper wedge line is the bullish trigger.\n\nThis is a critical distinction from triangles: rising wedges are counter-trend (bearish even in an uptrend), whereas ascending triangles are trend-following. The divergence between the direction of price and the direction of the pattern is what gives wedges their reliability as reversal signals. Always confirm with volume: wedges should show declining volume throughout formation and a volume spike on the breakout.',
+      key_points: [
+        'Rising wedge: both lines slope up, but range contracts = bearish reversal pattern',
+        'Falling wedge: both lines slope down, range contracts = bullish reversal pattern',
+        'Wedges are counter-trend reversal signals — opposite of their apparent direction',
+        'Volume should contract throughout wedge formation and spike on breakout',
+        'Rising wedges form in uptrends as warning signs; falling wedges form in downtrends',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-7': {
+      intro_text: 'Now you will identify a key continuation pattern from the description alone. No chart labels, no hints — read the price action described and identify the pattern and its implications. This tests whether you can recognise patterns from behaviour, not from visual shape on a labelled diagram.',
+      key_points: [
+        'Sharp impulsive move + controlled pullback + volume contraction = flag or pennant',
+        'Bull flags slope downward against the uptrend before breaking higher',
+        'Measured move from the breakout = the height of the preceding flagpole',
+      ],
       activity_type: 'multi_choice',
       question: 'Price rises sharply for 3 sessions, then consolidates for 6 candles forming slightly lower highs and near-flat lows in a tight downward channel. Volume drops during consolidation. Price then breaks above the channel top on expanding volume. What pattern is this?',
       options: [
@@ -1010,7 +1160,24 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'A bull flag is a continuation pattern. The flagpole is the sharp initial move; the flag is the controlled consolidation with slightly declining highs and roughly flat lows. Volume contracts during the flag (healthy) and expands on the breakout (genuine conviction). The measured move target is the flagpole height added from the breakout point.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-8': {
+      intro_text: 'Pattern failures are not random — they are high-probability setups in their own right. When a well-formed, widely-watched pattern fails to deliver its expected move, it signals something powerful: the opposite side is in control, and everyone who traded the expected direction is now trapped. Trapped traders create fuel for explosive moves in the opposite direction.\n\nThe head and shoulders failure is classic: neckline breaks, everyone shorts, price reverses and closes back above the neckline. Now all those shorts are trapped. Their stops fuel the upward move. The stronger the original pattern signal, the more trapped traders exist, and therefore the more powerful the failure move.\n\nHow to trade failures: wait for the confirmation of failure — a close back through the original pattern\'s key level in the opposite direction. Do not anticipate the failure; wait for it to be confirmed. Position with stop beyond the pattern extreme that would invalidate the failure thesis. Targets are the original pattern\'s measured move in the opposite direction.',
+      key_points: [
+        'Pattern failures occur when a confirmed pattern reverses back through its trigger level',
+        'Failures are high-probability setups because trapped traders fuel the opposite move',
+        'The more popular the pattern, the more traders trapped, the more explosive the failure',
+        'Wait for a close back through the original trigger level before trading the failure',
+        'Target: the original pattern\'s measured move in the opposite direction',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-9': {
+      intro_text: 'This exercise applies the head and shoulders pattern in practice. You will identify the two key troughs in the pattern and draw the neckline connecting them. The neckline is the critical trigger level: a close below it confirms the pattern and activates the measured move target.',
+      key_points: [
+        'The neckline connects the lowest point of the left trough and the lowest point of the right trough',
+        'A close below the neckline — not just a wick — is the confirmation signal',
+        'The neckline angle (flat vs sloped) affects where exactly the trigger price lies each session',
+      ],
       activity_type: 'draw_trendline',
       ticker: 'EURUSD',
       timeframe: 'D1',
@@ -1021,7 +1188,79 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'candlestick-patterns': {
+    'lesson-1': {
+      intro_text: 'The doji is one of the most important single-candle signals. It forms when a session opens and closes at almost exactly the same price — the open and close are at or very near the same level, leaving a small or non-existent body with wicks above and below. The doji represents pure indecision: neither buyers nor sellers won the session.\n\nBut a doji in isolation means very little. Context is everything. A doji after a sustained uptrend signals that buying momentum has paused — sellers are now matching buyers. This is potentially the beginning of a reversal. A doji in the middle of a range is just noise. A doji at a major support level in a downtrend signals that selling may be exhausted.\n\nThere are several doji variants: the standard doji (small body, balanced wicks), the long-legged doji (very long upper and lower wicks, extreme indecision), the gravestone doji (long upper wick, no lower wick, open and close at session low — bearish signal especially at highs), and the dragonfly doji (long lower wick, open and close at session high — bullish signal especially at lows). Each variant tells a slightly different story about the battle between buyers and sellers.',
+      key_points: [
+        'Doji: open and close at same price, indicating indecision between buyers and sellers',
+        'Meaning comes from context: doji at trend extreme is significant; doji mid-range is noise',
+        'Gravestone doji: long upper wick, close at low — bearish signal especially at highs',
+        'Dragonfly doji: long lower wick, close at high — bullish signal especially at lows',
+        'Always look for the next candle to confirm — doji is a warning, not a signal alone',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The hammer is one of the most reliable single-candle bullish reversal signals. It forms at the bottom of a downtrend with a small body near the top of the candle and a long lower wick — at least twice the body length. The long lower wick tells the story: sellers pushed price down aggressively during the session but buyers overwhelmed them and pushed price back up to close near the high. Buyers won the session decisively.\n\nFor a hammer to be valid, it needs context: it should form after a decline, ideally at a support zone. A hammer in the middle of a range or during an uptrend is not a reversal signal — it is just a candle. The colour of the body matters less than the wick: a green hammer is slightly more bullish than a red one, but both are valid signals.\n\nThe hanging man is the identical candle shape to the hammer, but it forms at the top of an uptrend — making it bearish. Same shape, opposite context, opposite meaning. Sellers pushed price down significantly during the session. Buyers recovered it, but the size of the lower wick shows that selling pressure was significant. After an extended rally, this is a warning that bears are becoming more active.',
+      key_points: [
+        'Hammer: small body at top, long lower wick ≥2× body length, forms after a decline — bullish',
+        'Hanging man: same shape as hammer but forms at an uptrend top — bearish warning',
+        'Lower wick length indicates how far sellers pushed price before buyers recovered it',
+        'Requires context: hammer at support after a decline; hanging man at resistance after a rally',
+        'Confirm with the next candle: a bullish close after a hammer, bearish close after hanging man',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The shooting star is a single-candle bearish reversal pattern that forms at the top of an uptrend. It has a small body near the bottom of the candle and a long upper wick — at least twice the body length. During the session, buyers pushed price up strongly, but sellers overwhelmed them and drove price back down to close near the open. Sellers won the session decisively.\n\nThe shooting star is the bearish counterpart of the hammer. Just as the hammer shows buyers absorbing all selling at lows, the shooting star shows sellers absorbing all buying at highs. It is most powerful when: (1) it forms after a sustained rally of multiple sessions, (2) the upper wick is long — 3× the body length or more, (3) it forms at a known resistance zone, and (4) the body is red (sellers won more completely).\n\nThe inverted hammer is the same shape as the shooting star but forms at the bottom of a downtrend — making it a potential bullish reversal signal. Buyers tried to push price up and partially succeeded. The confirmation rule applies here too: wait for the next candle to close bullishly above the inverted hammer before entering long.',
+      key_points: [
+        'Shooting star: small body at bottom, long upper wick ≥2× body, forms at rally top — bearish',
+        'Long upper wick shows buyers were overwhelmed and sellers drove price back to the open',
+        'Most powerful at resistance zones after a sustained multi-session rally',
+        'Inverted hammer: same shape at downtrend bottom — potential bullish reversal, needs confirmation',
+        'Always wait for the next candle to confirm before acting on single-candle signals',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Engulfing patterns are two-candle reversal signals and are among the most reliable candlestick patterns. A bullish engulfing forms when a bearish (red) candle is followed by a bullish (green) candle whose body completely engulfs the prior candle\'s body — open below the prior close, close above the prior open. The entire previous session\'s move is reversed and exceeded in a single candle.\n\nThe psychology: the first candle continues the existing downtrend. The second candle opens lower (suggesting continuation) but then a massive surge of buying overwhelms all sellers and drives price all the way above where the previous session opened. This is a decisive momentum shift. A bearish engulfing is the mirror: a green candle followed by a red candle that completely engulfs the green body.\n\nKey rules: (1) Context matters — a bullish engulfing at a support zone after a downtrend is significant; the same pattern mid-range is noise. (2) The size of the engulfing candle matters — a large engulfing candle with real body indicates strong momentum. (3) Volume on the engulfing candle should ideally be higher than the previous candle. (4) The more the second candle engulfs (larger relative to the first), the stronger the signal.',
+      key_points: [
+        'Bullish engulfing: green body completely covers the prior red body — bullish reversal at downtrend lows',
+        'Bearish engulfing: red body completely covers the prior green body — bearish reversal at uptrend highs',
+        'The engulfing candle must physically cover the entire body (not wicks) of the prior candle',
+        'Larger relative size of the engulfing candle = stronger momentum shift',
+        'Requires context at S/R zones — engulfing patterns mid-range are lower probability',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'Morning and evening star patterns are three-candle reversal formations that represent the most comprehensive picture of a momentum shift available in candlestick analysis. They require three candles, making them more reliable than single or two-candle patterns — more price action data confirms the reversal.\n\nMorning star (bullish reversal at downtrend bottom): (1) A large bearish candle continuing the downtrend. (2) A small-bodied candle (often a doji or spinning top) that gaps below the first candle — indecision. (3) A large bullish candle that closes well into the body of the first candle — buyers take control. The star in the middle is the indecision point; the third candle is the confirmation.\n\nEvening star (bearish reversal at uptrend top): the mirror image. (1) Large bullish candle. (2) Small-bodied star that gaps up — buyers lose momentum. (3) Large bearish candle closing well into the first candle. The strength of the pattern increases with: gap size between the first and second candle, the size of the third candle relative to the first, and volume expansion on the third candle.',
+      key_points: [
+        'Morning star: bearish candle + small star + large bullish candle = bullish reversal at lows',
+        'Evening star: bullish candle + small star + large bearish candle = bearish reversal at highs',
+        'The gap between candles 1 and 2 makes the signal stronger (less common in forex)',
+        'Third candle must close at least 50% into the first candle body to confirm',
+        'Volume should increase on the third candle — confirms institutional participation',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'The marubozu is the opposite of the doji: a candle with no wicks at all, or very minimal wicks. The body fills nearly the entire session range. A bullish marubozu opens at the session low and closes at the session high — buyers dominated from the first tick to the last, never giving sellers a moment. A bearish marubozu does the opposite. These are momentum candles, not reversal signals — they show conviction and are most powerful as continuation signals in the direction of the trend.\n\nSpinning tops are small-bodied candles with relatively long wicks on both sides. Like the doji, they represent indecision, but with slightly more movement — both buyers and sellers made progress during the session before returning to near the open. They are weaker than a doji in isolation but reinforce indecision signals when they cluster together or appear after momentum candles.\n\nUnderstanding these extremes — the marubozu (complete conviction) and the spinning top/doji (complete indecision) — gives you a framework for reading any candle. Every candle you see falls somewhere on the spectrum between these extremes. A candle with a moderate body and small wicks is showing moderate conviction. Reading candles this way removes the need to memorise dozens of named patterns — you are reading the underlying behaviour directly.',
+      key_points: [
+        'Bullish marubozu: no upper wick, no lower wick — buyers dominated the entire session',
+        'Bearish marubozu: same but sellers — maximum conviction in one direction',
+        'Spinning top: small body, relatively equal wicks — indecision, neither side in control',
+        'Marubozu candles are momentum signals, not reversal signals',
+        'All candles exist on a spectrum from marubozu (conviction) to doji (indecision)',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-7': {
+      intro_text: 'You have learned all the core single and multi-candle patterns. Now you will identify one from a written description alone — no chart, no visual cues. Read the scenario, apply what you know about body size, wick direction, and context, and select the correct pattern and its implication.',
+      key_points: [
+        'Hammer: small body at top of range, long lower wick ≥2×, forms after a decline',
+        'Shooting star: small body at bottom of range, long upper wick ≥2×, forms after a rally',
+        'Context is the deciding factor between similar-looking patterns like hammer vs hanging man',
+      ],
       activity_type: 'multi_choice',
       question: 'After a sustained downtrend, a candle forms at a known monthly support level with a tiny body near the TOP of the range, a lower wick 3× the body length, and almost no upper wick. What is this pattern and what does it signal?',
       options: [
@@ -1034,7 +1273,24 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'A hammer: small body at top of range, lower wick at least 2× the body, minimal upper wick. At the bottom of a downtrend at support, it signals buyers rejected lower prices. Context matters: the same shape at resistance in an uptrend is a hanging man — a bearish signal.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-8': {
+      intro_text: 'Every candlestick pattern we have studied exists on a spectrum of reliability. A hammer on a 1-minute chart at an arbitrary price means almost nothing. The same hammer on a weekly chart, at a multi-year support level, after a 40% decline, with RSI at 22 — that is one of the highest-probability signals in existence. Context determines everything.\n\nThe key contextual filters to apply to every candlestick signal: (1) Timeframe — higher timeframe patterns carry more weight. A daily hammer trumps an H1 hammer at the same price. (2) Location — is the signal at a known, significant S/R zone, or is it in empty space mid-range? (3) Trend — is the signal in the direction of the higher timeframe trend, or counter to it? With-trend signals are higher probability. (4) Indicator confirmation — does RSI confirm oversold/overbought at the same location? Does volume expand on the signal candle?\n\nThe professional approach: do not look for candlestick patterns first. Instead, identify your significant S/R zones and higher timeframe trend, then wait for price to reach those zones and check for a confirming candlestick signal. You are using the pattern as a trigger, not as the primary reason to trade. The zone provides the edge; the pattern provides the timing.',
+      key_points: [
+        'Timeframe hierarchy: weekly signal > daily signal > H4 signal at the same price',
+        'Location: signals at proven S/R zones are high probability; signals mid-range are noise',
+        'With-trend signals are higher probability than counter-trend signals',
+        'Use candlestick patterns as entry timing tools, not as standalone reasons to trade',
+        'Wait for price to reach your pre-identified zone, then look for the confirming pattern',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-9': {
+      intro_text: 'This exercise tests your ability to identify a candlestick reversal signal at a key support zone and mark the level precisely. Scan the chart for where price produced a significant reversal candle (hammer, engulfing, or morning star) directly at a support zone, then draw the support level.',
+      key_points: [
+        'Look for reversal candles where price bounced strongly — not every candle at support qualifies',
+        'The support level is the zone where the reversal candle\'s lower wick found its floor',
+        'Mark the level where the candle body/wick interacted with prior price history, not the wick tip',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'GBPUSD',
       timeframe: 'D1',
@@ -1045,7 +1301,68 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'indicators-that-work': {
+    'lesson-1': {
+      intro_text: 'Moving averages (MAs) smooth out price data to reveal the underlying trend. Rather than a jagged price line, you get a flowing average that rises in uptrends and falls in downtrends. The two main types are the Simple Moving Average (SMA) and the Exponential Moving Average (EMA).\n\nThe SMA calculates the average closing price over N periods, giving equal weight to every candle. The 200-day SMA is the gold standard institutional benchmark — funds measure performance relative to price being above or below it. The EMA gives more weight to recent candles, making it more responsive to current price action. This responsiveness makes it preferred by active traders.\n\nThe most important applications: (1) Trend direction — price above the EMA means uptrend, below means downtrend. (2) Dynamic support/resistance — in uptrends the 20 EMA is the first bounce zone; the 50 EMA is the deeper pullback support. (3) MA crossovers — when a faster MA crosses above a slower MA, it signals a potential trend change. Golden cross (50 MA crossing above 200 MA) = bullish. Death cross (50 crossing below 200) = bearish. Crossovers lag price but confirm trend changes.',
+      key_points: [
+        'SMA: equal weight to all periods; EMA: more weight to recent candles, more responsive',
+        'Price above EMA = uptrend; price below EMA = downtrend — the fundamental trend filter',
+        '20 EMA = short-term dynamic support; 50 EMA = medium-term; 200 EMA = long-term bias divider',
+        'Golden cross (50 above 200) = bullish signal; Death cross (50 below 200) = bearish signal',
+        'Moving averages are lagging indicators — they confirm trends, they do not predict them',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The Relative Strength Index (RSI) was developed by J. Welles Wilder and is one of the most widely used momentum oscillators in trading. It measures the speed and magnitude of recent price changes to assess whether a market is overbought or oversold. The RSI oscillates between 0 and 100.\n\nTraditional overbought/oversold levels are 70 (overbought — potential sell signal) and 30 (oversold — potential buy signal). However, in strong trending markets, RSI can stay above 70 for extended periods without a reversal — using these levels as automatic signals leads to fighting strong trends. A more sophisticated approach: in uptrends, RSI typically oscillates between 40 and 80; in downtrends, between 20 and 60. Adjust your expectations for the trend context.\n\nRSI is calculated using the average of up-closes versus down-closes over a period (default 14). When the market has made significantly more and larger up-moves than down-moves recently, RSI rises. When down-moves dominate, RSI falls. The RSI 50 level is the momentum midpoint: above 50 = net bullish momentum, below 50 = net bearish momentum. Combine with price action and support/resistance for the strongest signals.',
+      key_points: [
+        'RSI oscillates 0–100, measuring recent momentum: above 70 = overbought, below 30 = oversold',
+        'In strong trends, RSI can remain in overbought/oversold territory for many candles',
+        'RSI 50 = momentum midpoint: above 50 = bullish momentum, below 50 = bearish',
+        'Default period is 14 — shorter periods are more sensitive, longer periods are smoother',
+        'Never trade RSI signals in isolation — always combine with price level context',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'RSI divergence is one of the most powerful and reliable applications of any indicator. It occurs when price and RSI move in opposite directions — price makes a new high but RSI makes a lower high (bearish divergence), or price makes a new low but RSI makes a higher low (bullish divergence).\n\nWhy does it work? RSI measures momentum. If price makes a new high but RSI cannot match the previous high, it means the recent rally required less momentum than the prior one. Each new price high is being achieved with diminishing energy — the trend is becoming exhausted. This is mathematically verifiable evidence of momentum decay, not just a visual pattern.\n\nBearish RSI divergence: compare RSI peaks at consecutive price highs. If RSI is lower on the second peak, divergence exists. Bullish RSI divergence: compare RSI troughs at consecutive price lows. If RSI is higher on the second trough (price made a lower low but RSI made a higher low), bullish divergence is forming. The strongest divergence signals: span at least 5–10 candles between the comparison points, occur in the overbought or oversold zone (above 70 or below 30), and are confirmed by a reversal candlestick at the second divergence point.',
+      key_points: [
+        'Bearish divergence: price makes higher high but RSI makes lower high — momentum weakening',
+        'Bullish divergence: price makes lower low but RSI makes higher low — selling exhaustion',
+        'Divergence measures energy behind moves: new highs/lows with less momentum = warning',
+        'Strongest when divergence spans 5+ candles and RSI is in overbought/oversold zone',
+        'Confirm with a reversal candlestick at the divergence point before acting',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'The MACD (Moving Average Convergence Divergence) is a trend-following momentum indicator developed by Gerald Appel. It consists of three components: the MACD line (12 EMA minus 26 EMA), the Signal line (9 EMA of the MACD line), and the Histogram (MACD line minus Signal line, displayed as bars above or below zero).\n\nThe primary signals: (1) MACD crossover — when the MACD line crosses above the Signal line, it is a bullish signal; crossing below is bearish. The most reliable crossovers occur when both lines are below zero (bullish) or above zero (bearish). Crossovers near the zero line are weaker. (2) Zero line cross — when the MACD line crosses from negative to positive, it confirms a trend change from bearish to bullish momentum. (3) Histogram — the histogram shrinking (bars getting smaller) signals momentum loss in the current direction, even if price is still trending. This is histogram divergence.\n\nThe MACD works best on daily and weekly charts for trend confirmation. On short timeframes it generates too many false signals due to noise. Never use the MACD as a standalone entry signal — combine it with price action and S/R for context.',
+      key_points: [
+        'MACD line = 12 EMA minus 26 EMA; Signal line = 9 EMA of MACD line',
+        'MACD above Signal = bullish momentum; MACD below Signal = bearish momentum',
+        'Zero line cross confirms a trend shift: positive MACD = bullish, negative = bearish',
+        'Shrinking histogram bars = momentum loss in current direction (histogram divergence)',
+        'Best on daily/weekly timeframes; short timeframes produce too many false signals',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'Bollinger Bands, developed by John Bollinger, consist of a middle band (typically the 20-period SMA) flanked by two bands set at 2 standard deviations above and below the middle. The bands expand during high volatility and contract during low volatility.\n\nThe most important Bollinger Band insight: markets alternate between periods of low volatility (bands contracting — the squeeze) and high volatility (bands expanding). A squeeze — when the bands are the tightest they have been in months — is not a signal of direction but of imminent energy release. A breakout from a squeeze is often the start of a significant move. The direction is determined by which band price breaks through.\n\nThe band touch rule: price touching the upper band does not mean sell, and touching the lower band does not mean buy. In a strong uptrend, price can ride along the upper band for many candles. The traditional interpretation — buy lower band, sell upper band — only works in range-bound markets. The walk-along-the-band is a sign of a powerful trend. What matters is how price behaves when it touches the band: does it reject with a strong candlestick reversal, or does it close beyond the band (the "outside bar" that signals extreme momentum)?',
+      key_points: [
+        'Bollinger Bands: 20 SMA middle + 2 standard deviations above and below',
+        'Squeeze (bands at minimum width) signals energy compression and an imminent big move',
+        'Band touch does not mean reversal — in trends price walks along the band',
+        'Outside bar close (candle closing beyond the band) signals extreme momentum, not reversal',
+        'Bands widen during high volatility and contract during low volatility',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-6': {
+      intro_text: 'RSI divergence is a skill that requires practice to identify reliably. In this quiz you will read a scenario describing price and RSI behaviour over multiple swing points and determine what the RSI is signalling. Apply the divergence rules you learned in lesson 3.',
+      key_points: [
+        'Bearish divergence: price higher high + RSI lower high = momentum decay at highs',
+        'The RSI value at the second peak matters: still above 50 but lower than first peak is still valid divergence',
+        'Divergence spanning multiple swing highs over weeks is more reliable than spanning just 2 candles',
+      ],
       activity_type: 'multi_choice',
       question: 'EUR/USD H4 makes higher price highs over 8 weeks. RSI (14) at those same peaks shows declining values: first peak RSI = 71, second = 65, third = 58. What is this and what does it tell you?',
       options: [
@@ -1058,7 +1375,35 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Bearish divergence: price makes higher highs but RSI makes lower highs. RSI measures the speed and magnitude of price moves. When RSI declines while price still rises, each new high is achieved with diminishing buying energy — the trend is tiring. Most reliable when it spans multiple swing highs over weeks, especially near the 70 overbought zone.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-7': {
+      intro_text: 'No single indicator is reliable alone. The real power comes from indicator confluence — multiple indicators from different calculation methods all agreeing at the same time and price level. When independent tools built on different data converge, probability increases substantially.\n\nExample of indicator confluence for a long setup: (1) Price at the 200 EMA from above — bullish bias confirmed. (2) RSI at 32 — oversold, potential reversal zone. (3) MACD histogram shrinking from a deep negative reading — selling momentum decaying. (4) Price at lower Bollinger Band — stretched move, mean reversion likely. (5) Bullish engulfing candle at the confluence zone — trigger. Five independent signals all pointing to the same conclusion.\n\nThe critical rule for confluence: the signals must be genuinely independent. RSI and MACD are both momentum oscillators and are highly correlated — they do not count as two independent signals. True confluence comes from combining different categories: trend (MA), momentum (RSI or MACD), volatility (Bollinger Bands), price structure (S/R levels), and price action (candlestick patterns). Mix categories, not multiple indicators from the same category.',
+      key_points: [
+        'Indicator confluence: multiple independent tools agreeing at the same price level',
+        'RSI and MACD are correlated — they do not count as two independent signals',
+        'Mix categories: trend + momentum + volatility + price structure + candlestick',
+        'Three or more independent signals at the same level = high-conviction setup',
+        'Confluence reduces false signals because independent tools must all fail simultaneously',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-8': {
+      intro_text: 'Every indicator shares one fundamental limitation: they are all calculated from past price data. This makes them lagging by definition. A moving average cannot tell you where price is going — only where it has been. The MACD crossover confirms a trend change after it has already happened. RSI reaching oversold confirms price has already fallen significantly.\n\nThis is not a reason to abandon indicators — it is a reason to use them correctly. Lagging indicators are excellent at confirming trends once they are established and filtering out noise. They are terrible at predicting reversals before they happen. The mistake is using them backwards: waiting for the MA crossover then entering, when the crossover happens 20% into the move.\n\nThe solution is layered analysis. Use leading signals (price action, candlestick patterns, S/R zones) for timing and entry decisions. Use lagging indicators for bias and confirmation — they confirm whether your reading of the market is aligned with the broader trend. A hammer at support is a leading signal. RSI being below 35 at the same moment is lagging confirmation that supports the hammer. Together they are powerful; either alone is weaker.',
+      key_points: [
+        'All technical indicators are lagging — calculated from past price data',
+        'Lagging indicators excel at trend confirmation; they are poor at predicting reversals',
+        'Use price action and S/R for entry timing; use indicators for bias and confirmation',
+        'Waiting for MA crossover as entry often means entering 20%+ into the move',
+        'Combine leading signals (patterns, S/R) with lagging confirmation (MA, RSI) for best results',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-9': {
+      intro_text: 'This exercise combines price action with indicator confluence. You will identify a setup where RSI reached oversold territory and a hammer candle formed at a support zone — two independent signals at one location. Draw the entry trigger line precisely at the hammer high, which is where you would enter long on the next candle open.',
+      key_points: [
+        'Entry trigger is the high of the hammer candle — a close above it on the next candle is your long entry',
+        'Two confluences here: RSI oversold (momentum signal) + hammer at support (price action + level)',
+        'Stop goes below the hammer\'s lower wick; target is the next resistance level above',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'EURUSD',
       timeframe: 'H4',
@@ -1069,7 +1414,46 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'risk-management-framework': {
+    'lesson-1': {
+      intro_text: 'Risk:Reward ratio (R:R) is the single most important mathematical concept in trading. It compares how much you risk on a trade to how much you stand to gain. A 1:2 R:R means you risk £1 to potentially make £2. A 1:3 means risk £1 to make £3.\n\nWhy does this matter so much? Because it fundamentally determines the win rate you need to be profitable. At 1:1 R:R you need to win more than 50% of trades to profit. At 1:2 R:R you only need to win 34% of trades to break even — and 40% is profitable. At 1:3 R:R you can lose 75% of trades and still make money. This is why professionals focus obsessively on R:R rather than win rate alone.\n\nHow to apply it: before entering any trade, identify (1) your entry price, (2) your stop loss level based on the technical structure (not on how much you are willing to lose), and (3) your target — the next significant S/R level. Calculate the distance from entry to stop (your risk). Calculate the distance from entry to target (your reward). If the ratio is below 1:1.5, do not take the trade. Most professional traders require a minimum of 1:2. Never adjust your stop loss to manufacture a better R:R — set it where the setup is genuinely invalid.',
+      key_points: [
+        'R:R ratio: how much you risk vs how much you stand to gain on each trade',
+        'At 1:2 R:R you only need 34% win rate to break even; at 1:3 only 25%',
+        'Set stop loss at the technical invalidation point, never based on desired R:R',
+        'Minimum viable R:R is 1:1.5; professional standard is 1:2 or better',
+        'A high R:R allows profitability even with a relatively low win rate',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Expectancy is the mathematical answer to "does this strategy make money?" It combines win rate and average R:R into a single number that tells you the average profit or loss per unit of risk on every trade you take.\n\nThe formula: Expectancy = (Win Rate × Average Win R) − (Loss Rate × Average Loss R). If your strategy wins 55% of trades with an average +1.5R winner and loses 45% of trades with an average −1.0R loser: (0.55 × 1.5) − (0.45 × 1.0) = 0.825 − 0.45 = +0.375R expectancy. Every trade you take earns you 0.375R on average. Over 100 trades at 1% risk per trade, that is +37.5% expected return — before slippage.\n\nPositive expectancy is necessary but not sufficient. You also need enough trades to let the edge play out (sample size), consistent execution (no rules broken), and drawdown management (surviving the inevitable losing runs). A strategy with +0.20R expectancy will reach its long-term expected returns — but only if you survive long enough without blowing your account during the inevitable losing streaks. This is why position sizing is as important as the strategy itself.',
+      key_points: [
+        'Expectancy = (Win Rate × Avg Win R) − (Loss Rate × Avg Loss R)',
+        'Positive expectancy = the strategy has an edge; negative = strategy loses money long term',
+        'A small positive expectancy compounded over many trades produces significant returns',
+        'Expectancy only manifests if you execute consistently — skipping trades breaks the statistical model',
+        'Must be calculated on a sufficiently large sample (minimum 30–50 trades)',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Position sizing determines how large your trade is relative to your account. It is the mechanism by which you control risk. Getting this right is more important than any entry signal — a great entry with wrong position sizing can destroy an account; a mediocre entry with correct position sizing leaves your account intact for the next opportunity.\n\nThe fixed percentage method: risk a fixed percentage of your account on every trade — typically 1–2%. If your account is £10,000 and you risk 1%, you risk £100 per trade. Your stop distance in pips or ticks determines your position size: divide your risk amount (£100) by your stop size in currency value (e.g. £0.50 per pip × 20 pip stop = £10 stop value per lot) to get your position size. This ensures every loss is a predictable, manageable percentage.\n\nThe fixed R method: define your 1R as a fixed monetary amount (e.g. £100) and size every trade so that your stop equals exactly 1R. This is mathematically equivalent to the fixed percentage method when applied consistently. The core principle: position size is calculated from (1) your account size, (2) your risk percentage, and (3) your stop distance. You never size positions based on conviction — every trade gets the same risk allocation regardless of how certain you feel.',
+      key_points: [
+        'Position size is calculated from account size × risk % ÷ stop distance in price',
+        'Risk 1–2% of account per trade: enough to grow, small enough to survive losing runs',
+        'Never size by conviction — even your "best" setups get the same risk allocation',
+        'Fixed percentage method: consistent risk across all trades regardless of position size in lots',
+        'Stop distance determines position size — a wider stop means fewer lots/shares',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-4': {
+      intro_text: 'Expectancy is a formula. The best way to learn it is to apply it to a real set of trades and calculate it yourself. You will now work through a 20-trade set and compute the expectancy per trade. This number tells you exactly what to expect from this strategy on every future trade, on average.',
+      key_points: [
+        'Win rate = winners ÷ total trades; loss rate = 1 − win rate',
+        'Apply the formula: (win rate × avg win) − (loss rate × avg loss)',
+        'A positive result means the strategy has an edge; the number is the average R per trade',
+      ],
       activity_type: 'calculation',
       problem: 'A strategy over 20 trades: 12 winners averaging +2.0R, 8 losers averaging -1.0R. Using the expectancy formula — (Win Rate × Avg Win R) minus (Loss Rate × Avg Loss R) — what is the expectancy per trade in R?',
       correct_answer: '0.80',
@@ -1086,7 +1470,47 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       ],
       steps: [{ id: '1', label: 'Calculate win/loss rates', completed: false }, { id: '2', label: 'Apply expectancy formula', completed: false }, { id: '3', label: 'Review worked solution', completed: false }],
     },
+    'lesson-5': {
+      intro_text: 'Maximum drawdown is the largest peak-to-trough decline in account value you have experienced or can expect during a strategy\'s lifetime. It is the most important metric for assessing the survivability of a strategy — because a strategy that periodically drawdowns 50% cannot be traded by most people without an emotional crisis, even if the long-term expectancy is positive.\n\nDrawdown is inevitable. Even a strategy with strong positive expectancy will have extended losing runs due to normal statistical variance. Understanding the relationship between win rate, R:R, and expected maximum drawdown helps you set realistic expectations and survive the rough patches without abandoning a valid strategy.\n\nThe key rules: (1) Never risk more per trade than allows you to survive your strategy\'s expected worst-case drawdown on your account. At 1% risk and a 15-trade losing run (possible with a 45% win rate), you are down 14% — uncomfortable but survivable. At 3% risk, the same run wipes 36% — devastating. (2) If your account is in a drawdown of 20% or more, reduce position sizes until you recover — the psychological pressure of trying to recover large losses leads to reckless behaviour. (3) Maximum drawdown is always a backward-looking number — the real maximum drawdown will always exceed the historical one.',
+      key_points: [
+        'Maximum drawdown: largest peak-to-trough decline in account value during a strategy\'s run',
+        'All strategies with positive expectancy still experience extended losing runs',
+        'Lower risk % per trade = smaller drawdown during losing runs = more survivable',
+        'If drawdown exceeds 20%, reduce position size until recovery to protect psychology',
+        'Historical max drawdown understates future max drawdown — plan for worse',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'The disposition effect is one of the most pervasive and costly behavioural biases in trading: the tendency to sell winners too early (to lock in the "good feeling" of a profit) and hold losers too long (avoiding the "pain" of realising a loss). It is a systematic error that directly inverts what rational risk management requires.\n\nThe rational approach: cut losses short and let winners run. The disposition effect does the opposite. A trader holding a losing position because "it will come back" is letting loss aversion override their logical stop placement. A trader taking a 0.5R profit because it "feels good" on a trade that could reach 2R is letting the pleasure of winning override their original risk management plan.\n\nTo combat it: (1) Set your stop and target before entry — both orders in place simultaneously so emotion cannot interfere. (2) Never look at the monetary value of an open trade, only the R value — £150 profit sounds like a lot; +0.5R on a 2R target trade should not be closed. (3) Review your closed trades for average hold time on winners vs losers — if winners are consistently closed earlier than losers, you have the disposition effect. (4) Use hard stop-loss orders — never mental stops. The disposition effect is strongest when you have discretion to hold or close.',
+      key_points: [
+        'Disposition effect: selling winners too early and holding losers too long',
+        'Directly inverts rational risk management — losses should be cut, winners extended',
+        'Place both stop and target orders at trade open so emotion cannot intervene',
+        'Track average hold time on winners vs losers — early winner exits reveal the bias',
+        'Use hard stop orders not mental stops: the disposition effect attacks discretionary decisions',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-7': {
+      intro_text: 'Order types are the mechanics of how you actually enter and exit trades. Using the right order type is a risk management tool in itself — the wrong order type can turn a well-planned setup into an uncontrolled entry.\n\nMarket orders execute immediately at the best available price. They guarantee execution but not price — in fast-moving or low-liquidity conditions, your entry can be significantly worse than expected (slippage). Use market orders when immediate execution is critical and slight slippage is acceptable.\n\nLimit orders execute at a specified price or better. A buy limit is placed below the current price (you are willing to buy at a lower level); a sell limit above current price. They guarantee price but not execution — if price never reaches your limit, the order does not fill. This is powerful for entries at precise S/R levels: set a buy limit at the support zone and let the market come to you.\n\nStop orders trigger when price reaches a specified level and then execute as a market order. Buy stops are placed above current price (used for breakout entries — enter when price breaks above a level). Sell stops are placed below (used for breakdown entries and stop-loss orders). Understanding the difference between limit and stop logic is essential: limit orders execute against the trend; stop orders execute with momentum.',
+      key_points: [
+        'Market order: immediate execution at best available price — guarantees fill, not price',
+        'Limit order: fills at your price or better — guarantees price, not fill',
+        'Stop order: triggers when price reaches level, then executes as market — momentum entry',
+        'Stop-loss orders are sell-stops (for longs) or buy-stops (for shorts) to cap downside',
+        'For S/R entries: use limit orders; for breakout entries: use buy/sell stop orders',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-8': {
+      intro_text: 'Every professional trading operation has a daily loss limit — a maximum amount they will lose in a single trading day before stopping completely. This is not optional and it is not arbitrary. It protects against the snowball effect: one loss leads to revenge trading, another loss, larger position size to recover, catastrophic loss.\n\nApply this principle to your trading. Your daily loss limit quiz scenario will test whether you follow rules under pressure — the exact moment when your decision-making is most compromised.',
+      key_points: [
+        'Daily loss limit is a hard stop to prevent compounding losses from escalating',
+        'After 3 consecutive losses, psychological state is significantly impaired',
+        'Never try to recover the day\'s losses within the same session — it compounds mistakes',
+        'The limit exists for the moments when following it is hardest — that is its entire purpose',
+      ],
       activity_type: 'multi_choice',
       question: 'You have suffered 3 consecutive losses. Your account is down 2.8% in a single session. Your daily loss limit rule is 3%. What is the correct action?',
       options: [
@@ -1102,7 +1526,68 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'volume-analysis': {
+    'lesson-1': {
+      intro_text: 'Volume is the number of units traded during a period — shares, contracts, or lots depending on the market. It is the only indicator that measures participation rather than price. Price tells you where the market went; volume tells you how many people were involved in getting there. High volume means many participants agreed on a price. Low volume means few did.\n\nThe basic principle: moves on high volume are more significant than moves on low volume. A 50-pip rally on 3× average volume is a genuine expansion of buying interest. The same 50-pip rally on 30% of average volume might be a temporary lack of sellers rather than actual buying conviction — it is fragile and likely to reverse.\n\nVolume analysis is most powerful in stocks and futures, where exchange-reported volume data reflects actual transactions. In forex, there is no centralised exchange, so volume data is based on tick count (number of price changes) rather than actual trade size. Tick volume is a reasonable proxy but has limitations. Despite this, the patterns and principles of volume analysis still apply across all markets — the key is to compare current volume against the rolling average, not to fixate on absolute numbers.',
+      key_points: [
+        'Volume measures participation: how many traders were involved in a price move',
+        'High volume moves are more significant; low volume moves are fragile',
+        'Forex uses tick volume (price change count) as a proxy for real volume',
+        'Always compare volume to its rolling average (20-period is standard)',
+        'Volume is the only indicator measuring conviction rather than price alone',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The relationship between volume and breakouts is one of the most reliable principles in technical analysis. A genuine breakout from a consolidation or key level should be accompanied by above-average volume. The volume confirms that the breakout has genuine institutional participation — real buyers or sellers entering the market, not just retail orders triggered by stops.\n\nThe classic pattern: price consolidates in a range for multiple sessions. Volume contracts during consolidation (both buyers and sellers are waiting). Then price breaks above resistance on 2× or 3× average volume — institutions are entering. This is a high-confidence breakout. If the breakout happens on below-average volume, treat it with extreme scepticism: it may be a stop hunt or false break with insufficient participation to sustain.\n\nThe volume should spike on the breakout candle itself, then normalise (but remain above average) in the sessions following. A breakout candle on high volume followed immediately by low volume is normal — the initial surge brought buyers in, and now the lower volume shows consolidation of the new level. A breakout that needs escalating volume just to stay above the level is struggling.',
+      key_points: [
+        'Genuine breakouts require above-average volume on the breakout candle',
+        'Volume contracts during consolidation, expands on the genuine breakout — the classic pattern',
+        '2–3× average volume on a breakout = institutional participation, high conviction',
+        'Low-volume breakouts fail significantly more often — treat them as false breaks until proven',
+        'Volume should normalise after the initial breakout spike, not keep escalating',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Volume at key levels reveals the true strength of support and resistance. When price approaches a key support zone on high volume and then bounces strongly, it tells you that significant buyers are defending that level — institutional demand is present. When price approaches resistance on high volume and then fails and reverses, significant sellers are defending that ceiling.\n\nThe most powerful reading: high volume at support with price unable to break lower. This is called absorption — large buyers are absorbing all selling pressure at a specific price. Each sell order that hits the market is being taken by a large buyer. The high volume proves it. When selling pressure is exhausted, price bounces sharply — the large buyer now has their position and will push price higher.\n\nConversely, watch for high volume at resistance with price unable to push higher — sellers absorbing all buying. This is distribution. When buying pressure is exhausted, sellers have their short positions established and push price lower. Volume at key levels is not just confirming the level — it is telling you what type of participant is active at that level and whether they are likely to succeed.',
+      key_points: [
+        'High volume at support + price holds = large buyers defending the level (absorption)',
+        'High volume at resistance + price holds = large sellers defending the ceiling (distribution)',
+        'Absorption: big buyers taking every sell order — when exhausted, price rallies sharply',
+        'Distribution: big sellers taking every buy order — when exhausted, price falls sharply',
+        'Low volume at a level means it was not genuinely tested — institutional interest is absent',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'On-Balance Volume (OBV) and VWAP (Volume Weighted Average Price) are two of the most widely used volume-based indicators. They translate raw volume data into actionable signals.\n\nOBV accumulates volume over time: when the close is higher than the previous close, the volume for that period is added to the running total; when it closes lower, volume is subtracted. The OBV line therefore trends up when volume is accumulating on up-days (buying pressure) and down when it accumulates on down-days (selling pressure). OBV divergence is particularly useful: if price makes a new high but OBV does not, buying conviction is weakening — a warning sign matching RSI divergence logic.\n\nVWAP (Volume Weighted Average Price) is the average price weighted by volume — it tells you the average price at which all transactions occurred during a session. It is widely used by institutional traders as a benchmark: buyers want to buy below VWAP (better than average price), sellers want to sell above. Price trading above VWAP = bullish session; below = bearish. VWAP is best used as an intraday tool for day traders — on longer timeframes, anchored VWAP (fixed to a specific starting point like a swing high/low) is used instead.',
+      key_points: [
+        'OBV: cumulative volume — adds on up-closes, subtracts on down-closes',
+        'OBV divergence: price makes new high but OBV does not = buying conviction weakening',
+        'VWAP: average price weighted by volume — institutional fair-value benchmark',
+        'Price above VWAP = bullish; below VWAP = bearish during a session',
+        'Institutions buy below VWAP and sell above it — it acts as intraday S/R',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'Volume Profile is a sophisticated volume tool that shows the distribution of volume at each price level, rather than volume per time period. Instead of looking at volume as bars at the bottom of the chart (time-based), Volume Profile shows horizontal bars — the longer the bar at a price, the more volume was traded there.\n\nThe Point of Control (POC) is the single price level with the most volume traded — this is the price where the market found the most consensus and spent the most time. High Volume Nodes (HVN) are prices with significantly above-average volume — price tends to stall and rotate around HVNs. Low Volume Nodes (LVN) are prices with little trading activity — price moves rapidly through LVNs because there is no prior consensus at those levels.\n\nTrading application: the market is magnetically attracted to high-volume nodes and moves rapidly through low-volume nodes. If price is in a LVN between two HVNs, expect a fast move to the next HVN. If price reaches a HVN, expect slowing, consolidation, or rejection. The POC acts as a major magnet — price frequently returns to it. Volume Profile is the most institutionally-aware indicator available to retail traders.',
+      key_points: [
+        'Volume Profile shows volume distributed by price level, not by time',
+        'Point of Control (POC): the single price level with the most volume — a major magnet',
+        'High Volume Nodes (HVN): price rotates and consolidates around these levels',
+        'Low Volume Nodes (LVN): price passes through quickly due to lack of prior consensus',
+        'Market is attracted to HVNs and repelled from LVNs — use for target and support identification',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-6': {
+      intro_text: 'Now you will apply volume breakout analysis in a quiz. The scenario describes price breaking a major level with specific volume data. Your job: determine whether the volume confirms a genuine breakout or warns of a false break. Apply the rules from lesson 2 — above-average volume confirms, below-average signals scepticism.',
+      key_points: [
+        'Below-average volume on a breakout = limited institutional participation = likely false break',
+        'Watch for a reversal back below the broken level in the 1–3 sessions following a low-volume break',
+        'Price position alone does not confirm a breakout — volume must support it',
+      ],
       activity_type: 'multi_choice',
       question: 'EUR/USD breaks above major resistance at 1.1200. The breakout candle closes 25 pips above the level. Volume on that candle is 38% of the 20-day average. What does this indicate?',
       options: [
@@ -1115,6 +1600,17 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Valid breakouts should be accompanied by above-average volume, representing genuine conviction. A breakout on 38% of average volume means very few participants drove the move — potentially a stop-hunt rather than a genuine continuation. Statistically, low-volume breakouts fail significantly more often. Watch for a close back below 1.1200 in the next 1–3 candles.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-7': {
+      intro_text: 'Volume divergence occurs when price and volume move in opposite directions — the same concept as RSI divergence but using raw volume data. It is one of the earliest warning signs that a trend is losing institutional support.\n\nBullish volume divergence in a downtrend: price makes a new low but volume on the down-candles is declining — fewer participants are willing to sell at each new low. The trend is running out of selling interest. This signals potential exhaustion and reversal. Bearish volume divergence in an uptrend: price makes a new high but volume on the up-candles is declining — the rally is being achieved with progressively less buying conviction.\n\nThe classic exhaustion pattern: a climactic move on the highest volume seen in months, followed by an immediate reversal. This climax volume often marks the final push of a trend as the last holdouts capitulate. Buying climax (huge volume up-day at highs, followed by sharp reversal) = smart money distributing into retail panic buying. Selling climax (huge volume down-day at lows) = smart money accumulating into retail panic selling. These climactic volume spikes are among the most reliable reversal signals on daily and weekly charts.',
+      key_points: [
+        'Bearish volume divergence: price higher highs + declining up-candle volume = trend weakening',
+        'Bullish volume divergence: price lower lows + declining down-candle volume = selling exhaustion',
+        'Buying climax: massive volume spike at highs + immediate reversal = distribution top',
+        'Selling climax: massive volume spike at lows + immediate reversal = accumulation bottom',
+        'Declining volume on trend continuation = warning; rising volume on reversals = confirmation',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   // ════════════════════════════════════════════════════════
@@ -1122,7 +1618,68 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   // ════════════════════════════════════════════════════════
 
   'multi-timeframe-analysis': {
+    'lesson-1': {
+      intro_text: 'Every market exists on multiple timeframes simultaneously — the 5-minute, hourly, daily, weekly, and monthly charts all show the same price but through different lenses of resolution. Understanding how these timeframes relate to each other is the foundational skill of the analyst.\n\nThe timeframe hierarchy: higher timeframes dominate lower timeframes. The monthly trend determines the weekly trend\'s direction. The weekly trend shapes the daily. The daily shapes the hourly. The hourly shapes the 15-minute. When you trade against a higher timeframe trend, you are swimming against the tide — technically possible but statistically costly.\n\nEach timeframe has a natural participant base. Institutional macro funds make decisions on monthly and weekly charts. Fund managers manage risk on daily charts. Professional swing traders operate on daily and H4. Day traders work on H1 and H4 for bias, 15M and 5M for entry. Scalpers use 1M and 5M. Understanding who operates on each timeframe helps you understand whose orders are moving price.',
+      key_points: [
+        'Higher timeframes dominate lower timeframes — monthly > weekly > daily > H4 > H1',
+        'Trading against higher timeframe trend = fighting institutional bias',
+        'Each timeframe has a natural participant type: institutions on weekly/monthly, traders on daily/H4',
+        'The trend on each timeframe is valid until structurally broken — not every pullback is a reversal',
+        'Always establish context on at least two timeframes above your entry timeframe',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Top-down analysis is the systematic process of reading market context from the highest relevant timeframe down to the entry timeframe. It is the opposite of the beginner approach — which looks at a single timeframe, finds a pattern, and enters. Top-down analysis ensures every trade is aligned with the broader market structure.\n\nThe process: (1) Start monthly — what is the dominant trend? Where are the major S/R zones that have governed price for years? (2) Move to weekly — how is price positioned relative to the monthly structure? Is it in a weekly uptrend or downtrend? (3) Examine daily — what is the short-to-medium term direction? Where are the key daily levels? (4) Drop to H4 — where is price within the daily context? What is the current move? (5) Use H1 or 15M for entry timing only — where exactly to enter within the setup the higher timeframes have identified.\n\nThe result: a trade where the monthly, weekly, daily, and H4 all agree on direction. When all timeframes align, the probability of success is significantly higher than when only the entry timeframe shows a signal.',
+      key_points: [
+        'Top-down: start monthly → weekly → daily → H4 → H1/15M for entry timing',
+        'Each step asks: where is price relative to the higher timeframe\'s structure?',
+        'All aligned timeframes = high-probability setup; conflicting timeframes = skip or reduce size',
+        'Mark major S/R on monthly and weekly first — these are the levels that genuinely matter',
+        'Entry timeframe setup must be in the direction of all higher timeframe biases',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The higher timeframe (HTF) bias is the single most important piece of information for any trade. It answers: what direction does the dominant timeframe trend tell me to trade? Once established, this bias filters every lower timeframe signal — only taking signals that align with it.\n\nEstablishing HTF bias: look at the daily or weekly chart. Is price making higher highs and higher lows (uptrend = long bias)? Or lower lows and lower highs (downtrend = short bias)? Is it range-bound between clear levels (no directional bias — trade the boundaries)? The HTF bias is your mandatory filter. If the daily is in a clear uptrend, you do not take short setups on the H1, no matter how good they look.\n\nBias shifts: the HTF bias remains in force until a structural shift. In an uptrend, that means a lower low breaking the most recent swing low. Until that happens, every pullback is a buy opportunity, not a reversal. The mistake is calling tops and bottoms prematurely — anticipating a bias change before structure confirms it.',
+      key_points: [
+        'HTF bias = dominant direction on the daily/weekly — mandatory filter for all lower TF trades',
+        'Uptrend: higher highs + higher lows = long bias only; downtrend = short bias only',
+        'Bias remains valid until structurally broken — a lower low in an uptrend shifts to neutral/bearish',
+        'Never fight the HTF bias for "clean-looking" counter-trend setups on lower timeframes',
+        'Range-bound HTF = only trade the boundaries; no directional bias to apply',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'The lower timeframe (LTF) trigger is the entry mechanism — the precise signal that tells you exactly when and where to enter, within the context the higher timeframe has already established. The HTF gives the bias and the zone; the LTF gives the timing.\n\nAfter identifying the HTF bias and a high-quality zone (support in an uptrend, resistance in a downtrend), you drop to the LTF and wait for a confirming pattern to form within that zone. Typical LTF triggers: a bullish engulfing on the H1 at H4 support, a hammer on the 15M at the daily support zone, a MACD crossover at the H4 demand area while the daily is bullish. The trigger does not need to be on the HTF — it just needs to signal that the move within the HTF zone has begun.\n\nThe critical discipline: you must have the HTF setup first before looking for the LTF trigger. Many traders make the mistake of finding a great-looking LTF trigger and then trying to rationalise it with HTF context afterwards. The process must always be top-down: HTF identifies the zone, LTF provides the entry signal within it.',
+      key_points: [
+        'LTF trigger: the precise entry signal that confirms the HTF setup is activating',
+        'Process: HTF establishes zone → LTF provides trigger signal within that zone',
+        'Common triggers: candlestick pattern, MACD crossover, or price structure on H1/15M',
+        'Never look for the LTF trigger first — HTF setup must already be established',
+        'Stop goes below the LTF trigger structure, not below the HTF zone',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'The most common error in multi-timeframe analysis is conflating timeframe signals — letting a lower timeframe signal override a higher timeframe bias, or misidentifying a lower timeframe retracement as a higher timeframe reversal. These conflicts cause confusion and lead to poor trade decisions.\n\nHTF vs LTF conflict example: the daily chart is in a clear downtrend with price making lower lows. On the H1, there is a bullish flag breaking upward with strong momentum. This is a genuine conflict — the H1 signal is counter-trend to the daily. The correct resolution: respect the HTF bias. The H1 flag is a retracement within the downtrend, not a reversal. A bullish signal within a bearish HTF means the move has limited upside — it will run into the higher timeframe trend and fail.\n\nThe resolution framework: (1) Identify which timeframe the signal is on. (2) Check the next two timeframes above it. (3) If both are aligned with the signal direction, take it. (4) If one or both are opposing, reduce size or skip. (5) The higher timeframe wins all conflicts.',
+      key_points: [
+        'LTF counter-trend signals within HTF trends are retracements, not reversals',
+        'Conflict resolution: the higher timeframe bias wins — always',
+        'A bullish signal in a daily downtrend has limited upside before the trend reasserts',
+        'Check the next two timeframes above your signal — both aligned = high probability',
+        'Reduce size or skip when any timeframe above your entry TF conflicts',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-6': {
+      intro_text: 'The weekly chart is the most important timeframe for identifying dominant support and resistance. Levels that have governed price for 12+ months on the weekly are where the biggest institutional participants have their orders. Your job is to find the single level that has produced the most consistent and significant price reactions.',
+      key_points: [
+        'Weekly S/R zones are established where price has repeatedly rejected over months or years',
+        'These levels represent institutional order clusters — smart money has memory at these prices',
+        'The more time between touches and the stronger each reaction, the more significant the level',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'EURUSD',
       timeframe: 'W1',
@@ -1130,7 +1687,24 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       reference_line: { x1: 0, y1: 28, x2: 100, y2: 28 },
       steps: [{ id: '1', label: 'Study the weekly structure', completed: false }, { id: '2', label: 'Draw the dominant HTF level', completed: false }, { id: '3', label: 'Review feedback', completed: false }],
     },
+    'lesson-7': {
+      intro_text: 'Swing trading and scalping operate on completely different timeframe relationships. A swing trader on the daily chart uses the weekly for bias and H4 for entry timing — their trades last days to weeks. A scalper on the 5-minute uses the H1 for bias and the 1M or 5M for entries — their trades last minutes to hours.\n\nThe timeframe relationships differ, but the principles are identical: always use at least one timeframe above for bias, one timeframe for entry timing. The mistake is using the same timeframe for both bias and entry — there is no context, no zoom-out view. You are trading in a vacuum.\n\nFor swing traders: weekly and monthly set the macro context, daily provides the trend and key levels, H4 gives entry zones and triggers. For day traders: daily and weekly set the bias, H4 provides the trend, H1 gives the setup zone, 15M or 5M provides the entry trigger. Match your timeframe stack to your trading style — not to what looks cleanest on a single chart.',
+      key_points: [
+        'Swing traders: weekly/monthly bias → daily structure → H4 entry',
+        'Day traders: daily/weekly bias → H4 trend → H1 zone → 15M/5M entry trigger',
+        'Never use the same timeframe for both bias and entry — no context',
+        'Match timeframe stack to your style: swing vs day vs scalp requires different stacks',
+        'Higher timeframe structures always determine the probability of lower timeframe signals',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-8': {
+      intro_text: 'This exercise applies the full top-down process on GBP/USD. The daily chart shows a clear downtrend making lower highs. Your task is to identify the descending trendline connecting the two most recent significant swing highs — this line defines the HTF bearish bias. Setups to short should only be taken when price approaches this trendline from below.',
+      key_points: [
+        'Connect the two most recent clearly-defined swing highs — candle body closes, not wick tips',
+        'This trendline is your HTF filter: only short when price is below or at this line',
+        'A break above the trendline would shift the bias to neutral — reassess at that point',
+      ],
       activity_type: 'draw_trendline',
       ticker: 'GBPUSD',
       timeframe: 'D1',
@@ -1141,7 +1715,101 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'smart-money-concepts': {
+    'lesson-1': {
+      intro_text: 'Smart Money Concepts (SMC) is a framework that attempts to view markets from the perspective of institutional participants — the "smart money" that moves markets. The core premise: retail traders consistently lose because they are trading against institutions, not with them. By understanding how institutions accumulate, distribute, and hunt liquidity, you can align your trades with the dominant flow.\n\nThe SMC framework was developed from the teaching of Inner Circle Trader (ICT) and posits that price is moved by central banks, hedge funds, and market makers who need to fill enormous orders. These participants cannot simply place orders — they need liquidity. They create the conditions to generate that liquidity, then fill their orders as retail traders exit losing positions.\n\nThe key insight: institutional order flow leaves footprints in the chart. Order blocks, fair value gaps, and structural breaks are all evidence of where institutions entered or exited. By identifying these footprints, you trade at levels where institutional interest genuinely exists.',
+      key_points: [
+        'SMC premise: institutions move markets by hunting liquidity from retail traders',
+        'Smart money cannot simply place large orders — they need to generate opposing liquidity first',
+        'Price manipulation creates the conditions for institutions to fill their orders',
+        'SMC footprints: order blocks, fair value gaps, and structural breaks show institutional interest',
+        'Retail traders lose by providing liquidity to institutions — SMC teaches you to spot this',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Market structure is the foundation of SMC analysis. Price does not move randomly — it makes purposeful swings creating highs and lows. In an uptrend (SMC calls this a bullish market structure), price creates a series of Higher Highs (HH) and Higher Lows (HL). In a downtrend (bearish structure), Lower Lows (LL) and Lower Highs (LH).\n\nSMC divides price swings into two categories: swing highs and lows (major structural points formed by multiple candles) and internal highs and lows (smaller structural points within a swing). This distinction matters because internal structure breaks signal short-term momentum shifts, while swing structure breaks signal major directional changes.\n\nThe key question at any moment: what is the most recent swing high/low, and has it been broken? A break of the most recent swing high in a downtrend signals potential bullish intent. A break of the most recent swing low in an uptrend signals potential bearish intent. This structural reading is the lens through which all SMC concepts are applied.',
+      key_points: [
+        'Bullish structure: HH + HL sequence; bearish structure: LL + LH sequence',
+        'Swing highs/lows: major structural points; internal highs/lows: minor points within swings',
+        'Breaking a swing high in a downtrend = potential structural shift to bullish',
+        'Breaking a swing low in an uptrend = potential structural shift to bearish',
+        'Market structure provides the directional bias filter for all SMC setups',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Break of Structure (BOS) is one of the two primary structural events in SMC analysis. A BOS occurs when price breaks and closes beyond the most recent swing high (bullish BOS) or swing low (bearish BOS) in the direction of the existing trend. It is a trend continuation signal — the market is confirming the current direction by making a new significant high or low.\n\nIn a bullish market, each time price breaks above the previous swing high, that is a BOS — confirming the uptrend is intact and continuing. The BOS tells you the trend is healthy. The BOS level often becomes a pullback zone — after breaking the previous swing high, price may retrace back to it before continuing higher. Entry: wait for price to pull back to the BOS level, find a trigger, and enter in the direction of the BOS.\n\nBOS identification rules: the break must be a close beyond the swing point, not just a wick. The swing point being broken must be a genuine structural swing (at least 3 candles on each side showing it is a peak or trough). Internal structure breaks are not BOS — they are lower magnitude signals used for entry timing only.',
+      key_points: [
+        'BOS: price closes beyond the most recent swing high (bullish) or low (bearish)',
+        'BOS = trend continuation signal — the current trend is confirmed and continuing',
+        'After a bullish BOS, the broken swing high often becomes new support for pullback entries',
+        'BOS must be a candle body close, not a wick — wicks can be false breaks',
+        'Only genuine swing highs/lows qualify — at least 3 candles confirming the swing on each side',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Change of Character (CHoCH) is the other primary structural event in SMC — and the more significant one. While BOS confirms trend continuation, CHoCH signals a potential trend reversal. It occurs when price breaks in the OPPOSITE direction to the existing trend, taking out a structural swing point that would not break in a healthy trend.\n\nIn a bullish market, a CHoCH occurs when price breaks BELOW the most recent Higher Low — not the swing low formed during a pullback, but the structural HL that defines the uptrend. Breaking this level means the market has made a lower low, which contradicts the bullish structure. The trend may be shifting.\n\nCHoCH is the first signal of a potential reversal — it is not confirmation of one. After a CHoCH, the smart money approach is to: (1) neutralise directional bias, (2) watch for the subsequent BOS in the new direction for confirmation, (3) look for an order block or fair value gap at the CHoCH level as an entry zone for the new directional trade. A CHoCH followed by a BOS in the opposite direction is a high-conviction reversal.',
+      key_points: [
+        'CHoCH: price breaks a structural swing in the OPPOSITE direction to the current trend',
+        'In an uptrend, CHoCH = price breaks below the most recent Higher Low — bearish shift warning',
+        'CHoCH alone is a warning; CHoCH + BOS in new direction = confirmed reversal',
+        'After CHoCH, neutralise bias and wait for directional confirmation before trading',
+        'The CHoCH level often becomes the first pullback zone for the new directional trade',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'Order blocks are the SMC equivalent of supply and demand zones — but with a specific definition. An order block is the last opposing candle (or group of candles) before a significant impulsive move. The theory: institutions placed large orders at this area, and the impulsive move is the result of those orders executing. Price will eventually return to this area, and the remaining institutional orders will trigger again.\n\nBullish order block: the last bearish candle (or group of red candles) before a strong bullish impulse. When price returns to this zone, the remaining buy orders should trigger, bouncing price higher. The entry zone is within this order block area — typically between the high and low of the last bearish candle before the bullish surge.\n\nBearish order block: the last bullish candle (or group of green candles) before a strong bearish impulse. When price returns to this zone, remaining sell orders should trigger, pushing price lower. Key conditions that make an order block significant: (1) the impulse after it must be strong (large multiple of the OB size), (2) the impulse must have broken structure, (3) the OB should not have been significantly revisited before — a fresh OB is more potent than one that has been tapped multiple times.',
+      key_points: [
+        'Order block: the last opposing candle before a significant impulsive structural move',
+        'Bullish OB: last red candle before strong rally — where to look for long entries on pullback',
+        'Bearish OB: last green candle before strong decline — where to look for short entries',
+        'Must be followed by a structural BOS to be a valid order block, not just any impulse',
+        'Fresh order blocks (not yet revisited) are more potent than previously-tapped ones',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'Fair Value Gaps (FVG) are three-candle imbalances where price moved so quickly in one direction that the market left a literal gap in two-way order flow — a price range where buy and sell orders did not fully interact. The result is an area of "unfair price" that the market tends to return to and fill.\n\nHow to identify an FVG: on three consecutive candles, the wick of candle 1 and the wick of candle 3 do not overlap. The gap between candle 1\'s high (in a bearish FVG) and candle 3\'s low (in a bullish FVG) is the imbalance zone. In a bullish impulse with an FVG, the gap is below the price — the market will often pull back to it before continuing higher. In a bearish impulse with an FVG, the gap is above price.\n\nFVGs are often combined with order blocks: if an order block and an FVG coincide at the same level, the confluence is particularly strong — you have both the institutional order origin AND a market inefficiency at the same price. The most reliable SMC entries come from these OB+FVG convergence zones.',
+      key_points: [
+        'FVG: three-candle imbalance where candle 1 wick and candle 3 wick do not overlap',
+        'Represents price moving too fast for two-way order flow — an inefficiency the market corrects',
+        'Bullish FVG: gap below current price in an uptrend — expect a pullback to fill it',
+        'Bearish FVG: gap above current price in a downtrend — expect a rally to fill it',
+        'OB + FVG at same level = high-confluence SMC entry zone',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-7': {
+      intro_text: 'Liquidity is the SMC concept that explains why price moves to levels most traders would consider illogical. Institutions need liquidity — opposing orders — to fill their own large positions. The most concentrated areas of liquidity are where retail traders have their stop losses.\n\nWhere do retail stops cluster? Above swing highs (retail shorts\' stops are above resistance), below swing lows (retail longs\' stops are below support), above equal highs (where all the stop orders waiting above a double-top cluster), and below equal lows. Institutions create price moves specifically to reach these liquidity pools — triggering the stops and filling their own opposing orders simultaneously.\n\nThis concept reframes how you read price action: a sweep above a prior swing high that immediately reverses is not a failed breakout — it is a deliberate liquidity grab. The institution just filled their sell orders using the buy stops triggered above the high. After the sweep, price reverses in the direction of institutional intent. Trading after the liquidity sweep is a high-probability SMC entry: enter in the direction of the post-sweep reversal, stop beyond the sweep extreme.',
+      key_points: [
+        'Liquidity pools: where retail stop losses cluster — above highs, below lows, at equal highs/lows',
+        'Institutions move price to liquidity pools to fill their own opposing large orders',
+        'Sweep of a swing high with immediate reversal = institution sold into buy-stop liquidity',
+        'After the sweep, trade the reversal direction — that is where institutional intent lies',
+        'Equal highs and equal lows are the highest-conviction liquidity targets',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-8': {
+      intro_text: 'The premium and discount concept in SMC helps determine whether the current price is an attractive entry or an overextended position. Premium = price is above the equilibrium (50%) level of a range or swing; discount = price is below it. The rule: buy in discount, sell in premium.\n\nApplication: after identifying a bullish order block or FVG within a larger swing, determine whether price is currently in the premium or discount zone of that range. The low of the range to the high defines 100%. The 50% level (equilibrium) is the dividing line. For long entries, you want price to be below 50% (in discount) — you are getting a better-than-average price. Entries taken in premium when looking for longs often result in price retracing to discount before moving higher — creating unnecessary drawdown.\n\nThe optimal entry zone within an order block or FVG: the lower 25% of the area (deep discount). The premium/discount framework works on any range: a session range, a weekly range, or an individual swing. The mathematical principle is always the same — buy below the midpoint, sell above it.',
+      key_points: [
+        'Premium: price above the 50% midpoint of a range; discount: price below the midpoint',
+        'Buy in discount zones, sell in premium zones — buying at a favourable price relative to range',
+        'Calculate: (range high − range low) × 0.5 + range low = the equilibrium midpoint',
+        'Optimal long entry: in the lower 25% of an order block or FVG (deep discount)',
+        'Entering longs in premium = risk of retracement to discount before continuation',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-9': {
+      intro_text: 'Now you will identify a bullish order block on a chart — the last bearish candle area before an impulsive bullish move that broke structure. Draw the top of that origin zone. When price returns to this level, the remaining institutional buy orders should activate, providing your long entry.',
+      key_points: [
+        'Look for the last red candle (or cluster) immediately before the impulse began',
+        'The impulse must have broken the previous swing high — a BOS confirms the OB is valid',
+        'Mark the top of the origin zone — that is the key level the market will return to',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'EURUSD',
       timeframe: 'H4',
@@ -1150,6 +1818,12 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       steps: [{ id: '1', label: 'Identify the impulse origin', completed: false }, { id: '2', label: 'Draw the order block top', completed: false }, { id: '3', label: 'Review placement', completed: false }],
     },
     'lesson-10': {
+      intro_text: 'This exercise tests your understanding of CHoCH and bearish order blocks. After a CHoCH event — where price broke below a structural swing low — you need to identify the last bullish candle area before the bearish impulse began. This is the bearish order block. When price retraces back up to it, sell orders should activate.',
+      key_points: [
+        'CHoCH confirms bearish intent — now look for a bearish OB above current price',
+        'The bearish OB is the last green candle (or cluster) before the bearish impulse',
+        'Mark the bottom of the origin zone — that is where price retraces to before continuing lower',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'GBPUSD',
       timeframe: 'D1',
@@ -1160,7 +1834,57 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'fibonacci-and-elliott-wave': {
+    'lesson-1': {
+      intro_text: 'Fibonacci ratios appear throughout nature, art, and architecture — and they appear in financial markets with remarkable consistency. The reason is not mystical: Fibonacci levels work because enough traders use them that they become self-fulfilling. When the majority of institutional and retail traders identify the same Fibonacci levels as potential turning points, orders cluster there, creating genuine price reactions.\n\nThe most important Fibonacci ratios in trading: 0.382 (38.2% retracement — shallow pullback in a strong trend), 0.500 (50% retracement — the equilibrium midpoint), 0.618 (61.8% retracement — the golden ratio, the most widely respected level), 0.786 (78.6% — deep retracement before continuation). For extensions: 1.272 and 1.618 are the primary targets beyond the swing high.\n\nThe essential rule: Fibonacci levels must be applied to significant swings — the more meaningful the swing, the more significant the retracement levels. A 5-pip swing on a 1-minute chart has no Fibonacci significance. The same swing spanning 200 pips over 3 days on the daily chart — every Fibonacci level within it is watched by thousands of institutional traders.',
+      key_points: [
+        'Key Fibonacci levels: 38.2%, 50%, 61.8% (golden ratio), 78.6% retracement',
+        'Fibonacci works because enough participants use the same levels, creating self-fulfilling orders',
+        'Only apply Fibonacci to significant swings — small swings generate meaningless levels',
+        'Extension levels 127.2% and 161.8% are the primary profit targets beyond the swing',
+        'The 61.8% (0.618) level is the most respected and consistently reactive globally',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Drawing Fibonacci retracements correctly is a precision skill. The most common mistake is selecting arbitrary start and end points — choosing any two pivots and applying Fibonacci hoping for signals. Correct Fibonacci requires selecting the most obvious, significant swing high and low that define a clear directional move.\n\nFor a bullish retracement setup: identify a clear impulse move from a swing low to a swing high. The Fibonacci tool anchors at the swing low (0%) and extends to the swing high (100%). The retracement levels (38.2%, 50%, 61.8%) then appear between the swing low and high — these are the potential entry zones for longs during the pullback.\n\nFor a bearish retracement setup: anchor at the swing high (0%) and extend to the swing low (100%). Retracement levels mark potential entry zones for shorts during the bounce. The precision rule: anchor to the candle body close, not the wick tip. Wicks represent temporary extremes driven by stop hunts; body closes represent genuine consensus. Using body closes gives more accurate levels that align with where price actually trades.',
+      key_points: [
+        'Anchor Fibonacci to the most obvious, significant swing high and low of a clear impulse move',
+        'Bullish setup: swing low (0%) to swing high (100%) — look for longs at 38.2%/50%/61.8%',
+        'Bearish setup: swing high (0%) to swing low (100%) — look for shorts at 38.2%/50%/61.8%',
+        'Use candle body closes for anchoring — not wick tips (wicks are stop-hunt extremes)',
+        'More significant swing = more respected Fibonacci levels within it',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The golden zone is the range between the 0.618 and 0.786 Fibonacci retracement levels — the deepest retracement area that still represents a continuation move rather than a reversal. It is called the golden zone because 0.618 is the mathematical golden ratio (φ), which appears in nature, architecture, and financial markets as a fundamental proportion.\n\nWhy the 0.618 is the strongest level: when price retraces 61.8% of a prior move, it has given back a Fibonacci proportion of the impulse. Historically, this is where buying (in an uptrend) or selling (in a downtrend) has been most consistent. The 0.786 adds a buffer — deep retracements that stop at 78.6% before continuing are valid continuations, but anything beyond 78.6% is often a reversal.\n\nThe golden zone trade setup: (1) identify the significant swing, (2) draw Fibonacci from swing low to swing high, (3) wait for price to pull back into the 0.618–0.786 zone, (4) look for a reversal candlestick signal within the zone, (5) enter in the direction of the original swing with stop below 0.786 (or the swing low), target at the prior high and Fibonacci extension levels beyond it.',
+      key_points: [
+        'Golden zone: 61.8% to 78.6% retracement — the highest-probability entry zone in Fibonacci trading',
+        'Price retracing to 61.8% has given back a golden ratio proportion — historically strong level',
+        'Beyond 78.6% retracement = trend is likely reversing, not pulling back',
+        'Golden zone trade: wait for price in the zone + confirming candlestick → enter with trend',
+        'Stop below 78.6% (the zone) or below the swing low; target at prior high + extensions',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Fibonacci extensions project where price is likely to reach beyond the original swing high (or low), providing target levels for profit-taking. While retracements measure how far a pullback will go, extensions measure how far the continuation move will go.\n\nThe primary extension levels are 1.272 (127.2%) and 1.618 (161.8%). The 1.272 is the first significant extension target — price reaching 127.2% of the original swing means the continuation has exceeded the prior impulse by 27.2%, which is a Fibonacci proportion. The 1.618 is the golden extension — a powerful magnet that acts as a major target in trending moves.\n\nHow to use extensions: after entering at a Fibonacci retracement level (0.618 zone), your first target is the 1.000 level (the prior swing high/low). Your second target is the 1.272. Your final target is the 1.618. Many traders scale out: close 50% at 1.000, 30% at 1.272, let 20% run to 1.618 (or trail stop). Extensions become self-fulfilling in the same way retracements do — because institutional traders place limit orders at these levels globally.',
+      key_points: [
+        'Fibonacci extensions: targets beyond the original swing — 1.272 (first target), 1.618 (major)',
+        'Anchor extensions from the same swing low and high used for the retracement',
+        'Scale out at extension targets: first at 1.000, then 1.272, then let remainder run to 1.618',
+        'Extension targets work because institutions place limit sell orders at these levels',
+        'The 1.618 "golden extension" is often a significant reversal or consolidation zone',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise anchors your Fibonacci tool to a significant EUR/USD swing. The goal is to accurately identify the swing low (start of the impulse) and swing high (end of the impulse), then draw the line connecting them. In real trading, this anchoring determines every retracement level — precision here determines the quality of all subsequent analysis.',
+      key_points: [
+        'The swing low is the lowest point of the pullback before the impulse began',
+        'The swing high is the highest point the impulse reached before retracing',
+        'Use candle body closes for both anchor points — not the extreme wick tips',
+      ],
       activity_type: 'draw_trendline',
       ticker: 'EURUSD',
       timeframe: 'H4',
@@ -1168,7 +1892,46 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       reference_line: { x1: 5, y1: 80, x2: 92, y2: 20 },
       steps: [{ id: '1', label: 'Locate the swing low anchor', completed: false }, { id: '2', label: 'Draw from swing low to swing high', completed: false }, { id: '3', label: 'Review 0.618 level accuracy', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Elliott Wave Theory, developed by Ralph Nelson Elliott in the 1930s, proposes that market price movements follow a specific pattern of waves driven by investor psychology. The theory describes a repeating fractal pattern: a 5-wave impulse in the direction of the main trend, followed by a 3-wave corrective move against it.\n\nThe 5-wave impulse: Wave 1 begins the new trend. Wave 2 corrects against Wave 1. Wave 3 is the strongest and most extended wave. Wave 4 corrects against Wave 3. Wave 5 completes the impulse with a final push. Following the impulse, a 3-wave correction occurs: Wave A (against the trend), Wave B (correction of Wave A), Wave C (completing the correction, usually at or near the start of the original impulse).\n\nElliott Wave operates on a fractal basis — each wave in the larger degree is composed of smaller waves in the same pattern. A Wave 3 on the daily chart contains a complete 5-wave impulse on the H4 chart. This fractal nature means the pattern theoretically repeats at every timeframe.',
+      key_points: [
+        'Elliott Wave: 5-wave impulse (waves 1-5) followed by 3-wave correction (waves A-B-C)',
+        'Wave 3 is typically the longest and strongest impulse wave',
+        'Correction (A-B-C) typically retraces to between wave 2 and the start of wave 1',
+        'Fractal: each wave contains smaller-degree waves following the same pattern',
+        'Elliott Wave works best as a probability framework, not a precise prediction tool',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-7': {
+      intro_text: 'The critical distinction in Elliott Wave is between impulse waves (in the direction of the trend) and corrective waves (against the trend). Impulse waves are characterised by: strong directional momentum, expanding price range, increasing volume, and clear structural breaks. Corrective waves show the opposite: overlapping moves, contracting range, decreasing volume, and no structural break in the opposing direction.\n\nThe three impulse types: (1) Motive/Standard impulse — the classic 5-wave structure. (2) Diagonal triangle — a 5-wave structure where each wave overlaps the prior one, typically appearing in Wave 1 or Wave 5 positions. (3) Ending diagonal — same overlapping structure but marks the end of a higher-degree wave, signalling an imminent reversal.\n\nThe three corrective types: (1) Zigzag (A-B-C where each leg is sharp and directional). (2) Flat (A-B-C where Wave B retraces nearly 100% of Wave A). (3) Triangle (A-B-C-D-E in a contracting range). Identifying corrective wave type tells you how deep the correction will go and when to expect the impulse to resume.',
+      key_points: [
+        'Impulse waves: strong momentum, expanding range, volume, clear directional moves',
+        'Corrective waves: overlapping, contracting range, lower volume, no structural break',
+        'Diagonal triangles appear at Wave 1 or Wave 5 positions — overlapping impulse',
+        'Corrective types: zigzag (sharp A-B-C), flat (deep B), triangle (contracting A-B-C-D-E)',
+        'Corrective wave type determines correction depth and the timing of the next impulse',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-8': {
+      intro_text: 'Elliott Wave has three inviolable rules and several guidelines. The rules cannot be broken — if a count violates them, it is invalid. The guidelines are common but not mandatory. Understanding these rules is essential for eliminating invalid wave counts.',
+      key_points: [
+        'Rule 1: Wave 2 cannot retrace more than 100% of Wave 1 (a new low/high invalidates the count)',
+        'Rule 2: Wave 3 cannot be the shortest impulse wave among waves 1, 3, and 5',
+        'Rule 3: Wave 4 cannot overlap Wave 1 (except in diagonal triangles)',
+        'Guideline: Wave 3 is usually the longest wave; Wave 2 often retraces 61.8% of Wave 1',
+        'When a count is invalidated, reassess — the market is telling you the count was wrong',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-9': {
+      intro_text: 'Apply the three Elliott Wave hard rules to the scenario described. One of the described behaviours violates a fundamental rule and would immediately make the wave count invalid. Identify which one.',
+      key_points: [
+        'Three hard rules: Wave 2 cannot exceed Wave 1 start; Wave 3 not the shortest; Wave 4 cannot overlap Wave 1',
+        'A "truncated fifth" (Wave 5 ends below Wave 3 high) is allowed — it is not a rule violation',
+        'Wave 2 retracing 61.8% of Wave 1 is a common guideline, not a rule — it is perfectly valid',
+      ],
       activity_type: 'multi_choice',
       question: 'According to Elliott Wave rules, which of the following would immediately invalidate a 5-wave impulse count?',
       options: [
@@ -1184,7 +1947,68 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'sector-correlation-analysis': {
+    'lesson-1': {
+      intro_text: 'The economy moves through cycles — periods of expansion and contraction — and different sectors perform best at different stages of the cycle. Understanding which sectors to focus on based on where we are in the economic cycle is one of the highest-level skills in market analysis.\n\nThe four phases of the economic cycle and the sectors that typically outperform: (1) Early expansion (recovery): consumer discretionary, financials, and technology begin leading as credit availability improves. (2) Mid-cycle expansion: industrials, materials, and energy move as economic output increases. (3) Late cycle: energy and materials continue to lead; utilities begin defensive rotation. (4) Contraction/recession: healthcare, utilities, and consumer staples outperform as investors seek defensive positions.\n\nSector rotation is the institutional practice of systematically moving capital from one sector to another as the cycle progresses. Retail traders who understand this can position alongside institutional flows rather than fighting them. The leading indicators of cycle phase: yield curve shape, PMI readings, credit spreads, and central bank policy direction.',
+      key_points: [
+        'Economy cycles through expansion and contraction — different sectors lead at each phase',
+        'Early expansion: consumer discretionary + financials; mid-cycle: industrials + energy',
+        'Late cycle: energy + materials; recession: utilities + healthcare + staples',
+        'Sector rotation is institutional capital moving between sectors as the cycle advances',
+        'Leading indicators of cycle phase: yield curve, PMI, credit spreads, central bank policy',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Intermarket analysis studies the relationships between different asset classes — equities, bonds, commodities, and currencies — to improve market timing and directional bias. These four asset classes are fundamentally interconnected and move in predictable patterns relative to each other during specific market conditions.\n\nThe foundational relationships: (1) Bond yields and equities — rising yields mean higher borrowing costs and often pressure equity valuations; falling yields are typically bullish for stocks. (2) Commodities and inflation — commodity prices are the raw material input for inflation; rising commodities → higher inflation → central banks raise rates → equities and bonds often fall. (3) Commodities and the USD — commodity prices (especially oil and gold) typically have an inverse relationship with the US dollar (priced in USD, so a stronger dollar makes them more expensive internationally, reducing demand).\n\nIntermarket analysis is most useful for establishing macro bias — the overarching directional context within which you apply technical setups. A strong dollar environment, rising yields, and falling commodity prices typically signal risk-off conditions. A weak dollar, falling yields, and rising commodities typically signal risk-on.',
+      key_points: [
+        'Four asset classes: equities, bonds, commodities, currencies — all interconnected',
+        'Rising bond yields often pressure equities; falling yields typically supportive for stocks',
+        'Commodities rise with inflation; rising commodities can trigger rate hikes → equity pressure',
+        'Commodities typically trade inverse to the USD — strong dollar = weaker commodity prices',
+        'Risk-on: weak USD + falling yields + rising commodities + rising equities',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The US Dollar is the world\'s reserve currency — approximately 60% of global reserves are held in USD, and most commodities are priced in USD. This makes the dollar\'s trend one of the most important macro inputs for any market analysis. Understanding dollar correlations helps you align trades across multiple markets with the same macro theme.\n\nKey USD correlations: (1) USD vs EUR/USD and GBP/USD — these pairs are inversely correlated with the DXY (US Dollar Index). When the DXY rises, EUR/USD and GBP/USD typically fall, and vice versa. Correlation typically ranges from −0.80 to −0.95. (2) USD vs Gold — gold is the traditional anti-dollar asset. Strong dollar usually means weaker gold; weak dollar typically means gold rises. (3) USD vs Oil — oil is priced in USD; a stronger dollar makes oil more expensive for foreign buyers, reducing demand.\n\nPractical application: before taking a long EUR/USD position, check the DXY trend. If the DXY is in a strong uptrend, you are trading against a significant headwind. Your long setup needs to be very strong to overcome institutional dollar buying. Intermarket headwinds do not make trades impossible, but they reduce probability.',
+      key_points: [
+        'DXY (US Dollar Index) rising = EUR/USD and GBP/USD typically falling (inverse correlation)',
+        'USD vs Gold: strong dollar usually pressures gold; weak dollar supports gold',
+        'USD vs Oil: strong dollar makes oil more expensive globally, potentially reducing demand',
+        'Always check DXY direction before trading USD-correlated pairs',
+        'Trading against a strong DXY uptrend with long EUR/USD = significant institutional headwind',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Risk-on and risk-off are macro market states that describe investors\' collective appetite for risk. When conditions are benign and investors are confident, they move into risk assets (equities, high-yield bonds, commodity currencies) — this is risk-on. When uncertainty rises — economic data weakens, geopolitical tensions escalate, or a financial shock occurs — investors flee to safety. This is risk-off.\n\nRisk-on assets: equities, emerging market currencies, AUD, NZD, CAD (commodity currencies), high-yield bonds, Bitcoin. These assets rally when investors are willing to accept higher risk for higher returns. Risk-off assets: JPY, CHF, USD (in extreme risk-off), US Treasuries, Gold. These assets rally when investors prioritise safety over returns.\n\nThe risk-on/risk-off framework is most useful for day and swing traders in currencies. AUD/JPY is the classic risk barometer — when it rises, risk-on sentiment is dominant; when it falls, risk-off is dominant. A trader positioning in AUD/USD or NZD/USD during a broad risk-off environment will fight consistent institutional selling — the macro is against them. Always check the risk sentiment before entering correlated positions.',
+      key_points: [
+        'Risk-on: investors buy equities, commodity currencies (AUD/NZD/CAD), high-yield assets',
+        'Risk-off: investors buy JPY, CHF, gold, US Treasuries — flight to safety',
+        'AUD/JPY is the classic risk barometer: rising = risk-on, falling = risk-off',
+        'Trading AUD/USD long during risk-off = fighting institutional flows',
+        'Risk sentiment shifts often trigger across multiple markets simultaneously',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'Correlation coefficients provide a mathematical measure of how closely two instruments move together. The coefficient ranges from +1.0 (perfect positive correlation — they move identically) to −1.0 (perfect inverse correlation — they move exactly oppositely). A coefficient near 0 means the instruments have no consistent relationship.\n\nIn trading, correlations above +0.7 or below −0.7 are considered significant. For forex traders, key correlations to monitor: EUR/USD and GBP/USD are typically +0.85 or higher — they largely move together, which means holding both simultaneously is not diversification, it is amplified risk. EUR/USD and USD/CHF are typically −0.90 or lower — nearly mirror images.\n\nCorrelations are not fixed — they change over time and can break down during extreme market events. The 2008 financial crisis broke many historically reliable correlations as forced liquidation dominated all markets simultaneously. Before using a correlation as a trading input, verify it is currently active (use a 60–90 day rolling correlation, not historical data from years ago). Correlation informs position sizing and portfolio construction — never hold multiple highly correlated positions sized independently without acknowledging the true aggregate risk.',
+      key_points: [
+        'Correlation coefficient: +1.0 = perfectly correlated; −1.0 = perfectly inverse; 0 = no relationship',
+        'Above ±0.7 is considered significant in trading contexts',
+        'EUR/USD and GBP/USD typically +0.85: not diversification — amplified same-direction risk',
+        'EUR/USD and USD/CHF typically −0.90: nearly mirror each other',
+        'Correlations change over time — verify current correlation with recent rolling data (60–90 day)',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-6': {
+      intro_text: 'This exercise demonstrates the practical impact of intermarket analysis. You want to go long GBP/USD, but the DXY is in a clear uptrend. Drawing the DXY\'s ascending trendline makes the headwind visible — the same institutional dollar buying that pushes DXY higher creates selling pressure on GBP/USD. Understanding this macro headwind changes how you size or approach any GBP/USD long.',
+      key_points: [
+        'DXY ascending trendline = institutional USD buying in progress = headwind for GBP/USD longs',
+        'The strength of the DXY trend determines how strong the headwind is for counter-dollar trades',
+        'Only trade long GBP/USD when the DXY is at least consolidating or showing weakness',
+      ],
       activity_type: 'draw_trendline',
       ticker: 'EURUSD',
       timeframe: 'D1',
@@ -1192,10 +2016,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       reference_line: { x1: 0, y1: 70, x2: 100, y2: 30 },
       steps: [{ id: '1', label: 'Analyse DXY trend direction', completed: false }, { id: '2', label: 'Draw the DXY ascending trendline', completed: false }, { id: '3', label: 'Review headwind assessment', completed: false }],
     },
+    'lesson-7': {
+      intro_text: 'Seasonal patterns are recurring tendencies in specific markets at specific times of year. They are driven by predictable economic cycles — agricultural harvest seasons, fiscal year-end effects, earnings seasons, holiday periods, and central bank meeting calendars. While seasonal patterns are tendencies, not guarantees, they add a probabilistic edge when aligned with technical setups.\n\nForex seasonal patterns: the USD tends to strengthen in Q4 (fiscal year-end demand from US corporations repatriating overseas profits, and institutional portfolio rebalancing). January often sees a "new year" dollar weakness as institutional capital is deployed globally. Summer months (July-August) typically see lower liquidity and choppier price action — trending setups are less reliable.\n\nCommodities have the strongest seasonal patterns: oil demand typically peaks in summer (driving season) and winter (heating). Natural gas demand spikes in winter. Agricultural commodities follow planting and harvest cycles. For traders in stocks, the "sell in May and go away" effect shows statistically weaker equity performance from May to October compared to November to April. Use seasonality as a tailwind for setups, not as a standalone reason to trade.',
+      key_points: [
+        'Seasonal patterns: recurring tendencies driven by predictable economic and institutional cycles',
+        'Q4 often sees USD strength due to year-end repatriation and portfolio rebalancing',
+        'Summer months (July-August): lower forex liquidity, choppier price action — reduce expectations',
+        'Commodities: strongest seasonal patterns — oil (summer/winter demand), agriculture (harvest cycle)',
+        'Use seasonality as a probability tailwind alongside technical setups, not in isolation',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'building-your-trading-plan': {
+    'lesson-1': {
+      intro_text: 'A trading plan is the document that separates professional traders from gamblers. Without one, every trade is a discretionary decision influenced by emotion, recent performance, and confirmation bias. With one, every trade is the execution of a pre-tested, rule-based process. The trading plan does not guarantee profit — but it guarantees that any profit or loss is the result of a tested process, not random luck.\n\nA complete trading plan has ten components: (1) The markets you trade, (2) The timeframes you trade, (3) The setup criteria that define a valid setup, (4) Entry rules (exact conditions for entry), (5) Stop loss rules (where stops go and whether they can be moved), (6) Target and exit rules (how you exit winners), (7) Position sizing rules, (8) Daily loss limit, (9) Risk per trade, (10) Review process (how and when you review performance). Missing any of these creates a gap that emotion and bias will fill.\n\nThe plan must be written — not just understood. A rule you have not written is a rule you will override under pressure. The act of writing forces precision: "trade breakouts" is not a rule. "Enter long when price closes above a consolidation high on the H4 with RSI above 50 and volume above 20-day average" is a rule.',
+      key_points: [
+        'A trading plan converts discretionary gambling into a testable, rules-based process',
+        'Ten components: markets, timeframes, setup criteria, entry, stop, target, sizing, daily limit, risk, review',
+        'Missing any component creates gaps that emotion fills — not acceptable',
+        'Rules must be written, not just known — writing forces the precision needed for consistent execution',
+        'Vague rules ("trade breakouts") are not rules — specificity is the only standard',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'An edge is a statistical advantage: a tendency for your setups to produce positive expectancy over a large sample of trades. Before writing any rules, you need to understand what your edge actually is — not what you hope it is, but what the data shows.\n\nDefining your edge requires answering: (1) What market conditions does your approach perform best in — trending, ranging, or volatile? (2) What specifically happens on the chart before your best winning trades? (3) What do your losing trades have in common? (4) Are there specific times of day, days of week, or market events that improve or degrade your performance? Without answering these, your plan is built on assumptions rather than evidence.\n\nSources of edge: information edge (knowing something others do not — increasingly rare for retail), analytical edge (seeing relationships others miss), execution edge (entering and exiting better than average), and psychological edge (staying rational when others are emotional). Most retail traders with a genuine edge have a combination of analytical and psychological advantages. The analytical edge is built by studying price patterns systematically; the psychological edge is built by following a plan consistently.',
+      key_points: [
+        'Edge = statistical advantage producing positive expectancy over a large sample',
+        'Define your edge from data: what conditions, what setups, what times produce your best trades',
+        'Analyse your losers as carefully as your winners — their patterns reveal what to avoid',
+        'Types of edge: information (rare), analytical, execution, psychological — most traders combine the last three',
+        'An assumed edge is not an edge — backtest and forward-test to verify it objectively',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Setup criteria are the specific, objective conditions that must be present for a trade to be valid. They are the filter that determines which price patterns you trade and which you ignore. Without explicit setup criteria, you will trade every pattern that "looks good" — which leads to overtrading and inconsistent results.\n\nGood setup criteria have four characteristics: (1) Objective — another trader looking at the same chart must be able to confirm whether the criteria are met. "Price is at support" fails this test; "Price is within 5 pips of the weekly level at 1.0850 which has produced at least 3 prior bounces of 30+ pips each" passes it. (2) Specific — the setup tells you exactly what to look for. (3) Testable — you can back through historical data and identify every instance the setup occurred. (4) Limited — you need no more than 3–5 setup criteria to be valid. More than 5 often signals overfitting.\n\nStarting point: look at your 20 best trades ever. What did they all have in common? Those common elements are the basis of your setup criteria. Strip everything else away.',
+      key_points: [
+        'Setup criteria: the specific conditions that MUST be present for a trade to be valid',
+        'Must be objective (another trader can confirm it), specific, testable, and limited to 3–5',
+        'Vague criteria = different interpretation each time = inconsistent execution = unreliable statistics',
+        'Derive criteria from your best historical trades — what did all winners have in common?',
+        'More than 5 criteria often signals overfitting to historical data, not a genuine edge',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Entry, stop, and target rules are the operational core of your trading plan — they determine exactly how you enter, where your downside is limited, and how you capture profit. These three rules work as a system; changing one changes the others.\n\nEntry rule examples: "Enter long on a market order on the candle following a bullish engulfing that closes above the weekly level." Or "Enter long with a buy stop order 2 pips above the hammer candle high." Both are objective and executable. The entry rule must specify: order type (market, limit, or stop), timing (immediately, on next candle open, or on level touch), and the exact trigger event.\n\nStop rule: where does the technical invalidation point lie? In a long trade from support, the stop goes below the support zone — specifically 5 pips below the lowest wick of the last 3 candles at the zone. The stop rule must also state whether stops can be moved — and the only acceptable direction is to protect profit, never to give more room to a losing trade. Target rule: the next significant S/R level, a specific R multiple (e.g. close at 2R), or a Fibonacci extension level. Your target rule determines your average R:R — verify it is consistently above your minimum (e.g. 1:2).',
+      key_points: [
+        'Entry rule must specify: order type, timing, and exact trigger condition',
+        'Stop rule: set at the technical invalidation point — where the setup is demonstrably wrong',
+        'Stop can only move in the direction of profit — never give more room to losing trades',
+        'Target rule: defined by S/R level, R multiple, or Fibonacci extension — not arbitrary',
+        'These three rules define your R:R: verify the average R:R meets your minimum standard',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise puts your plan\'s short setup rules into practice. You have defined: price must reach resistance, a bearish rejection candle must form, and you enter below the rejection candle close. Your task is to identify the resistance zone and draw the entry trigger level — the exact price a close below would trigger your short entry.',
+      key_points: [
+        'Entry trigger is below the rejection candle body close — not at resistance itself',
+        'Placing the line below the close ensures the candle has genuinely rejected and closed bearishly',
+        'This one rule prevents entering on a candle that wicks to resistance but closes bullishly',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'EURUSD',
       timeframe: 'H4',
@@ -1203,7 +2088,35 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       reference_line: { x1: 0, y1: 35, x2: 100, y2: 35 },
       steps: [{ id: '1', label: 'Identify the resistance zone', completed: false }, { id: '2', label: 'Draw your entry trigger level', completed: false }, { id: '3', label: 'Review placement', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Session selection is the process of choosing which trading sessions match your setup type and personal schedule. Markets behave differently at different times of day, and not every session is equally suitable for every strategy.\n\nThe three primary forex sessions: London (7 AM – 4 PM UK time) — the most liquid session, responsible for approximately 35% of daily forex volume. The highest number of institutional participants are active. Trends are more sustained and setups are more reliable. New York (1 PM – 10 PM UK time) — the second most liquid, overlapping with London from 1–4 PM UK in the highest-volume period of the entire day. Major economic releases occur during this session. Asian (midnight – 9 AM UK time) — the lowest volatility of the three. JPY pairs are most active; EUR and GBP pairs often range.\n\nFor trend-following and breakout strategies, the London-New York overlap (1–4 PM UK) is the ideal window — maximum institutional participation, highest volume, and most sustained directional moves. For range strategies and mean reversion, the Asian session may be preferable. The worst time to trade any strategy: the last hour before London opens and on major holidays when volume drops to a fraction of normal.',
+      key_points: [
+        'London session: most liquid, 7 AM – 4 PM UK, best for trend-following setups',
+        'New York session: 1 PM – 10 PM UK; London-New York overlap (1–4 PM) = peak institutional volume',
+        'Asian session: lowest volatility, JPY pairs most active, good for range strategies',
+        'Never trade in the final hour before London open (illiquid) or on major holidays',
+        'Match your strategy type to the session character: trend = London; range = Asian',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-7': {
+      intro_text: 'The review process is the mechanism that transforms trading from a static plan into a constantly improving system. Without systematic review, you repeat the same mistakes indefinitely. With it, every losing trade teaches you something, and your edge refines over time.\n\nWhat to review: (1) Execution quality — did you follow every rule in your plan? If not, why? (2) Setup quality — was the setup genuinely valid by your criteria, or did you stretch the definition? (3) Outcome — did the trade win or lose? What did price do after your entry/exit? (4) R:R — what was your planned R:R and what was your actual result? (5) Psychological state — what were you feeling before, during, and after the trade?\n\nFrequency: daily micro-review (review each trade on the same day — was every rule followed?), weekly macro-review (review the week\'s aggregate statistics — win rate, average R:R, expectancy, any patterns in winning vs losing days), and monthly strategic review (are your plan rules still performing as expected, or do any need adjustment based on current market conditions?). The review process is not optional — it is the compounding mechanism of your trading career.',
+      key_points: [
+        'Review process: daily (execution), weekly (aggregate statistics), monthly (strategic adjustment)',
+        'Daily review asks: was every rule followed exactly? If not, why?',
+        'Weekly review: win rate, average R:R, expectancy, time-of-day patterns',
+        'Monthly review: are plan rules still performing? Do market conditions require adaptation?',
+        'The review process is the compounding mechanism — without it, improvement is accidental',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-8': {
+      intro_text: 'This quiz tests your understanding of when a plan\'s rules must be followed and when they can be overridden. The answer is: they must always be followed. Consistent execution is the only way to test whether your plan has edge. Every override introduces a data point that does not belong in your statistics.',
+      key_points: [
+        'Plan rules are absolute — the 200 EMA filter exists to prevent you fighting the dominant trend',
+        'A "perfect" setup below the 200 EMA in a downtrend still fails more often than not',
+        'Every rule breach means your statistics no longer represent your plan — they represent guessing',
+      ],
       activity_type: 'multi_choice',
       question: 'Your plan specifies: only take long trades when price is above the 200 EMA. EUR/USD is currently 35 pips below the 200 EMA. You identify a textbook hammer candle at support with RSI at 28. What should you do?',
       options: [
@@ -1219,7 +2132,57 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'trade-journalling': {
+    'lesson-1': {
+      intro_text: 'A trading journal is the practitioner\'s equivalent of a scientist\'s lab notebook. It is the systematic record of every decision, outcome, and emotion in your trading — the raw data from which you extract insights about your own performance. Without a journal, you cannot distinguish skill from luck, identify your true strengths and weaknesses, or objectively improve.\n\nWhat to log for every trade: (1) Date, time, and market. (2) Setup type and why it was valid by your criteria. (3) Entry price, stop loss, and target. (4) Planned R:R. (5) Exit price and actual R:R. (6) Was every rule followed? If not, which one and why? (7) Screenshot of the chart at entry. (8) Brief emotional state assessment — was the trade taken with patience or impulsiveness? (9) Screenshot at exit — where did price go after you closed?\n\nThe journal reveals patterns invisible to memory. You might "feel" you lose more on Fridays, but the journal either confirms or denies it objectively. You might feel EUR/USD is your best pair, but the data might show GBP/USD has 40% higher expectancy for you. The journal replaces subjective feeling with objective data — and data is the only reliable foundation for improvement.',
+      key_points: [
+        'Journal = systematic record of every trade: entry, stop, target, actual result, rule adherence',
+        'Log a screenshot at entry AND exit — seeing what price did after reveals patterns',
+        'Record emotional state: did you rush entry, or wait patiently for your trigger?',
+        'Journal reveals performance patterns invisible to memory and intuition',
+        'Data-driven improvement: journal findings replace subjective feelings with objective statistics',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Screenshot discipline is the most commonly neglected aspect of journalling — and the most valuable. Most traders who journal do so with text only, which loses the visual context that makes pattern recognition possible. Adding systematic screenshots creates a visual database of your trading that allows you to spot setup quality patterns over time.\n\nThe minimum screenshot standard: one screenshot at entry (showing the full context — your timeframe and the one above, with all relevant indicators and levels marked) and one screenshot at exit (showing what price did after your trade closed). The entry screenshot answers "was this a valid setup?" The exit screenshot answers "was my exit decision optimal?"\n\nAdditional screenshots to consider: the setup stage (before the trigger fires — showing why you were watching this level), and the outcome 24 hours after close (showing how much further the move went beyond your exit). This post-trade screenshot is particularly revealing: consistently seeing large moves after your exits suggests your targets are too tight. Consistently seeing price reverse after your exits suggests your targets are well-placed.',
+      key_points: [
+        'Screenshot at entry: shows the full setup context — did this meet your criteria?',
+        'Screenshot at exit: shows what price did after — were your targets and exits optimal?',
+        'Use multi-timeframe screenshots: include at least one TF above your entry timeframe',
+        'Post-close screenshots 24 hours later: reveals whether your exits were premature',
+        'Visual database allows pattern recognition that text-only journalling cannot provide',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Quantitative review is the statistical analysis of your trading data. It takes the raw entries in your journal and converts them into metrics that objectively describe your performance. These metrics tell you whether you have an edge, where it comes from, and what is degrading it.\n\nThe six core metrics: (1) Win rate — what percentage of trades result in a profit? (2) Average win R — how many R does the average winner return? (3) Average loss R — how many R does the average loser cost? (4) Expectancy — calculated from the above three. (5) Profit factor — total gross profit ÷ total gross loss. Above 1.5 is solid; above 2.0 is excellent. (6) Maximum drawdown — the largest peak-to-trough equity decline in the period.\n\nBreakdown metrics add deeper insight: performance by day of week, time of day, market, setup type, and session. You may discover your Thursday trades have negative expectancy (perhaps due to pre-NFP Friday uncertainty affecting liquidity), or that your evening trades consistently underperform morning trades. These segmented statistics reveal where your edge actually lives — and where you are leaking capital.',
+      key_points: [
+        'Core metrics: win rate, avg win R, avg loss R, expectancy, profit factor, max drawdown',
+        'Profit factor above 1.5 = solid edge; above 2.0 = strong edge; below 1.0 = losing strategy',
+        'Breakdown by: day of week, time of day, market, setup type, and session',
+        'Segmented analysis reveals where your edge actually exists vs where you are losing capital',
+        'Minimum sample for reliable statistics: 30 trades per segment being analysed',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Qualitative review focuses on the psychological and behavioural dimensions of your trading — the factors that cannot be captured in a number but have a profound impact on performance. While quantitative review tells you WHAT is happening, qualitative review tells you WHY.\n\nKey qualitative questions to answer monthly: (1) What emotional states were you in during your best trades? During your worst? (2) Did you take any trades out of boredom, revenge, or FOMO? How many and what was their collective cost? (3) Were there any periods when you deviated from your plan? What triggered the deviation? (4) What is your psychological response to drawdowns? Do you reduce size, increase size, or remain consistent? (5) Are there specific market conditions that cause you stress or uncertainty, leading to poor decisions?\n\nThe most valuable qualitative insight: patterns of self-sabotage. Many traders have a strong enough strategy to be profitable, but a recurring pattern of counterproductive behaviour that eliminates their edge. The journal catches these: three trades after a large winner that were taken impulsively (overconfidence), or a sequence of oversized trades after a losing run (revenge trading). Naming the pattern is the first step to eliminating it.',
+      key_points: [
+        'Qualitative review: the psychological why behind the statistical what',
+        'Track emotional state for every trade — correlate emotional states with outcomes',
+        'Identify recurring counterproductive patterns: revenge trading, overconfidence, FOMO entries',
+        'Count trades taken outside your plan: their collective cost reveals the value of discipline',
+        'Naming a psychological pattern is the first step to breaking it',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'Your journal data has revealed a critical insight: your average losing trade is 50% larger than your plan specifies. This is a specific, actionable finding that proves your stop discipline is broken. This quiz tests whether you interpret this correctly and choose the right fix.',
+      key_points: [
+        'If avg loss R > planned loss R, stops are being moved under pressure — a rule violation',
+        'The correct response: convert all stops to hard orders placed at entry — remove the ability to move them',
+        'Widening the official stop rule to match behaviour is rationalising bad habits, not fixing them',
+      ],
       activity_type: 'multi_choice',
       question: 'After reviewing 30 journal entries, your average losing trade is -1.5R — not -1.0R as your plan specifies. Your plan says: always honour the stop at -1.0R. What does this reveal?',
       options: [
@@ -1232,7 +2195,26 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'If your plan says -1.0R but you\'re actually losing -1.5R average, you are moving stops under pressure. A strategy profitable at -1.0R may become unprofitable at -1.5R. The journal caught this precisely because you were tracking systematically. The fix: convert all stops to hard orders placed immediately on entry, physically preventing you from moving them.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'The weekly review is a structured, dedicated session — not a quick glance at your numbers. Set aside 30–60 minutes every weekend (before the next week\'s trading begins) to run through a checklist of questions and update your journal statistics. Consistency in the review process is as important as consistency in trading execution.\n\nWeekly review structure: (1) Quantitative update — add the week\'s trades to your running statistics. Update win rate, average R, expectancy, and drawdown. (2) Execution audit — for every trade, was every plan rule followed? Grade each trade: A (all rules followed), B (minor deviation), C (significant deviation). Any C grade requires written analysis of why. (3) Best trade analysis — which trade best represented your plan? What made it textbook? (4) Worst trade analysis — which trade deviated most from your plan? What happened and why? (5) Market assessment — what conditions defined this week? What is the setup for next week\'s sessions?\n\nThe weekly review serves two purposes: continuous improvement (catching and correcting deviations quickly) and psychological reset (closing the week before it carries emotional weight into the next). A bad week reviewed, understood, and filed is less damaging than a bad week carried unconsciously into Monday.',
+      key_points: [
+        'Weekly review: 30–60 minutes every weekend — a structured, scheduled session',
+        'Grade every trade A/B/C on rule adherence: C grades require written analysis',
+        'Analyse best AND worst trade: reinforce what worked; understand what failed',
+        'Update all running statistics so trends in performance are visible across weeks',
+        'Market assessment for next week: what sessions matter, what levels are key',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-7': {
+      intro_text: 'The chart post-mortem is one of the most powerful learning exercises in journalling. After a losing trade, you draw your entry level on the chart and study what price did AFTER you exited. This exercise separates three categories of losses: (1) Valid losses — the setup was correct, executed correctly, and the market simply went against it. These are acceptable. (2) Avoidable losses — the setup did not meet your criteria, or you entered in the wrong location. These represent a fixable skill gap. (3) Plan violations — you broke a rule. These must be eliminated through mechanical order placement.',
+      key_points: [
+        'Post-mortem: draw your entry level and study what price did after the trade closed',
+        'Three loss categories: valid (plan worked, market moved), avoidable (setup flaw), plan violation',
+        'Only plan violations and avoidable losses need action — valid losses are the cost of business',
+        'Seeing price reverse immediately after your stop is common — the setup may still have been valid',
+        'Patterns of avoidable losses point to specific rule refinements needed in your plan',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'GBPUSD',
       timeframe: 'H4',
@@ -1247,7 +2229,90 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   // ════════════════════════════════════════════════════════
 
   'backtesting-and-statistics': {
+    'lesson-1': {
+      intro_text: 'Most traders treat strategy development as an art — they try something, it works for a while, it stops working, and they move on. Backtesting applies the scientific method to trading: form a hypothesis (a specific strategy with defined rules), test it on historical data, measure the results, and only deploy it live if the evidence supports the hypothesis.\n\nThe core purpose of backtesting is to answer one question before you risk real money: does this strategy have a statistically significant positive expectancy? The answer must come from data, not gut feeling. A strategy that "looks right" or "feels logical" with no data behind it is an untested hypothesis — not an edge.\n\nOne critical distinction: backtesting can prove a strategy had an edge in the past. It cannot prove the edge will persist in the future. Markets evolve, participants adapt, and strategies get arbitraged away. Backtesting gives you the best available evidence, not a guarantee. The mindset shift: treat every strategy as a hypothesis that must be continuously monitored — not a truth that was proven once and never needs revisiting.',
+      key_points: [
+        'Backtesting applies the scientific method: form hypothesis → test on data → measure → decide',
+        'The fundamental question: does this strategy have positive expectancy over a significant sample?',
+        'Backtesting proves past edge; it cannot guarantee future edge — markets evolve',
+        'A strategy that "looks right" without data behind it is an untested hypothesis, not an edge',
+        'Treat every strategy as a continuously monitored hypothesis, not a one-time proven truth',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Manual backtesting via bar-by-bar replay is the most rigorous and educational method available to most retail traders. You take a chart, cover all data to the right of a starting point, and advance one candle at a time — making trading decisions exactly as you would in live trading, recording your entry, stop, and target for each triggered setup.\n\nWhy manual beats automated for learning: the process forces you to develop genuine pattern recognition. When you look at 500 charts manually, you internalise what your setups look like in real time versus in hindsight. Automated backtesting on historical data is faster but skips this crucial learning phase — the strategy gets tested but you do not grow.\n\nThe methodology: choose your instrument and timeframe. Go back at least 3–5 years of data. Advance candle by candle. When your setup criteria are met, enter the trade with your defined rules. Record outcome. Move forward. Repeat until you have at least 100 triggered setups. Document every trade in a spreadsheet: date, direction, entry, stop, target, outcome, R result, and any notes about market conditions. Aggregate the results to calculate your core metrics.',
+      key_points: [
+        'Bar-by-bar replay: cover future candles, advance one at a time, trade exactly as in live markets',
+        'Manual backtesting builds genuine pattern recognition that automated testing skips',
+        'Minimum 3–5 years of data and at least 100 triggered setups for statistical significance',
+        'Record every triggered setup: date, direction, entry, stop, target, outcome, R result',
+        'Aggregate results after completion — do not assess performance mid-backtest',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'In-sample vs out-of-sample testing is the most important concept in strategy development. In-sample data is the historical period you use to develop and refine your strategy. Out-of-sample data is a period you set aside before starting and never look at until after your strategy is fully defined — it is the validation test.\n\nThe danger: if you use all available historical data to develop your strategy, you have no independent test to validate it. You have essentially memorised the data rather than discovered a genuine edge. Any strategy will look profitable if you see enough of the data you refined it on.\n\nThe correct approach: reserve 20–30% of your data as the out-of-sample validation set before you begin. After all in-sample development is complete and your rules are fixed, run them on the out-of-sample data without any further adjustments. If the strategy performs similarly on the out-of-sample data (within statistical variance), you have evidence of a genuine edge. If performance collapses on the out-of-sample data, the strategy is overfit to the in-sample period — it learned the noise, not the signal.',
+      key_points: [
+        'In-sample: the data used to develop the strategy; out-of-sample: reserved validation data',
+        'Must reserve 20–30% as out-of-sample BEFORE development begins — never look at it during development',
+        'Strategy tested only on data it was developed on proves nothing — it may have memorised noise',
+        'Similar performance on out-of-sample data = genuine edge; collapse = overfitting',
+        'Out-of-sample testing is the closest thing to forward testing on historical data',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Overfitting (curve-fitting) is the single greatest trap in strategy development. It occurs when a strategy\'s parameters are so tightly tuned to the specific characteristics of the historical data that the strategy performs spectacularly on that data but fails catastrophically on new data — because it has learned the historical noise rather than a genuine market inefficiency.\n\nHow overfitting happens: you start with a simple 50 EMA crossover strategy (reasonable). You notice it fails in choppy markets, so you add a filter (ADX above 25). Now it performs better. You notice specific hours perform worse, so you add a time filter. Better. You adjust the EMA lengths to find the "optimal" values. Better still. You add a volume confirmation. Each modification improves your in-sample results — but each one also makes the strategy more brittle. The strategy is now tuned to the specific historical noise patterns you added filters for, not a fundamental market inefficiency.\n\nThe tests for overfitting: (1) Does performance degrade significantly on out-of-sample data? (2) Are there more than 5 parameters optimised? (3) Are the optimal parameter values suspiciously specific (13/27 EMA rather than a round number like 10/30)? (4) Does small changes to parameters (e.g. using 12/26 instead of 13/27) cause significant performance degradation? If yes to any, the strategy is likely overfit.',
+      key_points: [
+        'Overfitting: strategy tuned so tightly to historical data that it learned noise, not signal',
+        'Each additional filter or parameter optimisation adds overfitting risk',
+        'Test: does performance degrade significantly on out-of-sample data? If yes → overfit',
+        'Suspiciously specific optimal values (13/27 EMA) = likely overfit to historical data noise',
+        'Robust strategies perform reasonably with round-number parameters, not just "optimal" ones',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'Once you have backtest data, you need to know which metrics actually matter — and which are misleading. Beginners focus on win rate and total profit. Professionals focus on expectancy, profit factor, drawdown characteristics, and CAGR.\n\nThe key metrics: (1) Win rate — percentage of winning trades. Meaningful only alongside average win/loss R. (2) Average win R and average loss R — if your average winner is 2R and average loser is 1R, a 40% win rate is profitable. (3) Profit Factor = gross profit ÷ gross loss. Above 1.5 is solid, above 2.0 is strong. Below 1.0 means you lose money. (4) Maximum drawdown — the largest peak-to-trough equity decline. For psychological and practical reasons, trading a strategy with a 50% max drawdown is extremely difficult even if the long-term expectancy is positive. (5) CAGR (Compound Annual Growth Rate) — the annualised percentage return, accounting for compounding. (6) CAGR ÷ Max Drawdown ratio — a composite measure of return per unit of pain. Above 1.0 is acceptable, above 3.0 is excellent.\n\nNever evaluate a strategy on any single metric. A strategy with a 90% win rate sounds wonderful — until you see the average loss is 10R and the average win is 0.3R.',
+      key_points: [
+        'Profit Factor = gross profit ÷ gross loss: above 1.5 solid, above 2.0 strong, below 1.0 = losing',
+        'CAGR: annualised compounded return — the real performance number after accounting for compounding',
+        'CAGR ÷ Max Drawdown ratio: return per unit of pain; above 3.0 is excellent',
+        'Never evaluate on any single metric — all metrics must be evaluated as a system',
+        'High win rate with terrible R:R (90% win, average loser 10× average winner) is still a losing strategy',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'Statistical significance answers the question: how confident can you be that your backtest results represent a genuine edge, rather than a lucky run of trades? The answer depends primarily on sample size and the magnitude of your results.\n\nThe law of large numbers dictates that as your sample size grows, your measured expectancy converges toward the strategy\'s true expectancy. With 10 trades, your results are essentially meaningless — you could get 8 winners with a losing strategy through luck. With 100 trades, you have some signal. With 500+, you have a statistically meaningful dataset.\n\nBasic significance thresholds: fewer than 30 trades — do not draw any conclusions, the sample is too small to be meaningful. 30–100 trades — directional indicator only; do not make final deployment decisions. 100–200 trades — solid baseline; sufficient to make a live trading decision with appropriate position sizing. 200+ trades — statistically reliable. For strategies with less frequent signals (5–10 trades per month), this may take years to accumulate, which is why bar-by-bar manual backtesting over 3–5 years of data is essential. You cannot shortcut sample size.',
+      key_points: [
+        'Statistical significance: how confident can you be your results represent a genuine edge vs luck?',
+        'Under 30 trades: meaningless; 30–100: directional only; 100+: actionable; 200+: statistically solid',
+        'Law of large numbers: more trades → measured expectancy converges toward true expectancy',
+        'Cannot shortcut sample size — 10 winners in 10 trades is not evidence of edge',
+        'Low-frequency strategies may need years of data to generate sufficient sample size',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-7': {
+      intro_text: 'Monte Carlo simulation takes your backtest results and generates thousands of possible random sequences of those same trades to model the distribution of possible outcomes. Where a standard backtest gives you one sequence (the one that happened historically), Monte Carlo gives you thousands of "what if" sequences — showing you the range of likely outcomes, not just the specific historical one.\n\nWhy this matters: your backtest might show a maximum drawdown of 15%. But that 15% drawdown happened in one specific sequence of trades. What if the 10 losses that were spread across the year had all happened consecutively? Monte Carlo answers this by reshuffling your trades thousands of times. If 95% of Monte Carlo simulations produce maximum drawdowns under 25%, you can trade with appropriate confidence. If 10% of simulations produce drawdowns of 50%+, you need to reduce position size to survive the worst case.\n\nPractical application: if your backtest produced 200 trades, Monte Carlo reshuffles them 10,000 times. For each shuffle, it calculates the equity curve and max drawdown. The result is a distribution of max drawdowns showing the range of likely outcomes. Size your live trading to survive the 95th percentile max drawdown — the worst case you are likely to actually experience.',
+      key_points: [
+        'Monte Carlo: reshuffle your backtest trades thousands of times to model the range of outcomes',
+        'Shows worst-case drawdown at different probability levels, not just the one historical sequence',
+        'If 95% of simulations produce max DD under 25%, size live trading to survive 25% drawdown',
+        'Accounts for the impact of sequential losses that happen to cluster together',
+        'Monte Carlo is the stress test that backtesting alone cannot provide',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-8': {
+      intro_text: 'The bar-by-bar backtest exercise puts every lesson in this course into practice. You will advance through historical EUR/USD data candle by candle and identify when your defined setup triggers. At the moment of trigger, you mark your exact entry price — the open of the candle immediately following the signal. This precision is critical: in live trading, this is the exact price at which your order fills.',
+      key_points: [
+        'Entry is on the NEXT candle open after the signal candle closes — never within the signal candle itself',
+        'The signal candle (bullish engulfing at support) must CLOSE before you can confirm the trigger',
+        'Your backtest record is only valid if every entry, stop, and target uses your predefined rules',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'EURUSD',
       timeframe: 'D1',
@@ -1256,6 +2321,12 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       steps: [{ id: '1', label: 'Identify the signal candle', completed: false }, { id: '2', label: 'Draw the entry price (next open)', completed: false }, { id: '3', label: 'Review backtest accuracy', completed: false }],
     },
     'lesson-9': {
+      intro_text: 'You now have two strategy summaries. Apply everything you learned about statistical significance, expectancy, profit factor, and sample size to determine which is more worthy of live trading — and why the surface-level "better" metric (win rate) can be entirely misleading.',
+      key_points: [
+        'Expectancy = (win rate × avg win R) − (loss rate × avg loss R); calculate both before comparing',
+        'Sample size matters: 40 trades is insufficient for confident conclusions; 100 is a solid baseline',
+        'High win rate with low R:R can have lower expectancy than low win rate with high R:R',
+      ],
       activity_type: 'multi_choice',
       question: 'Strategy A: 47% win rate, average +2.1R winner, average -1.0R loser, 100 trades tested. Strategy B: 68% win rate, average +0.7R winner, average -1.0R loser, 40 trades tested. Which would you trade live?',
       options: [
@@ -1271,7 +2342,57 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'algorithmic-thinking': {
+    'lesson-1': {
+      intro_text: 'Algorithmic thinking is not about coding — it is about removing subjectivity from your trading rules. A rule that requires human judgement to interpret ("price looks like it\'s at resistance") is not a rule that can be tested or consistently executed. A rule that can be stated as an objective, binary condition ("price is within 5 pips of the weekly high AND the daily candle is closing below the open") can be tested, coded if desired, and executed consistently.\n\nThe test for a code-ready rule: could you hand it to a programmer with no trading knowledge and have them build it exactly as you intend? If the answer is no — if the programmer would need to ask you clarifying questions about what "looks like" or "appears to be" means — the rule contains hidden subjectivity that will cause inconsistent execution.\n\nThe process of making strategies codeable forces a clarifying discipline that improves even manual trading. When you try to write your rules objectively, you discover how many undefined terms and implicit judgements were hiding in your process. Eliminating these is the difference between a strategy you can backtest rigorously and a strategy that exists only as a vague mental model.',
+      key_points: [
+        'Algorithmic thinking = removing subjectivity so rules can be consistently executed or tested',
+        'Test: could a programmer with no trading knowledge implement it exactly? If not, it\'s still subjective',
+        'Objective rules use binary conditions: measurable, comparable, unambiguous',
+        'Making rules codeable reveals hidden subjectivity and forces clarifying discipline',
+        'Manual traders benefit as much as algorithmic traders from this process',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'A decision tree is a branching structure of IF-THEN-ELSE logic that maps every possible scenario your strategy encounters and specifies the exact action for each. It is the most powerful tool for formalising a trading strategy — converting it from a mental heuristic into a precise, testable ruleset.\n\nThe structure: each node is a condition (IF), each branch is an outcome (THEN / ELSE), and the leaf nodes are actions (enter, skip, exit). A simple example: IF (daily RSI > 50) AND (price is above 200 EMA) AND (H4 hammer candle closes at weekly support) THEN enter long. IF any condition is false, skip. IF position is open AND price closes below the entry candle low THEN exit long.\n\nBuilding the tree exposes gaps in your strategy. Most traders discover they have no defined rules for: what happens if the setup partially fills, what to do if price reverses 1R against you before reaching target, when to trail a stop vs hold to target. A decision tree forces you to address every branch — not just the ideal scenario.',
+      key_points: [
+        'Decision tree: IF-THEN-ELSE branches mapping every scenario to a specific action',
+        'Leaf nodes are executable actions: enter long, skip setup, exit position, trail stop',
+        'Building the tree exposes strategy gaps: partial fills, early reversals, trailing rules',
+        'Every condition must be objective and binary — no "looks like" language',
+        'The tree should handle: entry conditions, stop placement, target, and exit rules for all scenarios',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Strategy parameters are the numerical inputs that define how a strategy behaves — EMA period lengths, RSI overbought/oversold thresholds, minimum ATR filter values, lookback periods for swing high/low identification. Every parameter is a choice, and how you make that choice has enormous implications for whether your strategy has genuine edge or is overfit.\n\nThe wrong approach to parameters: optimise each parameter on historical data and use the combination that produces the highest profit factor. This is the definition of overfitting. The correct approach: choose parameter values based on logical reasoning first, then verify the strategy is reasonably robust around those values.\n\nFor example: the RSI 14-period is widely used not because 14 is magically optimal, but because it represents approximately 2–3 weeks of trading days — a logical timeframe for measuring recent momentum. When parameters have logical justification, they are more likely to reflect genuine market behaviour rather than historical noise. The principle of parsimony: use the fewest parameters necessary to define the strategy, and prefer round-number values over precisely optimised ones.',
+      key_points: [
+        'Strategy parameters: the numerical inputs defining strategy behaviour (EMA periods, RSI levels, etc.)',
+        'Wrong: optimise every parameter on historical data for maximum profit factor — this is overfitting',
+        'Right: choose logically justified parameters, then verify robustness around those values',
+        'Logically motivated parameters reflect genuine market behaviour, not historical noise',
+        'Principle of parsimony: fewest parameters, round numbers preferred over precisely optimised values',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Sensitivity analysis tests whether your strategy\'s performance is stable across a range of parameter values, or whether it is brittle — dependent on hitting the exact "optimal" values. A robust strategy performs reasonably across a range of nearby parameter values. A brittle strategy performs well only at the exact optimised values and deteriorates sharply at adjacent values.\n\nHow to perform it: take your primary strategy parameter (e.g. RSI period = 14) and test performance at RSI period = 10, 12, 14, 16, 18, 20. Plot profit factor and max drawdown for each. If performance is stable across the range (profit factor stays above 1.3 at all tested values), the strategy is robust. If profit factor is 2.1 at 14 but drops to 0.8 at 13 and 0.7 at 15, the strategy is brittle — it has been tuned to the noise of the specific historical data, not a genuine edge.\n\nThe "parameter landscape" concept: imagine all the possible combinations of your parameters as a landscape, with performance (profit factor) as the altitude. A robust strategy produces a broad, flat plateau around the optimal values. An overfit strategy produces a very sharp spike — maximum at one precise point, collapsing immediately around it. You want to trade strategies that live on broad plateaus, not sharp peaks.',
+      key_points: [
+        'Sensitivity analysis: test performance across a range of parameter values, not just the optimal value',
+        'Robust strategy: stable performance across nearby parameter values (broad plateau)',
+        'Brittle strategy: great at exact optimal value, collapses at adjacent values (sharp spike)',
+        'Test each parameter ±20–30% from its chosen value — performance should remain acceptable',
+        'Sharp performance peaks in parameter space = strategy has memorised historical noise',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise puts your decision tree to work. Convert the resistance short setup into an executable IF-THEN structure and identify the precise leaf node — the exact entry trigger price. In a decision tree, the leaf node is the terminal action: the precise condition that, when met, triggers the trade. Everything before it is filtering conditions; the leaf node is what executes.',
+      key_points: [
+        'Leaf node: the terminal condition in the decision tree that triggers the actual trade action',
+        'Entry trigger is the exact price level where the "close below" condition is met',
+        'The rejection candle must close below this level — that is the leaf condition being satisfied',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'EURUSD',
       timeframe: 'H4',
@@ -1279,7 +2400,35 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       reference_line: { x1: 50, y1: 37, x2: 100, y2: 37 },
       steps: [{ id: '1', label: 'Identify the resistance zone', completed: false }, { id: '2', label: 'Draw the IF-THEN entry trigger', completed: false }, { id: '3', label: 'Review decision tree accuracy', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Pine Script is TradingView\'s built-in scripting language for creating custom indicators and strategies. You do not need to be a programmer to use it — understanding the logical structure of Pine Script code gives you the ability to read, modify, and troubleshoot existing scripts, which is immensely practical for backtesting and strategy development.\n\nThe basic Pine Script structure: every script starts with a version declaration, then defines its type (indicator or strategy), and then contains a series of calculations and plot/signal commands. A simple moving average crossover strategy in Pine Script has three elements: (1) calculate the fast and slow MA, (2) define the entry condition (fast MA crosses above slow MA), (3) define the exit condition (fast MA crosses below slow MA).\n\nPractical skill without coding: if you can read the IF-THEN structure of a Pine Script and understand what conditions trigger buy/sell signals, you can evaluate any public script\'s logic before adding it to your chart. Many freely available TradingView scripts have logical errors or rely on look-ahead bias — the ability to read the code lets you identify these without being a programmer.',
+      key_points: [
+        'Pine Script: TradingView\'s scripting language for custom indicators and strategies',
+        'Reading Pine Script (not writing it) is the key practical skill for non-programmers',
+        'Structure: version → type declaration → calculations → conditions → signals',
+        'Look-ahead bias: a script that accidentally uses future data in calculations — invalidates backtest',
+        'Ability to read existing scripts allows evaluation of logic before adding to your chart',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-7': {
+      intro_text: 'Walk-forward testing is an advanced validation methodology that tests a strategy\'s robustness over time by repeatedly performing in-sample optimisation on expanding windows of data, then validating on the following out-of-sample period. It is the most rigorous available test for whether a strategy adapts to changing market conditions.\n\nThe process: divide your total historical data into multiple sequential periods (e.g. 12 periods of 6 months each). For each period: (1) use the preceding 18 months of data to optimise the strategy parameters in-sample, (2) take those optimised parameters and test them on the next 6-month period out-of-sample, (3) record the out-of-sample results, (4) advance the window forward by 6 months and repeat. After all periods, aggregate the out-of-sample results. This aggregated out-of-sample performance is the most honest estimate of real future performance.\n\nWalk-forward efficiency ratio (WFER) = (aggregated out-of-sample performance) ÷ (average in-sample performance). A WFER above 0.6 suggests the strategy robustly translates from optimised in-sample settings to real-world out-of-sample conditions. Below 0.4 suggests significant overfitting.',
+      key_points: [
+        'Walk-forward testing: repeatedly optimise in-sample, then validate on following out-of-sample period',
+        'Tests whether the strategy\'s optimised parameters remain effective as market conditions evolve',
+        'Multiple sequential windows give you multiple out-of-sample results to aggregate',
+        'WFER = out-of-sample ÷ in-sample performance: above 0.6 suggests robustness',
+        'Most rigorous validation method — equivalent to ongoing live performance simulation',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-8': {
+      intro_text: 'This quiz tests your understanding of overfitting — specifically, the tell-tale sign that optimised parameters have learned historical noise rather than a genuine edge. Apply the in-sample vs out-of-sample logic to diagnose what happened to the 19/47 EMA crossover.',
+      key_points: [
+        'A profit factor that collapses from 1.89 in-sample to 0.88 out-of-sample is the definition of overfitting',
+        'Superior in-sample performance after parameter optimisation is expected — it proves nothing',
+        'Out-of-sample performance is the only honest test of whether edge is genuine',
+      ],
       activity_type: 'multi_choice',
       question: 'You backtest a 20/50 EMA crossover on 5 years of EUR/USD daily data. Default Profit Factor 1.45, Max DD 18%. After optimising to 19/47: PF 1.89, DD 12% in-sample. Running 19/47 on an untouched out-of-sample year: PF 0.88. What does this tell you?',
       options: [
@@ -1295,7 +2444,79 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'options-fundamentals': {
+    'lesson-1': {
+      intro_text: 'An option is a contract that gives the buyer the right, but not the obligation, to buy or sell an underlying asset at a specified price on or before a specified date. The key word is "right" — the buyer can choose to exercise or let it expire. The seller of the option (the writer) has the obligation to fulfill the contract if the buyer exercises.\n\nWhy options exist: they serve multiple legitimate purposes. Hedging — a fund holding a large stock position can buy put options to protect against a price decline, capping downside without selling the shares. Income generation — selling covered calls on existing stock positions generates premium income. Speculation — buying options allows leveraged directional bets with defined maximum loss (the premium paid). Institutional market-making — options provide continuous two-sided markets in underlying assets.\n\nThe two sides of every option: the buyer pays a premium upfront for the right. The seller receives that premium and takes on the obligation. The buyer\'s maximum loss is limited to the premium paid. The seller\'s potential loss can be theoretically unlimited (in the case of naked calls). This asymmetry between buyer and seller is fundamental to understanding how options are priced and used.',
+      key_points: [
+        'Option: contract giving the buyer the RIGHT (not obligation) to buy/sell at a set price by a set date',
+        'Option buyer: pays premium, has right to exercise; maximum loss = premium paid',
+        'Option seller: receives premium, has obligation to fill; theoretically unlimited loss on naked calls',
+        'Options serve: hedging, income generation, speculative leverage, and institutional market-making',
+        'The premium paid is always the maximum loss for the option buyer — this is defined risk',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'There are two types of options: calls and puts. A call option gives the buyer the right to BUY the underlying at the strike price. A put option gives the buyer the right to SELL the underlying at the strike price. Understanding these two instruments is the foundation of all options strategy.\n\nCall option mechanics: you buy a call with a strike of $100 for a premium of $3. If the stock is at $115 at expiry, your call is worth $15 (intrinsic value) and your profit is $12 ($15 − $3 premium). If the stock is at $95, the call expires worthless and you lose your $3 premium. The call buyer profits from rising prices; the call seller profits from flat or falling prices.\n\nPut option mechanics: you buy a put with a strike of $100 for a premium of $3. If the stock is at $80 at expiry, your put is worth $20 (you can sell at $100 what is worth $80) and your profit is $17 ($20 − $3 premium). If the stock is at $110, the put expires worthless. The put buyer profits from falling prices; the put seller profits from flat or rising prices. Puts are the primary hedging tool — buying puts on a stock you own creates a floor below which your losses are limited.',
+      key_points: [
+        'Call option: right to BUY at strike price — buyer profits from price increases above strike',
+        'Put option: right to SELL at strike price — buyer profits from price decreases below strike',
+        'Call buyer needs price to rise; put buyer needs price to fall',
+        'Option sellers profit when the option expires worthless (out-of-the-money at expiry)',
+        'Puts are the primary hedging instrument: cap downside on existing long positions',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Three variables define every option contract: strike price, expiry date, and premium. Understanding how these interact determines whether an option is appropriate for a specific purpose.\n\nStrike price: the price at which the option buyer has the right to buy (call) or sell (put). For a call, choosing a higher strike reduces premium cost but requires a larger price move to profit. For a put, choosing a lower strike reduces cost but requires a larger decline. Strike selection is the primary way of adjusting cost vs probability of profit.\n\nExpiry date (expiration): the date after which the option ceases to exist. Options have time value that decays as expiry approaches (theta decay). Longer-dated options have more time value (higher premium) and more time for the underlying to move in your favour. Short-dated options are cheaper but leave less time — and time decay accelerates sharply in the final 30 days.\n\nPremium: the price paid by the option buyer to the seller. It consists of intrinsic value (the amount by which the option is already in-the-money) and extrinsic value (time value + volatility value). An out-of-the-money option has zero intrinsic value — its entire premium is extrinsic.',
+      key_points: [
+        'Strike price: the price at which you can buy (call) or sell (put) the underlying',
+        'Expiry date: the deadline for exercising — time value decays to zero by expiry',
+        'Premium = intrinsic value (in-the-money amount) + extrinsic value (time + volatility)',
+        'Higher strike calls: cheaper premium, requires larger move to profit',
+        'Time decay (theta) accelerates in the final 30 days before expiry — major risk for buyers',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Moneyness describes the relationship between the option\'s strike price and the current price of the underlying. It determines what portion of the premium is intrinsic versus extrinsic, and is the most important factor in option pricing.\n\nIn-the-money (ITM): a call is ITM when the strike is below the current price (you have the right to buy at a price lower than market value — that right has immediate value). A put is ITM when the strike is above current price. ITM options have intrinsic value: the difference between strike and current price. They are more expensive but have a higher probability of expiring with value.\n\nAt-the-money (ATM): strike equals current price. No intrinsic value, but maximum sensitivity to price movements. ATM options are most sensitive to small price changes. Out-of-the-money (OTM): a call is OTM when the strike is above current price; a put is OTM when the strike is below. OTM options have zero intrinsic value — they are purely extrinsic (time and volatility value). They are cheap, have lower probability of expiring in-the-money, but provide the most leverage per pound spent if the underlying moves strongly in the right direction.',
+      key_points: [
+        'ITM (In-the-money): option already has intrinsic value — more expensive, higher probability',
+        'ATM (At-the-money): strike = current price; maximum sensitivity to price moves',
+        'OTM (Out-of-the-money): zero intrinsic value, pure extrinsic; cheapest, most leverage but lower probability',
+        'ITM call: strike below current price; ITM put: strike above current price',
+        'OTM options: high leverage if underlying makes a large move; expire worthless if not',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'Options have two components of value: intrinsic value and extrinsic value (also called time value). Understanding this distinction is critical for understanding why option buyers face an asymmetric time challenge — they are always fighting decay.\n\nIntrinsic value is straightforward: for a call, it is the maximum of (current price − strike, 0). For a put, it is the maximum of (strike − current price, 0). An OTM option has zero intrinsic value regardless of how long until expiry. Intrinsic value cannot be negative.\n\nExtrinsic value (time value + implied volatility value) is the portion of the premium above intrinsic value. It represents: (1) the probability that additional time will allow the option to move into the money (time value), and (2) the market\'s implied expectation of future volatility (volatility value). Theta is the greek that measures extrinsic value decay — how much premium you lose per day simply from time passing. The key insight: theta decay is not linear. An option expiring in 90 days loses far less per day than one expiring in 10 days. In the final 30 days, extrinsic value decay accelerates sharply — this is the window where option buyers are most at risk of seeing their premium erode rapidly even if the underlying is moving in the right direction.',
+      key_points: [
+        'Intrinsic value: max(underlying price − strike, 0) for calls; max(strike − underlying, 0) for puts',
+        'Extrinsic value: time value + implied volatility value — the decay portion of the premium',
+        'Theta: the greek measuring premium decay per day; always negative for option buyers',
+        'Theta decay is non-linear: accelerates sharply in the final 30 days before expiry',
+        'Option buyers fight time decay; sellers benefit from it — fundamentally asymmetric dynamic',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'The Greeks are the risk measures that describe how an option\'s price responds to changes in the underlying price, time, volatility, and interest rates. The four primary Greeks you need for practical trading are Delta, Theta, Vega, and Gamma.\n\nDelta: measures how much the option price changes for a $1 move in the underlying. A call with Delta = 0.50 gains approximately $0.50 in value for every $1 the underlying rises. ATM options have Delta near 0.50. ITM options have Delta approaching 1.0. OTM options have Delta near 0. Delta also approximates the probability that the option expires in-the-money.\n\nTheta: daily premium decay. A Theta of −0.05 means the option loses approximately $0.05 of value per day from time decay alone. Negative for buyers, positive for sellers. Vega: sensitivity to implied volatility changes. A Vega of 0.10 means the option gains $0.10 in value for every 1% increase in implied volatility. Buying options before a volatility expansion benefits from Vega; selling options before a volatility collapse benefits.\n\nGamma: the rate of change of Delta. High Gamma means Delta changes rapidly as the underlying moves — at-the-money options near expiry have very high Gamma, making them highly responsive to small price moves. Gamma is highest at ATM near expiry and is the primary reason short-dated ATM options are both cheap and potentially explosive.',
+      key_points: [
+        'Delta: price change per $1 move in underlying; ATM ≈ 0.50; also approximate probability of expiring ITM',
+        'Theta: daily time decay; always negative for option buyers — the cost of holding',
+        'Vega: sensitivity to implied volatility changes; buy before vol expansion, sell before contraction',
+        'Gamma: rate of change of Delta; highest for ATM options near expiry — explosive leverage',
+        'Greeks work together: high Gamma option has rapidly changing Delta as underlying moves',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-7': {
+      intro_text: 'This exercise applies the basic option P&L formula at expiry. At expiry, an option\'s value is entirely intrinsic — there is no time value left. This makes the calculation straightforward: calculate intrinsic value, subtract the premium paid, and the result is your profit or loss.',
+      key_points: [
+        'At expiry: option value = intrinsic value only (all time value has decayed to zero)',
+        'Call intrinsic value at expiry = max(stock price − strike, 0)',
+        'Net P&L = intrinsic value at expiry − premium paid; break-even = strike + premium',
+      ],
       activity_type: 'multi_choice',
       question: 'You buy a call option: strike $180, premium $5.00, stock price at expiry $191. What is your profit or loss per share at expiry?',
       options: [
@@ -1308,10 +2529,93 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'At expiry, call intrinsic value = max(Stock Price − Strike, 0) = $191 − $180 = $11. Net P&L = $11 − $5 premium = $6 profit per share. Break-even = Strike + Premium = $185. Maximum loss is always capped at the premium paid ($5) — the defined-risk advantage of buying options.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-8': {
+      intro_text: 'Defined-risk spread strategies allow you to reduce the premium cost of a directional options trade by simultaneously selling an option at a further strike. The trade-off: you cap your maximum profit in exchange for lower premium paid and a better break-even price.\n\nBull Call Spread: buy a call at strike A, sell a call at strike B (higher). The premium received from selling B reduces your net cost. Maximum profit = difference between strikes minus net premium paid. Achieved if underlying is above strike B at expiry. Maximum loss = net premium paid. Break-even = strike A + net premium paid. Use when you are bullish but want to reduce cost compared to an outright call.\n\nBear Put Spread: buy a put at strike A, sell a put at strike B (lower). The premium received from selling B reduces cost. Maximum profit = difference between strikes minus net premium paid. Achieved if underlying is below strike B at expiry. Use when you are bearish but want reduced premium exposure. Spreads are the most common institutional options strategy for directional trades — they define both maximum risk and maximum reward, making position sizing and risk management precise.',
+      key_points: [
+        'Bull call spread: buy lower strike call + sell higher strike call — bullish, reduced premium cost',
+        'Bear put spread: buy higher strike put + sell lower strike put — bearish, reduced premium cost',
+        'Both spreads: max loss = net premium paid; max profit = strike difference − net premium',
+        'Trade-off: lower cost and better break-even vs capped maximum profit',
+        'Spreads are the standard institutional directional options structure — defined risk and defined reward',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'trading-economic-events': {
+    'lesson-1': {
+      intro_text: 'Central banks are the most powerful participants in financial markets. Their mandate is price stability (controlling inflation) and, in some cases, employment maximisation. The three most market-moving central banks are the Federal Reserve (Fed, USD), the European Central Bank (ECB, EUR), and the Bank of England (BOE, GBP). Their decisions on interest rates move currency, equity, and bond markets globally.\n\nThe primary policy tools: (1) Interest rate decisions — raising rates reduces inflation but slows economic growth; cutting rates stimulates the economy. (2) Forward guidance — central bankers communicate their likely future actions through speeches, minutes, and statements. Markets price in expected future rate paths continuously, so forward guidance often moves markets more than the actual decision. (3) Quantitative easing (QE) and tightening (QT) — large-scale asset purchases (QE) inject liquidity and lower long-term yields; asset sales or balance sheet reduction (QT) do the opposite.\n\nThe key skill for traders: understanding the market\'s current expectation for the next central bank decision. The decision itself is less important than the delta between the expectation and the reality. A rate hike that was fully priced in often moves markets less than a smaller-than-expected hike.',
+      key_points: [
+        'Fed (USD), ECB (EUR), BOE (GBP): the three most market-moving central banks globally',
+        'Primary tools: interest rates, forward guidance, and QE/QT balance sheet management',
+        'Markets price in expected future rate paths continuously — forward guidance often moves markets more than decisions',
+        'The delta between expectation and reality is what drives post-announcement price moves',
+        'Forward guidance through speeches and minutes is continuously priced in between meetings',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Interest rates are the most powerful macro variable in financial markets. Understanding how rate changes transmit through asset classes allows you to position trades ahead of expected policy shifts and manage existing positions when rate surprises occur.\n\nThe transmission mechanism for equities: higher interest rates raise the discount rate applied to future corporate earnings — reducing the present value of those earnings, which pressures equity valuations. Companies with high debt face rising interest costs, compressing margins. High-growth stocks (which rely on future earnings) are hit harder than value stocks (which generate current earnings). Rate hikes are generally bearish for equities, especially growth stocks.\n\nThe transmission for currencies: higher interest rates make a currency more attractive to hold — foreign investors buy the currency to invest in higher-yielding assets, strengthening it. This is the foundation of interest rate parity and carry trades. A currency with higher rates attracts capital inflows; a currency with lower rates sees capital outflows. Rate hike expectations strengthen a currency; rate cut expectations weaken it. The magnitude of the move depends on how many cuts or hikes are already priced in by the market.',
+      key_points: [
+        'Rate hikes: raise discount rate → reduce equity valuations, especially high-growth stocks',
+        'Rate hikes: make currency more attractive → strengthen it through capital inflows',
+        'Rate cuts: stimulate growth but weaken currency and can inflate asset bubbles',
+        'Growth stocks more sensitive to rate changes than value stocks — longer duration earnings',
+        'What matters for currency moves: the delta between priced-in expectations and actual decision',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Inflation is the rate at which the general price level of goods and services rises, eroding purchasing power. It is the primary driver of central bank policy decisions, and central bank policy decisions move markets. Understanding the key inflation measures helps you anticipate policy actions before they happen.\n\nCPI (Consumer Price Index) is the most widely followed inflation measure in the US. It measures the price change of a basket of consumer goods and services. Month-over-month and year-over-year changes are the headline numbers traders watch. Core CPI excludes food and energy (which are volatile) and is considered more representative of underlying inflation trends.\n\nPPI (Producer Price Index) measures price changes at the producer level — the prices companies pay for inputs. Because producer costs typically pass through to consumer prices with a 3–6 month lag, PPI is a leading indicator of future CPI. PCE (Personal Consumption Expenditures) is the Federal Reserve\'s preferred inflation measure — it weights different goods and services based on what consumers actually spend (not a fixed basket) and tends to run slightly lower than CPI. When the Fed says "2% inflation target," they mean 2% Core PCE.',
+      key_points: [
+        'CPI: headline consumer inflation measure; core CPI excludes food/energy — Fed watches core',
+        'PPI: producer-level price changes; leads CPI by 3–6 months (producers pass costs to consumers)',
+        'PCE: Fed\'s preferred inflation measure — flexible basket weights vs fixed basket in CPI',
+        'Core PCE 2% = Federal Reserve\'s official inflation target',
+        'Above-target inflation = hawkish bias (rate hikes likely); below-target = dovish bias (cuts possible)',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Non-Farm Payrolls (NFP) is the most volatile monthly data release for forex markets. Published on the first Friday of each month by the US Bureau of Labor Statistics, it reports the number of jobs added or lost in the US economy (excluding agricultural workers) the previous month. It is so significant because it directly informs both elements of the Federal Reserve\'s dual mandate: maximum employment and price stability.\n\nThe typical market impact: 60 minutes of unpredictable, often violent price movement. Initial reaction, reversal of initial reaction, and then a directional move that lasts the remainder of the session. The initial reaction is often a fake-out — the market\'s first interpretation of the headline number is frequently wrong because headline NFP misses the full story (wage growth, participation rate, and prior month revisions often matter more).\n\nKey data points within the NFP release: (1) Headline jobs added — was it above or below consensus? (2) Unemployment rate — did it rise or fall? (3) Average hourly earnings — wage growth is the critical inflation component; strong wages are hawkish. (4) Prior month revisions — the previous month\'s data is frequently revised significantly, which changes the trend picture. A trader who acts only on the headline number is acting on incomplete information.',
+      key_points: [
+        'NFP: monthly US jobs report, first Friday of each month — most volatile forex release',
+        'Initial reaction is frequently wrong — the headline misses wage growth, revisions, and participation rate',
+        'Average hourly earnings (wage growth) is often more important than the headline jobs number',
+        'Prior month revisions can significantly change the trend interpretation',
+        'Most professional strategies avoid holding positions into NFP unless the risk management is explicitly sized for it',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'The yield curve plots the interest rates (yields) of US Treasury bonds across different maturities — from 3 months to 30 years. Under normal economic conditions, longer-dated bonds yield more than shorter-dated ones (normal upward-sloping curve) because investors require higher compensation for locking up money longer. The shape and slope of the yield curve is one of the most powerful macro indicators available.\n\nThree shapes and what they signal: (1) Normal (upward sloping): long rates higher than short rates. Healthy economic outlook. (2) Flat: short and long rates converging. Indicates economic uncertainty — the market expects slower growth ahead, reducing the term premium. (3) Inverted: short rates higher than long rates (specifically, 2-year yield above 10-year yield — the "2s10s spread"). An inverted yield curve has preceded every US recession in the past 50 years, typically by 12–24 months.\n\nWhy inversions predict recessions: short-term rates are controlled by the Fed (currently high, reflecting tight policy). Long-term rates reflect the market\'s expectation of future growth and inflation — when they fall below short rates, it signals the market expects the Fed to cut rates in the future (i.e., the economy will weaken enough to require stimulus). For forex traders, a deeply inverted US yield curve signals eventual dollar weakness as rate cuts become likely.',
+      key_points: [
+        'Normal yield curve: long rates > short rates — healthy economic expectation',
+        'Inverted yield curve: short rates > long rates (2s10s spread negative) — recession warning',
+        'Yield curve inversions have preceded every US recession in the past 50 years, by 12–24 months',
+        'Inversion signals: Fed will eventually cut rates as economy weakens → long-term USD bearish signal',
+        'Traders watch the 2-year vs 10-year spread (2s10s) as the primary inversion indicator',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'Trading news events requires different skills and risk management than technical setups. The challenge is that news creates unpredictable, often violent short-term price spikes that can trigger stops and hit extreme prices that bear no relationship to where the market will be 30 minutes later. Understanding how to position around high-impact events is a critical risk management skill.\n\nThree approaches: (1) Do not trade before the release — go flat before the announcement and wait for the initial reaction to resolve (30–60 minutes) before trading the new direction. This is the safest approach and the one most professionals use for high-impact events they have no edge in predicting. (2) Pre-event positioning — if you have a strong directional view based on market expectations vs. your own analysis, enter before the release with a defined stop. The stop must be sized for potential slippage during the spike. (3) Post-release fade — trade the reversal of the initial overreaction. Many news events trigger an initial spike in one direction followed by a sharp reversal as the market digests the full data release.\n\nThe key principle: never underestimate the magnitude of the initial spike. Spreads widen dramatically, slippage can be severe, and stop orders may fill 20–50 pips away from where they were placed. Reduce position size around high-impact events — the risk-per-trade model must account for potential slippage.',
+      key_points: [
+        'Three approaches: avoid (go flat), pre-position (with slippage-aware stop), or fade the overreaction',
+        'Initial spike direction is frequently not the lasting direction — the full data takes time to digest',
+        'Spreads widen and slippage can be severe during high-impact releases — size accordingly',
+        'Stops may fill 20–50 pips away from placement during NFP and FOMC moments',
+        'The safest approach for most traders: go flat before the release, trade after the dust settles',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-7': {
+      intro_text: 'This exercise practises one of the most important pre-news risk management decisions: deciding when to take profit before an unpredictable event rather than risking your gain. With a 45-pip profit and an NFP release 2 hours away, the question is where to set your exit level. The level should be technically meaningful — near a prior support or Fibonacci level — not arbitrary.',
+      key_points: [
+        'Pre-news profit protection: take partial or full profit at a sensible technical level before the release',
+        'The exit should be at a prior support or technical level — not a percentage of current profit',
+        'Protecting a known gain from an unpredictable event is rational risk management, not fear',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'EURUSD',
       timeframe: 'H1',
@@ -1319,7 +2623,24 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       reference_line: { x1: 0, y1: 37, x2: 100, y2: 37 },
       steps: [{ id: '1', label: 'Assess the current profit', completed: false }, { id: '2', label: 'Draw your pre-news profit protection level', completed: false }, { id: '3', label: 'Review risk management decision', completed: false }],
     },
+    'lesson-8': {
+      intro_text: 'Quantitative Easing (QE) and Quantitative Tightening (QT) are the unconventional monetary policy tools central banks use when interest rates alone are insufficient — specifically, when rates are near zero and more stimulus is needed, or when inflation is running hot and rate hikes need to be supplemented by balance sheet reduction.\n\nQE: the central bank creates new money to purchase assets (primarily government bonds and in some cases mortgage-backed securities). This directly injects money into the financial system, lowers long-term yields (because buying bonds raises bond prices, which lowers yields), encourages lending, and stimulates asset price inflation. QE is unambiguously bullish for risk assets (equities, commodities, high-yield bonds) and bearish for the purchasing currency over the medium term.\n\nQT: the central bank reduces its balance sheet by either selling bonds or allowing bonds to mature without reinvestment. This removes liquidity from the financial system, puts upward pressure on long-term yields, and reduces the amount of money available for risk assets. QT is bearish for equities and risk assets, bullish for the currency (less new money being created). The scale of QE programmes has been unprecedented since 2008 — the Fed\'s balance sheet grew from $900 billion in 2008 to over $9 trillion at its 2022 peak. The subsequent QT programme was one of the fastest in history.',
+      key_points: [
+        'QE: central bank creates money to buy bonds → injects liquidity, lowers yields, bullish for risk assets',
+        'QT: central bank reduces balance sheet → removes liquidity, raises yields, bearish for risk assets',
+        'QE is bearish for the currency long-term (more currency supply); QT is bullish',
+        'QE since 2008 has been unprecedented in scale — fundamentally changed asset class correlations',
+        'Balance sheet size and rate of change are the key variables to monitor for QE/QT impact',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-9': {
+      intro_text: 'This quiz tests a fundamental concept in event-driven trading: that markets trade the gap between expectations and reality, not the headline number in isolation. The same interest rate decision can be interpreted as bullish or bearish depending entirely on what the market had priced in beforehand.',
+      key_points: [
+        'Markets are forward-looking and price in expected outcomes continuously before any announcement',
+        'A result that meets expectations causes little movement — it was already priced in',
+        'A result below expectations (dovish surprise for hikes) weakens the dollar even if the action itself is hawkish',
+      ],
       activity_type: 'multi_choice',
       question: 'The Fed delivered a 0.25% rate hike. The market had priced in 0.50%. EUR/USD initially drops 35 pips, then reverses and rallies 110 pips within an hour. What explains this reaction?',
       options: [
@@ -1335,7 +2656,79 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'portfolio-and-advanced-risk': {
+    'lesson-1': {
+      intro_text: 'Most traders understand position-level risk — how much you risk on a single trade. Fewer understand portfolio risk — how those individual positions interact when held simultaneously. Portfolio risk is almost always higher than the sum of individual position risks, because positions that are correlated move together, amplifying aggregate exposure.\n\nThe key concept: independent positions diversify; correlated positions concentrate. If you hold two positions that have a 0.90 correlation coefficient (they move almost identically), you do not have 2% combined risk if each is sized to 1% — you effectively have close to 2% risk on a single directional bet. If you hold two positions with a −0.90 correlation (they move in opposite directions), they hedge each other and combined risk is close to zero.\n\nThe practical implication: before entering any new position, ask "how does this change my aggregate portfolio exposure?" If your existing positions are all long USD pairs, adding another long USD pair does not diversify — it concentrates. True portfolio risk management requires mapping the net directional exposure across all open positions, not just counting the number of positions and their individual risk allocations.',
+      key_points: [
+        'Portfolio risk ≠ sum of individual position risks — correlations change the aggregate',
+        'Highly correlated positions (0.90+) concentrate risk; negatively correlated positions hedge each other',
+        'Map net directional exposure across all positions, not just individual position sizes',
+        'Multiple "independent" 1% risks in the same direction become one large directional bet',
+        'True diversification requires low or negative correlation between positions',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Sharpe Ratio and Sortino Ratio are the standard institutional metrics for evaluating risk-adjusted returns — how much return a strategy or portfolio generates per unit of risk taken. They are essential because raw return alone is meaningless without knowing the risk required to generate it.\n\nSharpe Ratio = (Portfolio Return − Risk-Free Rate) ÷ Standard Deviation of Returns. It measures return per unit of total volatility. A Sharpe of 1.0 is considered acceptable, 2.0 is good, and above 3.0 is exceptional for a trading strategy. The limitation: Sharpe penalises upside volatility the same as downside — a strategy with large, irregular gains appears volatile even if losses are small and controlled.\n\nSortino Ratio = (Portfolio Return − Risk-Free Rate) ÷ Downside Deviation (only considers negative deviations). It is a more relevant metric for active traders because it ignores upside volatility and only penalises downside risk. A strategy with large winners and small losses will have a much better Sortino than Sharpe. For evaluating trading strategies with asymmetric return profiles (most breakout and trend-following strategies), the Sortino Ratio provides a more accurate picture of quality.',
+      key_points: [
+        'Sharpe Ratio = (return − risk-free rate) ÷ total standard deviation; above 1.0 acceptable, 2.0+ good',
+        'Limitation: Sharpe penalises upside volatility equally with downside — unfair for asymmetric strategies',
+        'Sortino Ratio: uses only downside deviation — more relevant for trading strategies with large winners',
+        'Strategies with large irregular wins + small losses: Sortino >> Sharpe, revealing true quality',
+        'Both ratios require comparison against a benchmark and a minimum sample of 12+ months',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The Kelly Criterion is a mathematical formula that calculates the theoretically optimal fraction of capital to risk on each bet or trade to maximise long-term wealth growth. It was developed by John Kelly at Bell Labs in 1956 and has been widely adopted by gamblers, investors, and traders.\n\nThe formula: f* = (W × R − L) ÷ R, where f* is the fraction to bet, W is the win probability, L is the loss probability, and R is the win-to-loss ratio. For a strategy with 50% win rate, 2R average winner, 1R average loser: f* = (0.50 × 2 − 0.50) ÷ 2 = 0.25. The Kelly criterion says to bet 25% of capital on each trade.\n\nThe critical caveat: full Kelly is almost never used in practice. The formula maximises long-term growth but also produces enormous drawdowns during losing runs. A 25% full Kelly bet with a 50% win rate produces an expected maximum drawdown of approximately 50% at some point. Most professional traders use half-Kelly or quarter-Kelly (12.5% or 6.25% of capital) to reduce variance while capturing most of the growth benefit. The practical takeaway: Kelly gives you the mathematical ceiling — your actual bet size should be at most half of what Kelly suggests.',
+      key_points: [
+        'Kelly Criterion: f* = (W × R − L) ÷ R — optimal fraction of capital to maximise long-term growth',
+        'Full Kelly maximises long-term wealth but produces very large drawdowns during losing runs',
+        'Half-Kelly or quarter-Kelly is the professional standard — captures most growth, reduces variance',
+        'Kelly provides the ceiling: never bet more than Kelly suggests, usually bet significantly less',
+        'Kelly is most useful as a risk-of-ruin check: if Kelly says 25% and you are betting 30%, you are overleveraged',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Correlation risk is the danger that positions you believe to be diversified are actually highly correlated and will move against you simultaneously during stressed market conditions. It is one of the most frequently underestimated risks in active trading.\n\nThe maths: two positions with 1% individual risk each, held simultaneously. If correlation = 0 (truly independent), the combined standard deviation of the portfolio is √(1² + 1²) = 1.41% — not 2%. Diversification reduces risk. If correlation = 0.90 (highly correlated), combined standard deviation ≈ 1.97% — nearly the same as if you had one position with 2% risk. No diversification benefit.\n\nThe hidden correlation problem: correlations that appear stable during normal market conditions can jump toward 1.0 during stress events. In the March 2020 Covid crash and the 2008 financial crisis, assets that normally had low correlations (equities, commodities, high-yield bonds) all fell simultaneously as forced liquidations dominated. When everyone is selling everything, correlations collapse to 1.0 regardless of historical relationships. Stress-test your portfolio assuming correlations go to 1.0 in the worst case — then size accordingly.',
+      key_points: [
+        'Correlation risk: positions believed to be diversified may move together under stress',
+        'Math: correlation 0 → true diversification (1.41% combined); correlation 0.90 → almost no benefit (1.97%)',
+        'Correlations can jump to 1.0 during market stress regardless of historical relationships',
+        'Stress test: assume all positions in the same direction go to maximum correlation during a crisis',
+        'Never size positions independently without mapping aggregate directional exposure',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-5': {
+      intro_text: 'Black swan events are extreme, highly improbable, high-impact events that fall outside normal statistical expectations — the 2008 financial crisis, the March 2020 Covid crash, the September 2001 attacks, the 1987 Black Monday crash. The term was popularised by Nassim Nicholas Taleb, who argued that financial models systematically underestimate the probability of these extreme events.\n\nThe statistical problem: standard risk models (Value at Risk, Sharpe Ratio, and portfolio standard deviation) all assume returns follow a normal distribution. But financial returns have "fat tails" — extreme events happen far more frequently than a normal distribution predicts. A 5-standard-deviation move should occur once every 14,000 years according to normal distribution assumptions. In reality, events of this magnitude occur once every decade or two.\n\nPractical implications: (1) Never size positions assuming the worst case is contained within normal statistical bounds. (2) Use hard stops, not mental ones — in genuine crises, discretion fails catastrophically. (3) Consider asymmetric hedges (out-of-the-money options) for tail risk protection on large positions. (4) Maintain cash reserves — liquidity is your survival tool during black swans. (5) Position size conservatively enough to survive a 2–3× larger move than your historical worst case.',
+      key_points: [
+        'Black swan: extreme, high-impact event that normal statistical models assign near-zero probability',
+        'Financial returns have fat tails — extreme events occur far more often than normal distribution predicts',
+        'Normal distribution vastly underestimates the frequency of 4–5 standard deviation moves',
+        'Always size positions to survive 2–3× your historical worst case — the real worst case is always worse',
+        'Tail risk hedges (OTM options) and cash reserves are the primary black swan survival tools',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'Maximum drawdown is the metric that determines whether a strategy can actually be traded by a human being. Theoretical positive expectancy is irrelevant if the required drawdown to extract it exceeds a trader\'s psychological and financial tolerance. Understanding drawdown cycles — how long drawdowns last and how deep they go — is essential for realistic expectations.\n\nRecovery mathematics: a 10% drawdown requires an 11.1% gain to recover. A 20% drawdown requires 25%. A 30% drawdown requires 42.9%. A 50% drawdown requires a 100% gain. The recovery requirement grows non-linearly with drawdown depth. This is why limiting maximum drawdown is the highest-priority risk management objective.\n\nDrawdown cycle analysis: how long do drawdowns typically last in your strategy? A strategy with frequent but shallow drawdowns (5% max, 3 weeks average) is psychologically very different from one with infrequent but deep drawdowns (25% max, 4 months average) — even if their expected annual returns are identical. Knowing the typical drawdown duration helps you plan: can you mentally endure 4 months underwater without abandoning a valid strategy? Most traders cannot, which is why deep drawdown strategies frequently fail through premature abandonment rather than negative expectancy.',
+      key_points: [
+        'Recovery maths: 20% DD needs 25% to recover; 50% DD needs 100% — non-linear relationship',
+        'Maximum drawdown determines whether a strategy is humanly tradeable, not just mathematically viable',
+        'Drawdown duration is as psychologically important as drawdown depth',
+        'Most valid strategies are abandoned during extended drawdowns — this is behavioural, not statistical failure',
+        'Target maximum drawdown of 15–20% or less for consistent human execution',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-7': {
+      intro_text: 'The Sharpe Ratio calculation is straightforward once you have the components. This exercise gives you the monthly return and standard deviation data and asks you to apply the formula precisely. The skill is not the arithmetic — it is interpreting the result against known benchmarks and understanding what it tells you about the strategy\'s quality.',
+      key_points: [
+        'Sharpe = (avg return − risk-free rate) ÷ standard deviation; all values must be on the same time basis',
+        'Risk-free rate must be converted to the same period as the returns (annual rate ÷ 12 for monthly)',
+        'Benchmarks: below 1.0 = acceptable, above 1.0 = good, above 2.0 = excellent for active trading',
+      ],
       activity_type: 'calculation',
       problem: 'A trading strategy over 12 months produced monthly returns averaging +3.2% with a standard deviation of 4.1%. The risk-free rate is 5% per year (0.417% per month). Sharpe Ratio = (Average Monthly Return − Monthly Risk-Free Rate) ÷ Standard Deviation. Calculate the monthly Sharpe Ratio to 2 decimal places.',
       correct_answer: '0.68',
@@ -1351,6 +2744,12 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       steps: [{ id: '1', label: 'Calculate excess return', completed: false }, { id: '2', label: 'Divide by standard deviation', completed: false }, { id: '3', label: 'Review interpretation', completed: false }],
     },
     'lesson-8': {
+      intro_text: 'This quiz applies the correlation risk concept to a real trading scenario. Three positions, all sized to 1% risk, but all long non-USD currencies against the dollar. The question is whether this represents 3% aggregate risk or something much more dangerous.',
+      key_points: [
+        'All three positions are long non-USD vs USD — they all have the same directional dollar exposure',
+        'A single strong-dollar event hits all three simultaneously, making the aggregate risk far higher than 3%',
+        'This is not three independent 1% risks — it is one large directional USD bet divided into three tickets',
+      ],
       activity_type: 'multi_choice',
       question: 'You have three open positions each sized to 1% account risk: Long GBP/USD, Long EUR/USD, Long AUD/USD. What is your true combined USD exposure risk?',
       options: [
@@ -1366,7 +2765,57 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'prop-firm-preparation': {
+    'lesson-1': {
+      intro_text: 'Proprietary trading firms (prop firms) provide traders with funded accounts to trade, in exchange for a share of the profits. The business model benefits both sides: traders access capital far larger than their personal savings; firms earn a percentage of profits without deploying their own trading expertise. Understanding the business model is essential for understanding why the rules are structured the way they are.\n\nTypical structure: traders pay a one-time challenge fee (£100–£400 depending on account size) to access a simulated evaluation account. If they meet the profit target without breaching risk limits, they receive a funded account with real capital. Profit splits typically range from 70/30 to 90/10 in the trader\'s favour on the funded account.\n\nThe challenge is designed to identify traders who can generate returns with strict risk discipline — not just traders who can be profitable. The rules specifically target the behaviour patterns that destroy real managed accounts: overtrading, oversizing after losses, and abandoning risk rules under pressure. Understanding the evaluation rules as a filter for trader psychology, not just performance, changes how you approach the challenge.',
+      key_points: [
+        'Prop firms provide funded accounts in exchange for a profit share — typically 70–90% to trader',
+        'Challenge fee pays for evaluation access; profit split begins on the funded account',
+        'The evaluation is a psychological filter, not just a performance test — it identifies rule-following discipline',
+        'Typical structure: challenge → evaluation pass → funded account → scaling opportunities',
+        'Profit splits of 80/20 to 90/10 in trader\'s favour are standard at tier-1 firms',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The three critical rules in every prop firm evaluation are: the profit target, the daily loss limit, and the maximum drawdown. These three interact as a system, and understanding their interaction is the key to passing the challenge — not just having a profitable strategy.\n\nProfit target: typically 8–10% of account value. The target provides a performance requirement but also creates psychological pressure to chase returns, especially near the deadline. This pressure is a feature, not a bug — it tests whether you abandon your strategy under pressure.\n\nDaily loss limit: typically 4–5% of starting balance. This is the hardest rule to follow because it triggers precisely when your emotional state is worst — after a losing sequence. Once the daily limit is hit, trading is prohibited for the rest of the day, regardless of setup quality. Attempting to override it (even technically within the limit) is the most common reason funded traders lose their accounts.\n\nMaximum drawdown: typically 8–10% of starting balance. This is measured from the peak balance (not starting balance) at firms with trailing drawdown rules, which is more restrictive than starting balance drawdown. Understand which calculation method your firm uses.',
+      key_points: [
+        'Three critical rules: profit target, daily loss limit, maximum drawdown — all must be respected simultaneously',
+        'Daily loss limit triggers when you are already in a bad emotional state — most test of discipline',
+        'Trailing drawdown (from peak balance) is more restrictive than fixed drawdown (from starting balance)',
+        'Know which drawdown method your firm uses before starting — it changes your risk capacity',
+        'Profit target creates psychological pressure to overtrade near the deadline — resist this explicitly',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Trading a funded account fundamentally changes your relationship with risk. On a personal account, a 1% risk trades costs you 1% of your own capital — painful but recoverable. On a funded £100,000 account at 1% risk, the same trade costs £1,000 of the firm\'s capital. The psychological experience is different, the stakes are different, and the firm\'s risk controls reflect this difference.\n\nThe funded account mindset: capital preservation comes before profit generation. On a personal account, a bad month can be recovered from by adding capital or simply waiting. On a funded account, breaching the maximum drawdown rule ends the account immediately — there is no recovery. This asymmetry requires a shift from growth-oriented thinking to capital protection-oriented thinking.\n\nPractical implications: (1) Trade smaller than your maximum allowed risk, especially in the first month while you calibrate to the firm\'s rules and market conditions. (2) Never take revenge trades or increase position size after losses — the funded account creates additional emotional pressure that amplifies these behaviours. (3) Build profit buffer before taking larger positions — when you are 4% up and need 10%, you have room to breathe. When you are 0% up and need 10%, each loss increases the pressure.',
+      key_points: [
+        'Funded account mindset: capital preservation first — a breached drawdown rule ends the account permanently',
+        'Asymmetry: no recovery from account breach; unlike personal account where you can add capital and wait',
+        'Start smaller than maximum allowed — calibrate to the firm\'s rules before scaling up',
+        'Never revenge trade on a funded account — the emotional stakes amplify destructive behaviours',
+        'Build a profit buffer early — protects your daily limit capacity later in the challenge',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'The most common failure modes in prop firm challenges are not caused by poor trading strategies — they are caused by poor psychological management of the challenge structure. Understanding these failure patterns in advance allows you to recognise and avoid them.\n\nFailure mode 1 — Chasing the target near the deadline: with 3 days left and 4% needed to reach the 10% target, traders dramatically increase position size. One bad trade wipes the buffer and forces an even larger bet, triggering the daily loss limit or maximum drawdown.\n\nFailure mode 2 — Daily loss limit breach through compounding losses: three consecutive 1.5% risk losses = 4.5% — over the typical 4% daily loss limit. Solution: never take a third trade after two consecutive losses in the same session.\n\nFailure mode 3 — Weekend/overnight gaps: holding positions over major economic releases or into the weekend exposes funded accounts to gap risk that cannot be controlled with a stop loss. Gaps can trigger slippage well beyond the intended stop, instantly breaching the daily limit.\n\nFailure mode 4 — Trading a different strategy than the tested one: the pressure of the challenge causes traders to abandon their proven approach and try something "better" — switching to scalping, increasing signal frequency, or trading unfamiliar instruments.',
+      key_points: [
+        'Chasing target near deadline: increases position size under pressure → most common failure mode',
+        'Never take a third trade after two consecutive losses in the same session',
+        'Weekend and gap risk: major releases can gap through stops, breaching daily limits instantly',
+        'Strategy drift: do not change your approach under challenge pressure — execute your proven system',
+        'The most-passed challenges are by traders who trade their normal system without adaptation',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This quiz presents the most common real-time decision in a prop firm challenge: what to do when your daily loss limit is hit. There is only one correct answer. The firmness required to execute it, however, is something most traders must consciously practise.',
+      key_points: [
+        'Daily loss limit = hard stop — no exceptions, no "just one more trade to recover" logic',
+        'With 2.4% profit and 7 days remaining, stopping preserves far more value than any potential recovery trade',
+        'After hitting the daily limit: log off, do not check the charts, return fresh tomorrow',
+      ],
       activity_type: 'multi_choice',
       question: 'On Day 3 of your prop firm challenge you have made 2.4% profit. A trade immediately hits your maximum daily loss limit. You have 7 days remaining. What is the correct action?',
       options: [
@@ -1379,7 +2828,35 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Prop firm daily loss limits are the single most common reason funded traders lose their accounts. The rule has zero exceptions. With 2.4% profit and 7 days remaining, protecting that gain is far more valuable than trading a compromised session. Once the daily limit is hit: log off, do the post-session review, and return tomorrow with fresh capital.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Standard fixed-percentage position sizing becomes sub-optimal under prop firm drawdown constraints. If you risk 1% per trade and the maximum drawdown is 8%, you theoretically have 8 maximum consecutive losses before account breach. But in practice, consecutive losses also impact your confidence and decision-making, making later losses more likely when you are already in a drawdown.\n\nThe Turtle Shell approach (also called scaled risk reduction): reduce position size as you approach your maximum drawdown limit. When the account is at full equity (no drawdown), risk 1%. When drawdown reaches 3%, risk 0.75%. At 5% drawdown, risk 0.5%. At 6–7%, risk 0.25%. This approach preserves your account through extended losing runs while still allowing recovery with small, controlled positions.\n\nThe mathematical benefit: when in a deep drawdown, small positions allow you to tighten without triggering the maximum limit. When you start recovering, the larger percentage gain on a lower base gradually rebuilds — without the risk of a single overlarge trade wiping your remaining buffer. The psychological benefit: reducing size during a drawdown removes the emotional pressure of large losses, allowing clearer decision-making.',
+      key_points: [
+        'Turtle Shell: reduce position size proportionally as drawdown increases — scale risk to remaining buffer',
+        'Example: full equity = 1% risk; at 3% drawdown = 0.75%; at 5% = 0.5%; at 6–7% = 0.25%',
+        'Preserves account through losing runs; allows recovery with controlled exposure',
+        'Eliminates the "one big trade to recover" psychological trap during drawdowns',
+        'Counterintuitive but critical: the time to trade small is when you are in drawdown, not when you are up',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-7': {
+      intro_text: 'Once you have passed the evaluation and received a funded account, the work is not done — the funded account is the beginning of a progressive scaling opportunity. Most prop firms offer scaling plans that increase account size as you demonstrate consistent performance on the funded level.\n\nTypical scaling structure: start with a £25,000 funded account. Demonstrate 10% profit over 3 months without breaching drawdown rules → upgraded to £50,000. Repeat → £100,000 → £200,000 and beyond at top firms. Each scaling step typically maintains the same percentage profit target and drawdown limits, so the rules do not become more difficult — only the absolute monetary values increase.\n\nThe psychological shift at each level: as account size grows, the same 1% risk trade represents a significantly larger monetary amount. A 1% risk on £200,000 is £2,000 — for most traders this triggers performance anxiety that was absent at £25,000. The solution: maintain strict focus on R values and percentages. £2,000 loss is still 1R and 1% — the same rule application as it was at £25,000. Traders who make this transition successfully never convert their positions to monetary values during trading; they think exclusively in percentages and R multiples.',
+      key_points: [
+        'Scaling plans: consistent funded performance → account size increases through defined milestones',
+        'Rules stay proportionally the same at each scale — percentage targets and drawdown limits unchanged',
+        'Psychological challenge: same 1% risk represents much larger monetary amounts at higher scales',
+        'Solution: think only in percentages and R multiples — never in monetary values during live trading',
+        'The scaling opportunity is the primary financial advantage of prop firm trading over personal accounts',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-8': {
+      intro_text: 'This is the ultimate prop firm psychology quiz: you are near the profit target with days remaining, and a strong setup appears with a 3% risk. The temptation is enormous — one trade could put you over the line. Apply the capital preservation principle and the position sizing rules from lesson 6.',
+      key_points: [
+        'With 75%+ of target achieved, reduce risk to 0.5–1% maximum — protect what you have built',
+        'A 3% risk trade when you need 2.5% is mathematically absurd: losing means needing 5.5% in 3 days',
+        'The final stretch is the highest-risk psychological phase — oversize trades destroy more challenges than underperformance',
+      ],
       activity_type: 'multi_choice',
       question: 'A prop firm challenge requires: 10% profit target, 5% daily loss limit, 10% max drawdown. You are at 7.5% profit with 3 days remaining. Your next setup risks 3% of the account. Should you take it?',
       options: [
@@ -1399,7 +2876,57 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   // ════════════════════════════════════════════════════════
 
   'order-flow-microstructure': {
+    'lesson-1': {
+      intro_text: 'Every price you see on a chart is the result of a continuous auction between buyers and sellers. The order book — also called the limit order book — is the queue behind every price, showing how many buyers are willing to buy at each price below the market and how many sellers are willing to sell at each price above. Understanding the mechanics of this auction is the foundation of order flow analysis.\n\nThe bid is the highest price buyers are currently willing to pay. The ask (or offer) is the lowest price sellers are currently willing to accept. The difference between them is the spread — the minimum transaction cost for any trade. When you buy at market, you pay the ask; when you sell at market, you hit the bid. You are always the price-taker when using market orders; limit orders make you the price-maker who sets the price and waits.\n\nThe order book is not static — it updates continuously as orders are placed, modified, and cancelled. Large visible orders in the book ("walls") attract attention but can be deceptive: sophisticated participants place and cancel large orders to create false impressions of supply or demand. This practice, called spoofing, is illegal but still occurs. The real signal is not what is quoted in the book but what actually transacts — which is why Time and Sales (the tape) and footprint data are more actionable than the raw order book.',
+      key_points: [
+        'Order book: the live queue of pending buy orders (bids) and sell orders (asks) at every price level',
+        'Bid = highest buyer price; ask = lowest seller price; spread = bid-ask difference = minimum transaction cost',
+        'Market orders are price-takers (pay ask/hit bid); limit orders are price-makers (wait at your price)',
+        'Large orders in the book ("walls") can be fake — spoofed and cancelled before execution',
+        'What actually transacts (tape/footprint) is more actionable than what is quoted in the book',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Level 2 market data (also called market depth) shows the full order book — not just the best bid and ask, but the stacked layers of orders at multiple price levels on both sides. For equities, this is typically 10–20 levels deep. For futures, depth can be seen across the full price ladder. Interpreting this data reveals where large participants have placed significant orders that the best bid/ask alone cannot show.\n\nHow to read Level 2: the left side shows the bid stack — prices where buyers are waiting, with the total quantity at each price. The right side shows the ask stack — prices where sellers are waiting. The market is at the top of the bid and bottom of the ask. When a large cluster of orders appears at a specific price (e.g., 10,000 lots at 1.2450 on the bid), that level is being defended — meaning a large buyer is absorbing all selling at that price.\n\nThe key skill: distinguishing between genuine large orders and iceberg or layered spoofing. Genuine large orders get executed and disappear from the book as price passes through them — you see the quantity diminish as trades fill against it. Spoofed orders disappear (are cancelled) BEFORE price reaches them. Learning to distinguish these requires watching how orders in the book respond as price approaches — the pattern of execution vs cancellation is the signal.',
+      key_points: [
+        'Level 2 shows the full order book depth — all pending orders at multiple price levels, not just best bid/ask',
+        'Large visible clusters at a specific price = that level is being defended by a large participant',
+        'Genuine orders: quantity diminishes as price trades through them (executed)',
+        'Spoofed orders: disappear before price reaches them (cancelled) — designed to mislead',
+        'Distinguish execution from cancellation to read genuine market depth vs manipulation',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Time and Sales — often called "the tape" — is a chronological log of every transaction that occurs, showing the price, quantity, and time of each fill. Where Level 2 shows pending orders, Time and Sales shows completed trades. This distinction is crucial: a filled trade is a commitment made; a pending order is just an intention that may be cancelled.\n\nReading the tape: large fills at the ask (green) indicate active buyers lifting offers — aggressive buying. Large fills at the bid (red) indicate active sellers hitting bids — aggressive selling. When large prints cluster at the ask and price is not rising, it indicates strong resistance — buyers are absorbing what sellers are offering. When large bid-hitting trades occur and price is rising, informed sellers are distributing into strength.\n\nThe modern challenge: automated market-making algorithms now generate enormous volumes of small prints that obscure the signal in the noise. Effective tape reading requires filtering for significant order sizes (e.g., looking only at fills above a minimum lot threshold) and watching for clusters of prints at a specific price over a short time window — which reveals accumulation or distribution by institutional participants who split large orders to minimise market impact.',
+      key_points: [
+        'Time and Sales: chronological log of every executed trade — price, size, time, and direction',
+        'Ask prints (green): active buyers lifting offers — aggressive buying conviction',
+        'Bid prints (red): active sellers hitting bids — aggressive selling conviction',
+        'Cluster of large ask prints with price not rising = absorption; price is being held back by sellers',
+        'Filter for large-lot prints only — algorithmic noise drowns the institutional signal at small sizes',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Iceberg orders are large institutional orders that are deliberately concealed by only showing a small fraction (the visible portion) in the public order book, with the full order "below the surface." As the visible portion fills, the algorithm immediately refreshes another small visible tranche — giving the appearance of a small, quickly-filled order while the underlying institutional position slowly accumulates or distributes.\n\nWhy institutions use icebergs: if a fund wants to buy £50 million of a stock, showing the full order in the book would immediately push the price against them before they can fill. By breaking it into hundreds of small visible pieces, they minimise market impact — they buy more at lower average prices. This is legal and standard institutional practice.\n\nHow to identify icebergs: the key signature is a specific price level that continuously refreshes with the same small visible quantity despite enormous volume trading at that price. If you see 100 lots always sitting at the bid, yet 50,000 lots have traded there over the past 20 minutes, something is continuously refilling that level. This is an iceberg. The practical implication: if you identify an iceberg buy order at a level, that level is a strong support as long as the iceberg remains active — the institutional participant is absorbing all selling at that price.',
+      key_points: [
+        'Iceberg order: large institutional order with only a small visible portion in the book — refreshes continuously as it fills',
+        'Purpose: minimise market impact and avoid tipping off other participants to the full size',
+        'Signature: same small quantity always visible at a level despite very high cumulative volume at that price',
+        'An active iceberg bid = strong support; the institution is absorbing all selling at that level',
+        'Legal and standard institutional practice — distinct from spoofing (which involves cancelling before execution)',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'Absorption is one of the most powerful order flow signals available: it occurs when a large participant systematically takes the opposing side of all incoming orders at a specific price level to defend that level. At support, an absorbing buyer takes every sell order that arrives. The result is visible in the data: enormous volume at a level with very little price movement — the selling pressure is being "absorbed" rather than moving price.\n\nThree repeated tests of the same support level, each with identical absorption and a 40+ point bounce, is one of the clearest institutional demand signatures in order flow analysis.',
+      key_points: [
+        'Absorption: an institution defends a level by taking the other side of all incoming orders',
+        'High volume at a level with minimal price movement = absorption, not coincidence',
+        'Repeated tests with identical absorption pattern = genuine institutional demand at that level',
+      ],
       activity_type: 'multi_choice',
       question: 'NAS100 is testing a major support level for the third time. Each time, the bid side shows a large cluster of orders being absorbed — buyers consuming sell pressure without price falling. Each test produces a 40+ point bounce. What is this behaviour called?',
       options: [
@@ -1412,7 +2939,35 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Absorption occurs when a large participant systematically takes the opposing side of incoming orders to defend a price level. At support, an absorbing buyer takes every sell order that hits the level. Three tests with identical absorption and 40+ point bounces each time indicates genuine institutional interest. Price is held not by absence of sellers, but by active large-scale buying that overwhelms selling pressure.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Stop hunts are deliberate price movements designed to trigger the stop losses of retail traders clustered just below swing lows (or above swing highs), creating a burst of forced selling (or buying) that the initiating institution can use to fill large positions at improved prices. Understanding stop hunts is critical because they are one of the primary ways large participants achieve price improvement on large orders.\n\nThe mechanism: retail traders follow conventional wisdom and place stops "below the swing low" or "above the swing high." This creates predictable clusters of stop orders at these levels. A large participant can push price through the level with relatively modest orders, triggering all these stops simultaneously — which creates a rush of market selling (or buying) at exactly the moment the institution wants to buy (or sell). The result: a sharp spike below the low, followed by an immediate reversal as the institution fills their long position against all the stop-loss sell orders.\n\nRecognising a stop hunt pattern: a sharp, fast move beyond a significant level, followed within a few candles by a reversal and recovery back through the level. Volume is often elevated at the spike low. The key insight: stop hunts are not random noise — they are intentional liquidity harvesting events. Skilled traders use them as entries, placing limit orders at the level that is about to be swept, anticipating the reversal.',
+      key_points: [
+        'Stop hunts: deliberate price pushes through swing lows/highs to trigger retail stop orders',
+        'Institutions use forced stop-loss selling to fill large buy orders at better prices',
+        'Pattern: sharp spike beyond a level + immediate reversal back through the level = stop hunt',
+        'Volume spikes at the sweep low/high as all triggered stops flood the tape simultaneously',
+        'Professional entry technique: limit orders at likely stop hunt levels, anticipating the reversal',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-7': {
+      intro_text: 'Standard candlestick charts aggregate all the price action within a time period into four values: open, high, low, close. Footprint charts add a fifth dimension: the volume at each individual price WITHIN the candle, split by whether it was buy-initiated (ask) or sell-initiated (bid) volume. This reveals the internal mechanics of every candle rather than just its summary.\n\nThe key metric in footprint analysis is Delta — the difference between buy volume and sell volume within a candle. Positive delta (more buy volume) suggests buyers are in control; negative delta (more sell volume) suggests sellers dominate. But the most powerful signals come from delta-price divergence: when price rises but delta is negative, or price falls but delta is positive.\n\nThe point of control (POC) within a footprint candle is the price where the most volume traded. Multiple candles with the same POC price form a high-volume node — a level where significant two-sided activity occurred. These nodes often become future support and resistance because the participants who transacted heavily at that price will defend their positions if price returns to that level. Footprint charts require specialist data (not available in standard retail platforms) but represent the most granular publicly available order flow data outside of direct exchange feeds.',
+      key_points: [
+        'Footprint charts: show volume at each individual price within a candle, split by buy vs sell volume',
+        'Delta = buy volume minus sell volume within a candle; positive = buyers dominant, negative = sellers',
+        'Delta-price divergence: price rising with negative delta = warning; price falling with positive delta = warning',
+        'Point of control (POC): the price within the candle where the most volume transacted',
+        'High-volume nodes from footprint analysis often become future support and resistance levels',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-8': {
+      intro_text: 'Delta-price divergence is the footprint signal that reveals the internal weakness or strength behind a price move. When price rises but selling delta dominates inside each candle, the move is being driven by thin offer-side liquidity (few sellers), not by genuine buyer conviction. This is unsustainable and signals a likely reversal when sellers become more aggressive.',
+      key_points: [
+        'Delta-price divergence: price direction and net volume direction move oppositely',
+        'Price rising with negative delta: buyers not in control — move driven by thin liquidity, not conviction',
+        'This divergence is a high-conviction reversal signal, especially at a known resistance level',
+      ],
       activity_type: 'multi_choice',
       question: 'On a EUR/USD 5-minute footprint chart, delta on three consecutive candles is: −8,400, −9,200, −7,800 (heavily negative — net selling dominating). Yet price rose 15 pips. What does this divergence signal?',
       options: [
@@ -1428,7 +2983,57 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   },
 
   'execution-mastery': {
+    'lesson-1': {
+      intro_text: 'Every trading decision has two components: the decision itself (what to trade, which direction, what size) and the execution (how the order is filled). Most traders obsess over the decision and ignore execution. Over hundreds of trades, poor execution compounds into a significant performance drag — sometimes the difference between a profitable and unprofitable strategy.\n\nMarket orders vs limit orders: a market order fills immediately at the best available price but guarantees execution at the cost of slippage. A limit order fills at your specified price or better but may not fill at all if price doesn\'t reach your level. The choice between them is not about preference — it is about context.\n\nWhen market orders are correct: time-sensitive situations where missing the trade is worse than the execution cost. A breakout where the signal is the close of a candle and every second of delay costs pips. A risk-reduction exit where getting out at any price is more important than minimising cost. When limit orders are correct: entries at predefined levels (support, resistance, Fibonacci retracements) where you have a specific price in mind, where a better price is possible if you are willing to wait, and where missing the fill is acceptable if price doesn\'t reach your level. The fundamental rule: for entries, prefer limits at technical levels. For exits under stress, market orders prioritise execution over price.',
+      key_points: [
+        'Market order: guaranteed execution at the cost of slippage — fills immediately at whatever price is available',
+        'Limit order: fills at your price or better, but may not fill if price doesn\'t reach the level',
+        'Market orders correct for: time-sensitive entries, breakouts, stress exits where execution > price',
+        'Limit orders correct for: technical level entries where you have a specific price and can accept missing the fill',
+        'Over hundreds of trades, execution costs compound — 2–3 extra pips per entry/exit is significant at scale',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Slippage is the difference between the price you intended to fill and the price you actually filled at. It is the hidden tax on every market order and on limit orders during fast markets. Understanding its sources allows you to minimise it systematically.\n\nThe primary sources of slippage: (1) Spread — the bid-ask spread is the baseline transaction cost. Buying costs you the ask minus the mid-price; selling costs the mid-price minus the bid. Wide spreads in illiquid conditions (before market open, during off-hours) dramatically increase this cost. (2) Market impact — large orders move price against you as your own order consumes available liquidity at each price level. A £100,000 market order in a thin instrument may push price 10 pips before fully filling. (3) Speed of execution — slow platform order routing means price moves between when you click and when your order reaches the market. (4) Requotes and partial fills — in fast markets, the price you see may no longer be available by the time your order arrives.\n\nMeasuring slippage: record the price you intended to fill (the bid/ask when you made the decision) versus the actual fill price for every market order. Aggregate these over 30+ trades. If average negative slippage exceeds 1.5–2 pips on EUR/USD, investigate your broker\'s execution quality and order routing.',
+      key_points: [
+        'Slippage: the difference between intended fill price and actual fill price — always a cost on market orders',
+        'Sources: bid-ask spread, market impact (your order moves price), execution speed, requotes',
+        'Spread widens dramatically in thin markets (pre-open, off-hours) — avoid market orders in these conditions',
+        'Measure slippage systematically: intended price vs actual fill, aggregated over 30+ trades',
+        'Average slippage above 2 pips on EUR/USD = investigate broker execution quality',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Trading during different times of day is not equal. Liquidity — the number of active buyers and sellers at any given moment — varies dramatically across the 24-hour trading day, and entry timing relative to liquidity windows has a direct impact on slippage, spread, and setup quality.\n\nThe three primary liquidity windows in forex and indices: (1) London open (08:00–09:30 GMT) — the highest-volume window of the day. Spreads tighten, price moves with conviction, and the day\'s directional bias often establishes. (2) London-New York overlap (13:00–17:00 GMT) — the highest-liquidity period of the entire week. Both major sessions are active simultaneously, creating the tightest spreads and most significant price moves. (3) New York close (21:00–22:00 GMT) — significant end-of-day positioning and rebalancing flows.\n\nLow-liquidity traps: trading during the Asian session (23:00–07:00 GMT) on instruments like EUR/USD produces wider spreads, thinner order books, and price movements that frequently reverse by the London open. Algorithmic stop hunts are more effective in thin markets. Trading during major holiday periods (Christmas week, US holidays) creates extreme illiquidity. The rule: execute in liquid windows, plan in thin ones.',
+      key_points: [
+        'London open (08:00–09:30 GMT): highest-volume window; spreads tighten, directional bias establishes',
+        'London-NY overlap (13:00–17:00 GMT): tightest spreads, highest liquidity of the week',
+        'Asian session on major forex pairs: wider spreads, thinner books, higher stop-hunt risk',
+        'Execute market orders during liquid windows only — avoid market orders in thin conditions',
+        'Rule: plan setups in thin windows; execute entries and exits during high-liquidity hours',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'A pre-entry checklist is a simple but powerful system for ensuring you never place a trade in conditions that make execution more expensive or more uncertain than your strategy accounts for. It takes 30 seconds to run and can prevent costly mistakes.\n\nThe four-item pre-entry checklist: (1) Spread — what is the current spread for this instrument? Is it within your acceptable range (e.g., EUR/USD under 1.5 pips, GBP/USD under 2.0 pips)? If the spread is unusually wide, the market is illiquid and your entry cost has increased significantly. Wait or skip. (2) Volume — for equities and futures, is current volume above average? Below-average volume often means the move lacks institutional participation and is more likely to reverse. (3) Time of day — are you within your permitted trading window? Is a major economic release imminent (within 15 minutes)? Entering immediately before a high-impact news release means your stop may be gapped through. (4) Setup freshness — has too much time passed since the signal? A breakout that happened 45 minutes ago is a stale entry with degraded risk-reward. Entry timing matters: the first 2–3 candles after a signal are the entry window.',
+      key_points: [
+        'Pre-entry checklist: 30-second check preventing costly execution mistakes',
+        'Check 1: Is the spread within normal bounds? Wide spread = illiquid conditions, skip or wait',
+        'Check 2: Is volume at or above average? Low volume = suspect move, likely without institutional backing',
+        'Check 3: Is a high-impact economic release within 15 minutes? If yes, skip the entry',
+        'Check 4: Is the setup fresh? Entries more than 2–3 candles after the signal are stale',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This canvas exercise applies the pre-entry checklist concept to execution method selection. For a given setup at a daily support level, three different entry methods produce meaningfully different effective R:R ratios once entry costs are factored in. The right method is not always obvious without explicitly calculating the spread and slippage impact.',
+      key_points: [
+        'Limit orders at technical levels consistently produce better average entry prices than market orders',
+        'Each pip of additional entry cost reduces your R:R by approximately 1/stop_pips — measurable and real',
+        'The best entry method depends on setup type: reversal at a level = limit; breakout = market',
+      ],
       activity_type: 'multi_choice',
       question: 'A GBP/USD long setup has triggered at daily support. Entry options: (A) market order now at 1.2720, spread 1.5 pips. (B) Limit order at the exact support level 1.2700. (C) Limit order above the 15-minute candle high at 1.2728 for confirmation. Stop is 40 pips below entry for all three. Which gives the best R:R after entry cost?',
       options: [
@@ -1441,16 +3046,88 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Option B (limit at the level) gives the best R:R if filled: you enter at the precise support with zero additional cost above the level. Option A enters 1.5 pips higher, slightly reducing R:R. Option C enters 8 pips above for confirmation — meaningful cost on a 40-pip stop (reduces R:R by roughly 0.2R). Professionals use limit orders at key levels for this reason — better average entry price compounds significantly over hundreds of trades.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Limit orders are not guaranteed to fill. This creates two specific risks that traders must manage: partial fills (where only a portion of your intended position fills) and re-queuing decisions (whether to wait, modify, or cancel and re-enter with a different approach).\n\nPartial fill scenario: you place a limit order for 10 lots at 1.2700. Only 6 lots fill because there were only 6 lots of available selling at that price before it bounced. Now you hold a 6-lot position when you planned for 10. The decision: accept the smaller position and manage it to your original target, or add to fill the remaining 4 lots at market (accepting slightly worse price). The correct answer depends on whether price is still at or near your planned entry — if it has moved significantly, adding at market defeats the purpose of using the limit order.\n\nRe-queuing: if your limit order doesn\'t fill and price moves away from your level, you have three options. (1) Cancel the order and let the setup pass — discipline, no chasing. (2) Re-set the limit at the new best price if price is still near the entry range. (3) Chase with a market order — generally the worst choice, as it often fills at a significantly worse price than your original limit. The professional default: cancel and let the setup pass. There will be another one.',
+      key_points: [
+        'Partial fills: only portion of limit order fills — decide whether to accept partial or add at market',
+        'Adding at market to complete a partial fill makes sense only if price is still at/near the planned level',
+        'Re-queuing options: cancel (best), reset limit nearby (acceptable), chase with market (generally worst)',
+        'Professional default when limit misses: cancel and let the setup pass — never chase',
+        'Every chased entry reduces average R:R on the strategy — partial fills are preferable to chasing',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'scaling-positions': {
+    'lesson-1': {
+      intro_text: 'Scaling into a winning position — adding to a trade that is moving in your favour — is one of the most powerful position management tools available. But it is also one of the most misunderstood. The key distinction: scaling into a WINNER (adding after the trade moves in your favour) is a valid professional technique. Averaging DOWN into a loser (adding to a losing position hoping for a recovery) is the single most common cause of catastrophic account losses.\n\nThe case for scaling into winners: (1) When the market confirms your thesis by moving in the direction you predicted, adding to the position increases your exposure precisely when evidence is on your side. (2) Scaling improves average position entry only when done at better prices — i.e., when the market is moving with you. (3) The combined position has a higher R on the initial risk, since the added units were entered with a tighter stop (moved to break-even on the initial position).\n\nThe prerequisite: before adding to any position, the initial position\'s stop MUST be moved to break-even or better. This ensures that the new add-on is fully independent — if the market reverses, the initial position cannot lose more than zero, and only the add-on is at risk.',
+      key_points: [
+        'Scale into WINNERS only — adding to a position that is already moving in your favour',
+        'Never average down into a loser — this is the most common cause of account-destroying losses',
+        'Prerequisite before scaling: move the initial stop to break-even — protect the original entry',
+        'Scaling into a winner increases exposure when the market is confirming your thesis',
+        'The add-on entry has its own defined risk — it is not "free" just because the initial position is at break-even',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Building a position across multiple entries — scaling in — requires a predefined plan for how, when, and at what prices you will add units. Without this plan, scaling becomes discretionary gambling rather than a structured execution approach.\n\nThe pyramid approach: the initial entry is the largest size; each subsequent add is smaller. This is the most conservative scaling method. Example: 50% of planned position at entry, 30% at first pullback to support within the trend, 20% at the next support confirmation. The largest unit enters when conviction is lowest (before confirmation); subsequent units confirm with higher conviction but at progressively worse prices.\n\nThe inverse pyramid approach: small initial entry, add as price confirms. Example: 25% initial, 50% on first pullback, 25% final add. This produces a better average price for most of the position, but means the majority of exposure enters AFTER the move has started. The tradeoff: better average price vs delayed commitment. The preferred method depends on how confident you are in the entry and how large the subsequent moves typically are relative to the initial pullback.',
+      key_points: [
+        'Scale-in requires a PREDEFINED plan: how many adds, at what prices, with what sizes',
+        'Pyramid (decreasing): largest position first, smaller adds as price confirms — most conservative',
+        'Inverse pyramid (increasing): small initial, larger adds on confirmation — better average price',
+        'Each add-on entry must have its own defined stop at a technical level, not at break-even only',
+        'Total planned position size must stay within your maximum risk parameters for the full combined position',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Taking partial profits — exiting a portion of a position before the full target — is a powerful psychological and financial tool. It converts a full-risk trade into a risk-free runner, reduces the emotional pressure of watching an open profit fluctuate, and ensures that some of the gain is locked in regardless of whether the final target is reached.\n\nThe mechanics: when the trade has reached a predefined milestone (e.g., 50% of the planned target distance, or 1R of profit), close a portion of the position (e.g., 50%) and move the remaining stop to break-even. The remaining 50% is now a "free" trade — it can only add to your profit; it cannot produce a loss. This trade management approach allows you to run winners without risking giving back the entire gain.\n\nThe trade-off: by exiting early with part of the position, you reduce your potential gain on trades that go all the way to target. A trade with 2R target where you take half off at 1R produces an average of 1.5R per full lot instead of 2R. Over a large sample, partial profit taking typically reduces peak expectancy slightly in exchange for higher consistency and lower average winning trade volatility. For most traders, the psychological benefit of locked gains outweighs the small statistical cost.',
+      key_points: [
+        'Partial profits: exit a portion of the position at a milestone, move stop to break-even on remainder',
+        'Creates a "risk-free runner" — the remaining position can only add to profit, not create a loss',
+        'Common milestone: 1R profit reached → take 50% off, move stop to break-even on 50% remaining',
+        'Trade-off: slightly lower expectancy on big movers vs higher consistency and locked-in gains',
+        'Psychological benefit: removes fear of giving back profit — enables holding runners without panic',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'A trailing stop is a stop loss that moves in the direction of profit as the trade progresses — locking in gains while still allowing the trade room to run further. Unlike a fixed stop, which sits at the same price until the trade is closed, a trailing stop follows price upward (for longs) or downward (for shorts), creating a dynamic exit that balances profit capture with continued participation.\n\nThe three primary trailing methods: (1) Fixed ATR trail — move the stop to 2× ATR below the current highest close. This adapts to current volatility. (2) Structure trail — move the stop below each successive higher swing low (for a long). This keeps the stop at a technically meaningful level rather than an arbitrary distance. (3) Moving average trail — use a fast moving average (e.g., 20 EMA) as the stop; close if the daily candle closes below it. This works well for large trending moves.\n\nThe psychology of trailing: most traders move their stops too quickly in the first phase of a trade and too slowly in the last phase. The correct behaviour is the opposite — give the trade more room in the early phase (when the trend needs space to establish) and trail more aggressively near target (when you have substantial profit to protect). The best trailing method is the one you can actually follow without discretionary overrides when the trade is moving against you.',
+      key_points: [
+        'Trailing stop: dynamic exit that follows price in the direction of profit, locking in gains',
+        'ATR trail: 2× ATR below highest close — volatility-adjusted, prevents tight trailing in choppy markets',
+        'Structure trail: below each successive higher swing low — technically meaningful, not arbitrary distance',
+        'MA trail: daily close below fast MA — works well for capturing large trending moves',
+        'Correct timing: give room in early phase, trail aggressively near target when large profit is at stake',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise makes the scaling and partial profit concepts concrete. With an open long position that has moved significantly in your favour, you will identify the specific price levels for partial profit taking, stop movement, and trailing — converting a paper gain into a structured exit plan.',
+      key_points: [
+        'First partial profit at 50–67% of target distance; stop moved to break-even at the same time',
+        'Second partial or full exit at the planned target; trailing stop protects any runner beyond target',
+        'Each exit level should align with a technical structure (resistance level, prior swing high)',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'GBPUSD',
       timeframe: 'H4',
       exercise_prompt: 'You entered long GBP/USD H4 at the marked entry level and price has moved 80 pips in your favour. Your original plan was a 120-pip target. Using the horizontal tool, draw your partial profit level — the price where you will take 50% of the position off (securing gains) and move your stop to break-even on the remaining 50%. This converts a full-risk trade into a risk-free runner.',
       reference_line: { x1: 20, y1: 42, x2: 100, y2: 42 },
       steps: [{ id: '1', label: 'Identify 50–80% of target distance', completed: false }, { id: '2', label: 'Draw your partial profit level', completed: false }, { id: '3', label: 'Review scaling logic', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'Averaging down — adding to a losing position in the hope of reducing your average entry price before a recovery — is the single most dangerous trade management error available to a retail trader. It is the mechanism behind virtually every account-blowing story: a trader enters a trade, it goes against them, they add more to "get their average down," it continues against them, they add again, and the position eventually becomes so large that even a small adverse move wipes the account.\n\nWhy averaging down feels logical: mathematically, if you hold 1 lot long at 1.3000 and the market drops to 1.2950, adding another lot gives you an average of 1.2975 — only 25 pips to break-even instead of 50. This calculation is accurate. What it ignores: the original trade was wrong. The market moved against the thesis. Adding capital into a confirmed losing position doubles your exposure to a market that has already demonstrated it does not agree with your view.\n\nThe correct alternative: if a setup remains valid at a lower price, close the original losing trade and re-enter fresh at the new level with your standard position size. This is structurally different from averaging down — you are starting a new trade at the better price with proper risk management, not adding to a hole. The key distinction: your stop on the new position is relative to the new entry, not the original entry. Average down — never. Re-enter at a better price on a fresh thesis — yes, with full discipline.',
+      key_points: [
+        'Averaging down: adding to a losing position — the most common cause of account-destroying drawdowns',
+        'The math feels logical; what it ignores: the original thesis was wrong, the market proved it',
+        'Doubling down doubles exposure to a move that is already going against you',
+        'Correct alternative: close the losing trade, re-enter fresh at the better price with standard size',
+        'The re-entry must have its own proper stop — not calculated from the original entry price',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
     },
   },
 
@@ -1459,7 +3136,57 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
   // ════════════════════════════════════════════════════════
 
   'session-edge': {
+    'lesson-1': {
+      intro_text: 'Not all hours of the trading day are created equal. The first 30–60 minutes of each major market session — London open, New York open, and to a lesser extent the Tokyo open — consistently produce the largest directional moves, the tightest spreads, and the clearest institutional order flow signals. These are the highest-edge windows of the trading day for retail traders who know how to use them.\n\nWhy the open is the highest-edge window: overnight, markets consolidate as institutional desks close their books. Pending orders from portfolio managers, hedge funds, and corporate hedgers accumulate. At the open, these orders flood the market simultaneously, creating directional pressure that is absent during the quieter mid-session hours. The orders are predictable in their mechanics: institutions need to transact at the open to execute on overnight decisions, rebalance positions, and respond to news that occurred while their primary market was closed.\n\nThe directional bias that establishes in the first 30 minutes of the London open frequently persists for several hours. Statistical studies of EUR/USD consistently show that the direction of the London open move (the first 30-minute candle versus the previous day\'s close) predicts the direction of the morning session correctly approximately 60–65% of the time — a meaningful edge if exploited with proper setup criteria.',
+      key_points: [
+        'Open windows (London, New York): highest institutional volume, tightest spreads, strongest directional moves',
+        'Overnight orders accumulate and execute simultaneously at the open — creating predictable institutional pressure',
+        'London open first 30-minute direction predicts morning session direction ~60–65% of the time',
+        'Session edges exist because institutions must transact at predictable times — not because of retail behaviour',
+        'Mid-session hours (after the first 2 hours): volume drops, price chops — lower edge for retail traders',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The London open (08:00 GMT) is the most important session transition in global forex markets. London is the world\'s largest forex trading centre, handling approximately 38% of all daily forex volume. When London opens, European institutional volume surges and the Asian session\'s thin, often-choppy market transforms into a directional, high-conviction market.\n\nThe key structural pattern at the London open: during the Asian session (midnight–07:00 GMT), major pairs like EUR/USD, GBP/USD, and EUR/GBP typically consolidate in a relatively tight range as Asian banks and institutional desks do limited cross-currency business. This range — the "Asian range" or "Asian box" — then becomes the reference point for the London open breakout. A sustained break above the Asian range high signals institutional buying has begun; a break below the Asian range low signals institutional selling.\n\nCommon London open patterns: (1) Asian range breakout — clean directional move through one side of the Asian box within the first 30 minutes. The most reliable and most tradeable. (2) Stop hunt then reverse — a quick spike through one side of the Asian box (hunting retail stops), followed by a sharp reversal in the opposite direction. This is the false breakout trap. (3) Gap and go — particularly common on Mondays when the weekly open gaps through the Asian range. Being able to distinguish these three patterns determines whether you trade the first move or wait for the second.',
+      key_points: [
+        'London handles ~38% of global forex volume — the most important session transition in forex',
+        'Asian session produces the consolidation range (Asian box) that London breakouts reference',
+        'Asian range breakout (08:00–08:30 GMT): clean move through one side = institutional directional flow',
+        'False breakout pattern: spike through one side then reversal — stop hunt before real direction',
+        'Pattern identification in the first 30 minutes determines whether you trade the first or second move',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The New York session open (13:00–13:30 GMT) coincides with the last 4 hours of the London session, creating the London-New York overlap — the highest-liquidity 4-hour window of the entire trading week. During this overlap, both European and North American institutional desks are simultaneously active, producing the tightest spreads and the most significant intraday moves.\n\nThe New York open\'s unique characteristic: it often reacts to US economic data released at 13:30 GMT (NFP, CPI, FOMC, jobless claims). This means the New York open frequently involves a news-driven directional move followed by a technical consolidation. The pattern: sharp news spike → 15–30 minute choppy consolidation → clean directional breakout as the market digests the data. Trading the immediate news spike is high-risk; trading the post-consolidation directional move is the lower-risk, higher-probability approach.\n\nWeekly close dynamics (21:00–22:00 GMT Friday): institutional portfolio managers rebalance positions at week\'s end to hit their benchmark weightings. This creates predictable rebalancing flows that often reverse or consolidate the week\'s moves in the final hour. Significant month-end rebalancing flows (last Friday of each month) can produce large, fast moves unrelated to technical setups — position management around these periods requires specific awareness.',
+      key_points: [
+        'London-NY overlap (13:00–17:00 GMT): highest liquidity window of the week — tightest spreads',
+        'New York open often involves 13:30 GMT US data release → news spike → consolidation → directional move',
+        'Trade the post-consolidation breakout, not the immediate news spike — lower risk, higher probability',
+        'Weekly close (21:00–22:00 GMT Friday): institutional rebalancing creates unpredictable flows',
+        'Month-end Friday: significant rebalancing — position management required, not just setup identification',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'While session opens provide the primary edge windows, institutional end-of-day and weekly close flows provide secondary opportunities with different characteristics. Understanding these flows helps you manage existing positions through potentially disruptive periods and occasionally identify new setups.\n\nEnd-of-day rebalancing (16:00–17:00 GMT): when the London session closes, European institutional desks close their daily books and rebalance currency exposures. If European equities performed strongly and need to be hedged with currency sales, this produces predictable EUR selling. If a US-based fund needs to convert USD profits back to base currency, this produces predictable USD selling at the New York close. These flows are sometimes predictable from equity market performance during the day.\n\nWeekly close and the Sunday open gap: significant news or events that occur between Friday\'s close (22:00 GMT) and Sunday\'s open (22:00 GMT) can produce gaps at the Monday open. These gaps tend to fill more frequently than they extend — approximately 70% of forex gaps at the Sunday open fill within the first trading day. This creates a specific strategy: identify the Friday close price, note the Sunday open gap, and trade the gap fill with a defined stop beyond the gap extension level.',
+      key_points: [
+        'End-of-day flows (16:00–17:00 GMT): European desk book-closing creates predictable currency rebalancing',
+        'Equity market performance during the day can predict end-of-day currency flows (fund hedging)',
+        'Sunday open gaps: ~70% of forex gaps fill within Monday — gap fill trades have statistical backing',
+        'Gap fill strategy: price of Friday close → measure gap → trade reversion to Friday close with defined stop',
+        'Never ignore end-of-day position management — rebalancing flows can spike through your stop rapidly',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise applies the London open breakout concept to a real chart. The Asian range is identified, and the breakout trigger must be drawn at the level where institutional buying begins — the high of the pre-London consolidation range. The first candle that closes above this level on expanding volume is the entry signal.',
+      key_points: [
+        'Asian range high: the resistance level built during the overnight session — the breakout trigger',
+        'Breakout entry: a CLOSING candle above the high, not just a wick — close confirmation required',
+        'Stop placement: inside the Asian range (below the high), not below the entire range',
+      ],
       activity_type: 'draw_horizontal',
       ticker: 'GBPUSD',
       timeframe: 'M15',
@@ -1467,10 +3194,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       reference_line: { x1: 0, y1: 38, x2: 100, y2: 38 },
       steps: [{ id: '1', label: 'Identify the pre-London range', completed: false }, { id: '2', label: 'Draw the range high breakout trigger', completed: false }, { id: '3', label: 'Review placement', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Knowing when NOT to trade the open is as important as knowing how to trade it. The London open breakout strategy fails in specific, recognisable conditions — and trading in those conditions is the primary source of losses for open-focused strategies.\n\nThe three false open conditions: (1) Major economic data scheduled within 30 minutes of the open. If US CPI is due at 09:30 GMT (60 minutes after the London open), the "breakout" in the first 30 minutes may simply be pre-data positioning that will reverse on the release. (2) Very narrow Asian range (less than 15–20% of average daily range). An unusually tight Asian range means there is no clear institutional conviction, and the breakout is more likely to be indecisive and choppy. (3) Immediate reversal within the first 15 minutes. If the first breakout candle is immediately followed by a full retracement back into the Asian range, the breakout was a false move. The correct response is to stand aside — not to trade the reversal back into the range.\n\nThe psychological challenge: the London open is an exciting, high-energy moment with fast-moving prices. The urge to take every setup is strong. The edge comes from selectivity — trading the clear, clean breakouts and standing aside from the ambiguous ones.',
+      key_points: [
+        'Do NOT trade London open breakout if: major data is due within 60 minutes, or Asian range is unusually narrow',
+        'Immediate reversal after breakout (within 15 min) = false open — stand aside, do not trade the reversal',
+        'Edge comes from selectivity: clear breakouts traded, ambiguous setups skipped',
+        'Narrow Asian range (<15% of ADR): insufficient overnight conviction, more likely choppy mid-session',
+        'Pre-data positioning during the first 30 minutes before a release is not an institutional breakout signal',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'advanced-dynamic-risk': {
+    'lesson-1': {
+      intro_text: 'Fixed-percentage position sizing (always risk 1% per trade) is the correct starting framework for every trader, but it treats all market conditions identically — the same risk on a tight 10-pip stop in low volatility as on a wide 100-pip stop in high volatility. This creates inconsistent risk exposure: tight stops in low volatility get hit more frequently, while wide stops in high volatility take very large positions to achieve the target R-value.\n\nATR-based position sizing solves this by making the stop width a function of current market volatility rather than a fixed pip value. The Average True Range (ATR) measures average candle range over the past N periods (typically 14). When ATR is low (quiet markets), stops are narrower; when ATR is high (volatile markets), stops are wider. By fixing your risk as a percentage of account and dividing by the ATR-based stop, your position size automatically contracts in volatile markets (where you need wider stops) and expands in quiet markets (where stops can be tighter).\n\nThe formula: Stop pips = 1.5–2.0 × ATR. Position size = (Account × Risk%) ÷ (Stop pips × Pip value per lot). This keeps your R-value per trade constant in monetary terms regardless of whether the market is calm or volatile — you are always risking the same percentage of account, with the stop and lot size co-varying to maintain this.',
+      key_points: [
+        'Fixed-pip stops create inconsistent risk: tight stops in low volatility, proportionally loose in high',
+        'ATR-based stops: set stop width = 1.5–2.0× current ATR — adapts to current market volatility',
+        'ATR-based position size = (Account × Risk%) ÷ (ATR-stop pips × pip value per lot)',
+        'Volatile market → wider ATR stop → smaller position size → same monetary R-value',
+        'This achieves constant percentage risk regardless of whether you are in high or low volatility',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Not all trading setups have equal probability of success. A textbook-quality setup at a major weekly support level, with confluence from the daily and H4 timeframes, a clean entry candle, and low-volatility pre-entry price action, has demonstrably higher historical success rates than a marginal setup at an unclear level in a choppy range. Quality-based sizing formalises this by allocating more capital to higher-quality setups.\n\nThe setup grading framework: assign each setup a grade (A, B, C) based on defined, objective criteria before entering. A-grade criteria: multiple timeframe confluence, clean technical level, clear entry trigger, trend alignment, low volatility pre-entry. B-grade: most criteria met, one element marginal (e.g., slightly unclear level or moderate volatility). C-grade: single timeframe only, marginal level, choppy pre-entry, or trend headwind.\n\nCorresponding risk allocation: A-grade = 1.5–2% account risk. B-grade = 1% (standard). C-grade = 0.5% or skip. This sizing approach means your largest positions are also your highest-conviction positions — when the market moves in your favour on an A-grade setup, the larger position captures more profit than a standard-size position would. Over a large sample, this improves CAGR without increasing maximum drawdown, because the extra risk is only taken when evidence is strongest.',
+      key_points: [
+        'Quality-based sizing: allocate more risk capital to higher-probability, higher-conviction setups',
+        'A-grade setup (multiple confluence, clean level, trend alignment) = 1.5–2% risk',
+        'B-grade (most criteria met) = 1% standard risk',
+        'C-grade (marginal setup) = 0.5% or skip',
+        'Grading must be done BEFORE entering — not after the trade moves against you',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The drawdown death spiral is the catastrophic failure pattern that destroys accounts with profitable strategies. It begins with a normal losing streak (which all strategies experience) and escalates through a specific psychological and financial mechanism: as losses accumulate, the trader increases risk to recover faster, which produces larger losses, which increases the emotional pressure to recover faster, which leads to further risk increases.\n\nThe mathematics: starting from a 20% drawdown at 1% risk per trade, it takes approximately 22 consecutive winning trades at 1R to recover. This is psychologically brutal but mathematically survivable. If the trader doubles position size to 2% in an attempt to recover faster and then hits 5 more consecutive losses before any winners, the drawdown reaches 30% — now requiring a 43% gain to recover. Each increase in risk makes recovery mathematically harder and psychologically more desperate.\n\nBreaking out of the death spiral requires counter-intuitive behaviour: reduce risk when you are in a drawdown, not increase it. When you are down 10–15%, cut your standard risk to 50%. When you are down more than 20%, cut to 25% or less. This feels wrong — you want to recover faster — but it is the only mathematically sound approach. Smaller positions in a losing streak limit the maximum depth of the drawdown. When wins eventually come (as they statistically must if the strategy has genuine edge), they gradually rebuild the account without the risk of a catastrophic blow-up from an overleveraged position.',
+      key_points: [
+        'Drawdown death spiral: losses → increase size to recover → more losses → more size → blow-up',
+        'Recovery maths: 20% DD at 1% risk needs ~22 consecutive winners — painful but survivable',
+        'Doubling size in a DD: if it continues to lose, pushes DD to catastrophic levels much faster',
+        'Counter-intuitive rule: reduce risk WHEN in a drawdown, not increase it',
+        'Protocol: at 10% DD → reduce to 50% size; at 20% DD → reduce to 25% size or less',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'The half-Kelly floor is a specific, mathematically derived rule for the minimum position size reduction that should occur when a strategy enters a drawdown. It is grounded in Kelly Criterion mathematics and provides a systematic, non-emotional framework for reducing exposure during losing periods.\n\nThe principle: the Kelly Criterion calculates the theoretically optimal bet size to maximise long-term growth. When you are in a drawdown, the observed win rate over your recent sample may be below your long-term average — either because of genuine deterioration in market conditions for your strategy, or simply because of normal variance. In either case, reducing to half-Kelly (50% of the calculated optimal position size) is the mathematically correct response to uncertainty about whether recent underperformance reflects a temporary variance or a genuine degradation of edge.\n\nPractical implementation: define your drawdown thresholds in advance. A common framework: 0–5% drawdown = full size. 5–10% drawdown = 75% of full size. 10–15% drawdown = 50% of full size (half-Kelly). Beyond 15% = 25% of full size. Critically: the reduction thresholds must be triggered by TOTAL drawdown from peak, not by recent trade count. Defining these rules before entering a drawdown period ensures you follow them without emotional override — because in a drawdown, the emotion is to increase size, not reduce it.',
+      key_points: [
+        'Half-Kelly floor: reduce to 50% of calculated Kelly position size when in a significant drawdown',
+        'Mathematical basis: uncertainty about whether underperformance is variance or genuine edge degradation',
+        'Framework: 0–5% DD = full; 5–10% = 75%; 10–15% = 50%; 15%+ = 25% of standard size',
+        'Thresholds triggered by TOTAL drawdown from peak — not recent trade count',
+        'Must be defined before entering a drawdown — emotional override is certain if done reactively',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This calculation exercise applies ATR-based position sizing in the context of a specific drawdown state. The formula is straightforward but the key concept is that risk percentage varies with drawdown depth — you do not always risk 1.5%. At the drawdown level shown, the appropriate risk is reduced accordingly, and the ATR-based stop determines the resulting lot size.',
+      key_points: [
+        'Max risk amount = account equity × current risk percentage (adjusted for drawdown state)',
+        'Risk per lot = stop pips × pip value per lot in account currency',
+        'Lot size = max risk ÷ risk per lot — always round down to avoid overexposure',
+      ],
       activity_type: 'calculation',
       problem: 'Account: £50,000. You want to risk 1.5% per trade. Your entry uses an ATR-based stop of 120 pips. Pip value for this instrument = £8 per pip per standard lot. What is the correct lot size?',
       correct_answer: '0.78',
@@ -1485,10 +3273,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       ],
       steps: [{ id: '1', label: 'Calculate max risk (£)', completed: false }, { id: '2', label: 'Calculate risk per lot', completed: false }, { id: '3', label: 'Calculate lot size', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Knowing the precise mathematics of your current drawdown and what is required to recover from it is not pessimism — it is essential navigational information. Traders who do not know their exact recovery requirement often either give up prematurely (underestimating how achievable recovery is) or increase risk recklessly (underestimating how much further they can fall).\n\nThe recovery formula: recovery required = (1 ÷ (1 − drawdown fraction)) − 1. A 10% drawdown requires 11.1% to recover. A 20% drawdown requires 25%. A 30% drawdown requires 42.9%. A 50% drawdown requires 100%. The key insight: recovery time is not proportional to drawdown depth — it compounds non-linearly.\n\nThe structured comeback plan: (1) Calculate exact recovery required from current drawdown. (2) Apply the reduced position size framework from lesson 4 (based on current drawdown depth). (3) Project how many winning trades at the reduced risk level, at your strategy\'s typical win rate and R:R, are required to reach the 10% and 5% drawdown thresholds — where you can begin scaling back up. (4) Trade the normal strategy with strict discipline at reduced size — no shortcuts, no increased risk. The plan is not to recover quickly; the plan is to not make the drawdown deeper while allowing positive expectancy to slowly accumulate.',
+      key_points: [
+        'Recovery formula: gain needed = 1/(1 − drawdown) − 1; 30% DD needs 42.9%, 50% needs 100%',
+        'Comeback plan: calculate recovery required → apply reduced sizing → project trade count to recovery',
+        'Do not try to recover quickly — the goal is to stop deepening the drawdown while positive expectancy accumulates',
+        'As drawdown reduces to 10%, step up to 50% size; at 5%, return to 75%; below 5%, full size',
+        'The comeback is a multi-week/month process — impatience is the enemy',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'systematic-strategy-design': {
+    'lesson-1': {
+      intro_text: 'A systematic trading strategy is one where every decision — what to buy or sell, when to enter, when to exit, and how much to risk — is governed by a precise, objective ruleset that produces the same answer every time given the same market data. The opposite is a discretionary strategy, where the trader\'s judgment determines the outcome. Both can be profitable; the key difference is that systematic strategies are testable.\n\nThe five required components of a complete systematic strategy: (1) Universe — which markets and instruments you trade. (2) Signal — the specific conditions that must be met to enter a trade. (3) Filter — regime or condition rules that suppress trading when the strategy is likely to underperform (e.g., "only trade when ADX is above 25"). (4) Execution rules — how to enter (market order, limit order, at what time relative to the signal). (5) Exit rules — both the stop-loss condition and the profit-taking or trailing condition. Missing any of these makes backtesting ambiguous and live execution inconsistent.\n\nWhy systematic design matters even for discretionary traders: the act of writing your discretionary rules explicitly forces you to confront undefined terms, implicit assumptions, and judgements that vary from day to day. Many "discretionary" traders are actually following a quasi-systematic approach that they have never fully articulated — systematising it reveals inconsistencies and improves both execution discipline and the ability to learn from the data.',
+      key_points: [
+        'Systematic strategy: objective ruleset where same data always produces same decision — fully testable',
+        'Five components required: universe, signal, filter, execution rules, and exit rules',
+        'Missing any component makes backtesting ambiguous and live execution inconsistent',
+        'Systematising a discretionary approach forces clarity on undefined terms and implicit judgements',
+        'The test: could you hand the rules to someone with zero trading knowledge and get identical trades?',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Universe selection — deciding which markets to trade — is the first and often most overlooked component of systematic strategy design. The choice of universe determines the opportunity set, the required infrastructure, the applicable strategies, and the risk characteristics of the portfolio.\n\nFiltering principles for universe selection: (1) Liquidity — can you trade the required position sizes without significant market impact? Highly liquid markets (major forex pairs, large-cap equities, front-month futures) allow institutional-size positions; illiquid markets limit scalability. (2) Volatility — does the market move enough to generate meaningful R-multiples after accounting for spread and commission costs? A market with a daily range of 5 pips cannot profitably support a 20-pip stop strategy. (3) Data quality — do you have clean, continuous historical data for backtesting? Gaps, holiday closures, and contract rollovers must be handled correctly. (4) Correlation — does this instrument add genuine diversification to the existing universe, or does it replicate exposure you already have?\n\nThe practical recommendation for retail systematic traders: start with 3–5 highly liquid instruments in markets you understand well. Breadth of universe is less important than depth of understanding. A strategy well-fitted to 5 instruments produces more reliable results than a strategy poorly fitted to 50.',
+      key_points: [
+        'Universe selection: which instruments to trade — determines opportunity set and risk characteristics',
+        'Liquidity filter: can you trade required sizes without market impact? Major pairs and large-cap equities pass',
+        'Volatility filter: does the market move enough relative to transaction costs to generate meaningful R-multiples?',
+        'Data quality: clean continuous data required for backtesting — gaps and roll adjustments must be handled',
+        'Start with 3–5 liquid, well-understood instruments; depth of understanding > breadth of coverage',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The hardest part of systematic strategy design is translating a discretionary insight into an objective, code-ready rule. Discretionary traders often have genuine edges — they recognise patterns, contexts, and dynamics that are real and repeatable. The challenge is making them explicit enough to test and execute consistently.\n\nThe translation process: start with a written description of what you look for. "I enter long when I see a bullish engulfing candle at support" — then ask: what defines "support"? (Previous swing low, a specific number of candles back, a percentage distance from recent highs.) What qualifies as "bullish engulfing"? (The close must be above the prior candle open, the body must engulf the prior body, or the candle range must be X% larger than the 14-period ATR?) Each undefined term is a decision that must be codified.\n\nThe test: write out your rules and apply them mechanically to 6 months of historical data, without looking ahead. If you find yourself making judgment calls that aren\'t in the rules — "this one doesn\'t count because the news came out that day" — you have found an implicit rule that needs to be made explicit. Only when you can apply the rules mechanically without any judgment calls is the signal ready to be tested.',
+      key_points: [
+        'Translation challenge: discretionary insights must become binary, objective conditions to be systematic',
+        'Every undefined term is a decision to be codified: what exactly qualifies as "support"? "Engulfing"?',
+        'Test for completeness: apply rules mechanically to historical data — no judgment calls allowed',
+        'If you make exceptions ("this one doesn\'t count"), you have an implicit rule to make explicit',
+        'Only when rules can be applied mechanically with zero judgment is the signal ready for backtesting',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Filters are conditions that must be met before a signal is valid. They are the systematic equivalent of a trader saying "this setup doesn\'t qualify in the current environment." The purpose of filters is to suppress trading in regimes where the strategy has no edge, thereby improving the overall win rate and reducing drawdowns.\n\nThe most common and effective filter types: (1) Trend/regime filter — only trade long signals when the weekly trend is bullish (price above 50-week MA), only trade short signals when bearish. This prevents counter-trend trades that have statistically poor performance for momentum strategies. (2) Volatility filter — skip signals when ATR is below a minimum threshold (market is too quiet to generate meaningful moves) or above a maximum (market is too chaotic for structured setups). (3) Time-of-day filter — only trade signals generated in specific sessions where historical performance is better. (4) News filter — skip signals within a defined window before or after high-impact economic data releases.\n\nFilter trade-offs: every filter reduces the number of signals. Fewer signals mean smaller sample sizes for backtesting and potentially lower absolute profit, even if per-trade expectancy improves. The correct approach: add filters only when statistical evidence supports them. A filter that removes 30% of signals but improves profit factor from 1.4 to 1.8 is worth keeping. A filter that removes 50% of signals for a 0.1 improvement in profit factor may not be worth the reduction in sample size.',
+      key_points: [
+        'Filters: additional conditions suppressing signals in regimes where the strategy has no edge',
+        'Trend filter: only trade long when higher timeframe is bullish — most impactful single filter for most strategies',
+        'Volatility filter: ATR range band to exclude both too-quiet and too-chaotic conditions',
+        'Add filters only when statistical evidence supports them — each filter reduces sample size',
+        'Filter value test: does it materially improve profit factor? A 30% signal reduction for 0.4 PF improvement = worth it',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This canvas exercise makes the systematic signal translation concrete. You will take a specific discretionary setup — a pullback to the 20 EMA — and turn it into an objective, countable ruleset. By marking every triggered entry across a 12-month historical period, you will experience the gap between how the setup "looks" in theory versus how often it actually triggers and what the success rate is.',
+      key_points: [
+        'Marking every triggered entry (not just clean-looking ones) is the discipline of systematic signal testing',
+        'The count of triggers per year informs position sizing expectations for live trading',
+        'Win rate alone is insufficient — you must note the R-value of each winner and loser',
+      ],
       activity_type: 'multi_choice',
       question: 'Which statement best describes the difference between a systematic signal and a discretionary one?',
       options: [
@@ -1501,10 +3350,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'The defining characteristic of a systematic signal is objective reproducibility: two traders applying the exact same rules to the same data will make the same trading decision. This is what enables backtesting, forward testing, and statistical validation. Discretionary judgment introduces subjectivity that prevents reliable historical testing and makes it impossible to know whether positive results came from edge or luck.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'A systematic strategy\'s execution rules specify exactly how a signal is converted into an order: what order type to use, what price to target, how to handle non-fills, and what to do when price has moved significantly from the signal level by the time you can act. Poor execution rules undermine strategies that look excellent in backtesting.\n\nThe key execution decisions: (1) Order type at entry — market order (guaranteed fill, costs spread) vs limit order (better price, risk of non-fill). Most intraday strategies on liquid markets use market orders; position trades on daily charts often use limit orders with end-of-day adjustments. (2) What to do if the limit doesn\'t fill — cancel on the next candle open, or let it run until the close? The rule must be explicit. (3) Entry timing — "on signal candle close" is the most common and safest (avoids look-ahead bias). "On next candle open" minimises delay but adds a small amount of look-ahead risk. (4) Slippage estimate — backtests assume perfect fills at the signal price. Live trading always involves slippage. Add a conservative slippage estimate (1–3 pips for major forex) to all backtest costs to produce a realistic performance estimate.',
+      key_points: [
+        'Execution rules specify order type, price target, non-fill handling, and slippage estimates',
+        'Market orders: guaranteed fill at spread cost; limit orders: better price but may not fill',
+        'Entry timing: "on signal candle close" is cleanest and avoids look-ahead bias',
+        'Backtest always with realistic slippage estimate — real performance will be worse than perfect-fill simulations',
+        'Non-fill rules must be explicit: cancel immediately, or run until end of session?',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-7': {
+      intro_text: 'Exit logic — when and how to leave a trade — is the component most underestimated in systematic strategy design. Many traders spend 90% of their design time on entry signals and treat exits as an afterthought. Yet in expectancy terms, exit quality often matters more than entry quality, because the exit determines what fraction of potential profit is captured and how often a winner becomes a loser.\n\nThe exit design question: should your strategy use fixed targets, trailing stops, or time-based exits? Fixed targets produce consistent R:R per trade and are easy to backtest but cap the upside on large moves. Trailing stops capture large moves but produce more whipsaws in choppy conditions, converting potential winners into small losses. Time-based exits close the position after N candles regardless of outcome — useful when setups degrade with age and position holding increases overnight/weekend risk.\n\nThe most important and most neglected exit rule: the failed-trade exit. Many strategies have explicit entry rules and explicit profit targets, but no explicit rule for "this trade is wrong." The result: losing trades are held too long while the trader waits for the setup to "come back." The correct systematic approach: define the maximum adverse excursion (MAE) threshold — the maximum distance the trade can move against entry before being closed. Backtesting this metric reveals the optimal early exit that reduces losses without prematurely closing trades that are temporarily unfavourable before recovering.',
+      key_points: [
+        'Exit logic matters as much as entry logic — exit determines what fraction of edge is captured',
+        'Fixed target: consistent R:R, caps upside; trailing stop: captures big moves, more whipsaws',
+        'Time-based exit: close after N candles — useful when setups degrade with age',
+        'Most neglected: the failed-trade exit rule — without it, losses drift and erode expectancy',
+        'MAE (Maximum Adverse Excursion) analysis reveals the optimal early exit threshold',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'data-analysis-for-traders': {
+    'lesson-1': {
+      intro_text: 'A trade analysis spreadsheet is the foundation of evidence-based improvement. Without structured data on your own performance, you cannot distinguish lucky runs from genuine edge, identify which setups are profitable, or measure whether changes to your approach are actually helping. Every professional trader maintains a detailed trade log — this lesson shows you how to build one from scratch.\n\nThe minimum required columns: Date, Instrument, Direction (long/short), Entry price, Stop price, Target price, Exit price, R value (outcome in R-multiples: (exit − entry) ÷ (entry − stop) for longs), Setup type, Session (London/NY/Asia), Timeframe of signal, Pre-entry notes (brief description of the setup), Post-exit notes (what happened, any mistakes).\n\nSetup type is the most valuable column after R value: it allows you to filter by setup type and calculate expectancy separately for each type of trade. This reveals which setups are profitable and which are destroying your overall expectancy — information that is completely invisible if you only track your overall win rate and average R.',
+      key_points: [
+        'Trade log: the essential tool for evidence-based improvement — without data, you cannot identify edge',
+        'Minimum columns: date, instrument, direction, entry/stop/target/exit prices, R value, setup type',
+        'Setup type column: allows filtering by category to identify which setups are profitable',
+        'R value = (exit − entry) ÷ (entry − stop) for longs — normalises across different instruments and sizes',
+        'Without a log, any run of profits could be luck — you have no way to distinguish skill from variance',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'A small number of statistics derived from your trade log reveal almost everything important about your strategy\'s performance. These eight metrics provide a complete picture that goes far beyond "how much money did I make."\n\n(1) Win rate: percentage of trades that are profitable. (2) Average win R: mean R-value of winning trades. (3) Average loss R: mean R-value of losing trades (should be close to -1.0 if stop losses are respected). (4) Expectancy: (win rate × avg win R) + (loss rate × avg loss R) — must be positive for a profitable strategy. (5) Profit factor: gross profit ÷ gross loss — above 1.5 is solid. (6) Maximum drawdown: largest peak-to-trough equity decline. (7) CAGR: compound annual growth rate — the real annualised return. (8) CAGR ÷ Max DD ratio: return per unit of pain — the most useful composite metric.\n\nThe surprise metric for most traders: average loss R. Many traders believe their average loss is -1.0 because they always place their stop 1R from entry. In reality, most traders exit early when a trade feels "wrong," producing average losses of -0.7R — or worse, they add to losing positions, producing average losses of -2.5R. The data tells the truth about behaviours the trader has rationalised away.',
+      key_points: [
+        'Eight essential metrics: win rate, avg win R, avg loss R, expectancy, profit factor, max DD, CAGR, CAGR/DD',
+        'Expectancy = (win rate × avg win) + (loss rate × avg loss) — the fundamental test of a profitable strategy',
+        'Profit Factor = gross profit ÷ gross loss; above 1.5 solid, above 2.0 strong',
+        'Avg loss R reveals whether stops are actually being respected — most traders are surprised by this number',
+        'CAGR ÷ Max DD: single most useful composite metric for comparing strategies objectively',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Numerical statistics summarise performance but hide its shape and texture. Visualising your trade data reveals patterns that tables of numbers cannot: the timing of drawdowns, the distribution of outcomes, whether the strategy improves or degrades over time, and the relationship between entry quality and trade outcome.\n\nThe equity curve is the single most diagnostic chart. Plot your cumulative R-value (y-axis) against trade number (x-axis). A healthy equity curve rises relatively smoothly with shallow drawdowns. A problematic equity curve shows long flat periods or deep V-shaped drawdowns — both of which signal specific problems. Flat periods mean you are booking small winners but avoiding large ones (too-tight trailing stops). Deep V-drawdowns mean your losses cluster in specific conditions.\n\nMAE/MFE (Maximum Adverse Excursion / Maximum Favourable Excursion) analysis is the most underused but most powerful visualisation. For each trade, MAE is how far price moved against you before the eventual outcome; MFE is how far price moved in your favour before the eventual outcome. Plotting all trades as dots on an MAE vs MFE scatter chart reveals: (1) how wide your stops need to be to avoid premature exits on eventual winners, (2) whether your profit targets are placed appropriately relative to typical MFE, and (3) whether early exits on "feeling wrong" are closing trades that would have recovered.',
+      key_points: [
+        'Equity curve: cumulative R vs trade number — most diagnostic visualisation of strategy health',
+        'Flat periods: booking small wins, not capturing large moves (trailing stops too tight)',
+        'Deep V-drawdowns: losses clustering in specific conditions — investigate what connects those sessions',
+        'MAE: how far against you before the trade resolved — determines optimal stop placement',
+        'MFE: how far in your favour before the trade resolved — determines optimal target placement',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-4': {
+      intro_text: 'This exercise applies setup-type filtering to reveal which subsets of your trading are actually driving performance. In almost every trader\'s data, a minority of setup types generate all the profit while other setup types destroy expectancy. The ability to identify and eliminate negative-expectancy subsets is often the single largest performance improvement available without changing the underlying strategy.',
+      key_points: [
+        'Filter your trade log by setup type to calculate separate expectancy for each category',
+        'Typically, 1–2 setup types drive all profit while others are neutral or negative',
+        'Eliminating a −0.3R average setup type can improve overall expectancy significantly',
+      ],
       activity_type: 'multi_choice',
       question: 'Your trade log analysis shows: breakout setups average +1.8R per trade, while reversal setups average −0.3R per trade over 80 trades. What should you do with this information?',
       options: [
@@ -1517,10 +3427,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'R-expectancy per setup type is the clearest metric in a trade log — it combines win rate and reward-risk into a single number. A setup averaging +1.8R is highly profitable; a setup averaging −0.3R is actively losing money. At 80 trades, a difference of +2.1R between setup types is statistically significant. Removing negative-expectancy setups and concentrating on positive-expectancy ones is the most direct way to improve performance.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-5': {
+      intro_text: 'The final lesson in data analysis takes the most uncomfortable skill in trading: saying no to setups you used to take. Your data has identified which setups are unprofitable. The challenge is that those setups still "look right" when they appear on the chart — pattern recognition does not automatically update when you discover a setup is unprofitable.\n\nThe practical removal process: (1) Write an explicit exclusion rule for the unprofitable subset. Not "try to take fewer reversals" — an explicit objective definition of what qualifies as a reversal, with the rule that it is categorically excluded from your trading. (2) Run the modified rule set on your historical data and calculate the improvement. If removing reversal setups improves expectancy from +0.5R to +1.2R per trade, you have quantified the improvement before implementing it live. (3) In the first 30 days after removal, review every setup you chose not to take — did your rule correctly identify the ones to skip? Adjust the exclusion definition if needed.\n\nThe psychology: "what if I miss a great reversal trade?" is a real cost. But the data shows that on average, taking reversal setups costs you -0.3R per attempt. The few exceptional reversal trades you miss will cost less in foregone profit than the ongoing -0.3R average across all the bad reversal trades you are no longer taking.',
+      key_points: [
+        'Removal process: write an explicit exclusion rule — not "try to take fewer," but categorical objective criteria',
+        'Quantify the improvement by running the modified ruleset on historical data before implementing live',
+        'Review passed-over setups in the first 30 days to verify the exclusion rule is working correctly',
+        'The "what if I miss a great one" fear is less costly than the ongoing average loss per excluded setup type',
+        'Data discipline: let the numbers override pattern recognition when they conflict',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'walk-forward-robustness': {
+    'lesson-1': {
+      intro_text: 'Every backtested strategy looks good on the data it was developed on. This is not a bug — it is a mathematical guarantee. When you optimise parameters on a dataset, you find the parameters that best fit that specific dataset, which always produces better-than-random results. The critical question is whether the strategy retains its edge on data it was not developed on.\n\nThe overfitting problem: overfitting occurs when a strategy has "learned" the specific characteristics of the historical data rather than a genuine market inefficiency. An overfit strategy has too many parameters, too specifically tuned values, and too-narrow filters that prevent it from adapting to even slight variations in market behaviour. It performs spectacularly in-sample and fails out-of-sample.\n\nWhy in-sample optimisation lies: if you have 5 years of data and run 1,000 different parameter combinations, the best-performing combination will show excellent results — not because it has found genuine edge, but because with 1,000 attempts at any dataset, some combination will fit the historical noise well. This is the multiple testing problem. Every additional parameter or filter dramatically increases the number of combinations tested, making genuinely good in-sample results increasingly meaningless as evidence of future edge.',
+      key_points: [
+        'In-sample optimisation always produces good results — mathematically guaranteed, not evidence of edge',
+        'Overfitting: too many parameters too specifically tuned — learns historical noise, not genuine market inefficiency',
+        'Multiple testing problem: 1,000 tested combinations will produce one that "works" by chance alone',
+        'Every additional parameter multiplies the combination space and the overfitting risk',
+        'Evidence of edge must come from data the strategy was NOT optimised on — out-of-sample only',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Walk-forward testing is the systematic methodology for validating a strategy\'s robustness across time. It simulates the real-world experience of periodically re-optimising a strategy and trading it on new, unseen data — repeated across multiple historical windows to produce an aggregated out-of-sample performance estimate.\n\nThe step-by-step methodology: (1) Divide your total historical data into sequential windows. A common setup: 18-month in-sample windows with 6-month out-of-sample periods. (2) On the first in-sample window (months 1–18), optimise your strategy parameters and record the optimal values. (3) Apply those exact optimised parameters to the following 6-month out-of-sample period without any changes. Record the out-of-sample performance. (4) Slide the window forward by 6 months: in-sample is now months 7–24, out-of-sample is months 25–30. Re-optimise and re-test. (5) Repeat until you have used all available data. (6) Aggregate all out-of-sample results into a single performance track record — this is the most honest estimate of live trading performance available from historical data.',
+      key_points: [
+        'Walk-forward: repeatedly optimise on in-sample window → test on following out-of-sample → slide forward',
+        'Common setup: 18-month in-sample, 6-month out-of-sample — repeat across full dataset',
+        'Aggregated out-of-sample performance = most honest estimate of live trading performance from history',
+        'Slide the window by the out-of-sample period size (6 months) to produce multiple independent tests',
+        'Walk-forward cannot be gamed: no out-of-sample data was ever seen during optimisation',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The Walk-Forward Efficiency Ratio (WFER) is the primary metric for assessing whether a walk-forward test demonstrates genuine robustness or marginal, luck-driven edge.\n\nWFER formula: WFER = (Aggregated out-of-sample profit factor) ÷ (Average in-sample profit factor). It answers the question: "What fraction of the in-sample performance actually carries through to out-of-sample?" A WFER of 1.0 would mean perfect transfer — the strategy performs identically in and out of sample (extremely rare). A WFER of 0.6–0.8 is good: the strategy retains 60–80% of its in-sample edge out-of-sample. A WFER below 0.4 suggests significant overfitting — less than 40% of the in-sample performance is genuine.\n\nInterpreting the results alongside absolute performance: a WFER of 0.70 with an in-sample profit factor of 2.5 produces an estimated live profit factor of 1.75 — highly tradeable. A WFER of 0.70 with an in-sample profit factor of 1.4 produces an estimated live profit factor of 0.98 — barely above breakeven after slippage and commission. Both have the same WFER but very different practical implications.',
+      key_points: [
+        'WFER = out-of-sample profit factor ÷ in-sample profit factor; measures % of edge retained live',
+        'WFER 0.6–0.8: solid robustness — 60–80% of in-sample edge transfers to out-of-sample',
+        'WFER below 0.4: significant overfitting — strategy learned historical noise',
+        'Combine WFER with absolute in-sample performance: WFER × in-sample PF = estimated live PF',
+        'A WFER of 0.7 × in-sample PF of 2.5 = estimated live PF of 1.75 — genuinely tradeable',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Walk-forward testing requires a choice between two window structures: rolling windows (where both the in-sample start and end move forward) and anchor windows (where the in-sample start is fixed and only the end moves forward). Each has implications for how the test models real-world behaviour.\n\nRolling windows: both boundaries of the in-sample period slide forward with each iteration. The in-sample always uses the most recent N months of data. This models a strategy that is periodically re-optimised using only recent data, with older data discarded. Best for strategies that may need to adapt to evolving market conditions (e.g., volatility regimes change, correlations shift). The risk: if the in-sample window is too short, early iterations have little data for reliable optimisation.\n\nAnchor windows: the in-sample start is fixed at the beginning of the dataset; only the end date moves forward with each iteration. Every iteration uses more historical data than the previous one. This models a strategy where all available history is used for optimisation — appropriate when more data is always better (e.g., slow mean-reversion strategies with stable long-term statistical properties). The risk: very old data from different market regimes may distort optimisation if market structure has fundamentally changed.',
+      key_points: [
+        'Rolling window: in-sample period slides forward, discards old data — models periodic re-optimisation on recent history',
+        'Anchor window: in-sample start fixed, end slides forward — uses all available history each iteration',
+        'Rolling best for: strategies that adapt to changing regimes, recent data more relevant than old',
+        'Anchor best for: strategies with stable long-term statistical properties (mean reversion, carry)',
+        'Rolling risk: short windows → insufficient data for reliable early-iteration optimisation',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This canvas exercise makes the walk-forward concept visual. By plotting the optimal parameter value for each in-sample window, you can see whether the parameter is stable (similar optimal values across windows — robust) or unstable (wildly varying optimal values — overfit). Stability of optimal parameters across time is the visual signature of a genuinely robust strategy.',
+      key_points: [
+        'Stable optimal parameters across windows: the strategy is finding the same pattern in each period',
+        'Wildly varying optimal parameters: the strategy is fitting each window\'s unique noise — not robust',
+        'Parameter stability is the visual equivalent of a high WFER',
+      ],
       activity_type: 'multi_choice',
       question: 'What is the fundamental purpose of walk-forward testing compared to static backtesting?',
       options: [
@@ -1533,10 +3504,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Static backtesting optimises parameters on historical data and reports results on the same data used to optimise — guaranteeing a good-looking result that may not generalise. Walk-forward testing separates the data used for optimisation from the data used for evaluation, repeatedly rolling the window forward. If the strategy retains edge across multiple out-of-sample windows, the evidence for genuine robustness is substantially stronger.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'After completing walk-forward testing, many traders are disappointed to find that the "perfect" backtested strategy performs significantly worse out-of-sample. The temptation is to keep optimising until the out-of-sample results improve — but this defeats the purpose of the test. The correct mental model: a robustly-performing imperfect strategy is always superior to a "perfect" but fragile one.\n\nThe fragility trap: the strategy with the highest in-sample profit factor is almost always the most overfit and produces the worst out-of-sample results. The strategy with more modest in-sample performance but stable WFER will outperform it in live trading. Professional systematic traders actively seek strategies that look mediocre in-sample but demonstrate consistent robustness across multiple out-of-sample windows.\n\nAccepting robustness over perfection: a strategy with profit factor 1.6 in-sample and WFER 0.75 (estimated live PF ≈ 1.2) is deployable. A strategy with profit factor 3.5 in-sample and WFER 0.25 (estimated live PF ≈ 0.87) will lose money. The correct choice is obvious in theory — but psychologically, the 3.5 PF strategy is hard to pass on. The acceptance of "good enough but reliable" is a hallmark of professional systematic strategy development.',
+      key_points: [
+        'Highest in-sample PF = most overfit strategy; modest in-sample PF + stable WFER = most deployable',
+        'The fragility trap: optimising until OOS results improve is just extending the in-sample overfitting process',
+        'Deployability test: estimated live PF (in-sample PF × WFER) must be above 1.2 after realistic slippage',
+        'Professional systematic traders seek "consistently robust" over "occasionally spectacular"',
+        'Accept the imperfect but robust strategy — it will outperform the perfect fragile one in every live deployment',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'market-regimes': {
+    'lesson-1': {
+      intro_text: 'Financial markets do not behave consistently across time — they alternate between distinct behavioural states called regimes. Most trading strategies are profitable in some regimes and unprofitable in others. The failure to identify the current regime is the primary reason that strategies with genuine historical edge fail in live trading: the trader deploys a trend-following strategy in a ranging market, or a mean-reversion strategy in a strong trend.\n\nThe four primary market regimes: (1) Trending: price makes consistent higher highs and higher lows (uptrend) or lower lows and lower highs (downtrend). Directional momentum persists. Trend-following strategies excel. Mean-reversion strategies fail. (2) Ranging: price oscillates between identifiable support and resistance without directional progress. Mean-reversion strategies excel. Trend-following strategies produce repeated small losses from false breakouts. (3) High volatility: large candles, gaps, and unpredictable price behaviour regardless of direction. Most strategies underperform; position sizing must be reduced. (4) Low volatility (quiet): small candles, narrow ranges, thin liquidity. Most strategies produce marginal results; transaction costs consume edge.\n\nThe key insight: profitable trading is not just about having a good strategy — it is about knowing when to deploy each strategy. A full systematic approach includes not just the strategy itself but a regime classifier that activates and deactivates the strategy based on current market conditions.',
+      key_points: [
+        'Four regimes: trending, ranging, high volatility, low volatility — each rewards different strategies',
+        'Trending: trend-following strategies outperform; mean-reversion strategies fail repeatedly',
+        'Ranging: mean-reversion strategies outperform; trend-following produces false breakout losses',
+        'High volatility: reduce all position sizes; most strategies underperform during chaotic periods',
+        'Regime awareness: knowing when to deploy each strategy is as important as having the strategy',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The Average Directional Index (ADX) was developed by J. Welles Wilder as an objective measure of trend strength. Unlike most indicators that tell you the direction of price movement, ADX tells you the strength of the trend regardless of direction. A rising ADX with a falling price indicates a strong downtrend; a rising ADX with a rising price indicates a strong uptrend. A falling ADX indicates a weakening trend or ranging condition — regardless of price direction.\n\nThe Directional Movement System (DMS) has three components: +DI (positive directional indicator), −DI (negative directional indicator), and ADX (the strength measure). +DI above −DI indicates an uptrend; −DI above +DI indicates a downtrend. ADX above 25 indicates a trending regime; ADX above 40 indicates a strong trend. ADX below 20 indicates a ranging or quiet market.\n\nPractical application as a regime filter: trade trend-following strategies only when ADX is above 25 and rising. Do not trade trend-following strategies when ADX is below 20 or falling. This single filter, applied to a simple EMA crossover strategy, typically reduces trading frequency by 30–40% while improving win rate on remaining trades by 15–20%. The filter eliminates whipsaw trades in ranging markets — exactly the condition where EMA crossovers perform worst.',
+      key_points: [
+        'ADX: measures trend STRENGTH regardless of direction; above 25 = trending, below 20 = ranging',
+        '+DI above −DI = uptrend direction; −DI above +DI = downtrend direction',
+        'ADX above 40 = strong trend; avoid mean-reversion in this regime',
+        'Trade trend-following only when ADX is above 25 and rising — eliminates most whipsaw trades',
+        'ADX filter reduces trading frequency 30–40% while improving win rate on remaining signals',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'While ADX measures trend strength, identifying ranging conditions requires different tools — specifically measures of how compressed or expanded price is relative to its recent history. Bollinger Band Width and normalised ATR are the two most practical measures of range tightness.\n\nBollinger Band Width (BBW): the difference between the upper and lower Bollinger Bands, divided by the middle band. When BBW is low, the bands are narrow and the market is ranging tightly. When BBW is high, the bands are wide and the market is trending or volatile. BBW reaching a multi-year low (the Bollinger Squeeze) often precedes a significant directional breakout — the compression releases as one side builds enough force to break the equilibrium.\n\nNormalised ATR: the current ATR divided by the average ATR over a longer period (e.g., current 14-period ATR ÷ 200-period average ATR). A ratio below 0.7 indicates current volatility is significantly below the long-term average (quiet/range regime). A ratio above 1.5 indicates current volatility is significantly above average (high volatility regime). This normalisation allows comparison across instruments with different absolute volatility levels — an ATR of 50 pips on GBP/USD is very different from an ATR of 50 pips on EUR/USD.',
+      key_points: [
+        'Bollinger Band Width: measures band spread relative to middle band — low BBW = tight range',
+        'Bollinger Squeeze (BBW at multi-year low): compression before significant directional breakout',
+        'Normalised ATR = current ATR ÷ long-period average ATR; allows cross-instrument comparison',
+        'Normalised ATR below 0.7: quiet/range regime; above 1.5: high volatility regime',
+        'Combine ADX (trend strength) with BBW/normalised ATR (volatility level) for complete regime classification',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Volatility regimes are distinct from trend regimes: a market can be highly volatile AND trending, or low-volatility AND trending. Understanding volatility regimes specifically — independent of direction — is essential for position sizing and strategy selection.\n\nVolatility clustering: financial market volatility is not randomly distributed across time — it clusters. A day of high volatility is far more likely to be followed by another day of high volatility than by a low-volatility day. This persistence is the foundation of the GARCH model used by quantitative traders to forecast near-term volatility. For practical traders: when volatility has been elevated for several sessions, do not assume it will immediately normalise. Plan positions accordingly with wider stops and smaller sizes.\n\nThe VIX (for equities) and ATR-based volatility measures (for forex and futures) are the primary real-time volatility regime indicators. When VIX is above 30, equities are in a high-volatility regime where most technical setups have reduced reliability and position sizes should be cut 30–50%. When ATR is running at 2× its 200-period average, forex strategies based on normal ATR-based stop calculations are at risk of being too tight. The regime-aware adjustment: when volatility surges, widen stops proportionally OR reduce position size proportionally — never maintain standard positions and standard stops in abnormal volatility.',
+      key_points: [
+        'Volatility clusters: high-vol days follow high-vol days, low-vol days follow low-vol days',
+        'Never assume volatility will immediately normalise after a spike — plan positions for continued elevated vol',
+        'VIX above 30: high-vol equity regime; reduce position sizes 30–50% and expect setup degradation',
+        'ATR at 2× 200-period average: widen stops OR reduce size proportionally — never maintain both',
+        'Volatility regime is independent of trend regime — both must be assessed simultaneously',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise builds a regime filter by applying objective ADX-based criteria to actual historical data and measuring how much a trend-following strategy improves when restricted to high-regime-conviction periods. The goal is to see empirically that strategy performance is regime-dependent — not just theoretically.',
+      key_points: [
+        'ADX above 25: trending regime; below 20: ranging — this threshold determines strategy activation',
+        'The correct test: would you have been better off not trading when ADX was below 20?',
+        'Strategy performance split by regime will show two very different distribution profiles',
+      ],
       activity_type: 'multi_choice',
       question: 'Which metric is most useful for objectively identifying whether a market is currently in a trending regime vs a ranging regime?',
       options: [
@@ -1549,29 +3581,151 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'ADX measures the strength of a trend without regard to direction — it rises in both strong uptrends and downtrends, and falls during ranging markets. Combining ADX threshold (25+ = trending, below 20 = ranging) with the slope of a long-period moving average (positive slope + ADX > 25 = uptrend regime) creates an objective, rules-based regime filter that can prevent trend-following strategies from trading in the wrong environment.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'The final lesson in market regimes addresses strategy-regime pairing — the systematic approach to matching your specific trading strategies to the conditions where they have historically excelled.\n\nThe pairing matrix: every strategy should be tested separately across each defined regime. A trend-following EMA crossover strategy might show profit factor 2.1 in trending regimes and 0.7 in ranging regimes. A mean-reversion bollinger band strategy might show profit factor 1.8 in ranging regimes and 0.6 in trending regimes. This means you should run the trend strategy when the regime is trending and the mean-reversion strategy when it is ranging — not both simultaneously regardless of conditions.\n\nImplementing in practice: define your regime thresholds objectively (e.g., ADX above 25 = trending). Each Monday morning, classify the current regime from the weekly chart. Deploy the appropriate strategy for the week. Review at the following Monday. If the regime has changed, switch strategies. This is a weekly cycle that does not require continuous monitoring and produces significantly better performance than applying one strategy universally.',
+      key_points: [
+        'Strategy-regime pairing: calculate strategy profit factor separately for each regime type',
+        'Deploy each strategy only in its optimal regime — switch when the regime changes',
+        'Weekly classification cycle: assess regime Monday morning, deploy appropriate strategy, review next Monday',
+        'Never deploy a strategy universally across all regimes if it clearly underperforms in some',
+        'Two strategies (one trend, one range) with regime switching often outperforms either used universally',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'statistical-arbitrage-intro': {
+    'lesson-1': {
+      intro_text: 'Statistical arbitrage (stat arb) is a class of quantitative strategies that exploit temporary pricing inefficiencies between related financial instruments. Unlike directional strategies (which bet on price going up or down), stat arb strategies bet on the relationship between two or more instruments returning to its historical norm — making them market-neutral and theoretically independent of overall market direction.\n\nThe core idea: two instruments that are economically related (e.g., EUR/USD and GBP/USD, which both respond to USD movements) tend to maintain a relatively stable statistical relationship over time. When this relationship temporarily diverges — one instrument outperforms the other more than historical norms suggest — a stat arb trade bets on the convergence. You buy the underperformer and sell the outperformer simultaneously, profiting if the spread normalises.\n\nStat arb is not risk-free arbitrage: the word "arbitrage" is somewhat misleading. The risk is that the relationship does not mean-revert — the spread diverges further or the relationship permanently breaks down. Classic failures include Volkswagen vs Porsche in 2008 and various equity pair trades during the 2020 Covid crash, where previously stable relationships behaved abnormally for extended periods. Understanding these risks is as important as understanding the strategy mechanics.',
+      key_points: [
+        'Stat arb: exploits temporary pricing inefficiencies in the RELATIONSHIP between related instruments',
+        'Market-neutral: simultaneously long the underperformer and short the outperformer',
+        'Core bet: the historical relationship between instruments will return to its normal range',
+        'Risk: the relationship does not mean-revert, or permanently breaks down (regime change)',
+        'Not risk-free arbitrage: "arbitrage" is a misnomer — genuine convergence risk is always present',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Pairs trading requires finding two instruments whose prices are cointegrated — meaning they share a common long-term trend and their spread is stationary (mean-reverting). Correlation is not sufficient: two instruments can have high correlation but no cointegration, meaning the spread between them is a random walk rather than mean-reverting.\n\nThe difference between correlation and cointegration: EUR/USD and AUD/USD have high positive correlation (both respond to USD movements) but may not be cointegrated — the spread between them can drift without limit over long periods. Oil and oil company stocks may be highly correlated but not cointegrated if the relationship changes with technological or regulatory shifts. Cointegration requires that a specific linear combination of the two price series produces a stationary (non-drifting) series.\n\nThe Engle-Granger cointegration test (performed in statistical software) formally tests this. For practical retail traders, a simpler heuristic: plot the spread (instrument A minus hedge ratio × instrument B) over a long period (3–5 years). If the spread oscillates around a relatively stable mean and consistently returns to it within a predictable time frame (e.g., 10–30 trading days), the pair is a candidate. If the spread trends persistently in one direction for 12+ months, the pair is not cointegrated and should not be traded as a mean-reversion pair.',
+      key_points: [
+        'Pairs trading requires cointegration, not just correlation — the spread must be stationary (mean-reverting)',
+        'High correlation ≠ cointegration; the spread between correlated instruments can trend without limit',
+        'Practical heuristic: plot the spread over 3–5 years — does it oscillate around a stable mean?',
+        'Engle-Granger test formally tests for cointegration if statistical software is available',
+        'Mean-reversion timescale: how long does the spread typically take to return to the mean? Must be defined',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Once you have identified a cointegrated pair, the next step is to quantify the spread — the exact relationship between the two instruments — and normalise it for trading signals. The raw price difference between two instruments is rarely useful because the prices move on different scales; normalisation makes the signal consistent and comparable over time.\n\nCalculating the spread: the spread is not simply (Price A − Price B). It requires a hedge ratio — the number of units of instrument B required to hedge one unit of instrument A. The hedge ratio is typically calculated from an ordinary least squares (OLS) regression of price A on price B. The resulting coefficient is the hedge ratio: Spread = Price A − (Hedge Ratio × Price B). This produces a series that should be stationary if the pair is genuinely cointegrated.\n\nNormalising for entry signals: once the spread is calculated, normalise it to a Z-score: Z-score = (Spread − Mean) ÷ Standard Deviation, where mean and standard deviation are calculated over a rolling lookback period (typically 60–252 trading days). A Z-score of +2.0 means the spread is 2 standard deviations above its mean — statistically unusual and potentially overextended. A Z-score of −2.0 means the spread is 2 SDs below the mean. These are the entry thresholds: Z > +2.0, short the spread (sell A, buy B); Z < −2.0, long the spread (buy A, sell B).',
+      key_points: [
+        'Spread = Price A − (Hedge Ratio × Price B); hedge ratio from OLS regression, not simply 1:1',
+        'Z-score normalises spread to standard deviations from mean: (Spread − Mean) ÷ Std Dev',
+        'Entry threshold: |Z-score| > 2.0 indicates spread is statistically overextended — mean reversion likely',
+        'Z > +2.0: short the spread (sell A, buy B); Z < −2.0: long the spread (buy A, sell B)',
+        'Lookback period for mean and SD: typically 60–252 trading days depending on spread stability',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'With the spread calculated and normalised to a Z-score, you can define systematic entry and exit rules for the pairs trade. The rules must specify: when to enter, what to trade in what proportions, where the stop loss is, and when to exit profitably.\n\nEntry rules: enter when Z-score exceeds ±2.0 standard deviations. Some traders use ±1.5 for more frequent trades with lower per-trade expectancy, or ±2.5 for fewer trades with higher expected profit per trade. The entry is always simultaneous: buy one side, sell the other in the hedge ratio proportions.\n\nExit rules: (1) Profit target — exit when Z-score returns to zero (the mean) or a target of ±0.5. Exiting at zero captures the full mean-reversion move; exiting at ±0.5 captures 75% of the expected move but exits faster, reducing holding period risk. (2) Time-based stop — exit the position if Z-score has not mean-reverted within a defined time period (e.g., 30 trading days). This prevents holding positions through regime changes where the relationship has broken. (3) Level-based stop — exit if the Z-score reaches ±3.5, as this indicates the spread is diverging further rather than converging — a signal of potential relationship breakdown.',
+      key_points: [
+        'Entry: Z-score exceeds ±2.0 SD — simultaneous trade on both legs in hedge ratio proportions',
+        'Profit exit: Z-score returns to zero (full move captured) or ±0.5 (75% captured, faster exit)',
+        'Time stop: exit if not converged within 30 trading days — prevents holding through regime changes',
+        'Level stop: exit if Z-score reaches ±3.5 — divergence signal, relationship may be breaking',
+        'All entries and exits must be simultaneous on both legs — half a pairs trade is just a directional trade',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This calculation exercise applies the spread calculation and Z-score normalisation to a specific EUR/USD vs GBP/USD pairs trade. You will calculate the current spread, compare it to the historical mean, and determine the trade direction based on standard deviation thresholds.',
+      key_points: [
+        'Spread = Price A − (hedge ratio × Price B); the result is compared to the historical mean',
+        'A spread below historical mean by more than 2 SDs signals: buy the spread (buy A, sell B)',
+        'The trade direction is always the same: buy what is cheap relative to its historical norm',
+      ],
       activity_type: 'calculation',
       problem: 'You are trading a GBP/USD vs EUR/USD pairs spread. The historical average spread (GBP/USD − EUR/USD × 1.1) is 0.0050. Currently: GBP/USD = 1.2710, EUR/USD = 1.1540. The hedge ratio is 1.1 (1 GBP/USD lot per 1.1 EUR/USD lots). Calculate the current spread value. Is it above or below the historical mean, and which direction does the pairs trade go?',
-      correct_answer: '0.0003',
+      correct_answer: '0.0016',
       tolerance: 0.0005,
       unit: '(spread)',
       hint: 'Spread = GBP/USD − (EUR/USD × 1.1). Compare to historical average of 0.0050.',
       solution_steps: [
-        'Spread = 1.2710 − (1.1540 × 1.1) = 1.2710 − 1.2694 = 0.0016',
-        'Wait — let\'s recalculate: 1.1540 × 1.1 = 1.2694. Spread = 1.2710 − 1.2694 = 0.0016',
-        'Historical mean = 0.0050. Current spread = 0.0016 — well BELOW the mean.',
-        'Mean-reversion trade: buy GBP/USD (long the spread) and short EUR/USD × 1.1 lots.',
-        'The spread should converge back toward 0.0050 as the relationship normalises.',
+        'Spread = GBP/USD − (EUR/USD × hedge ratio) = 1.2710 − (1.1540 × 1.1)',
+        '1.1540 × 1.1 = 1.2694',
+        'Spread = 1.2710 − 1.2694 = 0.0016',
+        'Historical mean = 0.0050. Current spread 0.0016 is BELOW the mean by 0.0034.',
+        'Trade direction: long the spread — buy GBP/USD and short EUR/USD × 1.1 lots. Spread should converge back toward 0.0050.',
       ],
       steps: [{ id: '1', label: 'Calculate the current spread', completed: false }, { id: '2', label: 'Compare to historical mean', completed: false }, { id: '3', label: 'Determine trade direction', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'Statistical arbitrage carries specific risks that do not apply to directional strategies. Understanding them is essential before deploying capital.\n\nSpread divergence risk: the most common risk is that the spread moves further against you after entry. If you enter at Z = +2.0 (expecting mean reversion), the spread may reach Z = +3.0 before eventually mean-reverting — creating a loss that must be held through, or triggering your level stop. Managing this requires position sizing that allows you to maintain the position through the expected range of further divergence (typically up to ±3.0 SD) without breaching risk limits.\n\nRegime change risk: cointegration is not permanent. The economic relationship between two instruments can fundamentally change due to regulatory shifts, sector rotation, changes in the instruments themselves (mergers, restructurings), or macro regime changes. When a previously cointegrated pair stops mean-reverting, the spread diverges without returning — a regime change. The time stop (close if not converged within 30 days) is the primary defence against regime change.\n\nLiquidity mismatch risk: if one leg of the pair is significantly less liquid than the other, you may be able to exit the liquid leg immediately but face slippage or inability to exit the illiquid leg quickly. Both legs must be similarly liquid for the strategy to work effectively.',
+      key_points: [
+        'Spread divergence risk: spread may go from Z = +2.0 to Z = +3.0 before mean reverting — hold or stop?',
+        'Size to survive ±3.0 SD divergence without breaching risk limits; level stop at ±3.5 SD',
+        'Regime change risk: cointegration can permanently break — time stop (30 days) is the primary defence',
+        'Liquidity mismatch: both legs must be similarly liquid to allow simultaneous entry and exit',
+        'Never run pairs trades with significantly different liquidity on each leg',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
     },
   },
 
   'building-personal-system': {
+    'lesson-1': {
+      intro_text: 'Building your personal trading system begins with the three foundational constraints that every other decision flows from: your universe (what you will trade), your objective (what you are trying to achieve), and your constraints (what limitations you are working within). Trying to build a system without first defining these three elements produces a system that is optimised for an imaginary trader, not for your specific circumstances.\n\nUniverse: which instruments, timeframes, and markets will you trade? The correct answer is not "everything profitable" — it is "the instruments I have sufficient knowledge and data for, in the timeframes compatible with my schedule, with liquidity appropriate for my account size." A retail trader with £20,000 should not attempt to trade strategies designed for £200,000 accounts, even if those strategies are profitable at scale.\n\nObjective and constraints: what are you trying to achieve — income generation (requires frequent trades and consistent returns), capital growth (allows drawdown periods and concentrates on CAGR), or risk-controlled growth (limits maximum drawdown above all else)? What time can you actually dedicate to trading and analysis? What is your maximum acceptable drawdown before you stop trading the system? What is the minimum win rate you can psychologically sustain? These constraints are not weaknesses — they are inputs that determine the optimal strategy for you specifically.',
+      key_points: [
+        'Three foundations: universe (what), objective (why), constraints (limitations) — define before building',
+        'Universe determined by: knowledge, data quality, schedule compatibility, account size, and liquidity',
+        'Objective types: income (consistent returns), growth (maximize CAGR), risk-controlled (cap drawdown)',
+        'Constraints include: available time, max acceptable drawdown, minimum tolerable win rate',
+        'The right system is the one that fits your specific constraints — not the theoretically optimal system',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The complete rule set for a trading system must specify every element required to execute without any judgment calls in live trading. This lesson walks through writing the full rule set — a document you will refer to during trading to ensure every decision is covered.\n\nThe rule set structure: (1) Entry signal definition — the exact conditions (with measurable, objective parameters) that must all be true simultaneously to trigger an entry. (2) Regime/filter conditions — additional conditions that must be true at the time of the signal to allow it to activate (e.g., weekly ADX above 25). (3) Exit rules — both stop loss (how far below entry for longs) and target/trailing exit (when to exit with profit). (4) Position sizing formula — the exact calculation converting account size, risk percentage, and stop distance to a position size. (5) Trade management rules — what actions are permitted and prohibited once a trade is open (e.g., "may move stop to break-even when 1R is reached, but may not add to position mid-trade").\n\nWriting the rule set is harder than most traders expect: the first draft always contains undefined terms and missing rules. The test is imagining a mechanical robot executing the rules — would the robot make the same trades you intend? If not, find the undefined terms and define them.',
+      key_points: [
+        'Complete rule set: entry signal, filter conditions, exit rules (stop + target), position sizing, trade management',
+        'Every element must be measurable and objective — no "looks like" or "appears to be" language',
+        'Test: could a mechanical robot execute the rules and make the same trades as you intend?',
+        'Undefined terms are the most common problem in first drafts — find and eliminate them',
+        'Trade management rules specify what is ALLOWED once a trade is open, not just how to enter',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Backtesting your complete system is not just about generating performance statistics — it is a validation process that requires a methodology checklist to ensure the results are reliable and not contaminated by common errors.\n\nThe backtesting methodology checklist: (1) Out-of-sample data reserved before development begins — at least 20% of total data held back. (2) All signals applied consistently — no discretionary skipping of "bad-looking" setups that triggered the rules. (3) Realistic transaction costs applied — spread, commission, and slippage estimate added to every trade. (4) No look-ahead bias — every decision uses only data available at the time of the signal candle close. (5) Correct handling of data issues — gaps, holiday closures, earnings release periods (for equities) handled explicitly. (6) Minimum sample size requirement met — at least 100 triggered signals, preferably 200+.\n\nLook-ahead bias is the most subtle and common error: it occurs when the backtest uses data from after the signal candle close to make a decision that the strategy would not have had access to in real time. Common examples: using the candle\'s closing price to determine if a condition was met when the condition is evaluated intracandle, or using daily high/low to set stops that would only be known at the end of the day.',
+      key_points: [
+        'Methodology checklist: OOS reserved, consistent signals, realistic costs, no look-ahead, correct data handling',
+        'Look-ahead bias: using data from after the signal that wouldn\'t have been available in real time',
+        'Most common look-ahead error: using candle high/low (only known at close) in intracandle logic',
+        'Apply every signal the rules trigger — no discretionary "this one doesn\'t look right" skipping',
+        'Minimum 100 triggered signals to draw any conclusions; 200+ for reliable statistical estimates',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Stress-testing goes beyond backtesting against normal historical data — it deliberately subjects the strategy to the conditions most likely to break it. The goal is to identify fragilities before deploying real capital, not after.\n\nThe three stress tests every system must pass: (1) Regime stress test — calculate performance separately for each market regime (trending, ranging, volatile, quiet). A strategy that performs well overall but loses money in one specific regime will encounter that regime during live trading and potentially produce its worst drawdown exactly when you are least prepared. (2) Worst-case drawdown simulation — Monte Carlo reshuffle of all backtest trades to generate the distribution of possible drawdown outcomes. Size live trading to survive the 95th percentile maximum drawdown. (3) Parameter sensitivity test — vary each parameter ±20–30% from its chosen value and measure performance impact. If performance degrades sharply with small parameter changes, the strategy is brittle and likely overfit.\n\nThe pass/fail criteria: a strategy should be deployable if it (1) remains profitable in its primary regime, (2) survives 95th percentile Monte Carlo drawdown without a position size that would cause you to stop trading, and (3) maintains positive profit factor across all tested parameter variations.',
+      key_points: [
+        'Regime stress test: calculate performance separately per regime — find the Achilles heel',
+        'Monte Carlo stress test: reshuffle trades 10,000 times to find 95th percentile max drawdown',
+        'Parameter sensitivity: ±20–30% variation — must remain profitable, not collapse at adjacent values',
+        'Deploy only if: profitable in primary regime, survives Monte Carlo, robust across parameter range',
+        'Stress testing is pre-deployment discovery of fragility — better to find it now than in a live drawdown',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise applies the regime stress test concept: running the complete system separately across different historical market regimes to identify where it performs well and where it underperforms. The honest assessment of which regime(s) your system struggles in is essential information for risk management.',
+      key_points: [
+        'Every system has at least one regime it underperforms in — finding it is the goal, not a failure',
+        'The acceptable drawdown ceiling per regime determines your position size in that regime',
+        'A system that is aware of its worst regime can reduce size in that regime — this is regime-aware risk management',
+      ],
       activity_type: 'multi_choice',
       question: 'Which elements are required to constitute a complete, testable trading system?',
       options: [
@@ -1584,10 +3738,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'A complete trading system requires all five components: (1) WHAT you trade (market universe), (2) WHEN you enter (entry rules — objective and unambiguous), (3) WHEN you exit with a loss (stop loss rules), (4) WHEN you exit with a profit (target or trailing rules), (5) HOW MUCH you risk (position sizing). Without any one of these, the system cannot be backtested, cannot be consistently executed, and its results cannot be attributed to edge rather than luck.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Live deployment is the transition from testing to real capital. The first 90 days of running a system live are the most critical — not for performance, but for process verification. During this period, you are not trying to make money; you are verifying that the system behaves as expected and that you can execute it correctly under real conditions.\n\nThe first 90-day protocol: (1) Trade at reduced size (25–50% of planned live size). This limits financial impact if you discover unexpected issues. (2) Paper trade the signals that trigger below your minimum live threshold — this grows your live sample while capturing data on signals you are not taking. (3) Review every signal at end of each week — did you execute correctly? Were there any judgment calls? Was the execution consistent with the rule set? (4) Track your performance against the expected range from the backtest. If live results are significantly outside the expected Monte Carlo range within 90 days, investigate before increasing size.\n\nThe most common first-90-day discovery: the rule set has an ambiguity that was not apparent in backtesting but requires a judgment call in live trading. This is normal and expected — document the judgment call, define the rule explicitly, and continue.',
+      key_points: [
+        'First 90 days: process verification, not profit maximisation — reduce size to limit financial impact',
+        'Paper trade signals below size threshold to grow sample while limiting live exposure',
+        'Weekly review: did execution match the rule set? Any judgment calls = rule set ambiguity to fix',
+        'Track against Monte Carlo expected range — significantly outside range within 90 days requires investigation',
+        'Discovering rule set ambiguities in the first 90 days is expected and good — document and fix them',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'global-macro-framework': {
+    'lesson-1': {
+      intro_text: 'Global macro trading is the discipline of identifying and trading the large, structural movements in economies, interest rates, currencies, and commodities that play out over weeks, months, or years. Unlike technical traders who focus on price patterns and order flow, macro traders start with an economic thesis — a view on the direction of GDP growth, inflation, monetary policy, or geopolitical conditions — and then find the most efficient financial instrument to express that view.\n\nThe macro framework has four pillars: (1) Growth — is the economy expanding or contracting? GDP data, PMI readings, and employment figures are the primary inputs. (2) Inflation — is inflation rising or falling? CPI, PPI, and PCE data determine the pressure on central banks to raise or cut rates. (3) Monetary policy — how is the central bank responding to growth and inflation? Interest rate differentials and central bank rhetoric drive currency and bond market movements. (4) Risk sentiment — are investors globally in risk-on (buying equities, selling safe havens) or risk-off (buying gold, CHF, JPY, selling equities) mode?\n\nMacro traders synthesise these four pillars into a directional thesis: when growth is accelerating, inflation is rising, and the central bank is tightening, the currency of that economy typically strengthens, bonds fall, and commodity-linked assets outperform. When growth is slowing and the central bank is easing, the opposite occurs. The skill is not in knowing the formula — it is in identifying inflection points earlier than the consensus.',
+      key_points: [
+        'Global macro: trades large structural movements driven by economic, monetary, and geopolitical forces',
+        'Four pillars: growth (GDP/PMI), inflation (CPI/PCE), monetary policy (rate differentials), risk sentiment',
+        'Thesis-first: macro starts with an economic view, then finds the instrument to express it most efficiently',
+        'Rate differentials drive currencies; growth differentials drive equities; inflation drives commodities',
+        'Edge comes from identifying inflection points (when the cycle turns) before the consensus reprices',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The business cycle — the recurring expansion and contraction of economic activity — is the foundational model for global macro analysis. Understanding where an economy sits within the cycle determines which assets are likely to outperform, which central bank policy direction is most probable, and which currencies are likely to strengthen or weaken.\n\nThe four cycle phases and their typical market implications: (1) Recovery: GDP growth begins recovering from a trough. Unemployment falls, consumer confidence rises. Equities outperform, credit spreads narrow, commodity-linked currencies (AUD, CAD) strengthen. (2) Expansion: Growth is above trend, inflation rises. Central banks begin tightening. The currency of the fastest-tightening economy strengthens. (3) Slowdown: Growth peaks and decelerates. Inflation is still elevated but falling. Defensive assets outperform — bonds, gold, yen, franc. (4) Recession: GDP contracts, unemployment rises. Central banks cut rates aggressively. Long bonds rally, safe-haven currencies strengthen, commodity currencies weaken.\n\nThe cycle is never perfectly regular, and countries move through it at different speeds — this asynchrony creates opportunities. When the US is in expansion while Europe is in slowdown, USD/EUR is likely to rise. When China is entering recovery while Australia has already peaked, AUD may lag its typical commodity-linked correlation. Mapping cycle positions across major economies is the first step in a rigorous macro portfolio construction.',
+      key_points: [
+        'Business cycle: four phases — recovery, expansion, slowdown, recession — each with distinct asset implications',
+        'Recovery: equities, credit, commodity currencies outperform; recession: bonds, gold, safe-haven currencies outperform',
+        'Central bank policy lags the cycle: tightening begins in expansion, cutting begins in recession',
+        'Asynchrony between country cycles creates the best macro opportunities (US expansion + Europe slowdown = USD/EUR long)',
+        'First macro step: map where each major economy sits in its cycle relative to the others',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Interest rate differentials are the primary driver of currency markets over medium-to-long time horizons. When one country\'s interest rates are higher than another\'s, capital flows toward the higher-yielding currency, creating demand that pushes its exchange rate higher. This is the foundation of carry trading and the mechanism by which central bank policy decisions move currencies.\n\nThe relationship is not simple: markets are forward-looking, and currency moves anticipate central bank decisions rather than reacting to them. By the time the Federal Reserve actually raises rates, the USD may have already priced in months of tightening expectations. Skilled macro traders position for the shift in rate expectations — not the actual rate change itself.\n\nThe key to trading rate differentials: track the market\'s expected rate path, not the current rate. The rate expectations market (pricing of future central bank meetings via rate futures and options) tells you what is priced in. If the market expects 3 rate hikes and the Fed ultimately delivers 4, the USD strengthens on that surprise. If the market expects 3 hikes and only 2 materialise, the USD weakens despite rates still rising. The delta between expectation and reality is where macro edge lives.',
+      key_points: [
+        'Rate differentials: primary medium-term driver of currencies — capital flows to higher-yielding currencies',
+        'Markets are forward-looking: currencies price in expected future rates, not current rates',
+        'Track rate expectations (futures pricing) vs current rates — the surprise delta creates macro edge',
+        'USD strengthens when the Fed delivers more than expected; weakens when it delivers less',
+        'Carry trade: borrow low-yield currency, buy high-yield currency — positive carry while spread exists',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'A macro trade thesis is the structured argument that connects an economic observation to a specific trade. Without a well-structured thesis, macro trading degenerates into directional gambling on news events. The thesis forces clarity: what is the catalyst, what evidence supports it, what would invalidate it, and what is the expected timeline?\n\nThe five components of a rigorous macro thesis: (1) Primary catalyst — the specific economic development that will drive the trade. Not "the dollar is going up" but "the Fed is going to sound hawkish at Jackson Hole because core PCE is still above 3% and the labour market remains tight." (2) Confirmation factors — two or more independent data points that support the thesis. (3) Best expression — which instrument captures the most direct exposure to the thesis at the lowest cost? (4) Invalidation — what specific data or event would prove the thesis wrong? Knowing this in advance allows disciplined exit rather than holding through adverse evidence. (5) Timeline — over what period does the thesis play out? A 2-month thesis held for 9 months is a mistake even if it eventually proves correct.\n\nThe expression question is often underestimated. The same bullish USD view can be expressed as: long DXY futures (broadest expression), long USD/JPY (highest rate differential), short EUR/USD (biggest European weakness), or short EM currencies (amplified risk-off exposure). Each expression has different leverage to the thesis, different risk of wrong assumptions elsewhere, and different carry costs.',
+      key_points: [
+        'Macro thesis: 5 components — catalyst, confirmation factors, best expression, invalidation, timeline',
+        'Catalyst must be specific: not "dollar going up" but "Fed hawkish at JH because core PCE > 3%"',
+        'Invalidation: knowing in advance what would kill the thesis enables disciplined exit on adverse evidence',
+        'Timeline: holding a 2-month thesis for 9 months is a mistake even if eventually correct',
+        'Expression selection: same thesis can be USD/JPY, short EUR/USD, or EM shorts — each with different risk profile',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise applies the macro thesis framework to a real scenario. A complete AUD/USD long thesis requires a commodity driver, a monetary policy driver, and a USD-bearish catalyst — all three contributing independently to the same directional outcome. Identifying which combination constitutes a complete thesis separates structured macro thinking from directional guessing.',
+      key_points: [
+        'A complete thesis needs multiple independent confirmation factors, not just one directional observation',
+        'AUD is primarily driven by: Chinese growth/demand for commodities + RBA rate stance vs Fed stance',
+        'A thesis with one driver is fragile; three independent drivers that all point the same way is robust',
+      ],
       activity_type: 'multi_choice',
       question: 'A macro trader wants to build a thesis for going long AUD/USD. Which combination of factors constitutes a complete and rigorous macro trade thesis?',
       options: [
@@ -1600,10 +3815,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'A robust macro thesis requires: a primary catalyst (what is the specific event or trend driving the move), confirmation factors (at least two independent supporting pieces of evidence), an invalidation level (what would prove the thesis wrong), and a timeframe (how long does the thesis take to play out). Option B has a commodity demand driver, a currency supply driver, and a rate differential driver — three independent factors all pointing to AUD strength.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Risk management in macro trading differs from technical trading in one critical way: macro positions have structural catalysts with defined timelines, and the position must be managed against those catalysts — not just against price action. A technical trader cuts a position when it hits a stop level. A macro trader must also cut when the fundamental thesis is invalidated, even if the price has not yet reached the stop.\n\nSize for the unknown: macro events have fat tails. A central bank statement that deviates significantly from expectations can move a currency 2–3% in minutes. Position sizing must account for this: macro traders typically size positions smaller than the stop distance alone would suggest, because the actual exit may occur at a significantly worse price than the intended stop during high-liquidity events.\n\nThe macro portfolio approach: most professional macro traders run a portfolio of theses rather than one concentrated position. The rationale is correlation management — in risk-off events, long AUD/USD, long equities, and long copper are all correlated losses. A portfolio with a mix of independent macro themes (some trend-following, some carry, some event-driven) reduces the probability of all positions losing simultaneously. Diversification at the thesis level is as important as diversification at the instrument level.',
+      key_points: [
+        'Macro stop: cut when the THESIS is invalidated, not just when the price hits a level',
+        'Fat tail sizing: macro events can gap through stops — size smaller than stop math suggests for event risk',
+        'Portfolio of theses: independent macro themes reduce correlated loss in risk-off events',
+        'Carry, trend, and event-driven themes have different correlation to risk-off — combine all three',
+        'Never concentrate a macro portfolio in a single theme regardless of conviction level',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'central-bank-playbooks': {
+    'lesson-1': {
+      intro_text: 'Central banks are the most powerful single actors in financial markets. Their decisions about interest rates, balance sheet policy, and forward guidance move currencies, bonds, equities, and commodities simultaneously. Understanding how central banks think — what they mandate them to pursue, how they communicate, and what their likely next move is — is the foundation of macro trading.\n\nThe dual mandate vs single mandate distinction matters enormously. The US Federal Reserve operates under a dual mandate: maximum employment AND price stability. This means the Fed must balance two sometimes-competing objectives — it cannot cut rates aggressively during inflation even if unemployment rises. The ECB, Bank of England, and most other major central banks operate under a single mandate: price stability (inflation near 2%). Single-mandate banks have more freedom to act on inflation regardless of employment conditions.\n\nThe central bank reaction function describes how each bank adjusts policy in response to economic data. The Fed\'s reaction function: raise rates when inflation is above 2% and unemployment is low (economy "running hot"), cut rates when inflation is below 2% or unemployment rises sharply. Once you understand a central bank\'s reaction function and current data inputs, you can estimate their likely next move and trade ahead of it.',
+      key_points: [
+        'Central banks are the most powerful market actors — their decisions move all asset classes simultaneously',
+        'Dual mandate (Fed): maximum employment + price stability — must balance two competing objectives',
+        'Single mandate (ECB, BoE): price stability only — more freedom to act on inflation aggressively',
+        'Reaction function: how a central bank adjusts policy in response to economic data inputs',
+        'Trading edge: understand the reaction function + current data = estimate next move before it happens',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Central bank communication has become as important as the rate decisions themselves. The modern practice of "forward guidance" — statements about the likely future path of interest rates — allows central banks to move markets without actually changing rates. Understanding how to read, parse, and trade central bank statements and press conferences is a core macro skill.\n\nThe hierarchy of central bank communications: (1) Monetary policy statements — the official written statement released simultaneously with the rate decision. Contains the decision itself and brief rationale. (2) Press conference — the chair or governor answers journalist questions for 45–60 minutes immediately after the statement. This is where the most market-moving information lives, because the chair often reveals more about the forward path in response to questions than the prepared statement contains. (3) Meeting minutes — released 3 weeks after the meeting. Reveals internal debate and dissenting views. Often market-moving if the internal debate was more contentious than the public statement implied. (4) Individual speeches — board members give speeches between meetings. Hawkish or dovish comments from a majority of board members between meetings effectively pre-signal the next decision.\n\nKey parsing techniques: look for changes in language between consecutive statements. Moving from "inflation remains elevated" to "inflation remains sticky" is a subtle signal. The word "appropriate" frequently carries outsized meaning: "it may be appropriate to raise rates" vs "it will be appropriate to raise rates." Professional macro traders track every word change between consecutive statements.',
+      key_points: [
+        'Forward guidance: central banks move markets with language about future rates, not just current decisions',
+        'Hierarchy: policy statement < press conference < minutes < individual speeches (minutes most revealing of dissent)',
+        'Press conference is most market-moving: chair reveals forward path in response to questions',
+        'Language changes between consecutive statements signal policy shifts — track every word change',
+        '"May be appropriate" vs "will be appropriate" — parsing precision separates professional macro from amateur',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The concept of "priced in" is central to trading central bank decisions. Markets do not wait for rate decisions — they price in the expected outcome weeks or months in advance using interest rate futures and options. By the time the actual decision arrives, it is often already reflected in asset prices. The market impact of the decision depends entirely on how the actual outcome compares to what was priced in.\n\nThe pricing mechanism: the Fed Funds futures market prices the probability of rate changes at upcoming meetings. If futures imply a 90% probability of a 0.25% hike, and the Fed hikes 0.25%, the market barely moves — it was already priced. If the Fed hikes 0.50% (a surprise), the dollar surges because traders must reprice the rate path upward. If the Fed unexpectedly pauses, the dollar falls even though rates did not decrease.\n\nThe "buy the rumour, sell the news" dynamic: a currency that has been rallying into a hawkish meeting often reverses immediately after the decision if the outcome was fully priced. This occurs because the positioning built up by traders betting on the hawkish outcome is now unwound. Understanding whether the decision is fully priced (and thus a "sell the news" candidate) vs whether there is upside surprise potential (a "buy the event" candidate) is the most practical skill in central bank trading.',
+      key_points: [
+        '"Priced in": markets reflect expected decisions weeks in advance via rate futures — actual move = surprise delta only',
+        'Rate futures imply specific probabilities for each meeting — track these daily',
+        '90% priced hike + 25bp hike = minimal move; 90% priced hike + 50bp hike = significant USD surge',
+        '"Buy the rumour, sell the news": fully-priced outcomes often reverse as pre-event positioning unwinds',
+        'Key decision: is the event fully priced (sell the news candidate) or is upside surprise possible (buy the event)?',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Each major central bank has a distinct personality, history, and communication style that creates predictable behavioural patterns. The Federal Reserve, ECB, Bank of England, Bank of Japan, and Swiss National Bank all operate differently — and understanding these differences gives macro traders an informational edge.\n\nThe Federal Reserve: the most transparent and closely watched central bank. Holds press conferences after every meeting. Uses the "dot plot" (Summary of Economic Projections) to communicate individual FOMC members\' rate path expectations. Has a well-established history of acting to support financial stability (the "Fed put"). Tends to communicate in advance of major policy shifts, creating anticipatable positioning opportunities.\n\nThe Bank of Japan: the most unique major central bank. Held rates near zero for three decades. Used yield curve control (YCC) — targeting a specific long bond yield rather than just setting the overnight rate. When YCC was abandoned in 2024, it triggered one of the largest single-day yen moves in decades. The BoJ is the most likely to surprise with sudden unannounced policy shifts, creating tail risk for JPY carry traders. The Swiss National Bank periodically intervenes directly in currency markets — something the Fed and ECB almost never do — making USD/CHF and EUR/CHF sensitive to SNB actions in ways EUR/USD is not.',
+      key_points: [
+        'Each central bank has a distinct personality: communication style, transparency, and intervention tendency differ',
+        'Fed: most transparent, dot plot provides forward rate path, well-established "Fed put" financial stability role',
+        'BoJ: most likely to surprise — history of sudden YCC policy shifts; tail risk for carry traders',
+        'SNB: actively intervenes in currency markets; unique among major CBs in direct FX intervention',
+        'Central bank-specific knowledge is a persistent edge — most retail traders treat them as interchangeable',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise tests the most practical central bank trading insight: the disconnect between the headline rate decision and the market reaction. When the market barely reacts to a rate hike that matches expectations, understanding why and positioning for the subsequent move (often driven by press conference language) separates informed macro traders from those who simply react to headlines.',
+      key_points: [
+        'When a rate hike matches consensus, the surprise is zero — the market move reflects the forward guidance only',
+        'The press conference language after a consensus decision is the real event to trade',
+        'Dovish language at a hawkish-appearing meeting is the most powerful reversal catalyst',
+      ],
       activity_type: 'multi_choice',
       question: 'The ECB has just raised rates by 0.50% — in line with consensus. EUR/USD barely moves after the initial spike. What explains this and what is the highest-probability trade setup?',
       options: [
@@ -1616,10 +3892,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'The market moves on the DELTA between expectation and reality. A consensus hike is worth zero surprise. Value is in the forward guidance: hawkish language (more hikes coming) is EUR-bullish beyond the consensus; dovish language (this could be the last hike) is EUR-bearish despite the headline number. Professional central bank traders position for the press conference language, not the rate number itself.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Quantitative easing (QE) and quantitative tightening (QT) are the non-conventional tools central banks use when interest rates are near zero and conventional rate cuts have been exhausted. Understanding how these balance sheet policies affect asset prices and currencies is essential for macro traders, since QE/QT cycles play out over years and create persistent trends.\n\nQE mechanics: the central bank creates new money and uses it to purchase government bonds (and sometimes corporate bonds, mortgage-backed securities, or equities in Japan\'s case). This injects liquidity into the financial system, drives bond yields lower (pushing investors into riskier assets), weakens the currency (more money supply), and inflates asset prices across the board. QE is simultaneously a yield curve management tool, a risk asset support mechanism, and a currency weakening policy.\n\nQT mechanics: the central bank allows bonds on its balance sheet to mature without reinvesting the proceeds (passive QT) or actively sells bonds back to the market (active QT). This drains liquidity, pushes bond yields higher, strengthens the currency, and creates headwinds for risk assets. QT is rarely as powerful as QE because it lacks the same "shock and awe" effect — but it compounds the impact of rate hikes, making the combined effect of rate hikes + QT more powerful than either alone. The 2022 cycle — the fastest rate hiking cycle in 40 years combined with simultaneous QT — produced the largest single-year bond losses in history.',
+      key_points: [
+        'QE: central bank creates money to buy bonds — drives yields lower, weakens currency, inflates risk assets',
+        'QT: central bank shrinks balance sheet — drains liquidity, raises yields, strengthens currency, headwind for equities',
+        'QE is more powerful than QT: "shock and awe" of new money creation exceeds gradual balance sheet reduction',
+        'QT compounds rate hikes: 2022 rate hikes + QT = largest single-year bond losses in modern history',
+        'QE weakens the currency of the country doing it; QT strengthens it — major macro positioning input',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'currency-wars-rates': {
+    'lesson-1': {
+      intro_text: 'Currency wars — the deliberate weakening of a country\'s exchange rate to gain competitive advantage in international trade — are a recurring feature of the global economy. When a currency weakens, exports become cheaper for foreign buyers (boosting export volumes) and imports become more expensive domestically (reducing import volumes). This improves the trade balance and, in theory, stimulates domestic production. The problem: every country weakening its currency simultaneously produces no competitive gain for anyone — just global inflation.\n\nThe modern toolkit for currency depreciation: (1) Rate cuts — lower interest rates reduce capital inflows, weakening the currency. (2) QE — expanding money supply reduces the value of each unit. (3) Verbal intervention — central bank officials or government finance ministers make public statements expressing desire for a weaker currency or concerns about excessive strength. (4) Direct FX intervention — the central bank buys foreign currency (selling domestic currency) directly in the FX market. (5) Capital controls — restricting inflows or outflows of foreign capital to prevent appreciation.\n\nFor macro traders, currency wars create trend-following opportunities in the currencies of countries with declared or implicit depreciation policies. The BoJ\'s multi-decade low-rate policy combined with verbal intervention to resist JPY appreciation created one of the most persistent carry trade environments in history — until the 2024 BoJ normalisation reversed it violently.',
+      key_points: [
+        'Currency wars: deliberate exchange rate weakening for trade competitiveness — beggar-thy-neighbour policy',
+        'Depreciation toolkit: rate cuts, QE, verbal intervention, direct FX intervention, capital controls',
+        'Simultaneous depreciation by multiple countries: no competitive gain, only global inflation',
+        'BoJ JPY suppression: decades of low rates + verbal intervention = persistent carry trade opportunity',
+        'Currency war reversals (when the depreciating country normalises) are the most violent currency moves',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Interest rate differentials are not just theoretical constructs — they translate into concrete daily cash flows through the swap rate mechanism in spot FX markets. Understanding how carry is earned and paid, and how rate differential changes affect existing carry positions, is essential for any trader holding FX positions overnight.\n\nThe swap rate (also called the rollover rate or overnight financing rate) is the net interest payment credited or debited when a spot FX position is held past the daily settlement time (typically 5pm New York). Long the higher-yielding currency = positive swap (you earn interest). Short the higher-yielding currency = negative swap (you pay interest). These amounts accumulate daily and can represent significant income or cost over multi-week or multi-month holding periods.\n\nThe carry trade in practice: borrow in a low-yield currency (pay low interest), invest in a high-yield currency (receive high interest), and profit from the interest rate differential while the exchange rate remains stable. Classic historical carry pairs: long AUD/JPY or NZD/JPY (Australia and New Zealand pay higher rates; Japan pays near zero). The risk: carry trades unwind violently when risk-off episodes hit — the low-yield currency (often JPY) surges as carry traders simultaneously close positions, producing rapid losses. The August 2024 yen carry unwind saw USD/JPY fall 10% in three days.',
+      key_points: [
+        'Swap rate: daily interest credited/debited for holding FX overnight — long high-yield = earn; short high-yield = pay',
+        'Carry trade: borrow low-yield, invest high-yield — profit from rate differential while exchange rate is stable',
+        'Classic carry pairs: AUD/JPY, NZD/JPY — Australia/NZ high yield vs Japan near-zero',
+        'Carry unwind risk: risk-off events cause simultaneous carry closure — low-yield currency surges violently',
+        'August 2024: BoJ rate hike + risk-off = 10% USD/JPY fall in 3 days as global carry unwind hit',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Purchasing Power Parity (PPP) is the theoretical long-run anchor for exchange rates. It states that the exchange rate between two currencies should equate the price of an identical basket of goods across countries. If a hamburger costs £3 in the UK and $4 in the US, PPP implies an exchange rate of 1.33 USD/GBP. The Economist\'s Big Mac Index is a lighthearted but surprisingly useful PPP measure.\n\nWhy PPP matters for macro traders: PPP does not determine short-term exchange rates — carry, risk sentiment, and capital flows dominate in the short run. But over 10-year horizons, exchange rates tend to revert toward PPP. A currency that is 40% overvalued on PPP terms is likely to face sustained depreciation pressure over the subsequent decade, even if it continues to strengthen for 2–3 more years. PPP sets the gravitational ceiling for overvalued currencies.\n\nThe practical application: PPP analysis is used primarily to identify extreme overvaluation or undervaluation, which creates a macro bias for long-term positioning. USD/CNY is persistently below PPP (CNY undervalued) due to China\'s export-driven economic model and capital controls. GBP was significantly overvalued on PPP terms prior to Brexit, contributing to the persistent post-referendum depreciation. JPY reached multi-decade undervaluation vs PPP in 2024 — a factor in the BoJ\'s eventual rate normalisation.',
+      key_points: [
+        'PPP: long-run anchor — exchange rate should equalise the price of identical goods baskets across countries',
+        'PPP does not determine short-term rates; carry and capital flows dominate over weeks and months',
+        'Over 10-year horizons, exchange rates revert toward PPP — use as long-horizon directional bias',
+        '40% PPP overvaluation = likely decade of depreciation pressure, even if short-term trend is up',
+        'JPY at multi-decade PPP undervaluation in 2024 = one factor in BoJ normalisation decision',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Dollar cycles — multi-year periods of broad USD strength or weakness — are the single most important macro trend for global markets. A strong dollar cycle reduces returns on international assets for US investors, creates stress for emerging market economies with dollar-denominated debt, and weighs on commodity prices (most commodities are priced in USD). A weak dollar cycle does the opposite: boosts international equity returns, relieves EM debt burdens, and supports commodity prices.\n\nThe drivers of dollar cycles: (1) US growth differential — when the US economy grows faster than the rest of the world, capital flows to the US (stronger dollar). When the rest of the world grows faster, capital flows outward (weaker dollar). (2) Fed rate differential — as established above, higher relative US rates attract capital. (3) Risk sentiment — the USD is a safe-haven currency; in risk-off episodes, global investors repatriate to USD regardless of fundamentals. (4) US current account deficit — persistent trade deficits export dollars abroad, structurally pressuring the USD over long cycles.\n\nHistorical dollar cycles: the dollar strengthened dramatically from 1980–1985 (Fed Volcker tightening), weakened from 1985–1995 (Plaza Accord + US growth slowdown), strengthened from 1995–2002 (tech boom + US growth outperformance), weakened from 2002–2011 (Iraq War spending + GFC), strengthened from 2011–2020 (Fed tightening ahead of global peers), and entered a new potential weakening cycle from 2020. Each cycle lasts 7–10 years — longer than most macro traders expect.',
+      key_points: [
+        'Dollar cycles: multi-year USD strength/weakness periods — most important macro trend for all global assets',
+        'Strong dollar: headwind for EM (USD debt burden), commodities (USD-priced), and international equities',
+        'Four cycle drivers: US growth differential, Fed rate differential, risk sentiment, current account deficit',
+        'Historical cycles last 7–10 years — longer than most traders hold a dollar view',
+        'Dollar is a safe haven: risk-off episodes produce short-term USD rallies even in secular weakness cycles',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This calculation exercises the most foundational carry trade concept: computing the annualised interest income from holding a rate differential position. Carry is the mathematical floor of carry trade profitability — the exchange rate can move against you and still leave a net positive return if the carry is large enough.',
+      key_points: [
+        'Carry = long currency interest rate − short currency interest rate (annualised)',
+        'Daily swap = annual carry ÷ 360 (or 365) × notional — credited or debited every business day',
+        'Carry provides a buffer: the exchange rate can move N% against you before carry income is consumed',
+      ],
       activity_type: 'calculation',
       problem: 'You execute a carry trade: sell USD/JPY (short USD, long JPY). Wait — carry is earned by being LONG the high-yield currency. USD interest rate = 5.25%. JPY interest rate = 0.10%. You go LONG USD/JPY (long USD, short JPY) with a £100,000 notional position. What is your annualised carry income in percentage terms per year?',
       correct_answer: '5.15',
@@ -1634,10 +3971,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       ],
       steps: [{ id: '1', label: 'Identify interest rates for each currency', completed: false }, { id: '2', label: 'Calculate net carry differential', completed: false }, { id: '3', label: 'Review risk/reward context', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'The most dangerous moments in carry trading are the unwind events — sudden, rapid reversals where carry positions are closed en masse, causing the low-yield currency to surge violently. These events are not random: they follow a recognisable pattern and can be anticipated by alert macro traders.\n\nThe anatomy of a carry unwind: (1) Build-up — low-rate environment + stable FX conditions attract carry traders. Positioning grows over months as carry income accumulates and drawdowns remain small. (2) Trigger — a risk-off shock (geopolitical event, financial stress, unexpected data) causes risk aversion. Some carry traders begin unwinding. (3) Cascade — as the low-yield currency starts rising, other carry traders face margin calls or stop-losses. Forced selling accelerates the move, triggering more stop-losses. (4) Overshoot — the low-yield currency rises well beyond what fundamentals justify, as positioning is liquidated without regard for fair value. (5) Stabilisation — once weak hands have been cleared, the carry trade is reestablished by new entrants at better levels.\n\nTrading the unwind: the most accessible opportunity is not trying to catch the unwind top (which requires precise timing of a non-linear event) — it is re-entering carry positions after the unwind has stabilised. The best carry entry levels come immediately after a major unwind, when the carry differential is at its widest relative to the cleaned-up FX level.',
+      key_points: [
+        'Carry unwind anatomy: build-up → risk-off trigger → cascade of forced stops → overshoot → stabilisation',
+        'The low-yield currency surges in an unwind — JPY, CHF, USD all have safe-haven + carry-funder status',
+        'Never add to a carry trade during a unwind cascade — wait for stabilisation',
+        'Best carry entry: immediately after a major unwind, when the carry differential is wide and positioning is clean',
+        'Carry unwinds overshoot fundamentals — the reversal opportunity is predictable even if the trigger is not',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'commodity-supercycles': {
+    'lesson-1': {
+      intro_text: 'Commodity supercycles are decade-long periods of above-trend commodity prices driven by structural imbalances between supply and demand. Unlike normal commodity cycles (which last 3–5 years and are driven by inventory and production swings), supercycles are driven by fundamental structural shifts — most commonly rapid industrialisation of a large developing economy that requires vast quantities of raw materials.\n\nThe historical supercycles: (1) 1899–1917: US industrialisation drove demand for steel, coal, and copper. (2) 1933–1951: World War II mobilisation. (3) 1968–1980: post-war developing world industrialisation + oil shocks. (4) 1996–2014: China\'s industrialisation — the largest demand impulse in commodity history. Each supercycle ended when the supply response (new mines, new oil fields, expanded production capacity) finally caught up with demand, combined with a slowdown in demand growth as the industrialising economy matured.\n\nWhy supercycles matter for macro traders: they create 10+ year secular trends in commodity-linked currencies (AUD, CAD, BRL, COP), commodity-exporting equity markets, and producer company stocks. A trader who identified the China supercycle in 2001 and went long AUD/USD would have made one of the most profitable trades of the decade. Identifying the next supercycle early — the current thesis involves green energy transition driving copper, lithium, and cobalt demand — is the holy grail of long-horizon macro.',
+      key_points: [
+        'Commodity supercycles: decade-long above-trend prices from structural supply/demand imbalances',
+        'Driven by industrialisation of large developing economies — China supercycle 1996–2014 was the largest in history',
+        'End when supply (new mines/fields) catches demand AND the industrialising economy matures',
+        'Create 10+ year secular trends in commodity currencies (AUD, CAD), EM equities, and producers',
+        'Current supercycle thesis: green energy transition driving copper, lithium, cobalt demand (electrification)',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Oil is the most important single commodity in the global economy — it is an input to manufacturing, transportation, agriculture, and chemical production simultaneously. Oil price movements are therefore both a cause and a symptom of economic conditions, creating complex macro relationships that require careful interpretation.\n\nThe supply-demand drivers of oil: on the demand side, global GDP growth is the primary driver. Every 1% increase in global GDP requires approximately 0.4–0.6% more oil. China alone drove 40% of incremental global oil demand from 2000 to 2015. On the supply side, OPEC+ production quotas are the most consequential short-term variable. OPEC+ (OPEC plus Russia) controls approximately 40% of global production and has demonstrated the ability to move prices 10–20% with production announcements. US shale production is the most important non-OPEC variable: it can ramp up or down within 6 months, providing a natural production buffer that did not exist before 2010.\n\nMacro implications of oil price moves: rising oil (from demand) signals global growth and is bullish for risk assets and commodity currencies. Rising oil (from supply cuts) is stagflationary — reduces consumer purchasing power and corporate margins without boosting growth. Falling oil (from demand contraction) signals global slowdown. Falling oil (from supply glut) is deflationary and supports consumer spending. Reading the cause of the oil move correctly determines the second-order macro trade.',
+      key_points: [
+        'Oil is an input to all sectors — oil price changes affect inflation, corporate margins, and consumer spending simultaneously',
+        'Demand driver: every 1% global GDP growth ≈ 0.5% more oil demand; China was 40% of incremental demand 2000–2015',
+        'Supply driver: OPEC+ production quotas are the most powerful short-term lever (40% of global supply)',
+        'US shale: 6-month production ramp time provides a buffer that dampens supply-driven price extremes',
+        'Read the CAUSE of the oil move: demand-driven rise = bullish macro; supply-cut rise = stagflationary',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Precious metals — primarily gold and silver — serve unique functions in the macro framework. Unlike industrial commodities, gold is not primarily a consumption commodity: very little gold is destroyed in industrial use. It is instead a store of value, a currency hedge, and a safe-haven asset. Understanding what drives gold is therefore different from understanding what drives copper or oil.\n\nGold\'s primary drivers: (1) Real interest rates — the most important single driver. Gold pays no yield, so its opportunity cost rises as real rates (nominal rates minus inflation) rise. When real rates are negative (as during 2020–2021), gold is exceptionally attractive. When real rates are high (as in 2022–2023), gold faces headwinds. (2) USD strength — gold is priced in USD globally, so a stronger dollar makes gold more expensive for non-USD buyers, reducing demand. (3) Inflation expectations — gold is a traditional inflation hedge, but its performance varies. It worked well as an inflation hedge in the 1970s but underperformed in the 2021–2022 inflation surge. (4) Central bank demand — emerging market central banks (China, India, Russia) have been consistent buyers as they diversify reserves away from USD.\n\nGold as a macro signal: rising gold with rising stocks is a risk-on signal (growth-driven). Rising gold with falling stocks is a risk-off flight-to-safety signal. Rising gold with rising inflation expectations is a monetary debasement signal. The context of gold\'s move determines which macro regime the market is pricing.',
+      key_points: [
+        'Gold is primarily a store of value and safe haven, not a consumption commodity',
+        'Primary driver: real interest rates (nominal − inflation) — negative real rates are goldʼs best environment',
+        'Gold is priced in USD: stronger dollar = gold more expensive for non-USD buyers = demand headwind',
+        'Central bank demand: EM CBs (China, India, Russia) diversifying reserves away from USD = structural support',
+        'Gold rising + stocks falling = risk-off; gold rising + stocks rising = growth/inflation signal',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Agricultural commodities — wheat, corn, soybeans, coffee, cocoa — are less commonly traded by macro traders than energy and metals, but they produce some of the most powerful macro effects when their prices move sharply. Food price spikes are a primary driver of emerging market inflation, political instability, and central bank policy responses in food-importing economies.\n\nThe macro commodity correlation matrix: macro traders use commodity prices not just to trade those commodities directly, but as leading indicators for related markets. Key relationships: (1) Copper → global industrial activity → AUD/USD, industrial company equities. (2) Oil → global energy costs → inflation, petro-state currencies (CAD, NOK, RUB), airlines, logistics. (3) Iron ore → Chinese construction activity → AUD/USD, Chinese steel stocks. (4) Agricultural → EM food inflation → EM central bank policy, political stability risk premium. (5) Lithium/copper/cobalt → electric vehicle supply chain → battery manufacturer equities, EV-exposed economies.\n\nThe most actionable aspect of commodity macro: leading indicator sequences. Chinese PMI data leads iron ore demand by 1–2 months. US housing starts lead lumber demand. Shipping costs (Baltic Dry Index) lead commodity demand by 4–8 weeks. Building these leading indicator sequences allows macro traders to position in commodity-linked currencies and equities before the commodity itself moves — which is where the highest-conviction entry and the best risk-reward ratios live.',
+      key_points: [
+        'Agricultural price spikes: primary driver of EM inflation, political instability, and EM central bank responses',
+        'Commodity correlation matrix: copper → industrial activity; oil → inflation; iron ore → Chinese construction',
+        'Leading indicator sequences: Chinese PMI leads iron ore 1–2 months; Baltic Dry leads commodity demand 4–8 weeks',
+        'Positioning in commodity currencies BEFORE the commodity moves is the highest-conviction macro entry',
+        'Lithium/cobalt/copper: green transition commodities with decade-long structural demand from electrification',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise applies the commodity-macro linkage to a specific scenario: interpreting a sustained copper rally in the context of Chinese economic data and determining its second-order implications for currency and equity markets. The key skill is reading the commodity signal correctly and following the macro chain.',
+      key_points: [
+        '"Dr. Copper": copper price is one of the best leading indicators of global industrial and economic activity',
+        'A demand-driven copper rally (PMI + infrastructure data) has different implications than a supply-driven one',
+        'The macro chain: copper up (demand) → AUD up → commodity equities up → risk-on globally',
+      ],
       activity_type: 'multi_choice',
       question: 'Copper prices have risen 28% over the past 6 months, driven by rising Chinese manufacturing PMI readings and strong infrastructure spending data. What is the most useful macro interpretation of this move?',
       options: [
@@ -1650,10 +4048,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Copper has the nickname "Dr. Copper" because its demand is tied directly to construction, manufacturing, and infrastructure — the backbone of economic activity. A sustained copper rally driven by PMI and infrastructure data is a strong signal of genuine economic expansion, particularly in China. Macro traders use this as a leading indicator: long AUD/USD (Australia is the world\'s largest copper exporter), long cyclical equities, reduce safe-haven positions.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Commodity-linked currencies — the Australian dollar (AUD), Canadian dollar (CAD), New Zealand dollar (NZD), Norwegian krone (NOK), and Brazilian real (BRL) — are the most direct expressions of commodity macro themes available in FX markets. They are more liquid, lower cost, and easier to trade than commodity futures contracts, while providing leveraged exposure to commodity price movements.\n\nThe AUD is the cleanest commodity currency: Australia exports iron ore, coal, copper, gold, and agricultural products. The correlation between AUD/USD and iron ore prices has historically been 0.70–0.85 over 12-month periods. When Chinese PMI rises and iron ore demand accelerates, AUD/USD is often the fastest-moving and most liquid expression. CAD is primarily an oil currency — its correlation with WTI crude is strong but complicated by the Canada-US trade relationship (Canada sends 98% of oil exports to the US, making USD/CAD partially a domestic trade flow story). NOK is the purest oil currency in the G10 — Norway exports virtually all its oil and the NOK correlation with Brent crude is high.\n\nThe risk in commodity currencies: they are pro-cyclical. In global risk-off events, commodity currencies sell off simultaneously with their underlying commodities — and often more sharply, because FX is more liquid and easier to short than commodity contracts. A global recession trade typically combines short AUD/USD, short commodity prices, and long JPY or CHF — all expressing the same risk-off macro view from different angles.',
+      key_points: [
+        'Commodity currencies: AUD, CAD, NZD, NOK, BRL — most liquid expressions of commodity macro themes',
+        'AUD: iron ore + copper + coal → 0.70–0.85 correlation with iron ore over 12-month periods',
+        'CAD: primarily oil but complicated by 98% Canada-US export concentration (domestic trade flow also matters)',
+        'NOK: purest G10 oil currency; highest Brent crude correlation of any developed market FX pair',
+        'Commodity currencies are pro-cyclical: risk-off = commodity currencies + commodities both sell off simultaneously',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'geopolitical-risk-trading': {
+    'lesson-1': {
+      intro_text: 'Geopolitical risk — the potential for political instability, conflict, trade disputes, and government policy shocks to affect financial markets — is one of the most difficult factors to incorporate into a trading framework. Unlike economic data, geopolitical events are difficult to predict in timing and magnitude. Yet the market reactions to geopolitical events follow recognisable patterns, creating tradeable opportunities if approached with discipline.\n\nThe geopolitical risk premium: financial markets incorporate a risk premium for ongoing geopolitical uncertainty — a discount applied to asset prices to compensate investors for the probability of a negative geopolitical event materialising. During periods of elevated geopolitical risk, equity risk premiums widen, credit spreads increase, gold and safe-haven currencies outperform, and risk assets underperform. During periods of geopolitical calm, the risk premium compresses and these relationships reverse.\n\nThe key insight: geopolitical events produce predictable initial reactions but highly uncertain secondary dynamics. Oil spikes, safe-haven flows, and equity falls are the near-certain first 24 hours of a major conflict. Whether these moves persist, deepen, or rapidly reverse depends on how the geopolitical situation develops — which is genuinely unpredictable. This means geopolitical trades should be sized for short duration with rapid exits, not held as long-term directional views.',
+      key_points: [
+        'Geopolitical risk premium: markets discount asset prices for the probability of adverse political events',
+        'Elevated geopolitical risk: wider equity risk premiums, higher credit spreads, outperformance of gold and safe havens',
+        'Initial reactions are predictable (oil spikes, safe havens up, equities fall); secondary dynamics are not',
+        'Geopolitical trades: short duration, rapid exits — not long-term directional views',
+        'Geopolitical calm: risk premium compresses, cyclical and risk assets outperform safe havens',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Trade wars — disputes between countries over tariffs, quotas, intellectual property, and market access — have become a recurring feature of the post-2016 global economy. The US-China trade war that began in 2018 was the largest trade conflict since the 1930s and produced predictable, tradeable market effects that are a template for future conflicts.\n\nThe market mechanics of a tariff escalation: when tariffs are announced, the currencies of the targeted countries typically weaken (the CNY weakened against the USD in each major US tariff announcement in 2018–2019). The supply chains of affected industries are disrupted, benefiting domestic producers and third-country producers who are not subject to the tariff. Agricultural exporters who compete with the tariffed country for the same markets may gain temporarily. US consumers and companies using the tariffed inputs face cost increases — potentially inflationary.\n\nTrading trade war escalation vs de-escalation: escalation trades are relatively straightforward — short the currency of the targeted country, long domestic alternatives, long safe havens. De-escalation trades are more complex because the announcement of negotiations often produces a larger market move than the final agreement (which tends to be well-priced by the time it is signed). The announcement of US-China trade talks in 2019 produced a multi-percent AUD rally (AUD benefits from any improvement in China conditions) even before any concrete agreement was reached.',
+      key_points: [
+        'Trade wars: tariffs produce predictable initial FX effects — targeted country currency weakens',
+        '2018–2019 US-China: CNY weakened on each major US tariff announcement — repeatable template',
+        'Escalation trade: short targeted currency, long domestic producers, long safe havens, long agricultural alternatives',
+        'De-escalation: announcement of talks produces larger move than final agreement (already priced when signed)',
+        'AUD is a proxy for China trade sentiment — trade war escalation = short AUD; de-escalation = long AUD',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Sanctions — economic penalties imposed by one country or group of countries on another — are a form of geopolitical risk with highly specific and predictable market impacts. Unlike tariffs (which are symmetric trade frictions), sanctions are asymmetric: they target specific sectors, institutions, or individuals and have concentrated effects on specific asset classes.\n\nThe Russia sanctions case study (2022): when the US and EU imposed comprehensive sanctions on Russia following the Ukraine invasion, the effects were specific and immediate: (1) Russian assets became non-investable for most institutional capital, causing RUB collapse and Russian equity market closure. (2) Russian oil and gas exports were disrupted, causing a European energy crisis and record European natural gas prices. (3) Russian wheat exports were disrupted, contributing to a global agricultural price spike. (4) European economies that depended on Russian energy faced stagflationary pressures — rising energy costs + economic slowdown simultaneously. Trading the secondary effects (long European energy alternatives, long wheat and agricultural commodities, long USD/EUR on European stagflation risk) was more profitable and less risky than trading Russian assets directly.\n\nThe lesson: the direct target of sanctions is often untradeable (illiquid, exchange closure risk). The secondary effects on connected markets — energy alternatives, agricultural substitutes, competitor currencies, supply chain beneficiaries — are the actionable trades.',
+      key_points: [
+        'Sanctions: asymmetric, targeted economic penalties with concentrated effects on specific asset classes',
+        'Direct sanction target often untradeable (illiquid, exchange closure, institutional non-investment): avoid',
+        'Secondary effects are the actionable trades: energy alternatives, agricultural substitutes, competitor currencies',
+        '2022 Russia: European energy crisis + wheat spike + EUR weakness were all tradeable secondary effects',
+        'Stagflation risk in energy-importing countries is the most durable secondary effect of energy sanctions',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Geopolitical scenarios that create tail risk — low-probability but high-impact events — require a different approach from standard macro positioning. Tail risk events cannot be predicted with enough confidence to hold large directional positions, but they can be hedged against with options and other instruments that have defined, limited downside.\n\nThe hedging toolkit for geopolitical tail risk: (1) Long gold — gold provides automatic safe-haven exposure in any risk-off event, regardless of the specific cause. Its cost of holding (when real rates are near zero or negative) is low. (2) Long put options on equity indices — provides defined downside protection. The cost is the premium, which is known in advance. (3) Long JPY or CHF — safe-haven currencies surge in risk-off events. Long USD/JPY put options are a common geopolitical hedge. (4) Long oil upside — energy conflicts almost always produce oil spikes. Call options on crude oil are a direct geopolitical hedge for oil disruption scenarios.\n\nThe portfolio approach to tail hedging: maintaining 2–5% of portfolio value in tail hedges at all times reduces the cost of individual tail events substantially. A portfolio with permanent gold, put option, and safe-haven currency allocations does not need to predict specific geopolitical events — the hedges pay off automatically in any risk-off episode, regardless of cause. The drag from holding hedges in benign periods is the insurance premium for protection against catastrophic drawdowns.',
+      key_points: [
+        'Geopolitical tail risk: low probability but high impact — requires hedges, not directional bets',
+        'Gold: universal safe-haven, low holding cost in zero/negative real rate environments',
+        'Long put options: defined cost (premium) for defined protection — ideal for tail risk hedging',
+        'Long JPY/CHF: safe-haven currencies surge regardless of which specific event triggers risk-off',
+        '2–5% permanent tail hedge allocation: eliminates need to predict specific events; pays off in any crisis',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise applies the geopolitical scenario framework to a classic oil-supply disruption event, testing whether you correctly identify the initial reaction patterns, understand the safe-haven flows, and recognise that duration and exit timing are the key variables — not the initial direction.',
+      key_points: [
+        'Classic geopolitical risk-off pattern: oil up, equities down, gold up, safe-haven currencies (CHF, JPY, USD) up',
+        'Duration of the move is determined by whether the situation escalates or de-escalates — not by the initial move',
+        'Initial spike often overshoots and reverses rapidly when situation stabilises — tight stops essential',
+      ],
       activity_type: 'multi_choice',
       question: 'Tensions between two major oil-producing nations escalate significantly over a weekend. Oil prices spike 6% on Monday open. USD/CHF drops sharply. Gold rallies 1.8%. What is the correct interpretation and positioning framework?',
       options: [
@@ -1666,10 +4125,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Geopolitical risk events produce predictable initial reactions: oil spikes, safe-haven inflows (CHF, JPY, Gold), equity weakness. The trading edge is in reading the secondary moves: (1) the initial spike often overshoots, (2) if the geopolitical situation fails to escalate further, these moves reverse rapidly. Professional approach: trade the initial move with tight stops, and position for the reversal if the situation stabilises. Never assume duration without evidence.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'The final dimension of geopolitical risk trading is political risk in domestic markets — elections, policy changes, regulatory shifts, and government instability that affect specific country assets. This is different from international geopolitics: it affects the currency, bonds, and equities of a single country rather than global safe-haven flows.\n\nElection trading: markets often price political risk into assets in the run-up to elections where there is genuine uncertainty about the outcome. A candidate who advocates for higher corporate taxes, stricter financial regulation, or fiscal expansion (increasing bond supply and inflation risk) creates downward pressure on equities and the currency as their polling improves. The most reliable election trades are: (1) sell volatility after elections with clear outcomes (the risk premium compresses rapidly once uncertainty is resolved), (2) buy assets that the winning candidate is expected to favour before the election where this is clearly priced below fair value.\n\nPolicy risk is most acute in emerging markets, where government policy can change rapidly and dramatically — nationalisation of industries, capital controls, defaults on sovereign debt, and dramatic currency devaluations are all risks that developed market investors rarely face. EM political risk requires specific analysis of each country\'s political situation, fiscal position, and historical response to economic stress.',
+      key_points: [
+        'Political risk: elections, policy changes, regulatory shifts — affects single country assets, not global safe havens',
+        'Election trading: sell volatility after clear outcomes (risk premium compresses); buy favoured assets before',
+        'Policy risk premium builds into currency, bonds, equities as election uncertainty rises',
+        'EM political risk: nationalisation, capital controls, default, devaluation — requires country-specific analysis',
+        'Developed markets: regulatory risk (pharma, financial, tech sector regulation) is the most common domestic political trade',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'options-strategies-advanced': {
+    'lesson-1': {
+      intro_text: 'Vertical spreads are the foundation of structured options trading. Unlike buying single options (which require the underlying to move significantly to profit), vertical spreads define both the maximum profit and maximum loss in advance, making them more capital-efficient and risk-controllable than naked options positions.\n\nThe bull call spread: buy a lower-strike call, sell a higher-strike call at the same expiry. Maximum profit: the spread width minus the net premium paid (achieved when the underlying closes above the short strike at expiry). Maximum loss: the net premium paid (if the underlying closes below the long strike). This structure reduces the cost of buying the call by selling a higher-strike call against it — but caps the upside at the short strike.\n\nThe bear put spread: buy a higher-strike put, sell a lower-strike put at the same expiry. Maximum profit: the spread width minus the net premium paid. Maximum loss: the net premium paid. Both vertical debit spreads require the underlying to move in your favour by expiry to be profitable. The trade-off: lower cost than a single option, but capped upside. Vertical spreads are the default structure for directional options trades with defined risk — the single most important concept in practical options trading.',
+      key_points: [
+        'Vertical spread: buy one strike, sell another at same expiry — defines maximum profit and maximum loss',
+        'Bull call spread: long lower call + short higher call; max profit = spread width − premium paid',
+        'Bear put spread: long higher put + short lower put; same structure in opposite direction',
+        'Cost reduction: selling the further strike reduces premium paid but caps profit at the short strike',
+        'Defined risk: premium paid is the maximum possible loss — never more, regardless of how wrong you are',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Credit spreads and iron condors are the options structures that allow traders to profit from time decay and the volatility risk premium — the persistent tendency for implied volatility to exceed realised volatility. Rather than buying options and needing large moves to profit, credit spread sellers collect premium upfront and profit if the underlying stays within a defined range.\n\nThe bull put spread (credit spread): sell a higher-strike put, buy a lower-strike put. Net premium is received upfront. Maximum profit: the premium received (if the underlying closes above the short strike). Maximum loss: the spread width minus the premium received. This structure profits when the underlying stays above the short put strike — it does not need to rise, just not fall through the strike.\n\nThe iron condor: simultaneously selling a bull put spread and a bear call spread on the same underlying with the same expiry. Net premium received from both sides. Profits if the underlying stays within the range defined by the short strikes. Iron condors are the primary vehicle for selling volatility on equity indices, where the market tends to remain in a defined range for most of the time. The risk: if the underlying breaks out beyond either short strike, maximum loss is the spread width minus total premium received. Iron condors require active management when the underlying approaches either short strike.',
+      key_points: [
+        'Credit spread: premium received upfront; profit if underlying stays above/below the short strike at expiry',
+        'Bull put spread: sell higher put, buy lower put — profits if underlying stays above short put strike',
+        'Iron condor: bull put spread + bear call spread simultaneously — profits if underlying stays in the range',
+        'Iron condors: primary vehicle for selling volatility premium on equity indices (most time spent in range)',
+        'Risk: underlying breaks through a short strike — loss = spread width − total premium received',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The Greeks — delta, gamma, theta, and vega — are the sensitivities that describe how an options position\'s value changes in response to changes in the underlying price, time, and volatility. Mastering the Greeks is the difference between understanding why your position is making or losing money and being surprised by outcomes that are actually mathematically predictable.\n\nDelta: the rate of change of option value per $1 move in the underlying. A delta of 0.50 means the option gains (or loses) $0.50 for every $1 move in the underlying. At-the-money options have approximately 0.50 delta. Deep in-the-money options approach delta 1.0. Far out-of-the-money options approach delta 0. A long call has positive delta (benefits from price rise); a long put has negative delta (benefits from price fall).\n\nTheta: the daily time decay. A theta of −$0.05 means the option loses $0.05 in value each day, all else equal. Long options have negative theta (hurt by time passing). Short options have positive theta (benefit from time passing). Theta accelerates as expiry approaches — an option loses value most rapidly in its final two weeks. This is why options sellers prefer to hold positions through expiry while options buyers prefer to exit well before expiry.',
+      key_points: [
+        'Delta: option value change per $1 underlying move; ATM options ≈ 0.50 delta',
+        'Long call: positive delta (rises when underlying rises); long put: negative delta (rises when underlying falls)',
+        'Theta: daily time decay; long options lose value each day, short options gain value each day',
+        'Theta accelerates approaching expiry: options lose value fastest in the final two weeks',
+        'Options buyers fight theta; options sellers collect theta — this is the core practical tension in options trading',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'The two remaining primary Greeks — gamma and vega — capture more subtle but critically important option risks. Gamma measures how quickly delta changes as the underlying moves; vega measures the sensitivity to changes in implied volatility.\n\nGamma: the rate of change of delta per $1 move in the underlying. High gamma means the option\'s delta changes rapidly as the underlying moves — the position "accelerates." At-the-money options near expiry have the highest gamma. A long straddle (long call + long put) is a high-gamma position: if the underlying moves sharply in either direction, the winning leg gains delta faster than the losing leg loses it. Short options positions have negative gamma — the position works against you faster as the underlying moves further from the strike.\n\nVega: the change in option value per 1% change in implied volatility. An option with vega of $0.15 gains (or loses) $0.15 for every 1% increase (or decrease) in implied volatility. Long options have positive vega — they benefit from volatility increases. Short options have negative vega — they are hurt by volatility increases. This creates the fundamental options risk: in a crisis, implied volatility surges (VIX spikes), which benefits long options positions and destroys short options positions — regardless of the direction of the underlying move. Options sellers who are naked short vega face the largest losses exactly when they can least afford them.',
+      key_points: [
+        'Gamma: rate of change of delta; high near ATM and near expiry; long options have positive gamma',
+        'High positive gamma: position accelerates in your favour as the underlying moves in either direction (straddle)',
+        'Negative gamma (short options): position accelerates against you as the underlying moves further from strike',
+        'Vega: change in option value per 1% change in implied vol; long options = positive vega',
+        'Crisis risk for options sellers: VIX surge destroys short vega positions — the most dangerous correlation in options',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This calculation exercise applies iron condor mechanics to a real premium calculation. Understanding how to calculate net premium, maximum profit, maximum loss, and break-even prices is the minimum required knowledge before placing any iron condor or credit spread trade.',
+      key_points: [
+        'Net premium = total premium received − total premium paid (across all four legs)',
+        'Max profit = net premium × contract multiplier (achieved if underlying closes between the two short strikes)',
+        'Break-even prices: short put strike − net premium (downside); short call strike + net premium (upside)',
+      ],
       activity_type: 'calculation',
       problem: 'You sell an iron condor on SPX: sell 4500 call (premium received $8.50), buy 4525 call (cost $3.20), sell 4400 put (premium received $7.80), buy 4375 put (cost $2.90). All options expire in 30 days. What is your maximum profit per contract (100 shares)?',
       correct_answer: '1020',
@@ -1686,10 +4206,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       ],
       steps: [{ id: '1', label: 'Calculate total premium received', completed: false }, { id: '2', label: 'Calculate total premium paid', completed: false }, { id: '3', label: 'Calculate net premium and max profit', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Managing options positions after entry is where most retail traders fail. Opening an iron condor or credit spread is straightforward; knowing when to adjust, take partial profits, or cut losses requires rules defined in advance — not decisions made in the heat of a moving market.\n\nThe 50% profit rule: when a credit spread has decayed to 50% of the maximum profit (i.e., you have captured half the premium), close the position and take the profit. The remaining 50% of theoretical profit requires holding through the riskiest period (near expiry, when gamma is highest), and the risk-reward of holding further is typically unfavourable. Professional options traders are disciplined about taking 50% profit and recycling the capital into new positions.\n\nRoll management: when the underlying approaches a short strike (typically within 10 delta of the strike), the position requires management. Options: (1) close for a loss at the defined maximum, (2) roll the threatened side — buy back the short option and sell a further strike at a later expiry, collecting additional premium, (3) close one side and maintain the other if the directional view is now strong. The roll has no guaranteed outcome — it extends duration and adjusts strikes but cannot repair a fundamentally wrong directional bet.',
+      key_points: [
+        '50% profit rule: close credit spreads when half the max premium has been captured — best risk-reward exit',
+        'Remaining 50% of profit requires highest-gamma period (near expiry) where risk of loss is greatest',
+        'Roll management: when underlying within 10 delta of short strike, close/roll/adjust before max loss',
+        'Rolling: buy back threatened short, sell further strike at later expiry — extends duration but collects more premium',
+        'Defined loss: never let a credit spread lose more than the defined maximum — cut at 100–200% of premium received',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'implied-vs-realised-vol': {
+    'lesson-1': {
+      intro_text: 'Implied volatility (IV) and realised volatility (RV) are two different measures of market volatility that are almost never equal — and the gap between them is one of the most persistent and profitable anomalies in financial markets. Understanding this gap and how to trade it is the foundation of volatility-based strategies.\n\nRealised volatility (also called historical volatility or HV): the actual volatility that a price series exhibited over a historical period. It is calculated from actual price returns — the standard deviation of daily (or intraday) percentage price changes, annualised. It is a backward-looking measure: it tells you how volatile the underlying actually was.\n\nImplied volatility: the volatility figure implied by current options prices, given the current underlying price, strike, time to expiry, and risk-free rate. It is a forward-looking expectation — the market\'s collective estimate of future volatility over the life of the option. IV is derived by solving the Black-Scholes formula in reverse: given all other known inputs plus the option\'s market price, what volatility must be implied?\n\nThe volatility risk premium: on average and over long periods, IV exceeds RV. The market systematically overestimates future volatility relative to what actually occurs. This persistent premium is collected by options sellers and paid by options buyers. It is the reason that structured short-volatility strategies have historically been profitable as long-run strategies.',
+      key_points: [
+        'RV (realised/historical vol): actual volatility that occurred — backward-looking, calculated from price returns',
+        'IV (implied vol): volatility priced into options — forward-looking, derived from options market prices',
+        'IV almost always exceeds RV on average: the volatility risk premium',
+        'Volatility risk premium: systematic overestimation of future vol → options sellers collect, buyers pay',
+        'Short-vol strategies collect the premium; long-vol strategies pay it — premium exists for structural reasons',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The VIX (CBOE Volatility Index) is the most widely followed measure of implied volatility and is often called the "fear gauge" of the equity market. It represents the expected 30-day volatility of the S&P 500, derived from the prices of a wide range of near-term SPX options. Understanding the VIX — its typical range, its mean-reverting nature, and its relationship to equity markets — is essential for any options trader.\n\nVIX characteristics: the VIX is strongly mean-reverting. In calm markets, it trades between 12–20. During moderate stress, it rises to 20–30. During crises, it spikes to 30–80+ (GFC 2008: 89, COVID 2020: 85). Critically, very high VIX readings are short-lived — the VIX almost always falls back toward its long-run mean of approximately 19 within weeks or months of a spike. This mean-reversion is the most reliable feature of volatility dynamics.\n\nVIX term structure: the VIX measures 30-day implied vol. The VIX futures term structure shows expected vol at different horizons. In normal markets, the term structure is upward sloping (contango): near-term vol is lower than longer-dated vol. In stressed markets, the term structure inverts (backwardation): near-term vol exceeds longer-dated vol as the market prices the current spike as temporary. The shape of the term structure is a real-time indicator of market stress level and is used to time volatility selling.',
+      key_points: [
+        'VIX: 30-day implied vol of S&P 500; "fear gauge" — rises in equity market stress, falls in calm periods',
+        'Mean-reverting: long-run average ≈ 19; spikes to 30–80+ in crises then rapidly reverts toward mean',
+        'Calm range: 12–20; moderate stress: 20–30; crisis: 30–80+ (GFC: 89, COVID: 85)',
+        'VIX term structure contango (normal): near-term vol below long-term vol',
+        'Backwardation (stressed): near-term vol exceeds long-term vol — spike priced as temporary, then reverting',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Trading the IV/RV relationship — going long or short volatility based on whether implied vol is rich or cheap relative to realised vol — is one of the most robust strategies in institutional options markets. The mechanics are straightforward; the discipline of execution is the hard part.\n\nThe long volatility trade (when IV is cheap relative to RV): buy straddles or strangles. A straddle (long call + long put at the same strike) profits if the underlying moves more than the implied volatility predicts. If RV is running at 25 and IV implies only 15, the market is underpricing future volatility — buying straddles is theoretically advantageous. Long vol strategies work best in the early stages of a volatility regime change: entering before a market shock, not during it.\n\nThe short volatility trade (when IV is rich relative to RV): sell straddles, strangles, or iron condors. If RV is running at 12 and IV is at 22, the market is significantly overpricing volatility — selling premium allows collection of the gap. Short vol strategies are the classic options income strategies: they require the underlying to move less than implied. The risk: a vol spike destroys short vol positions in the same week they were structured to earn over 30 days.',
+      key_points: [
+        'Long vol trade: buy straddles/strangles when IV is cheap vs RV — profit if actual moves exceed implied predictions',
+        'Best long vol entry: before a vol regime change (before the spike), not after it has already happened',
+        'Short vol trade: sell straddles/strangles/iron condors when IV is rich vs RV — collect the IV/RV gap',
+        'Short vol risk: a vol spike destroys positions in days that were structured to earn premium over 30 days',
+        'IV/RV ratio above 1.5: strong short vol signal; below 0.7: strong long vol signal',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'The Sharpe ratio and Sortino ratio are standard risk-adjusted return metrics — but short volatility strategies require additional scrutiny because their return distributions are fundamentally non-normal. Understanding the kurtosis problem in short-vol strategies is essential before deploying significant capital.\n\nThe kurtosis problem: standard return metrics assume returns follow a roughly normal (bell curve) distribution. Short volatility strategies produce return distributions with high kurtosis — they have long stretches of small, consistent gains (the premium income) punctuated by occasional severe losses (the vol spikes). The Sharpe ratio looks excellent during calm periods and catastrophic during spikes. A short-vol strategy that has a Sharpe of 1.5 over 3 years may have produced that with a single -80% month hidden in the data.\n\nThe correct assessment framework for short-vol strategies: (1) Worst-case single month loss — a strategy that loses more than 5–10× its monthly income in a single event has not been properly sized or hedged. (2) Time to recovery — after the worst historical drawdown, how long did it take to return to the previous high? (3) Hedge cost vs premium income — if the strategy permanently hedges tail risk with long options or VIX calls, how much of the premium income is consumed by the hedge, and what is the net unhedged income? Only after answering these three questions can short-vol strategy performance be properly evaluated.',
+      key_points: [
+        'Short-vol return distribution: non-normal, high kurtosis — many small gains, occasional catastrophic losses',
+        'Sharpe ratio misleads: looks excellent during calm, catastrophic during spikes — insufficient metric alone',
+        'Worst-case month assessment: if one month loss exceeds 5–10× monthly income, strategy is unacceptably risky',
+        'Time to recovery: how long after worst drawdown to return to high-water mark — critical for capital commitment',
+        'Permanent tail hedge: VIX calls or long puts consume premium but prevent catastrophic loss — evaluate net',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise tests the core IV/RV relationship interpretation: reading a specific VIX level relative to recent historical realised volatility and identifying the correct trade expression based on whether implied vol is rich or cheap.',
+      key_points: [
+        'IV significantly above RV: market is overpricing future volatility — options selling strategies have positive expectancy',
+        'The structural IV/RV gap (volatility risk premium) averages 2–5 vol points over long periods',
+        'An IV/RV gap of 10+ vol points represents an unusually rich opportunity for premium sellers',
+      ],
       activity_type: 'multi_choice',
       question: 'SPX 30-day implied volatility (VIX) is at 28. The realised 30-day historical volatility over the past month was 18. What does this tell you about the options market and what is the typical trade expression?',
       options: [
@@ -1702,10 +4283,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'The volatility risk premium (IV > RV) is one of the most persistent and well-documented anomalies in options markets. Implied volatility systematically overestimates future realised volatility on average — this is why options selling strategies have historically been profitable. The trade: when the IV/RV ratio is elevated, options are "expensive," favouring selling premium. When IV collapses back toward RV, short options positions profit from the decline in option prices (theta + vega decay).',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'The volatility risk premium is not static — it varies across time, market regimes, and asset classes. Understanding when the premium is most reliably harvestable and when short-vol strategies are most dangerous is the final level of sophistication in volatility trading.\n\nThe premium is most reliable when: (1) the VIX is in its normal range (15–25) with a contango term structure, (2) no major scheduled risk events (Fed meetings, earnings, elections) fall within the option expiry window, (3) realized vol has been stable for 4+ weeks (no vol regime change underway), and (4) the credit spread market is not showing signs of financial stress (spreads narrow, not widening).\n\nThe premium is most dangerous when: (1) VIX has recently spiked and begun to decline — vol can re-spike before fully normalising, (2) major scheduled events are near term (within the option window), (3) macroeconomic data is producing large surprises (hot inflation prints, significant jobs misses), or (4) credit spreads are widening rapidly, signalling financial stress building beneath the surface. Timing short-vol entry to avoid dangerous environments and concentrate on fertile environments is the core skill that separates consistent vol sellers from those who get wiped out cyclically.',
+      key_points: [
+        'Best short-vol conditions: VIX 15–25, contango term structure, no major events in window, stable recent RV',
+        'Avoid short vol: VIX recently spiked (may re-spike), major events near term, data producing large surprises',
+        'Credit spread widening is an early warning sign of financial stress building — pre-emptive exit signal',
+        'Consistent vol sellers: cycle between selling premium in fertile environments and stepping aside in dangerous ones',
+        'The vol spike that wipes out short-vol traders almost always arrives when conditions looked safe the week before',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'volatility-surface': {
+    'lesson-1': {
+      intro_text: 'The volatility surface is a three-dimensional representation of implied volatility across all available strikes and expiries for a given underlying asset. Rather than a single IV number, the surface shows how implied volatility varies by strike (the volatility smile or skew) and by time to expiry (the term structure). Reading the volatility surface correctly reveals what the options market is pricing in about future uncertainty, tail risk, and expected price distributions.\n\nThe volatility smile: in currency markets, implied volatility forms a "smile" shape — it is higher for far out-of-the-money options in both directions than for at-the-money options. This reflects the market\'s acknowledgement that tail events (large moves in either direction) are more probable than a normal distribution implies. The smile tells you the market is buying insurance against both directions.\n\nThe volatility skew: in equity index markets, the smile is asymmetric — it slopes down more steeply to the right than the left, forming a "skew." Put options (downside protection) are systematically more expensive than equidistant call options (upside participation). This reflects structural demand for crash protection from institutional investors who are long equity portfolios. The steeper the skew, the more fear is priced in. A flattening skew (puts becoming relatively cheaper vs calls) signals improving sentiment and reduced demand for downside protection.',
+      key_points: [
+        'Volatility surface: 3D map of IV across all strikes (skew) and all expiries (term structure)',
+        'Volatility smile (FX): IV higher for OTM options in both directions — symmetric tail risk pricing',
+        'Volatility skew (equity indices): puts more expensive than equidistant calls — crash protection demand',
+        'Steep skew = high fear + institutional hedging demand; flat skew = improving sentiment',
+        'Reading the surface tells you what the options market prices about future distribution of returns',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The term structure of implied volatility — how IV varies across different expiry dates — is one of the most information-rich indicators available to options traders. It reveals the market\'s forecast of near-term versus longer-term uncertainty and provides actionable signals for volatility positioning.\n\nContango (normal upward slope): near-term IV is lower than longer-dated IV. The market expects more volatility over the next 3 months than over the next 30 days. This is the normal condition in stable markets: there is more uncertainty further out in time because there are more unknown events. Contango favours selling near-term options (lower premium, faster decay) and holding longer-dated options.\n\nBackwardation (inverted slope): near-term IV exceeds longer-dated IV. The market is pricing an immediate crisis and expects conditions to normalise over time. This happens during crises: the VIX spikes to 40+ while 3-month VIX futures might be at 28 — the market expects the near-term spike to revert. Backwardation creates the most reliable short-vol opportunity: near-term options are expensive relative to any reasonable long-run expectation, and mean reversion from backwardation to contango is one of the highest-probability moves in the options market.',
+      key_points: [
+        'Contango (normal): near-term IV < long-dated IV; more uncertainty further out, less right now',
+        'Backwardation (inverted): near-term IV > long-dated IV; crisis pricing with expectation of normalisation',
+        'Backwardation signals the highest near-term short-vol opportunity — spike expected to revert rapidly',
+        'VIX futures contango slope: also drives VIX ETF decay (short XIV/SVXY strategies exploit this)',
+        'Term structure slope is a real-time measure of market stress level — watch it daily during volatile periods',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The 25-delta risk reversal is the most widely used measure of the volatility skew and is a key indicator of market sentiment and positioning. It measures the difference in implied volatility between 25-delta calls and 25-delta puts, providing a quantitative measure of the relative demand for upside versus downside protection.\n\nFormula: Risk Reversal = IV(25-delta call) − IV(25-delta put). A negative risk reversal (puts more expensive than calls) indicates institutional demand for downside protection — the typical condition in equity markets. A positive risk reversal (calls more expensive than puts) indicates speculative demand for upside participation — common in cryptocurrency and occasionally in commodity markets during supply squeezes.\n\nThe risk reversal as a positioning signal: extreme negative risk reversals (e.g., −8 or wider in SPX terms) indicate maximum fear and crash protection demand. Historically, when risk reversals reach extreme negative levels, it is a contrarian indicator — the market is so positioned for a crash that most of the possible selloff has been hedged by institutions, limiting further downside. Conversely, very flat or positive risk reversals after a long bull market indicate complacency — insufficient downside protection in place.',
+      key_points: [
+        'Risk reversal = IV(25-delta call) − IV(25-delta put); measures relative skew between upside and downside',
+        'Negative RR (normal for equities): puts more expensive — crash protection demand from long portfolios',
+        'Positive RR: calls more expensive — speculation on upside (common in crypto, commodities during squeezes)',
+        'Extreme negative RR (−8+): maximum fear, contrarian indicator — much downside already hedged institutionally',
+        'Flat/positive RR after bull market: complacency signal — insufficient downside protection in place',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Trading the volatility surface means taking positions not just on the level of implied volatility (long or short vol) but on its shape — the relative cheapness or richness of different parts of the surface. This is the domain of professional volatility traders and requires understanding calendar spreads and ratio spreads.\n\nCalendar spread (time spread): buy a longer-dated option and sell a shorter-dated option at the same strike. Profits from the difference in time decay rates (theta) and from changes in the term structure. If the near-term option decays faster than the long-dated option (as it should in contango), the position profits. Calendar spreads are also long vega on the long-dated leg — they benefit from volatility increases at the longer expiry.\n\nDiagonal spread: a combination of calendar spread and vertical spread — buy a longer-dated option at one strike and sell a shorter-dated option at a different strike. Used to exploit specific expectations about where the underlying will be at near-term expiry while maintaining longer-dated exposure. Diagonal spreads are the building blocks of most sophisticated institutional options strategies and allow very specific views on both direction and volatility at specific time horizons.',
+      key_points: [
+        'Volatility surface trading: positions on the SHAPE of IV (which parts are cheap vs rich), not just the level',
+        'Calendar spread: long back-month, short front-month at same strike — profits from faster front-month theta decay',
+        'Calendar spreads are long the term structure: benefit if contango steepens or near-term vol falls relative to back-month',
+        'Diagonal spread: different strikes + different expiries — exploits directional view + term structure view simultaneously',
+        'Surface trading is the most sophisticated options approach — requires understanding all Greeks across multiple expiries',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise tests the interpretation of volatility skew from the surface: reading what a specific put/call implied vol differential tells you about institutional positioning and market sentiment. The ability to interpret skew magnitude and direction is essential for options market context.',
+      key_points: [
+        'Negative skew in equity indices is structural — the question is always: how steep is it?',
+        'A 13-vol-point gap between 25-delta puts and calls is historically very steep — elevated fear',
+        'Steep skew creates opportunity: risk reversals (sell puts, buy calls) become attractive when skew is extreme',
+      ],
       activity_type: 'multi_choice',
       question: 'SPX options show a steep negative skew: 25-delta puts are trading at 32 implied vol, while 25-delta calls are trading at 19 implied vol. What does this tell you about market sentiment and positioning?',
       options: [
@@ -1718,10 +4360,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Negative skew (puts more expensive than calls at equal delta distance) is a universal feature of equity index options, but the MAGNITUDE of the skew changes with market sentiment. A steep skew signals: (1) heightened fear and institutional demand for crash protection, (2) market makers facing difficulty hedging sold put positions (requiring higher premiums). When skew is extreme, contrarian strategies that sell puts relative to calls (risk reversals) can be attractive if the underlying fundamental outlook is constructive.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'The final lesson in volatility surface analysis addresses how to use the surface as a market intelligence tool — reading what specific surface shapes tell you about institutional positioning, upcoming catalysts, and market stress levels.\n\nEvent vol: before scheduled events (Fed meetings, earnings, economic data releases), implied volatility rises for the expiry that encompasses the event and then collapses immediately after (the "vol crush"). The magnitude of the pre-event IV rise indicates how much uncertainty the market is pricing for that specific event. If IV is very high into a Fed meeting (pricing a large potential move), and the Fed delivers a consensus outcome, the vol crush can be dramatic — and selling options before the event with the intention of buying them back after (if the position can be managed through the event) is a common institutional trade.\n\nUsing the surface to read market consensus: the options market\'s pricing reflects the aggregated views of all participants. The shape of the surface at any moment represents a probability distribution: the most expensive options are the ones the market thinks have the highest probability of being in-the-money at expiry. When the surface is heavily skewed toward downside puts, the market is pricing a higher probability of a crash than a rally. This is the options market\'s silent vote on the likely distribution of future outcomes — and it is often more informative than analyst forecasts.',
+      key_points: [
+        'Event vol: IV rises into scheduled events, then collapses (vol crush) immediately after the outcome is known',
+        'Selling options before events and buying after the vol crush is a common institutional income strategy',
+        'Pre-event IV level reveals how much the market is pricing for that specific uncertainty',
+        'The surface is a real-time probability distribution: expensive options = market prices high probability of that outcome',
+        'Heavy downside skew = options market pricing higher crash probability than rally — a real-time sentiment signal',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'delta-gamma-hedging': {
+    'lesson-1': {
+      intro_text: 'Delta hedging is the practice of eliminating the directional (delta) exposure of an options position by taking an offsetting position in the underlying asset. A properly delta-hedged options position is "market neutral" — it does not profit or lose from small directional moves in the underlying, but profits or loses from changes in volatility, time passage, and large moves (gamma effects).\n\nWhy delta hedging matters: options market makers who sell options to clients cannot hold large directional positions — they would be speculating on direction, not providing liquidity. Instead, they continuously delta-hedge their options book, leaving only volatility exposure (vega) and time decay (theta). For retail options traders, understanding delta hedging is essential because it explains why options prices move in ways that can seem counterintuitive — the options market maker is actively managing their delta, which affects the supply and demand for the underlying.\n\nThe mechanics: if you are long a call with delta 0.40, you are effectively long 40 shares per contract. To delta hedge, short 40 shares. Net delta = 0. If the underlying rises by $1, the call gains $0.40 × 100 = $40, but the short 40 shares loses $40. Net P&L: $0 from delta. Profit or loss now comes only from other Greeks: gamma (if the underlying moves significantly), theta (if time passes), and vega (if implied volatility changes).',
+      key_points: [
+        'Delta hedging: offsetting the directional exposure of options with a position in the underlying',
+        'Delta-neutral: the hedged position does not profit from small directional moves — only vol, time, and gamma matter',
+        'Market makers delta-hedge continuously — they provide liquidity on vol, not direction',
+        'Mechanics: long call delta 0.40 = long 40 shares equivalent; hedge by shorting 40 shares',
+        'After hedging: remaining P&L drivers are gamma (large moves), theta (time), vega (vol changes)',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Dynamic delta hedging means re-hedging the delta exposure continuously as it changes when the underlying moves. Because of gamma (the rate of change of delta), a delta-neutral position immediately becomes non-neutral when the underlying moves even slightly. Maintaining delta neutrality requires frequent rebalancing.\n\nThe rebalancing frequency trade-off: rebalancing more frequently keeps the position more precisely delta-neutral but incurs more transaction costs (each rebalance involves buying or selling the underlying). Rebalancing less frequently allows delta to drift further from zero but reduces transaction costs. Professional market makers typically rebalance when delta drifts beyond a threshold (e.g., ±50 delta per position) rather than on a fixed time schedule.\n\nGamma P&L: the profit from gamma in a long options position comes from the fact that delta increases as the underlying rises (positive gamma) — so you buy more underlying (at a rising price) and sell it when the underlying falls (at a lower price). This "buy low, sell high" dynamic of continuous delta hedging is what long gamma positions profit from. A long straddle that is continuously delta-hedged will profit from large moves in either direction — not because of direction but because of the gamma-driven rebalancing.',
+      key_points: [
+        'Dynamic hedging: continuous rebalancing as gamma changes the delta — required to maintain delta-neutral',
+        'Rebalance frequency trade-off: more frequent = more precisely neutral, more transaction costs',
+        'Threshold-based rebalancing: re-hedge when delta drifts beyond ±50 units, not on fixed schedule',
+        'Gamma P&L: long gamma position profits from the buy-low-sell-high dynamic of continuous rebalancing',
+        'Long straddle + continuous delta hedging: profits from large moves regardless of direction (gamma P&L)',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Gamma scalping is the active trading strategy that monetises the gamma of a long options position through continuous delta rebalancing. It is one of the few strategies that can profit from volatility without predicting direction, making it particularly valuable when the market is expected to be volatile but the direction is uncertain.\n\nThe gamma scalping process: (1) Buy a straddle (long call + long put at ATM). (2) Immediately delta-hedge the position to neutral. (3) When the underlying moves up significantly, the delta increases — short more underlying to re-neutralise. (4) When the underlying falls back, delta decreases — buy back underlying to re-neutralise. (5) Each rebalancing cycle generates a small profit from buying low and selling high. The total profit from gamma scalping = sum of all rebalancing trades (the "gamma P&L") minus the theta decay cost (the premium paid for the straddle that decays daily).\n\nThe fundamental equation of gamma scalping: total P&L = gamma P&L − theta cost. The position is profitable when realised volatility (actual moves) exceeds implied volatility (the cost of the straddle). If the underlying moves more than implied vol predicted, gamma P&L exceeds theta cost. If the underlying moves less, theta cost exceeds gamma P&L. Gamma scalping is therefore a direct bet on realised vol being higher than implied vol.',
+      key_points: [
+        'Gamma scalping: profit from continuous delta rebalancing without predicting direction',
+        'Process: buy straddle → delta hedge → rebalance on every significant move → accumulate rebalancing profit',
+        'Each rebalance is a "buy low, sell high" trade in the underlying — gamma generates these entry/exit points',
+        'P&L = gamma P&L (from rebalances) − theta cost (straddle premium decay): profitable when RV > IV',
+        'Gamma scalping = direct bet that actual moves (RV) will exceed what the straddle priced (IV)',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Short gamma positions — options sellers who are net short options — face the inverse of the gamma scalping dynamic. Rather than profiting from large moves and rebalancing, short gamma positions lose from large moves and rebalancing costs. Understanding short gamma risk is essential for any options income strategy.\n\nThe short gamma spiral: when the market moves sharply against a short gamma options position, the delta exposure grows rapidly (because of negative gamma). The options seller must buy the underlying as it rises (to hedge short call exposure) or sell as it falls (to hedge short put exposure). This forced buying high and selling low is the opposite of gamma scalping — it is a systematic loss-generating dynamic. In severe market dislocations, this forced hedging by large short gamma holders can amplify market moves, as everyone with short gamma exposure is forced to trade in the same direction simultaneously.\n\nManaging short gamma: the practical management tools are: (1) position limits — size short gamma positions such that the maximum delta drift in a 3-sigma move is manageable, (2) pre-defined roll triggers — specific delta levels at which the position is adjusted, (3) long gamma hedges — buying far OTM options against the short gamma position to limit tail exposure, (4) time management — avoiding holding short gamma through high-vol events that could produce 3+ sigma moves.',
+      key_points: [
+        'Short gamma: options sellers lose from large moves — forced to buy high (short call hedge) or sell low (short put hedge)',
+        'Short gamma spiral: as market moves against position, forced hedging amplifies further moves',
+        'Large short gamma in the system: market makers simultaneously buy/sell to hedge, amplifying dislocations',
+        'Short gamma management: position limits, pre-defined roll triggers, long OTM hedges, event avoidance',
+        'Never hold large short gamma through events that could produce 3+ sigma moves without a tail hedge',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise applies delta-hedging mechanics to a live scenario: calculating the current delta exposure of a short straddle position and identifying the correct hedge to return to delta neutrality. The arithmetic must be precise — a delta hedging error compounds over time.',
+      key_points: [
+        'Net delta of a short straddle: starts at zero (ATM put and call cancel), accumulates as underlying moves',
+        'Positive net delta = long underlying bias; negative net delta = short underlying bias',
+        'Hedge always goes opposite to net delta: positive delta → sell underlying; negative delta → buy underlying',
+      ],
       activity_type: 'multi_choice',
       question: 'You sold 10 SPX straddles (short 10 calls and 10 puts at the same strike). Your net delta is currently +250 (the underlying moved up and the calls became more in-the-money). How do you delta-hedge to return to delta-neutral?',
       options: [
@@ -1734,10 +4437,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Delta-neutral hedging: your short straddle has accumulated +250 delta as the market moved up (the short call gained more delta than the short put lost). To neutralise: SELL the equivalent of 250 units of the underlying (futures, ETF, or shares). This removes the directional P&L exposure, leaving you with a position that profits primarily from time decay (theta) and volatility contraction (vega), while being exposed to gamma risk — the position will re-accumulate delta as the market continues to move.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'The practical integration of delta and gamma hedging in a professional options book requires continuous monitoring, pre-defined decision rules, and systematic reporting. This lesson covers the operational framework for running a hedged options book.\n\nThe Greeks P&L attribution: every day, a professionally managed options position is attributed to its component Greeks. Theta P&L: how much did time decay contribute (should be positive for short options books). Delta P&L: how much did directional exposure contribute (should be near zero if properly hedged). Gamma P&L: how much did large underlying moves contribute (negative for short gamma books on large-move days). Vega P&L: how much did changes in implied volatility contribute. This daily attribution shows whether the book is performing as expected and immediately flags any structural issue.\n\nPositioning limits: a professional options desk sets limits on each Greek exposure — maximum delta, maximum gamma, maximum vega, maximum theta — at the portfolio level. These limits prevent any one book from having outsized exposure to a single risk factor. When a limit is breached (as it will be when the underlying moves significantly), the risk manager is notified and the book must be rebalanced within a defined timeframe. For retail traders replicating this approach: defining personal limits on each Greek and reviewing them weekly is the minimum required discipline for running more than one or two options positions simultaneously.',
+      key_points: [
+        'Daily Greeks attribution: delta, gamma, theta, vega P&L each attributed separately — essential for risk monitoring',
+        'Theta P&L near positive expected value = short options book performing as designed',
+        'Large negative gamma P&L on a big-move day = expected; the question is whether it was within position limits',
+        'Position limits on each Greek: maximum delta/gamma/vega/theta at portfolio level prevents tail concentration',
+        'Retail application: define personal Greeks limits, review weekly — manage each position within those bounds',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'options-portfolio-protection': {
+    'lesson-1': {
+      intro_text: 'Portfolio protection using options is the practice of buying insurance against catastrophic losses in an existing investment portfolio. Unlike speculative options strategies that seek to profit from market moves, protective options strategies accept paying a premium in exchange for a defined floor on portfolio losses. Understanding when, how much, and which type of protection to buy is a core risk management competency for any serious trader or investor.\n\nThe protective put: the simplest form of portfolio protection. Buy put options on an index or stock that closely mirrors your portfolio. If the portfolio falls sharply, the put options gain value, offsetting the portfolio loss. The cost: the put premium, paid upfront. If the market rises, the puts expire worthless and the premium is lost — the "cost of insurance" that did not need to pay out.\n\nThe coverage decision: full coverage (100% of portfolio delta hedged) is very expensive. Most institutional managers choose partial coverage (25–50% of portfolio), protecting against catastrophic drawdowns while accepting moderate losses. The correct coverage level depends on: (1) the cost of full coverage as a percentage of expected annual return, (2) the maximum drawdown the investor or fund can tolerate before capital is withdrawn or the strategy is abandoned, and (3) the current volatility environment (whether options are cheap or expensive relative to historical norms).',
+      key_points: [
+        'Portfolio protection: buy put options to define a loss floor — accept premium cost for guaranteed downside limit',
+        'Protective put: simplest form; if portfolio falls, put gains offset losses; if market rises, premium is lost',
+        'Full coverage is expensive (10%+ annualised); most managers choose 25–50% partial protection',
+        'Coverage level depends on: cost relative to expected returns, max tolerable drawdown, current vol environment',
+        'Partial protection: catastrophic tail covered; moderate losses absorbed — the most common institutional structure',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The collar strategy — combining a protective put (downside protection) with a short call (premium income that funds the put) — is the most widely used institutional portfolio protection structure. It reduces the net cost of protection to near zero at the expense of capping the upside.\n\nCollar construction: for a portfolio of 100 shares at $50 each (total value $5,000): (1) Buy a 6-month put option at the 45 strike (5% below current price). Cost: $2.50 per share = $250 total. (2) Sell a 6-month call option at the 57 strike (14% above current price). Premium received: $2.50 per share = $250 total. Net cost of the collar: $0. The portfolio is now protected against losses below $45 (put provides a floor) and participates in gains up to $57 (call caps upside at the strike). Between $45 and $57, the portfolio behaves normally.\n\nThe trade-off: the collar gives up upside participation above the short call strike. If the stock rallies from $50 to $65, the portfolio captures only the gain to $57 ($700 of the $1,500 move). This capping of upside is the cost of free downside protection. The practical decision: at what upside target is capping acceptable? If the 6-month price target is $60, a $57 cap is only slightly below target — acceptable. If the target is $70, capping at $57 gives up too much potential gain.',
+      key_points: [
+        'Collar: buy a protective put + sell a call — the call premium funds the put, creating near-zero net cost',
+        'Result: portfolio has a defined floor (put strike) and a defined cap (call strike)',
+        'Between put and call strikes: portfolio behaves normally — neither protection nor constraint active',
+        'Upside capped at call strike: if stock rallies beyond the call, gains are surrendered to the call buyer',
+        'Decision: is the cap level acceptably above the expected price target? If yes, collar is optimal',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Tail risk hedging — protecting against extreme, low-probability but high-impact drawdowns — is different from standard portfolio protection. Where a collar or protective put guards against moderate drawdowns (10–20%), tail risk hedges are designed to protect against catastrophic events (30–60% drawdowns) that would threaten the survival of the portfolio or the investor\'s ability to continue trading.\n\nThe tail risk instruments: (1) Deep OTM put options — far out-of-the-money puts (e.g., 20–30% below current price) are much cheaper than ATM puts on a per-contract basis, but provide protection only against catastrophic moves. They expire worthless in most environments but generate enormous returns in crashes: during the 2020 COVID crash, 30%-OTM SPX puts held for 30 days returned 10–50× purchase cost. (2) VIX call options — in any major equity crisis, the VIX surges. Long VIX calls (e.g., 40-strike calls when VIX is at 15) are very cheap but generate very large returns during crises. (3) Long gold — as discussed in the macro section, gold provides automatic safe-haven exposure in crises regardless of the specific cause.\n\nThe sizing question: how much of portfolio value should be allocated to tail hedges? Too little and the hedge does not meaningfully offset the crash. Too much and the ongoing premium cost (for options that expire worthless most of the time) creates significant drag on returns. Research suggests 1–3% of portfolio value in permanent tail hedges provides meaningful crash protection while keeping drag below the expected alpha of most active strategies.',
+      key_points: [
+        'Tail hedging: protects against 30–60%+ crashes, not moderate 10–20% drawdowns',
+        'Deep OTM puts: cheap individually; returned 10–50× in COVID 2020 crash for 30%-OTM positions',
+        'VIX calls: long-dated VIX calls (40-strike with VIX at 15) very cheap; enormous returns in any major crisis',
+        'Gold: universal crisis hedge that does not expire and requires no premium cost beyond storage/ETF fees',
+        '1–3% permanent tail hedge allocation: meaningful protection without excessive drag on non-crisis returns',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Dynamic portfolio insurance (DPI) is the systematic approach to adjusting portfolio protection as market conditions change. Rather than buying a fixed hedge and holding it to expiry, DPI continuously rolls, adjusts, and re-sizes protection in response to changes in volatility, portfolio value, and market regime.\n\nThe rolling strategy: instead of buying one large long-dated put, buy a series of shorter-dated puts and roll them forward before expiry. The advantage: shorter-dated puts are more liquid and responsive to changes in the near-term volatility environment. The disadvantage: each roll incurs transaction costs and the protection has gaps at the roll point if the market moves sharply just as the puts expire.\n\nAdjusting protection to portfolio value: after a portfolio has grown significantly, the original put positions provide less coverage (the puts were sized for a smaller portfolio). DPI requires buying additional puts proportional to the growth in portfolio value. Conversely, after a significant drawdown, the puts may provide excessive coverage relative to the reduced portfolio value — rolling down and reducing size may be appropriate. The key discipline: tail protection should always represent a defined percentage of current portfolio value, not a fixed number of contracts purchased at inception.',
+      key_points: [
+        'Dynamic portfolio insurance: continuously roll, adjust, and re-size protection as conditions change',
+        'Rolling strategy: shorter-dated puts, rolled forward — more responsive but gap risk at each roll',
+        'Portfolio growth requires buying additional protection: fixed contracts from inception undercover a grown portfolio',
+        'After drawdown: existing puts may over-cover reduced portfolio — roll down and reduce size',
+        'Rule: tail protection always = defined % of current portfolio value, not a fixed legacy contract count',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This calculation applies the mechanics of index put option hedging to a real portfolio: determining how many contracts are needed, and what the total annual hedge cost is as a percentage of portfolio value. These are the two numbers every portfolio manager must know before implementing any options-based protection strategy.',
+      key_points: [
+        'Contract count = portfolio value ÷ (index level × contract multiplier) — always round up for full coverage',
+        'Hedge cost % = (total premium paid ÷ portfolio value) × (365 ÷ days to expiry) for annualisation',
+        'Annualised hedge cost above 5% makes options-only protection strategies unsustainable unless offset by income',
+      ],
       activity_type: 'calculation',
       problem: 'You manage a £500,000 equity portfolio with a beta of 1.0 vs FTSE 100. FTSE 100 is at 8,000. Each FTSE 100 put option controls a £10 notional value per index point. You want to hedge 100% of your downside for the next 3 months using at-the-money puts. ATM puts (8,000 strike, 90 days) cost 180 index points each. How many contracts do you need to buy, and what is the total hedge cost?',
       correct_answer: '625',
@@ -1753,10 +4517,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       ],
       steps: [{ id: '1', label: 'Calculate contract value', completed: false }, { id: '2', label: 'Calculate number of contracts', completed: false }, { id: '3', label: 'Calculate total hedge cost', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Integrating options protection into a broader portfolio management framework means treating the cost and structure of protection as an explicit budget line, comparable to other risk management costs, and optimising the total portfolio including both alpha-seeking and protection strategies.\n\nThe protection budget: most professional portfolio managers allocate 1–3% of AUM annually to tail protection. This budget must be deployed efficiently across different protection instruments: some allocated to near-term rolling puts (tactical protection for specific scheduled risks), some to long-dated options (strategic protection against secular drawdowns), and some to structural hedges like gold that do not expire. Managing the mix across these instruments is itself a risk management sub-strategy.\n\nMeasuring hedge effectiveness: after each significant market downturn, review the hedge\'s performance. Did it offset the expected percentage of portfolio loss? Did the correlation between the hedge and the portfolio perform as expected? Were any basis risks realised (e.g., the put was on an index but the portfolio had significant sector concentration that diverged from the index)? This review process, applied systematically, continuously improves the protection framework over time. The best-hedged portfolios in 2020 and 2022 were run by managers who had been studying their hedge effectiveness since 2008.',
+      key_points: [
+        'Protection budget: 1–3% of AUM annually; deploy across near-term rolling puts, long-dated options, structural hedges',
+        'Optimise the mix: near-term puts for specific scheduled risks; long-dated options for secular drawdown protection',
+        'Basis risk: put on broad index but portfolio has sector concentration — hedge may not perform as expected',
+        'Post-drawdown review: did the hedge offset the expected % of loss? What went wrong? What worked?',
+        'Continuous improvement: the best-hedged portfolios in 2020 were built on lessons from studying 2008 performance',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'multi-strategy-portfolio': {
+    'lesson-1': {
+      intro_text: 'A multi-strategy portfolio combines multiple trading strategies — each with their own market thesis, instruments, holding periods, and risk profiles — into a single managed portfolio. The goal is not simply to run several strategies simultaneously, but to combine strategies that have low correlation with each other, so that the combined portfolio has better risk-adjusted returns than any individual strategy.\n\nThe diversification benefit of combining strategies: two strategies that each have a Sharpe ratio of 0.8 but are uncorrelated produce a combined portfolio with a Sharpe ratio approaching 1.1 — a 38% improvement in risk-adjusted returns without changing either strategy. This is the mathematical power of low-correlation combination. The key requirement: the strategies must be genuinely uncorrelated, not merely different in appearance.\n\nStrategy correlation pitfalls: many strategies that appear different are in fact driven by the same underlying factor. A trend-following equity strategy and a momentum FX strategy are both essentially risk-on strategies — they both lose when the equity market falls sharply. Running them together in a "diversified" portfolio provides little actual diversification during crises. True diversification requires strategies that are driven by genuinely different underlying forces: some systematic, some discretionary; some trend-following, some mean-reverting; some macro, some microstructure.',
+      key_points: [
+        'Multi-strategy: combine uncorrelated strategies to improve portfolio-level Sharpe without changing any individual strategy',
+        'Two uncorrelated strategies each with Sharpe 0.8 → combined portfolio Sharpe approaches 1.1',
+        'Correlation is the key variable: apparent diversity means nothing if underlying drivers are the same',
+        'Equity momentum + FX momentum = same risk-on factor — not genuinely diversified despite different instruments',
+        'True diversification: trend-following + mean-reverting; macro + microstructure; systematic + event-driven',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Capital allocation across multiple strategies is one of the most consequential decisions in a multi-strategy portfolio. Allocating too much to one strategy concentrates risk. Allocating too little to the best strategy sub-optimises returns. The allocation decision must balance expected return, risk, and correlation simultaneously.\n\nNaive equal allocation: the simplest approach — allocate equal capital to each strategy. This is suboptimal but robust: it does not require predicting which strategy will perform best (which is difficult) and avoids over-weighting a strategy based on recent performance (which is dangerous). Equal allocation is a useful baseline and surprisingly hard to beat consistently.\n\nVol-weighting: allocate to each strategy such that each contributes equal volatility (risk) to the portfolio. Strategies with lower historical volatility receive more capital; higher-volatility strategies receive less. This ensures no single strategy dominates the portfolio\'s risk budget by virtue of being more volatile. Vol-weighting improves on equal allocation by accounting for risk differences but does not account for expected return differences.',
+      key_points: [
+        'Equal allocation: simple, robust, hard to beat — avoids over-weighting based on recent performance',
+        'Vol-weighting: allocate so each strategy contributes equal volatility — scales by risk, not just capital',
+        'Vol-weighting improves on equal allocation but still ignores expected return and correlation',
+        'Kelly allocation (from course lesson-5): weights by Sharpe squared, normalised — accounts for return AND risk',
+        'In practice: start with vol-weighting and tilt toward strategies with higher risk-adjusted expected returns',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Risk budgeting is the framework for thinking about how much of the portfolio\'s total risk budget is being consumed by each strategy and each source of risk. Rather than thinking in terms of capital allocation, risk budgeting focuses on risk allocation — ensuring that the portfolio\'s total risk is distributed as intended across strategies and risk factors.\n\nThe risk budget concept: if a portfolio targets 10% annual volatility, the risk budget is 10% vol. A single strategy that contributes 7% vol to the portfolio (due to its volatility and allocation) is consuming 70% of the risk budget — leaving only 30% for all other strategies. Even if that strategy has the highest Sharpe, concentrating 70% of risk budget in a single strategy eliminates the diversification benefit.\n\nRisk factor decomposition: beyond strategy-level risk budgeting, a multi-strategy portfolio should decompose total risk by underlying factors. How much of total portfolio vol comes from equity market exposure? From interest rate exposure? From currency exposure? From volatility exposure? If 80% of total portfolio risk comes from equity beta, the portfolio is essentially a leveraged equity portfolio with some decoration — regardless of how many strategies it contains. True multi-strategy risk management ensures that no single factor consumes more than 30–40% of the total risk budget.',
+      key_points: [
+        'Risk budget: total portfolio volatility target distributed across strategies and risk factors',
+        'A single strategy consuming 70% of the risk budget eliminates most of the diversification benefit',
+        'Risk factor decomposition: how much of total vol comes from equity beta, rates, currencies, volatility?',
+        'If 80% of portfolio risk = equity beta, it is a leveraged equity position despite surface diversity',
+        'Rule: no single factor should consume more than 30–40% of total risk budget in a true multi-strategy portfolio',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Rebalancing — periodically restoring strategy allocations to their target weights after they have drifted due to differential performance — is a systematic source of additional return in multi-strategy portfolios. The discipline of selling recent winners and buying recent underperformers feels counterintuitive but has been shown to add 0.5–1.5% annual return (the "rebalancing bonus") over long periods.\n\nThe mechanics: if Strategy A is targeted at 33% but has outperformed and grown to 45% of the portfolio, rebalancing requires selling 12% of portfolio value from Strategy A and redeploying to underperforming strategies. This forces systematic "buy low, sell high" behaviour at the strategy level — the same principle as gamma scalping at the options level.\n\nRebalancing frequency: too frequent = high transaction costs and premature allocation changes. Too infrequent = significant drift from target allocations. The correct frequency depends on the volatility of individual strategies (more volatile = drift faster = rebalance more often) and the cost of rebalancing. Common approaches: (1) calendar rebalancing (monthly or quarterly regardless of drift), (2) threshold rebalancing (rebalance when any strategy drifts more than 5–10% from target), (3) volatility rebalancing (rebalance when strategy volatility changes significantly, not just weight).',
+      key_points: [
+        'Rebalancing bonus: systematic selling of winners, buying of underperformers adds 0.5–1.5% annual return',
+        'Mechanics: outperformer grows above target weight → trim; underperformer falls below → add',
+        'Forces systematic buy-low-sell-high at the strategy level — same principle as gamma scalping',
+        'Calendar rebalancing: monthly or quarterly; threshold rebalancing: triggered by 5–10% drift from target',
+        'Volatility rebalancing: adjust allocation when a strategy\'s vol changes, not just its capital weight',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise applies the Kelly criterion to multi-strategy capital allocation. By computing the Sharpe-based Kelly weights for each strategy and normalising them to sum to 100%, you produce a theoretically optimal allocation that accounts for both risk and expected return simultaneously.',
+      key_points: [
+        'Kelly % = Sharpe² ÷ 2 for each strategy — higher Sharpe receives higher allocation',
+        'Normalise so all weights sum to 100%: divide each strategy\'s Kelly by the total Kelly across all strategies',
+        'Kelly sizing is theoretically optimal but aggressive — use half-Kelly in practice to reduce variance',
+      ],
       activity_type: 'calculation',
       problem: 'You have 3 strategies with the following Sharpe Ratios: Strategy A = 1.4, Strategy B = 0.9, Strategy C = 1.1. Using the simplified Kelly Criterion formula — Kelly % = Sharpe² / 2 — allocate capital across the three strategies. What percentage of capital goes to Strategy A? (Round to nearest whole percent.)',
       correct_answer: '49',
@@ -1774,10 +4599,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       ],
       steps: [{ id: '1', label: 'Calculate Kelly % for each strategy', completed: false }, { id: '2', label: 'Sum and normalise', completed: false }, { id: '3', label: 'Review allocation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'The final lesson in multi-strategy portfolio construction addresses correlation monitoring — the ongoing process of measuring whether strategies that were expected to be uncorrelated have remained so, and what to do when correlations shift.\n\nCorrelation is not stable: the correlation between two strategies can change significantly over time, particularly during market stress. Two strategies that have 0.2 correlation in normal markets may exhibit 0.7+ correlation in a risk-off episode (because both lose money simultaneously as the underlying market driver flips). This correlation regime change is the primary risk in multi-strategy portfolios — the diversification that looked robust in calm markets evaporates exactly when it is most needed.\n\nMonitoring and response protocol: (1) Calculate rolling 90-day correlations between all strategy pairs monthly. (2) If any pair\'s correlation rises above 0.5, investigate the cause — is it a temporary regime shift or a structural change in the relationship? (3) If two strategies have permanently become highly correlated, consider reducing one to avoid redundant risk. (4) In a risk-off crisis, temporarily reduce all allocations (the overall portfolio vol will have spiked) and allow the crisis-period correlation data to inform post-crisis rebalancing. The discipline of managing correlation dynamically — not just setting it at inception and forgetting it — is the final element that separates a true multi-strategy portfolio from a collection of unmonitored strategies.',
+      key_points: [
+        'Correlation is not stable: calm-period 0.2 correlation can become 0.7+ correlation in a risk-off episode',
+        'Diversification evaporates exactly when needed most — the primary risk in multi-strategy construction',
+        'Monitor rolling 90-day correlations monthly; investigate any pair above 0.5',
+        'Permanent correlation increase → reduce one strategy to eliminate redundant risk',
+        'Crisis protocol: reduce all allocations, then use crisis-period correlation data to inform post-crisis rebalancing',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'factor-investing': {
+    'lesson-1': {
+      intro_text: 'Factor investing is the systematic approach to capturing risk premiums that have been identified in academic research and confirmed in practice across decades and geographies. Rather than stock-picking or timing markets, factor investing holds diversified portfolios of assets that share a specific characteristic (the "factor") that has historically been associated with excess returns.\n\nThe origins: in 1992, Fama and French published their landmark three-factor model, showing that the cross-section of equity returns is explained by three factors: market risk (beta), size (small caps outperform large caps), and value (cheap stocks outperform expensive ones). This work earned Fama a Nobel Prize and launched an industry of factor-based products. Subsequent research added momentum (past winners outperform past losers), profitability (high-quality companies outperform low-quality), and low volatility (lower-vol stocks outperform higher-vol stocks on a risk-adjusted basis).\n\nWhy factor premiums exist: there are two competing explanations. The risk-based explanation: factors generate excess returns because they represent genuine systematic risks that investors must be compensated to hold. Value stocks are cheap because they are genuinely riskier (often financially distressed). Small caps are volatile and illiquid. The behavioural explanation: factors work because of systematic investor behaviour that creates persistent mispricings — investors overpay for glamour (growth) stocks and underpay for boring value stocks; they fail to extrapolate past winners sufficiently; they are overconfident about high-volatility, lottery-type stocks.',
+      key_points: [
+        'Factor investing: systematic capture of documented risk premiums — diversified exposure to a characteristic, not stock-picking',
+        'Fama-French three factors (1992): market beta, size (small cap), value — Nobel Prize-level research',
+        'Modern five-factor model adds: momentum (past winners), profitability (quality), low volatility',
+        'Risk-based explanation: factors compensate for genuine risks (distress, illiquidity)',
+        'Behavioural explanation: systematic investor biases create persistent mispricings that factors exploit',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The momentum factor — the tendency for recent winners to continue outperforming and recent losers to continue underperforming — is one of the most robust and puzzling findings in finance. It works across equities, bonds, commodities, and currencies, and over time horizons of 1–12 months. Unlike value (which requires patience over years), momentum captures trends that play out over months.\n\nThe evidence: Jegadeesh and Titman (1993) showed that a strategy of buying the past 12-month equity winners and selling the past 12-month losers (with a 1-month skip to avoid the short-term reversal) generated 1–1.5% per month in the US. This has been replicated across virtually every equity market and asset class. Cross-asset momentum (trend following) is the foundation of the $400 billion managed futures industry.\n\nThe risk of momentum: momentum strategies have negatively skewed returns. They produce steady profits most of the time, interrupted by sharp drawdowns during "momentum crashes" — periods where recent winners suddenly reverse and recent losers rebound (often at the beginning of economic recoveries when beaten-down value stocks surge). The 2009 momentum crash after the GFC produced 60–80% drawdowns in many momentum strategies within weeks. Momentum investors must be prepared to hold through these crashes, which are painful precisely because they occur when everything else seems to be recovering.',
+      key_points: [
+        'Momentum: past 12-month winners continue to outperform; past losers continue to underperform — 1-12 month horizon',
+        'Works across equities, bonds, commodities, currencies — one of the most robust cross-asset factors',
+        'Foundation of the $400B managed futures industry (trend following = cross-asset momentum)',
+        'Momentum crashes: sharp reversals at turning points (e.g., 2009 post-GFC) — 60–80% drawdowns possible',
+        '1-month skip: avoid the short-term reversal (1-week winners tend to mean-revert in the next week)',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The quality factor — capturing excess returns from companies with high profitability, stable earnings, and strong balance sheets — is the most intuitive and newest of the major factors. Quality companies are not cheap (they trade at premium valuations to their lower-quality peers), but they consistently outperform on a risk-adjusted basis over long periods.\n\nQuality metrics: (1) Gross profitability (gross profit ÷ assets) — Novy-Marx (2013) showed this simple ratio predicts future excess returns better than many complex alternatives. (2) Return on equity (ROE) and return on invested capital (ROIC) — measures of how efficiently management generates returns from capital. (3) Earnings stability — the standard deviation of annual earnings growth; lower is better. (4) Leverage — low debt companies outperform high-debt companies on a risk-adjusted basis over long periods, particularly during economic downturns when financing costs spike.\n\nThe quality-value combination: quality and value factors are naturally negatively correlated (value companies are often low quality; quality companies are often expensive). Combining the two factors in a portfolio — tilting toward cheap companies of reasonably quality — produces better risk-adjusted returns than either factor alone. This is the basis of Warren Buffett\'s documented investing style: he buys high-quality businesses at reasonable prices, which amounts to a quality + value factor portfolio held at concentrated position sizes.',
+      key_points: [
+        'Quality factor: high profitability, stable earnings, strong balance sheets outperform over long periods',
+        'Top quality metrics: gross profitability/assets, ROIC, earnings stability, low financial leverage',
+        'Gross profitability (Novy-Marx 2013): simple ratio that outperforms most complex quality alternatives',
+        'Quality-value combination: naturally negatively correlated — combining reduces factor-specific risk',
+        'Buffett\'s documented edge: quality + value — high-quality businesses at reasonable prices',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Factor timing — adjusting factor exposures based on predictions about which factors will outperform in the near future — is the most controversial and difficult aspect of factor investing. While the long-run premiums of major factors are well-established, predicting which factors will outperform in a given year is extremely difficult and most attempts at factor timing underperform a static multi-factor portfolio.\n\nThe regime-factor relationship: some factors have clear economic regime dependencies. Value outperforms in early cycle (economic recovery) as cheap, beaten-down stocks recover. Quality outperforms in late cycle (economic slowdown) as earnings stability becomes more valuable. Momentum tends to outperform in trending, low-volatility regimes and suffers in high-volatility, trend-reversing environments. Low volatility outperforms across regimes but particularly during corrections.\n\nThe practical recommendation: for most investors, a static allocation to 4–5 uncorrelated factors (value, momentum, quality, low vol, size) rebalanced quarterly produces better long-run results than active factor timing. Factor timing requires both predicting the economic cycle correctly AND predicting which factors will respond to that cycle — two difficult forecasting tasks compounded. The return from timing must exceed the costs (transaction costs, tax events, missed time in market) for it to add value. Research suggests only the most sophisticated factor timing models (based on valuation spreads of factors) add consistent value.',
+      key_points: [
+        'Factor timing: most attempts underperform static multi-factor allocation — two forecasting tasks compounded',
+        'Regime-factor links: value (early cycle), quality (late cycle), momentum (trending low-vol markets)',
+        'Low volatility: outperforms across regimes, especially valuable during corrections',
+        'Best evidence-based timing signal: factor valuation spread (value factor cheap vs history = overweight value)',
+        'Practical rule: static 4–5 factor allocation quarterly rebalanced outperforms most active factor timing',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise tests the core value factor concept and the dual explanations for why it has historically produced excess returns. Understanding the theoretical foundations of a factor is essential for having conviction to hold it through periods of underperformance.',
+      key_points: [
+        'Value factor: cheap stocks on fundamental ratios (low P/B, P/E, P/CF) outperform expensive glamour stocks',
+        'Risk-based: value stocks are often financially stressed — investors require a premium to hold them',
+        'Behavioural: investors systematically overprice glamour and underprice boring value — persistent mispricing',
+      ],
       activity_type: 'multi_choice',
       question: 'What is the value factor in equity investing, and what is the theoretical explanation for why it has historically produced excess returns?',
       options: [
@@ -1790,10 +4676,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'The value factor (documented by Fama and French) is one of the most replicated findings in academic finance. Stocks that are "cheap" on fundamental ratios — low P/B, P/E, P/CF — have historically outperformed expensive "glamour" stocks over long horizons. The dual explanation (risk-based vs behavioural) is debated, but practitioners implement it via systematic screening and rebalancing: identify cheap stocks across sectors, maintain a diversified portfolio, and rebalance periodically to maintain factor exposure.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Factor crowding — the risk that so many investors are exposed to the same factor that a reversal produces correlated losses across all of them simultaneously — has become one of the most important structural risks in modern investing. As factor-based ETFs and smart beta products have grown to trillions of dollars, previously niche academic factors have become mainstream, changing their risk profiles.\n\nThe crowding mechanism: as more capital flows into a factor (e.g., value stocks), prices of value stocks rise toward fair value, compressing the expected future return of the factor. Simultaneously, the exit risk increases — when sentiment shifts and capital flows out of the factor, all holders sell simultaneously, amplifying the drawdown. Factor crashes are often more severe and more correlated than idiosyncratic stock crashes because all factor investors hold similar portfolios.\n\nMeasuring crowding: several approaches are used. (1) Factor valuation spreads — the current price premium of the long side vs the short side of the factor. If value stocks are trading at a 30% discount to the market (historical average 40%), the value premium is compressed and crowding may be elevated. (2) Factor return momentum — a factor that has outperformed significantly in the past 3 years has likely attracted inflows and crowding. (3) Institutional position concentration — prime broker data on what factors institutional investors are overweight provides a direct crowding measure. Managing factor crowding requires contrarian discipline: reducing the most crowded factors and increasing the least crowded, even when recent performance suggests the opposite.',
+      key_points: [
+        'Factor crowding: too much capital in a factor compresses future returns and amplifies reversal drawdowns',
+        'Smart beta AUM growth has changed factor risk profiles — academic factors are now mainstream and crowded',
+        'Crowding measure 1: factor valuation spread (current premium vs historical average)',
+        'Crowding measure 2: factor performance over past 3 years — sustained outperformance → likely crowding',
+        'Crowding management: contrarian — reduce most crowded factors; add least crowded even if recent underperformance',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'portfolio-attribution': {
+    'lesson-1': {
+      intro_text: 'Portfolio attribution analysis is the process of decomposing a portfolio\'s total return into its component sources. Rather than knowing only that the portfolio returned +8%, attribution tells you whether that return came from being overweight the right sectors, from successful individual stock selection, from timing (entering and exiting positions at advantageous times), or from currency effects. This breakdown is essential for learning, accountability, and future decision-making.\n\nThe Brinson-Hood-Beebower (BHB) model is the standard attribution framework for equity portfolios. It decomposes active return (return above the benchmark) into three effects: (1) Allocation effect — the excess return from overweighting or underweighting sectors relative to the benchmark. (2) Selection effect — the excess return from choosing better-performing individual securities within each sector. (3) Interaction effect — the combined impact of allocation and selection decisions working together (typically small and often allocated to selection).\n\nWhy attribution matters beyond reporting: attribution reveals whether positive returns came from skill or luck, and whether negative returns came from the correct decision made in bad timing or from genuinely poor decisions. A manager who underweighted the best sector but selected superior stocks within their chosen sectors may actually be demonstrating strong analytical skill despite underperforming the benchmark.',
+      key_points: [
+        'Attribution: decomposes total return into allocation effect, selection effect, and interaction effect',
+        'Brinson-Hood-Beebower model: standard framework for comparing portfolio decisions against a benchmark',
+        'Allocation effect: return from overweighting/underweighting sectors relative to benchmark weights',
+        'Selection effect: return from picking better-performing securities within each sector',
+        'Attribution reveals skill vs luck: positive attribution ≠ skill; negative attribution ≠ poor decisions',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Factor attribution extends the standard sector-based BHB model by decomposing returns into exposure to systematic risk factors (market beta, value, momentum, quality, etc.) rather than just sector allocations. It is the most informative attribution framework for systematic and quantitative portfolios.\n\nThe factor attribution equation: Total Portfolio Return = Sum of (Factor Exposure × Factor Return) + Alpha. The factor exposures (beta, value tilt, momentum tilt, etc.) are calculated from the portfolio holdings. The factor returns are measured from the appropriate factor index or benchmark. The residual — what is not explained by factor exposures — is alpha: the return attributable to skill or information not captured by the factors.\n\nThe uncomfortable finding of factor attribution: most "active" equity funds have significant factor exposures that explain the majority of their returns. A fund with strong returns in a bull market year may simply have high market beta (factor exposure), not skill (alpha). Factor attribution is the forensic tool that strips away factor exposures to reveal whether genuine alpha is being generated. A manager who generates 3% alpha on a truly factor-neutral basis is adding significant genuine value. A manager who generates 3% active return but has a 1.2 beta and a strong value tilt in a year where the market and value both outperformed has generated close to zero genuine alpha.',
+      key_points: [
+        'Factor attribution: total return = sum of (factor exposure × factor return) + residual alpha',
+        'Alpha: return not explained by any factor exposure — the genuine skill component',
+        'Most "active" funds have large market beta and factor tilts that explain most of their return variation',
+        'A manager with 1.2 beta in a strong market may have zero alpha despite appearing to outperform',
+        'Factor attribution is the forensic test of genuine skill vs leveraged factor exposure',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Trade-level attribution drills down to the individual trade to understand which specific positions drove overall performance. Unlike portfolio-level attribution (which gives a structural view), trade-level attribution answers: which trades made money, which lost money, and what characteristics distinguish the winners from the losers?\n\nThe trade-level analysis framework: for each trade, record and analyse: (1) Setup type — what entry criteria triggered the trade. (2) Direction — long or short. (3) Instrument — which asset. (4) Holding period — how long the position was held. (5) R-multiple outcome — the result in terms of initial risk. (6) Market regime at entry — were you trading in the optimal regime for the setup type? (7) Entry quality — was the entry at the intended level, or did slippage/execution reduce the R-multiple?\n\nThe insights from trade-level attribution: (1) Which setup types are profitable and which are not (covered in Level 6 data analysis). (2) Whether the best trades share specific characteristics — particular sessions, market regimes, or entry patterns. (3) Whether execution quality is affecting performance — if intended risk was 1R but actual average loss is 1.4R, execution is consuming edge. (4) Whether holding period is appropriate — are winners being cut too early (low MFE captured ÷ max MFE) and losers held too long (actual loss ÷ intended stop is consistently above 1.0)?',
+      key_points: [
+        'Trade-level attribution: which specific trades drove performance and what characteristics distinguish winners from losers',
+        'Record per trade: setup type, direction, instrument, holding period, R-multiple, regime at entry, execution quality',
+        'Which setup types are profitable? (if not already known from data analysis, this confirms it)',
+        'Execution quality attribution: intended 1R vs actual 1.4R average loss = execution consuming 0.4R per loss',
+        'Holding period attribution: low (MFE captured ÷ max MFE) = exiting winners too early',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Risk attribution decomposes total portfolio risk (volatility and drawdown) into its component sources, in the same way return attribution decomposes returns. Understanding which positions, factors, and decisions contribute most to portfolio risk is essential for managing the portfolio to a target risk level.\n\nMarginal contribution to risk (MCTR): for each position in the portfolio, MCTR measures how much the portfolio\'s total volatility would decrease if that position were removed. A position with high MCTR is a large driver of total portfolio risk — even if it does not have the highest individual volatility. MCTR captures correlation: a position that is highly correlated to the rest of the portfolio contributes more risk than its standalone volatility suggests.\n\nDrawdown attribution: during a significant portfolio drawdown, attributing the drawdown to its sources is essential for learning. Which positions caused the most drawdown? Were they the intended high-conviction positions, or were they smaller positions that happened to produce outsized losses? Was the drawdown concentrated in a few positions (concentration risk materialised) or distributed across many positions (systematic factor shock where diversification failed)? The answers determine the appropriate portfolio adjustment: reduce concentration in the former case, evaluate factor exposures in the latter.',
+      key_points: [
+        'Risk attribution: decomposes total portfolio vol and drawdown into position-level and factor-level contributions',
+        'MCTR (marginal contribution to risk): how much would portfolio vol decrease if this position were removed?',
+        'High MCTR ≠ high individual vol: a position correlated to everything else contributes more risk than it appears',
+        'Drawdown attribution: concentrated (few positions) → reduce concentration; distributed → evaluate factor exposures',
+        'Positions with largest MCTR should be highest-conviction ideas — otherwise, concentration without conviction',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This calculation applies Jensen\'s Alpha — the risk-adjusted excess return after accounting for the portfolio\'s beta exposure. It is the most fundamental test of whether active management is adding value or simply leveraging market exposure.',
+      key_points: [
+        'Jensen\'s Alpha = Portfolio Return − [Risk-Free Rate + Beta × (Market Return − Risk-Free Rate)]',
+        'Positive alpha: portfolio earned more than its level of market risk exposure predicted',
+        'Negative alpha: portfolio earned less than its beta exposure would have earned passively',
+      ],
       activity_type: 'calculation',
       problem: 'Your portfolio returned +8.4% over 6 months. The benchmark (MSCI World) returned +5.9% over the same period. Your portfolio beta vs the benchmark is 0.85. Calculate your alpha (Jensen\'s Alpha) over 6 months. Risk-free rate for 6 months = 2.1%. Alpha = Portfolio Return − [Risk-Free Rate + Beta × (Benchmark Return − Risk-Free Rate)]',
       correct_answer: '2.87',
@@ -1809,10 +4756,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       ],
       steps: [{ id: '1', label: 'Calculate expected return from beta', completed: false }, { id: '2', label: 'Calculate alpha', completed: false }, { id: '3', label: 'Interpret the result', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Systematic attribution — building a structured process for reviewing and learning from attribution data — transforms attribution from a reporting exercise into a genuine learning and improvement system. The goal is to use attribution insights to directly improve future portfolio construction and decision-making.\n\nThe attribution review cycle: (1) Monthly: review trade-level attribution for the past month. Identify the two or three positions that most impacted performance (positively and negatively). Write a one-paragraph post-mortem for each — what was the thesis, why did it work or not, and what would you do differently? (2) Quarterly: review factor attribution. Has the portfolio\'s factor exposure shifted from intended? Are any unintended factor bets accumulating? (3) Annually: review full-year attribution for patterns. Are the same setup types consistently profitable? Are the same mistakes recurring? What is the attribution-based evidence for whether this strategy is genuinely generating alpha or riding factor exposure?\n\nThe attribution feedback loop: the most effective traders use attribution findings to directly modify their trading rules. If attribution shows that trades taken in the afternoon consistently underperform morning trades, add a time-of-day filter. If attribution shows that large losses consistently occur in specific market conditions, add a condition filter to the entry rules. Attribution is not just measurement — it is the input that continuously improves the strategy.',
+      key_points: [
+        'Attribution review cycle: monthly (trade-level), quarterly (factor exposure), annually (pattern identification)',
+        'Monthly post-mortem: what was the thesis, why did it work/not, what would you do differently?',
+        'Quarterly factor check: has intended factor exposure drifted? Are unintended bets accumulating?',
+        'Annual pattern review: same setups profitable every year? Same mistakes recurring? Genuine alpha or factor riding?',
+        'Attribution feedback loop: use findings to directly modify trading rules — attribution drives improvement',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'stress-testing-scenarios': {
+    'lesson-1': {
+      intro_text: 'Stress testing is the practice of evaluating a portfolio\'s behaviour under extreme market conditions — conditions that are beyond normal historical experience but remain plausible. The purpose is to identify vulnerabilities that normal risk metrics (volatility, Sharpe ratio, drawdown) may miss because they are based on historical average behaviour rather than tail events.\n\nThe distinction between stress tests and backtests: a backtest evaluates performance across all historical conditions, including both normal and extreme periods. A stress test deliberately focuses on specific extreme scenarios — periods of market breakdown, liquidity crisis, or structural regime change — to understand how the portfolio behaves when the assumptions underlying normal risk management break down.\n\nThe three types of stress tests: (1) Historical scenario analysis — apply the portfolio\'s current factor exposures to specific historical crisis periods (2008 GFC, 2000 tech bust, 1997 Asian crisis, 2020 COVID). (2) Hypothetical scenario analysis — construct plausible future scenarios that have not yet occurred (e.g., a rapid 200bps rate rise, a China hard landing, a USD devaluation). (3) Sensitivity analysis — hold all else constant and stress a single variable to understand the portfolio\'s sensitivity to that specific factor (e.g., "what is the P&L impact of a 10% fall in equities?").',
+      key_points: [
+        'Stress testing: evaluates portfolio under extreme scenarios that normal historical risk metrics miss',
+        'Three types: historical scenario (apply current exposures to past crises), hypothetical (plausible future shocks), sensitivity (stress single variable)',
+        'Historical scenarios: GFC 2008, tech bust 2000, COVID 2020, 2022 rate shock — all must be run',
+        'Hypothetical: China hard landing, 200bps rate rise, USD devaluation — scenarios that have not yet occurred',
+        'Stress tests reveal correlation breakdown: what was "diversified" in normal markets may move together in the stress',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Historical scenario stress testing applies the portfolio\'s current factor exposures to actual historical crisis periods to estimate how the portfolio would have performed in those events. The advantage over a simple backtest is that you can test the current portfolio — not the portfolio that existed in 2008, which was presumably different from today\'s.\n\nThe methodology: (1) Identify the portfolio\'s current factor exposures (equity beta, duration, credit beta, FX exposure, volatility exposure, commodity exposure). (2) Measure the performance of each factor during the specific stress period. (3) Calculate the expected portfolio P&L as the sum of (factor exposure × factor return during the stress period). (4) Add any idiosyncratic exposures (specific stock or sector concentration) that may not be fully captured by factors.\n\nThe 2008 GFC stress test example: a typical balanced portfolio (60% equity, 40% bonds) would have experienced approximately −35% in equities (using MSCI World returns) and +5% in bonds (as rates fell) during 2008–2009. Net: −60% × 35% + 40% × 5% = −19%. A portfolio with the same equity weight but in financials-heavy equities would have experienced −55% in equities (financials fell 70%) and a similar bond allocation: −60% × 55% + 40% × 5% = −31%. The stress test reveals the concentration risk that the normal risk metrics missed.',
+      key_points: [
+        'Historical stress methodology: current factor exposures × historical crisis returns = estimated stress P&L',
+        'Tests the CURRENT portfolio, not the 2008 portfolio — reveals current vulnerabilities to historical scenarios',
+        'GFC 2008: equities −35% to −55% depending on sector; bonds +5%; most "diversified" portfolios lost 20–35%',
+        'Concentration risk: financials-heavy equity allocation produced double the loss of diversified equity in 2008',
+        'The stress test reveals what was hidden in normal-conditions risk metrics: concentration and correlation breakdown',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Hypothetical scenario stress testing constructs plausible future scenarios that differ from historical experience — either because the specific macro configuration has not occurred before, or because structural changes in markets mean historical precedents do not apply cleanly.\n\nConstructing a hypothetical scenario: (1) Define the macro shock clearly — "the Fed raises rates by 200bps over 6 months due to persistent above-target inflation." (2) Estimate the first-order effects on each risk factor — bonds fall (duration risk), USD strengthens (rate differential), equity multiples compress (higher discount rate). (3) Estimate the second-order effects — lower equity multiples hit growth stocks harder than value; USD strength hurts EM; higher rates stress financial sector balance sheets. (4) Quantify the portfolio\'s estimated P&L by applying the estimated factor returns to the portfolio\'s current exposures.\n\nThe most useful hypothetical scenarios for the current environment: (1) Inflation resurgence scenario — inflation returns to 5%+ forcing another aggressive rate hiking cycle. (2) Recession scenario — GDP contracts 2% in one year; earnings fall 20%; credit spreads widen 300bps. (3) Geopolitical escalation — energy supply disruption driving oil to $150; European recession; risk-off globally. (4) China stress — Chinese real estate crisis deepens; GDP growth falls to 2%; iron ore and copper fall 40%.',
+      key_points: [
+        'Hypothetical scenarios: plausible future shocks that have not historically occurred or differ structurally from the past',
+        'Construction: define macro shock → first-order factor effects → second-order effects → portfolio P&L estimate',
+        'Key 2024–2026 hypothetical scenarios: inflation resurgence, recession, geopolitical escalation, China stress',
+        'Second-order effects often produce the largest losses: USD strength → EM stress → EM equity sell-off',
+        'Hypothetical scenarios are most valuable when they challenge current consensus positioning',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Liquidity stress testing evaluates the portfolio\'s ability to liquidate positions under stressed market conditions — when bid-ask spreads widen, volumes fall, and normal market liquidity disappears. This is a distinct and often neglected dimension of stress testing that becomes critical during crises.\n\nThe liquidity cascade: in normal markets, you can estimate how long it would take to liquidate each position based on normal daily volumes and your position size relative to those volumes. In a crisis, volume can fall 50–80% and bid-ask spreads can widen 5–10× simultaneously, extending the time to liquidate while increasing the cost of liquidation. If multiple positions need to be liquidated simultaneously (as occurs in a portfolio drawdown when risk must be reduced urgently), the combination of reduced volume and wider spreads can make liquidation extremely expensive.\n\nLiquidity stress test methodology: (1) Calculate days-to-liquidate for each position under stressed volume assumptions (50% of normal volume). (2) Estimate the liquidation cost at stressed bid-ask spreads (5× normal spread). (3) Identify which positions have the longest days-to-liquidate — these are the illiquid tail risk positions. (4) Ensure that all highly illiquid positions collectively represent less than 20% of portfolio value — the amount that cannot be quickly liquidated must not threaten the portfolio\'s overall survival in a forced liquidation scenario.',
+      key_points: [
+        'Liquidity stress: can you exit positions in a crisis? Volume falls 50–80%, spreads widen 5–10× simultaneously',
+        'Days-to-liquidate: (position size) ÷ (daily volume × 50%) — gives stressed liquidation timeline',
+        'Liquidation cost = days × spread × position size — estimate in a 5× normal spread environment',
+        'Highly illiquid positions < 20% of portfolio: the amount you cannot exit quickly must not threaten survival',
+        'Liquidity cascade: needing to liquidate multiple positions simultaneously is the worst-case scenario',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise tests the conceptual foundation of stress testing: why historical scenario analysis is more valuable than standard risk metrics for identifying tail vulnerabilities, particularly the correlation breakdown that is the most dangerous and most commonly missed feature of crisis events.',
+      key_points: [
+        'Standard risk metrics (Sharpe, vol) are backward-looking averages — they miss tail event correlations',
+        'Crisis correlation breakdown: assets that are 0.2 correlated in normal markets may be 0.8+ in a crisis',
+        'Historical scenario stress tests apply to the CURRENT portfolio, revealing current vulnerabilities to past extremes',
+      ],
       activity_type: 'multi_choice',
       question: 'What is the primary purpose of stress testing a portfolio against historical scenarios (e.g., 2008 GFC, 2020 COVID crash, 2022 rate hike cycle)?',
       options: [
@@ -1825,10 +4833,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Stress tests reveal what normal risk metrics miss. Correlations that appear low in normal markets (e.g., equities and credit, or different geographic equity markets) often jump toward 1.0 during crises — the so-called correlation breakdown. A portfolio that appears well-diversified under normal conditions can experience catastrophic drawdown when all positions move against you simultaneously. The 2008 GFC showed that most "diversified" portfolios were actually concentrated long-risk positions.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Translating stress test results into concrete portfolio adjustments is the final and most important step. A stress test that produces a report filed away without action is a wasted exercise. The goal is to use the results to directly improve the portfolio\'s resilience.\n\nThe stress test to action framework: (1) Identify the two or three scenarios that produce the largest estimated losses. (2) For each scenario, identify which specific positions or factor exposures are the primary drivers of the estimated loss. (3) For each primary driver, evaluate: can the exposure be reduced (and at what cost to expected return)? Can it be hedged (and at what cost)? Is the exposure intentional and appropriately sized given the expected return? (4) Implement the adjustments with the minimum cost and complexity that achieves a meaningful improvement in the stress scenario outcome.\n\nThe acceptable loss threshold: define in advance what the maximum acceptable loss in any stress scenario is. If the 2008 GFC scenario produces an estimated −45% and the maximum acceptable loss is −25%, the portfolio must be adjusted. If the estimated loss is −22% and the maximum is −25%, the portfolio is within tolerance and no adjustment is required. This pre-defined threshold prevents the post-stress-test paralysis of "how bad is bad enough to change something?" — a question that should be answered before reviewing the stress test results.',
+      key_points: [
+        'Stress test action framework: identify worst scenarios → find primary drivers → evaluate reduce/hedge/accept',
+        'For each primary driver: reduce exposure? Hedge it? Accept it as intentional? Answer must be deliberate',
+        'Minimum cost adjustment: achieve meaningful stress improvement without unnecessary portfolio restructuring',
+        'Pre-define maximum acceptable loss before reviewing stress tests — prevents post-hoc rationalisation',
+        'If estimated loss < max acceptable threshold: no action needed; if above: adjust until within tolerance',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'performance-reporting': {
+    'lesson-1': {
+      intro_text: 'Performance reporting is the formal process of communicating trading or investment results to stakeholders — whether that is investors in a fund, a prop firm risk desk, or yourself as the primary audience. The quality of performance reporting directly affects the quality of decisions made based on that reporting: poor reporting obscures the real drivers of performance; good reporting makes them transparent.\n\nThe audience determines the report: a report for institutional allocators (pension funds, endowments, family offices) emphasises risk-adjusted returns, benchmark comparison, and factor attribution. A report for a prop firm risk desk emphasises drawdown, position concentration, and risk metrics. A personal performance report for self-directed traders emphasises setup-type expectancy, execution quality, and psychological patterns. In all cases, the report must be honest — a performance report that only shows favourable data is not a performance report; it is marketing material.\n\nThe fundamental reporting principle: always include both the return AND the risk taken to achieve it. A return of +15% is meaningless without knowing whether it was achieved with 5% volatility (exceptional risk-adjusted performance) or 40% volatility (poor risk-adjusted performance that happened to avoid a catastrophic loss). Every performance report must include at minimum: return, benchmark return, volatility, maximum drawdown, and Sharpe ratio.',
+      key_points: [
+        'Performance reporting: formal communication of results — quality of report determines quality of decisions made from it',
+        'Audience-specific: institutional allocators want risk-adjusted + attribution; prop desk wants drawdown + concentration',
+        'Always include risk alongside return: +15% with 5% vol is exceptional; +15% with 40% vol is poor risk-adjusted performance',
+        'Minimum metrics in any report: return, benchmark, volatility, max drawdown, Sharpe ratio',
+        'A report showing only favourable data is marketing, not performance reporting — honesty is the standard',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The Global Investment Performance Standards (GIPS) are the internationally recognised standards for calculating and presenting investment performance to prospective investors. Compliance with GIPS is not legally required in most jurisdictions, but it is the de facto standard for institutional fund managers seeking to raise capital from sophisticated allocators who understand the shortcuts and manipulations that non-GIPS performance presentations can contain.\n\nThe key GIPS requirements: (1) Composites — all actual, fee-paying, discretionary portfolios must be grouped into composites that represent similar strategies. You cannot cherry-pick the best-performing accounts to show in your track record. (2) Returns calculated using time-weighted return (TWR) — the standard that eliminates the effect of cash flows, allowing fair comparison across managers regardless of when clients invested or withdrew capital. (3) Total returns including dividends and income, not just price appreciation. (4) Disclosure of all fees — gross-of-fee and net-of-fee returns must be presented. (5) Minimum 5-year history — a GIPS-compliant presentation requires at least 5 years of performance history.\n\nFor retail traders and small fund managers: even if full GIPS compliance is impractical, applying GIPS principles to self-reporting improves the integrity of your own performance assessment. Time-weighted return calculation, inclusion of all accounts managed to the same strategy, and net-of-cost returns are the most important principles.',
+      key_points: [
+        'GIPS: international standard for performance presentation to institutional allocators — de facto requirement for fundraising',
+        'Composites: ALL accounts following a strategy must be included — cherry-picking best accounts is prohibited',
+        'TWR (time-weighted return): eliminates cash flow timing effects; allows fair comparison between managers',
+        'Net-of-fee and gross-of-fee returns: both must be disclosed; investors care about what they actually received',
+        'Minimum 5-year GIPS history: short track records require disclosure of non-compliant status',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Benchmark selection is a consequential but often overlooked aspect of performance reporting. The choice of benchmark determines whether the manager appears to be adding value or destroying it — and different benchmarks can produce dramatically different conclusions about the same set of returns.\n\nThe correct benchmark principle: the benchmark should represent the passive alternative to the active strategy. If you run a UK large-cap equity strategy, the FTSE 100 is the appropriate benchmark — it is what an investor would hold if they chose to passively index rather than invest with you. If you run a global equity long/short strategy, a blended benchmark (50% MSCI World + 50% cash rate) might be more appropriate, since your net equity exposure is not 100%.\n\nBenchmark gaming: unethical managers select benchmarks that their strategy is likely to outperform regardless of skill. Comparing a diversified multi-asset portfolio to a pure equity index during a bear market will produce outperformance (because the multi-asset portfolio held bonds). Comparing a leveraged equity fund to a cash rate will produce outperformance in any bull market. Sophisticated allocators are alert to benchmark selection games. The principle: choose the most challenging appropriate benchmark, not the most easily beaten one. Intellectual honesty in benchmark selection is itself a signal of a trustworthy manager.',
+      key_points: [
+        'Benchmark: the passive alternative to your strategy — what investors would hold instead of investing with you',
+        'UK large-cap equity manager → FTSE 100; long/short equity at 50% net exposure → 50% MSCI World + 50% cash',
+        'Benchmark gaming: selecting easy-to-beat benchmarks is a red flag for institutional allocators',
+        'Net equity exposure matters: a manager with 50% net long equity should not benchmark against 100% equity index',
+        'Choose the most challenging appropriate benchmark: intellectual honesty signals trustworthiness to allocators',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'The performance report narrative — the written commentary that accompanies the quantitative metrics — is the component most valued by sophisticated allocators and most often done poorly by new managers. Numbers alone do not tell the story; the narrative explains what happened, why, and what it means for the future.\n\nThe attribution narrative structure: (1) Market environment summary — what happened in the markets during the period? What were the major themes and events that shaped the environment? This contextualises the performance for readers who may not be following markets daily. (2) Portfolio performance summary — how did the portfolio perform relative to the benchmark? What were the primary contributors and detractors? (3) Position-level commentary — for the 3–5 positions that had the most impact (positive and negative), a brief explanation of the thesis, what happened, and whether the thesis remains valid. (4) Forward-looking outlook — what is the current positioning and what is the investment thesis for the coming period? What risks does the portfolio face?\n\nThe hardest part of the narrative: discussing underperformance honestly. A manager who explains losses as "difficult market conditions" without identifying specific mistakes is not providing a useful report. The most credible and valuable narratives describe exactly what went wrong, whether it was a mistake in the thesis, timing, or execution, and what has been learned and adjusted.',
+      key_points: [
+        'Report narrative: market context → portfolio performance → position-level commentary → forward outlook',
+        'Market context: allocators need to know the environment that produced the reported results',
+        'Position-level commentary: the 3–5 biggest impact positions (+ and −) explained with thesis and outcome',
+        'Forward outlook: current positioning and investment thesis — what are you expecting next?',
+        'Honest loss attribution: specific mistakes (thesis? timing? execution?) + what was learned — most credible narrative',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise tests the institutional performance reporting standard: which combination of metrics constitutes a complete, professional report that gives allocators the risk-adjusted context they need to evaluate the manager.',
+      key_points: [
+        'Return alone is insufficient — risk context (Sharpe, drawdown, volatility) is required for evaluation',
+        'Sortino ratio (penalises only downside vol) is increasingly standard alongside the Sharpe ratio',
+        'Attribution commentary: which positions contributed positively, which detracted — not just aggregate numbers',
+      ],
       activity_type: 'multi_choice',
       question: 'A fund manager is preparing a monthly performance report for institutional investors. Which set of metrics is most appropriate and complete for a professional report?',
       options: [
@@ -1841,12 +4910,73 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Institutional reporting requires risk-adjusted context, not just raw returns. A return of +8% means nothing without knowing the risk taken to achieve it. Standard institutional metrics: (1) Absolute return vs benchmark, (2) Sharpe ratio (return per unit of risk), (3) Maximum drawdown (worst peak-to-trough), (4) Volatility (standard deviation), (5) Attribution commentary (what drove performance). Sortino ratio (penalises only downside volatility) is increasingly standard. Raw P&L without risk context cannot be evaluated by allocators.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Building a personal performance reporting system — even as a solo trader with no external investors — is one of the highest-leverage activities available. Self-reporting with the same rigour as institutional reporting creates accountability, improves learning, and forces honest assessment of results that are easy to rationalise away in the absence of a formal process.\n\nThe personal performance dashboard: (1) Monthly return vs a relevant benchmark (or vs zero for market-neutral strategies). (2) Rolling 12-month Sharpe ratio and maximum drawdown. (3) Setup-type expectancy by category — the single most actionable metric for improvement. (4) Execution quality metrics — average intended risk vs average actual risk per trade. (5) Win rate and R-expectancy separated by market regime (trending vs ranging). Updating this dashboard monthly takes 30–60 minutes and provides the empirical foundation for every improvement decision.\n\nThe performance review meeting: hold a monthly meeting with yourself (or a trading partner). Review the dashboard. Identify the three most important observations from the month. Make one or two concrete rule changes based on those observations. Document the change and the reasoning. Review the impact in the following months. This structured process of observe → hypothesise → change → measure is the scientific method applied to trading improvement — and it is how professional systematic traders continuously iterate toward better performance.',
+      key_points: [
+        'Personal performance dashboard: monthly return, Sharpe, max DD, setup expectancy, execution quality, regime breakdown',
+        'Updating takes 30–60 minutes monthly — the highest-leverage hour in trading improvement',
+        'Monthly self-review: three key observations → one or two concrete rule changes → document and measure',
+        'Observe → hypothesise → change → measure: the scientific method applied to trading improvement',
+        'Self-reporting with institutional rigour creates accountability even without external investors',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'hedge-fund-structure': {
+    'lesson-1': {
+      intro_text: 'A hedge fund is a pooled investment vehicle that is not constrained by the regulations that govern mutual funds and ETFs — it can use leverage, short selling, derivatives, and illiquid assets that are unavailable to registered investment products. Understanding how hedge funds are structured legally, operationally, and commercially is essential for anyone aiming to launch or work in one.\n\nThe legal structure: in the UK, hedge funds typically use an authorised contractual scheme (ACS) or a limited partnership structure. In the US, the limited partnership (LP) is standard: a General Partner (GP) manages the fund and bears unlimited liability; Limited Partners (LPs) are the investors who contribute capital and are liable only up to their invested amount. The GP earns a management fee (typically 1–2% of AUM annually) and a performance fee (typically 20% of profits above a hurdle rate) — the famous "2 and 20" structure.\n\nThe service provider ecosystem: every hedge fund requires a set of specialist service providers. The prime broker provides leverage, securities lending, and custody. The administrator calculates and verifies the fund\'s NAV independently (critical for investor trust). The auditor verifies the annual accounts. The legal counsel drafts the fund documents and advises on regulatory compliance. The fund of funds and placement agents help with capital raising. Understanding each service provider\'s role is essential for fund operations — and for understanding the costs that eat into returns before investors see them.',
+      key_points: [
+        'Hedge fund: pooled vehicle unconstrained by mutual fund regulations — can use leverage, shorts, derivatives, illiquids',
+        'LP structure: General Partner manages (unlimited liability); Limited Partners invest (liability limited to investment)',
+        'GP fees: management fee (1–2% AUM annually) + performance fee (20% of profits above hurdle) = "2 and 20"',
+        'Hurdle rate: GP collects performance fee only on returns ABOVE this threshold (typically 6–8% annual)',
+        'Service providers: prime broker (leverage/custody), administrator (independent NAV), auditor, legal counsel',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The fund documentation package is the legal foundation of a hedge fund. These documents define the relationship between the fund, the GP, and the LP investors — what the fund can invest in, how fees are charged, under what conditions investors can redeem, and what rights the GP retains. Mistakes in fund documents can be catastrophic and are difficult to correct after investors have subscribed.\n\nThe key documents: (1) Private Placement Memorandum (PPM) or Offering Memorandum (OM) — the comprehensive document describing the fund\'s investment strategy, team, risks, fees, and legal structure. Investors receive and must sign that they have read this before investing. (2) Limited Partnership Agreement (LPA) or Articles of Association — the binding legal agreement between GP and LPs that governs all aspects of the fund\'s operation. The LPA takes precedence over the PPM in any conflict. (3) Subscription Agreement — the individual contract each investor signs to subscribe to the fund, confirming they are a sophisticated/professional investor and agreeing to fund terms. (4) Side Letters — bilateral agreements between the GP and specific large investors that modify the standard fund terms for that investor only (e.g., lower fees, more frequent reporting, redemption on different terms).\n\nThe negotiating reality: large institutional investors (sovereign wealth funds, pension funds) have significant negotiating leverage and routinely obtain side letters with preferential terms. Smaller investors receive standard fund terms. The existence and general nature of side letters must be disclosed to all investors (though their specific content need not be), as they can create material inequalities between investor classes.',
+      key_points: [
+        'PPM/OM: comprehensive strategy, team, risk, fee, and structure description — investors sign acknowledgement',
+        'LPA/Articles: binding legal agreement between GP and LPs — governs all fund operations, trumps the PPM',
+        'Subscription Agreement: individual investor sign-up; confirms professional/sophisticated investor status',
+        'Side Letters: bilateral modifications for large investors (lower fees, better liquidity) — standard in institutional funds',
+        'Side letter existence must be disclosed to all investors; specific content can remain confidential',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Liquidity management — how a hedge fund handles investor subscriptions, redemptions, and the liquidity of its underlying portfolio — is one of the most critical and most mismanaged aspects of fund operations. The 2008 GFC saw dozens of funds suspend redemptions when investors simultaneously tried to withdraw capital from funds holding illiquid assets — the classic liquidity mismatch problem.\n\nLiquidity terms: the redemption frequency (how often can investors withdraw capital) and notice period (how far in advance must they notify the fund) must match the liquidity of the underlying portfolio. A fund holding daily-traded large-cap equities can offer daily or weekly liquidity. A fund holding illiquid credit or private equity positions should offer quarterly or annual redemptions with 60–90 day notice. Mismatching liquidity terms and portfolio liquidity is the most dangerous structural error in fund design.\n\nGate provisions: in extreme redemption scenarios, gate provisions allow the GP to limit the amount redeemed in any one period (e.g., no more than 25% of the fund can redeem in any quarter). This prevents a liquidity spiral where forced asset sales to meet redemptions drive down NAV, triggering further redemptions. The existence and conditions for triggering the gate must be disclosed in the fund documents. Side pockets allow the GP to segregate illiquid assets into a separate vehicle while the main fund continues normal operations — investors in the side pocket receive their proceeds only when the illiquid assets are ultimately realised.',
+      key_points: [
+        'Liquidity mismatch: offering redemptions more frequently than the portfolio can be liquidated = catastrophic risk',
+        'Redemption frequency must match portfolio liquidity: daily equities = daily/weekly; illiquid credit = quarterly+',
+        'Gate provision: limits redemptions to X% of fund per period — prevents liquidity spiral in stressed markets',
+        'Side pocket: segregates illiquid assets; main fund continues normally while illiquid assets await realisation',
+        '2008 lesson: suspending redemptions damaged investor trust far more than the underlying losses themselves',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Understanding hedge fund fees — both their structure and their total cost impact on investor returns — is essential for any fund manager designing a fee structure and any investor evaluating whether a fund\'s net-of-fee returns justify the cost.\n\nThe standard fee structure: management fee (1–2% of AUM per year, charged regardless of performance) covers operational costs and provides baseline GP income. Performance fee (15–20% of profits above a hurdle rate) aligns the GP\'s interests with investors by paying the GP more when investors make more. The high-water mark (HWM) provision requires the fund to recover any previous losses before charging performance fees again — preventing the GP from collecting performance fees after a loss year simply by generating a small recovery.\n\nThe real cost impact: a fund charging 2% management and 20% performance fee on a gross return of 10% per year delivers net return to investors of approximately 6–7%. The management fee (2%) is charged on the full AUM every year. The performance fee (20% × 8% above 6% hurdle = 1.6%) is charged only on the above-hurdle profits. Total fee drag: 3–4% in a typical year. For investors to justify paying hedge fund fees, the net-of-fee return must exceed the return available from lower-cost alternatives (index funds, smart beta) after accounting for the higher fees. This is why the benchmark for hedge fund performance is cash + a spread, not the equity index — most hedge funds run at less than 100% net equity exposure.',
+      key_points: [
+        'Management fee: 1–2% AUM per year regardless of performance; covers operations, provides baseline GP income',
+        'Performance fee: 15–20% of profits above hurdle rate; aligns GP interests with investor returns',
+        'High-water mark: GP must recover all previous losses before collecting performance fees again',
+        '2/20 with 6% hurdle on 10% gross return: investors net approximately 6–7% — 3–4% total fee drag',
+        'Benchmark for hedge funds: cash + spread (not equity index) — most funds run below 100% net equity exposure',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise calculates the net investor return from a hedge fund with a specific fee structure, applying the hurdle rate and high-water mark mechanics to determine the actual performance fee charged.',
+      key_points: [
+        'Management fee is deducted first, from gross return — then performance fee is calculated on the remainder',
+        'Performance fee applies only to returns above the hurdle rate — not on the full return',
+        'High-water mark: if fund is below prior peak, no performance fee regardless of current period return',
+      ],
       activity_type: 'calculation',
-      problem: 'A hedge fund has: gross return 18%, management fee 2% per year, performance fee 20% of profits above a 6% hurdle rate. The fund started the year at £100M AUM. Calculate the net return to investors after all fees.',
+      problem: 'A hedge fund has: gross return 18%, management fee 2% per year, performance fee 20% of profits above a 6% hurdle rate. The fund started the year at £100M AUM. Calculate the net return to investors after all fees. The fund started the year at £100M AUM. Calculate the net return to investors after all fees.',
       correct_answer: '12.4',
       tolerance: 0.3,
       unit: '% net to investors',
@@ -1862,10 +4992,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       ],
       steps: [{ id: '1', label: 'Deduct management fee', completed: false }, { id: '2', label: 'Calculate performance fee above hurdle', completed: false }, { id: '3', label: 'Calculate net return', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Fund governance — the oversight structures that protect investors from conflicts of interest, operational failures, and GP misconduct — is a topic that most new fund managers underestimate until something goes wrong. The collapse of several high-profile funds (Archegos, Melvin Capital) demonstrated that inadequate governance structures can accelerate fund failures that might otherwise have been survivable.\n\nThe board of directors (or advisory board): institutional quality funds maintain an independent board or advisory committee with at least two members who are independent of the GP. Their role: review and approve the financial statements, ensure the administrator is calculating NAV correctly, review any potential conflicts of interest (e.g., GP co-investing alongside the fund), and provide investor oversight. Absence of an independent board is a red flag for institutional investors.\n\nConflict of interest management: the most common conflicts in hedge fund management are: (1) GP co-investment — if the GP has a personal investment in the fund alongside investors, does the GP give themselves preferential treatment in trade allocation? (2) Side letters — are all investors being treated equitably? (3) Valuation of illiquid assets — who determines the value of hard-to-price securities? (a) The GP themselves (conflict), (b) the independent administrator (best practice). Every hedge fund must have a documented conflict of interest policy and a process for identifying and disclosing any conflict before it becomes a problem.',
+      key_points: [
+        'Fund governance: oversight structures protecting investors from conflicts, operational failures, GP misconduct',
+        'Independent board/advisory committee: minimum two independent members; reviews NAV, approves statements',
+        'No independent board = red flag for institutional allocators — standard governance expectation',
+        'Common conflicts: GP co-investment (trade allocation), side letters (fair treatment), illiquid asset valuation',
+        'Valuation of illiquid assets: GP self-valuation = conflict; independent administrator valuation = best practice',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'capital-raising': {
+    'lesson-1': {
+      intro_text: 'Capital raising is the process of attracting investor capital to a hedge fund — and it is consistently cited by fund managers as the most difficult aspect of running a fund, frequently more challenging than generating returns. The capital raising process requires a differentiated investment proposition, a credible team, a track record (or a compelling story in its absence), and the right access to the right investors.\n\nThe investor universe: different investor types have different requirements, minimum investment sizes, and decision-making timescales. Family offices (private wealth management for high-net-worth families) often invest $1–25M with relatively fast decisions. Fund of funds (vehicles that invest in multiple hedge funds) invest $5–50M but require extensive due diligence. Endowments and foundations invest $10–100M with a 3–12 month decision process. Pension funds are the largest potential allocators ($50M–$1B+) but have the longest decision cycles (12–24 months) and the most stringent requirements — typically only accessible to established managers with 3+ years of audited track record.\n\nThe timing implication: most new fund managers can only raise capital from family offices and high-net-worth individuals initially. Access to institutional capital requires establishing a track record first. This creates the "chicken and egg" problem of fund raising: you need a track record to raise institutional capital, but you need capital to build a track record. The most common solution: start with a managed account structure (trading a single investor\'s account), build a 12–18 month track record, then convert to a fund structure and expand the investor base.',
+      key_points: [
+        'Capital raising is consistently the hardest part of hedge fund management — harder than generating returns',
+        'Investor universe by size/timeline: family offices ($1–25M, fast) → FoF ($5–50M) → endowments → pension funds ($50M+, 12–24 months)',
+        'Institutional access requires 3+ years of audited track record — not accessible to new managers',
+        '"Chicken and egg" problem: need track record for capital, need capital for track record',
+        'Solution: managed account first (one investor, 12–18 months) → audited track record → fund structure → broader raise',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The pitch deck and investment memorandum are the core marketing materials that must communicate the fund\'s investment edge clearly and compellingly. These documents are not academic research papers — they must be readable, differentiated, and answer the key questions in an institutional investor\'s mind within the first five minutes of reading.\n\nThe pitch deck structure: (1) The edge — what does this manager do that others don\'t? One slide, one clear sentence. (2) The team — who are the portfolio managers and risk managers? What relevant experience do they have? (3) The strategy — how specifically does the strategy generate returns? What is the investment process in concrete terms? (4) The track record — actual audited performance with full risk metrics (Sharpe, drawdown, vol). (5) Risk management — how is risk controlled? What would cause you to close the fund? (6) The terms — fees, liquidity, minimums. (7) Operations — prime broker, administrator, auditor, legal counsel.\n\nThe most common pitch deck mistakes: (1) Leading with performance in a period that happened to be favourable — allocators immediately discount short-track-record performance statistics. (2) Vague strategy description ("we buy undervalued companies") — specific and differentiated edge must be demonstrated. (3) Over-claiming capacity — stating "this strategy can be scaled to $5 billion" with no evidence. (4) Insufficient risk disclosure — institutional allocators want to see the worst periods, not just the best.',
+      key_points: [
+        'Pitch deck structure: edge (1 sentence) → team → strategy process → track record → risk management → terms → operations',
+        'Lead with edge, not performance: allocators discount short track records and favour clear process explanations',
+        'Strategy description must be specific: "we buy undervalued companies" is insufficient — the mechanism matters',
+        'Show the worst periods first: institutional allocators trust managers more when they disclose losses proactively',
+        'Over-claiming capacity is a red flag: "$5B capacity" without supporting analysis destroys credibility',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'The due diligence process that institutional allocators conduct before investing in a hedge fund is rigorous, time-consuming, and goes far beyond reviewing the pitch deck. Understanding what investors are looking for — and what red flags will immediately disqualify a manager — is essential preparation.\n\nThe three pillars of institutional due diligence: (1) Investment due diligence (IDD) — is the strategy sound? Does the manager have a genuine, identifiable edge? Is the track record attributable to skill or to broad market tailwinds? Can the strategy be replicated by cheaper alternatives? (2) Operational due diligence (ODD) — is the back office robust? Are the operations, systems, and controls capable of managing the fund safely? Is there adequate segregation of duties (the person executing trades should not also be reconciling the positions)? (3) Reputational due diligence — background checks on all key personnel; verification of claimed credentials, employment history, and legal/regulatory record.\n\nCommon ODD red flags: (1) GP is also the fund administrator (no independent NAV calculation). (2) Single signature authority on fund bank accounts (no dual control). (3) No independent board or advisory committee. (4) Audit performed by a small, unknown auditor (large fund, small auditor = potential independence issue). (5) Gap in employment history not adequately explained. Operational failures cause as many hedge fund losses as investment failures — Madoff\'s fraud was an operational failure, not an investment failure.',
+      key_points: [
+        'Three pillars of DD: investment (edge, attribution), operational (back office, controls, segregation), reputational (background checks)',
+        'ODD red flag 1: GP also administers the fund — no independent NAV = highest single fraud risk',
+        'ODD red flag 2: single signature bank authority — dual control is the minimum acceptable governance standard',
+        'Madoff lesson: fraud is an operational failure; ODD that caught the red flags would have avoided the loss',
+        'Small auditor for large fund is a significant ODD concern — audit independence is essential',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Investor relations (IR) — the ongoing management of relationships with existing and prospective investors — is a continuous function, not just an activity at the point of fundraising. The quality of investor relations determines whether investors remain invested through difficult periods, whether they recommend the manager to other investors, and whether they increase their allocation over time.\n\nThe IR calendar: monthly performance reports (distributed within 10 business days of month-end), quarterly calls with key investors (portfolio review and market commentary), annual in-person meetings (strategy review, team update, operational review). During periods of significant underperformance or drawdown, additional communication is critical — investors who receive prompt, honest communication during difficult periods are far more likely to maintain their allocation than those who receive delayed or evasive updates.\n\nThe communication principle during drawdowns: communicate early, often, and specifically. When a fund is down 10% in a month, send a preliminary update within 3 business days explaining: (1) what happened (specific positions or factors that drove the loss), (2) what the current portfolio exposure and risk level is, (3) what the current thesis is — is the portfolio positioned to recover, or has the strategy been adjusted? Allocators who receive specific, honest communication during drawdowns maintain trust even through significant losses. Allocators who receive delayed or vague communication immediately begin redemption planning.',
+      key_points: [
+        'IR calendar: monthly reports (10 days post month-end), quarterly calls, annual in-person meetings',
+        'Drawdown communication: preliminary update within 3 business days of significant loss — never delay',
+        'Drawdown update must contain: what happened (specific), current exposure/risk level, current thesis/positioning',
+        'Early specific communication during drawdowns preserves investor trust; delayed/vague communication destroys it',
+        'Investors who receive good IR during losses are more likely to maintain or increase allocation when recovery comes',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise tests the most fundamental capital raising concept: what a sophisticated institutional allocator is actually evaluating in a manager pitch. Understanding the allocator\'s perspective — what they prioritise, what they distrust, and what they need to gain conviction — is the foundation of effective fundraising.',
+      key_points: [
+        'Allocators evaluate process and edge first — recent performance is a check, not the primary signal',
+        'A manager who cannot explain their edge clearly is disqualified regardless of performance',
+        'Team pedigree and educational credentials are supporting factors, not primary conviction drivers',
+      ],
       activity_type: 'multi_choice',
       question: 'A manager is pitching to a large family office allocator. Which element of the pitch is most important for getting to a second meeting?',
       options: [
@@ -1878,10 +5069,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Sophisticated allocators have seen thousands of impressive 3-month track records that subsequently underperformed. What drives a second meeting is "why do you make money?" — a clear, logical explanation of the edge that connects the strategy\'s source of alpha to its execution. The pitch must answer: (1) what market inefficiency are you exploiting, (2) why does it persist, (3) why is your team specifically positioned to capture it, (4) what makes the process repeatable. Performance is supporting evidence for the thesis, not the thesis itself.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'The scaling question — how does the strategy perform as AUM grows, and at what point does AUM growth destroy the edge — is one of the most important and most honestly answered questions in the fundraising process. Understanding capacity constraints and being transparent about them with investors is both an ethical requirement and a strategic advantage.\n\nCapacity constraints: most trading strategies have a natural capacity limit beyond which additional AUM reduces returns. The limit arises from: (1) Market impact — larger positions move prices against you, increasing entry costs and reducing exit prices. A strategy that makes 100 trades per year of $100K each has different market impact than the same strategy making 100 trades per year of $10M each. (2) Opportunity scarcity — some strategies only work on a small universe of instruments or specific setups that do not occur frequently enough to absorb large capital allocations. (3) Liquidity — the size of available positions at acceptable spreads limits the strategy to a maximum allocation.\n\nThe honest capacity conversation: institutional allocators respect managers who set hard capacity limits and close the fund when capacity is reached, even when it means forgoing management fee income. AQR, Renaissance, and other top-tier systematic managers have all periodically returned capital to investors and closed to new subscriptions when they believed further AUM would harm returns. This behaviour signals that the manager prioritises returns (and their performance fee income) over assets under management — exactly the incentive alignment investors want.',
+      key_points: [
+        'Capacity limit: maximum AUM at which the strategy returns begin to degrade from market impact or opportunity scarcity',
+        'Market impact: large trades move prices — $10M trades cost significantly more to execute than $100K trades',
+        'Opportunity scarcity: some strategies have a limited number of high-quality setups per year regardless of AUM',
+        'Hard capacity limit + willingness to return capital = strongest possible signal of manager/investor alignment',
+        'AQR, Renaissance: periodically returned capital and closed to new subscriptions — behaviour institutional investors value most',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'regulatory-compliance': {
+    'lesson-1': {
+      intro_text: 'Financial regulation exists to protect investors, maintain market integrity, and prevent systemic risk. For a fund manager or serious trader, understanding the regulatory framework is not just a compliance requirement — it is essential for understanding the operating environment, the rules that govern fair and legal behaviour, and the consequences of non-compliance.\n\nThe UK regulatory framework: the Financial Conduct Authority (FCA) is the primary regulator for investment management in the UK. Fund managers managing assets for others typically require FCA authorisation unless they qualify for an exemption. The key regulatory categories: (1) Authorised Fund Manager (AFM) — manages regulated collective investment schemes. (2) Alternative Investment Fund Manager (AIFM) — manages alternative investment funds (hedge funds, private equity). Managers above the AIFMD threshold (€500M in AUM or €100M with leverage) must register with the FCA and comply with AIFMD requirements including remuneration rules, risk management requirements, and investor disclosure obligations.\n\nThe EU regulatory framework: for managers accessing EU investors after Brexit, the Alternative Investment Fund Managers Directive (AIFMD) applies via the National Private Placement Regime (NPPR). This allows UK managers to market to EU investors country by country, subject to each country\'s rules. Full AIFMD compliance and ESMA registration provides broader EU market access but with more onerous requirements.',
+      key_points: [
+        'FCA: UK primary regulator for investment management — authorisation required to manage client assets in most cases',
+        'AIFM: managing hedge funds above €500M AUM (or €100M with leverage) requires AIFMD compliance',
+        'AIFMD requirements: risk management framework, remuneration rules, investor disclosure (KIID, annual report)',
+        'Post-Brexit EU access: NPPR (country-by-country marketing) or full AIFMD registration for broader access',
+        'FCA authorisation process: typically 6–12 months, extensive documentation, minimum capital requirements',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Market abuse — trading that manipulates prices, exploits material non-public information (insider trading), or otherwise undermines market integrity — is one of the most serious regulatory violations, carrying criminal penalties in most jurisdictions. Understanding precisely what constitutes market abuse is essential for every professional trader.\n\nInsider trading: trading on material, non-public information (MNPI). "Material" means information that would significantly affect the price of the security if it were public. "Non-public" means it has not been disclosed to the market. Examples: trading ahead of a merger announcement that you learned from a company executive, or trading on advance knowledge of a government economic data release. The FCA and SEC pursue insider trading vigorously; prison sentences of multiple years are common for convicted insider traders.\n\nMarket manipulation: intentional actions to move prices away from their fair value for profit. Examples: "pump and dump" (buying a thinly traded stock, artificially driving up the price via promotional material, then selling at the inflated price), "spoofing" (placing large orders with no intention of executing them, to create the false impression of demand or supply), and "layering" (placing and quickly cancelling multiple orders to create the appearance of market depth). Algorithmic traders face specific scrutiny for manipulation because their order patterns can appear manipulative even when genuinely functional.',
+      key_points: [
+        'Insider trading: trading on material, non-public information — criminal offence in all major jurisdictions',
+        'MNPI test: would this information significantly affect the price if it were public? If yes, do not trade',
+        'Market manipulation: intentional price distortion for profit — spoofing, layering, pump and dump',
+        'Spoofing: placing orders with no intent to execute to create false impression of demand/supply — criminal',
+        'Algo traders face specific scrutiny: order patterns can appear manipulative even when genuinely functional',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Anti-money laundering (AML) and Know Your Customer (KYC) requirements are an increasingly significant operational burden for fund managers but are non-negotiable regulatory obligations. AML compliance is required by the Money Laundering Regulations 2017 (in the UK), the Bank Secrecy Act (in the US), and equivalent laws in all major jurisdictions.\n\nKYC requirements: before accepting any investor subscription, a fund manager must verify the investor\'s identity, source of funds, and beneficial ownership. For individual investors: government-issued ID, proof of address, evidence of source of wealth. For corporate investors: constitutional documents, shareholder register (to identify ultimate beneficial owners above 25% ownership), source of funds documentation. For politically exposed persons (PEPs) — individuals in or closely connected to public office — enhanced due diligence is required.\n\nOngoing AML monitoring: KYC is not a one-time exercise at subscription. Regulations require ongoing monitoring of investor activity for suspicious patterns (unusual redemption requests, requests to send redemptions to third parties not on the subscription agreement, sudden large additional subscriptions from previously inactive investors). Suspicious Activity Reports (SARs) must be filed with the National Crime Agency (UK) or FinCEN (US) if suspicious activity is identified — and the investor must not be tipped off that a SAR has been filed.',
+      key_points: [
+        'AML/KYC: mandatory verification of investor identity, source of funds, and beneficial ownership before any investment',
+        'Individual KYC: government ID, proof of address, source of wealth documentation',
+        'Corporate KYC: constitutional documents, beneficial owner register (25%+ owners), source of funds',
+        'PEPs: politically exposed persons require enhanced due diligence regardless of investment size',
+        'Ongoing monitoring required: SARs must be filed for suspicious activity; do NOT tip off the investor',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Best execution obligations require that investment managers execute trades in the best interests of their clients — obtaining the best possible outcome across price, costs, speed, likelihood of execution, and other relevant factors. Best execution is not simply "getting the best price" — it is a comprehensive standard that considers the full context of the trade.\n\nThe MiFID II best execution framework (applicable in the UK post-Brexit via the UK MiFID regime): firms must establish, implement, and review a best execution policy specifying how they meet the obligation for each asset class they trade. The policy must identify the execution venues (brokers, exchanges, dark pools) they use and explain why those venues provide best execution. The policy must be reviewed annually and updated when material changes occur.\n\nBest execution monitoring: firms must monitor execution quality by comparing their actual execution prices to benchmarks (the arrival price, VWAP, or market close, depending on the strategy). Significant and systematic deviations from the benchmark require investigation and potential change of execution venue. The obligation to clients is not fulfilled by having a policy — it requires ongoing measurement and response. Prop traders trading their own capital have no best execution obligations to investors, but institutional managers trading client assets must document, monitor, and report on execution quality.',
+      key_points: [
+        'Best execution: obtaining the best overall outcome for clients across price, cost, speed, and execution probability',
+        'Not just best price: spread, commission, market impact, and certainty of execution all factor in',
+        'UK MiFID best execution policy: written policy specifying execution venues per asset class; annual review required',
+        'Monitoring requirement: compare actual execution to benchmarks (VWAP, arrival price) — deviations must be investigated',
+        'Applies to client assets only: prop traders have no best execution obligation to investors',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise tests the most consequential compliance concept in active trading: the boundary between legal market participation and illegal market manipulation. The distinction is critical and requires understanding both the letter and the spirit of the law.',
+      key_points: [
+        '"Marking the close" = placing trades specifically to inflate reported NAV at period end = market manipulation',
+        'Intent to create an artificial price is the key element: it does not matter if the trade is subsequently unwound',
+        'Regulatory action has resulted in significant fines and criminal charges for this behaviour in multiple jurisdictions',
+      ],
       activity_type: 'multi_choice',
       question: 'A portfolio manager executes a large buy order in a thinly traded stock immediately before the fund publishes its monthly performance report. The purchase temporarily inflates the stock\'s closing price, boosting the fund\'s reported NAV. What is this practice called and why is it illegal?',
       options: [
@@ -1894,10 +5146,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: '"Marking the close" or "portfolio pumping" is a form of market manipulation. It artificially inflates the fund\'s performance metrics reported to investors, creating a misleading picture of returns. Regulators (FCA, SEC, ESMA) treat this as securities fraud because investors make allocation decisions based on reported NAV. Even if the trades are subsequently unwound, the false price at the valuation date has already misled investors. This has resulted in substantial fines and criminal charges in multiple jurisdictions.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Building a compliance culture — where regulatory compliance is embedded in every operational decision rather than treated as an external constraint imposed by regulators — is the hallmark of durable, institutional-quality fund management. The funds that face regulatory action are not primarily those with malicious intent; they are often those where compliance was treated as someone else\'s responsibility.\n\nThe compliance programme: a complete compliance programme includes: (1) Written policies and procedures for every regulated activity. (2) A designated compliance officer (DCO) responsible for monitoring and reporting. (3) Regular compliance training for all staff. (4) A trade surveillance system that monitors for suspicious patterns. (5) A documented escalation process for compliance concerns. (6) Annual compliance review with a report to senior management or the board.\n\nThe compliance tone from the top: research consistently shows that compliance failures are most common in organisations where senior management treats compliance as a cost centre rather than a core business function. When the portfolio manager signals that compliance checks can be skipped to close a trade faster, or that investor disclosure requirements are excessive bureaucracy, the entire organisation\'s compliance culture degrades. The most effective compliance programmes have visible, active support from the most senior people in the organisation — and visible, immediate consequences for compliance failures.',
+      key_points: [
+        'Compliance culture: embedded in every decision, not treated as an external constraint or someone else\'s responsibility',
+        'Complete compliance programme: written procedures, designated compliance officer, training, trade surveillance, escalation process',
+        'Annual compliance review: report to senior management — formalises ongoing monitoring as a governance obligation',
+        'Tone from the top: senior management attitude determines compliance culture across the entire organisation',
+        'Compliance failures: most common where senior management treats compliance as a cost, not a core function',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'fund-operations': {
+    'lesson-1': {
+      intro_text: 'Fund operations encompasses everything that happens after a trade is executed: trade confirmation, settlement, position reconciliation, cash management, NAV calculation, investor reporting, and regulatory filings. While portfolio management generates the returns, operations determines whether those returns are accurately recorded, legally protected, and efficiently distributed to investors.\n\nThe trade lifecycle: (1) Trade execution — the portfolio manager executes a trade with a broker or on an exchange. (2) Trade confirmation — the broker sends a confirmation of the executed trade (counterparty, instrument, quantity, price, settlement date). The operations team must confirm this matches the portfolio manager\'s records within the same business day. (3) Settlement — the actual exchange of securities and cash occurs (T+1 for equities in the US and UK post-2024, T+2 in most other markets). (4) Position reconciliation — the fund\'s records are reconciled with the prime broker\'s records and the custodian\'s records daily. Any discrepancy is investigated immediately. (5) Cash management — uninvested cash earns interest; insufficient cash causes settlement failures with penalties.\n\nFailed settlements: when a trade fails to settle (buyer fails to deliver cash or seller fails to deliver securities), the counterparty may buy-in (purchase the securities at market and charge the difference to the failing party). Failed settlements create legal liability and reputational risk. A robust operations function prevents failed settlements through proactive cash and position management.',
+      key_points: [
+        'Fund operations: post-trade processes that ensure returns are accurately recorded and legally protected',
+        'Trade lifecycle: execution → confirmation (same day) → settlement (T+1/T+2) → reconciliation → cash management',
+        'Daily position reconciliation: fund records vs prime broker records vs custodian records — discrepancies investigated same day',
+        'Failed settlement: legal liability + potential buy-in charges; prevented by proactive cash and position management',
+        'Operations failure can destroy reputation faster than investment failure: regulatory action follows operational breakdowns',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'The fund administrator is the third-party service provider responsible for calculating the fund\'s NAV independently of the GP — a critical safeguard against fraud and valuation manipulation. Understanding the administrator\'s role, how NAV is calculated, and what the validation process looks like is essential operational knowledge.\n\nNAV calculation: NAV = Total Assets − Total Liabilities. Total assets = sum of all positions valued at their market prices + cash + accrued income. Total liabilities = all payable expenses (management fees, administrator fees, legal fees, any borrowing costs). For a long-only equity fund holding exchange-listed stocks, NAV calculation is relatively straightforward — use the market closing prices and sum. For a fund holding illiquid assets (private credit, real estate, OTC derivatives), valuation requires a documented methodology approved by the board.\n\nThe administrator\'s independence: the administrator must receive position and trade data directly from the prime broker — NOT just from the GP. This independence prevents a situation where a fraudulent manager submits false position data to the administrator to inflate NAV. In the Madoff fraud, there was no independent administrator verifying positions against prime broker records — the "administrator" was Madoff\'s own company, producing whatever NAV Madoff wanted. The lesson: the administrator\'s independence from the GP is the single most important protection against NAV fraud.',
+      key_points: [
+        'Administrator: independent third party calculating NAV — the primary safeguard against NAV fraud',
+        'NAV = Total Assets (positions at market price + cash + accrued income) − Total Liabilities (fees + costs)',
+        'Administrator receives data directly from prime broker, NOT from the GP — preserves independence',
+        'Illiquid assets: documented valuation methodology required; board approval; independent valuation agents for large positions',
+        'Madoff lesson: no independent administrator = GP can report any NAV they choose; independent admin is non-negotiable',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Risk management systems for fund operations go beyond the portfolio-level risk management that a portfolio manager performs. At the operational level, risk management addresses the systemic risks that can affect the entire fund regardless of investment performance: counterparty risk, cybersecurity risk, disaster recovery, and key person risk.\n\nCounterparty risk: the risk that a counterparty (prime broker, bank, OTC derivative counterparty) fails to fulfil their obligation. The collapse of Lehman Brothers in 2008 demonstrated that prime broker failure is a real risk — funds with Lehman as their prime broker had their assets temporarily frozen during the bankruptcy proceedings. Best practice: segregate assets at a custodian separate from the prime broker, use multiple prime brokers for large funds, and ensure the prime brokerage agreement includes strong asset protection provisions.\n\nKey person risk: the risk that the departure of one or two critical individuals (typically the portfolio manager and/or the chief risk officer) would materially impair the fund\'s ability to operate. Institutional investors increasingly require key person provisions in the LPA — clauses that allow investors to redeem without penalty if a named key person leaves the fund within a defined period. Managing key person risk operationally requires: documented investment processes, proper succession planning, and ensuring the investment process is not dependent on one individual\'s judgement for all decisions.',
+      key_points: [
+        'Operational risk management: counterparty risk, cybersecurity, disaster recovery, key person risk',
+        'Counterparty risk: prime broker or bank failure can freeze assets — Lehman 2008 froze hedge fund assets temporarily',
+        'Asset protection: segregate assets at independent custodian; use multiple prime brokers for large funds',
+        'Key person provision: LPA clause allowing penalty-free redemption if named key person departs',
+        'Managing key person risk: documented processes, succession planning, no single point of knowledge dependency',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'Technology infrastructure is the operational backbone of a modern fund — from order management systems (OMS) that route and track trades, to risk management platforms that calculate real-time Greeks and exposures, to reporting systems that distribute NAV and attribution data to investors. The correct technology choices depend heavily on the fund\'s strategy, AUM, and operational complexity.\n\nThe OMS (Order Management System): the central system that connects the portfolio manager\'s trade decisions to the execution venues, records all orders and fills, and feeds confirmed trades to the risk management and accounting systems. Popular institutional OMS platforms include Bloomberg AIM, Eze, and Charles River. For smaller funds, simpler solutions exist but must integrate with the prime broker\'s systems for seamless position reconciliation.\n\nRisk management systems: real-time risk platforms (Bloomberg PORT, Axioma, Aladdin) calculate portfolio-level VaR, factor exposures, Greeks, and stress test results on a continuous basis. For a hedge fund trading options, a risk platform that can calculate real-time delta, gamma, vega, and theta across the entire portfolio is not a nice-to-have — it is a requirement. Position limits and risk limits should be embedded in the risk management system so that breaches trigger automatic alerts rather than relying on manual monitoring.',
+      key_points: [
+        'OMS: central trade routing and record system; connects PM decisions to execution venues and downstream accounting',
+        'OMS connects to prime broker for position reconciliation — must integrate seamlessly or create reconciliation breaks',
+        'Risk management platform: real-time VaR, factor exposures, Greeks, stress tests — not optional for options funds',
+        'Automated risk limit alerts: position limit breaches must trigger automatic alerts, not rely on manual monitoring',
+        'Technology choices must match strategy complexity: an options fund needs real-time Greeks; equity long-only needs sector attribution',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise tests the core knowledge of prime brokerage: what services a prime broker provides and why its selection has a direct impact on strategy capacity and net returns.',
+      key_points: [
+        'Prime broker: provides financing, securities lending, execution, custody, reporting — the fund\'s operational backbone',
+        'Stock borrow availability and rate are critical for short-selling strategies — not all prime brokers can borrow the same stocks',
+        'Prime broker terms (financing rate, haircuts) directly impact net returns in leveraged or short-heavy strategies',
+      ],
       activity_type: 'multi_choice',
       question: 'What is the prime broker\'s role in a hedge fund\'s operations, and why is prime broker selection critical for fund performance?',
       options: [
@@ -1910,10 +5223,71 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       explanation: 'Prime brokers are the operational backbone of hedge funds. Their services include: (1) margin financing at negotiated rates, (2) stock borrow for short selling at varying rates and availability, (3) capital introduction (connecting managers to potential allocators), (4) portfolio reporting and risk analytics, (5) custody. For a leveraged long/short fund, the cost of financing and the availability and cost of stock borrow can be the difference between a strategy being viable or not — making prime broker terms a direct input into returns.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
     },
+    'lesson-6': {
+      intro_text: 'Business continuity planning (BCP) and disaster recovery (DR) are the operational frameworks that ensure a fund can continue to function and protect investor capital during unexpected events — technology failures, natural disasters, pandemics, or the unexpected loss of key personnel.\n\nThe BCP for a hedge fund: (1) Core process identification — which processes must continue regardless of disruption? Order execution, position monitoring, investor communication, and NAV calculation are typically the critical processes. (2) Backup systems — are there secondary systems that can assume each critical process if primary systems fail? Cloud-based systems provide automatic geographic redundancy. (3) Remote working capability — the COVID-19 pandemic demonstrated that entire funds can operate remotely indefinitely; BCP must include remote access to all critical systems with appropriate cybersecurity controls. (4) Communication plan — which counterparties and investors must be notified in the event of a business disruption, and who is responsible for that communication?\n\nThe disaster recovery test: BCP and DR plans must be tested at least annually. A test that only exists on paper has not been validated. The test should include: simulating system failure and switching to backup systems, remote working drill, investor communication simulation, and counterparty notification. Regulators (FCA, SEC) expect evidence of BCP testing and may inspect BCP documents during regulatory visits.',
+      key_points: [
+        'BCP: ensures fund continues to operate and protect investor capital during unexpected disruptions',
+        'Critical processes: order execution, position monitoring, investor communication, NAV calculation',
+        'Cloud systems provide geographic redundancy automatically — on-premise servers require manual DR sites',
+        'COVID lesson: entire funds can operate remotely indefinitely — BCP must include fully remote operation capability',
+        'Annual BCP test required: simulate failure, switch to backup systems, drill communication — paper plans are insufficient',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
   },
 
   'building-your-legacy': {
+    'lesson-1': {
+      intro_text: 'The trading journey is not linear. Every successful trader has experienced periods of doubt, drawdown, and the temptation to abandon a sound strategy in favour of something that "worked recently." The ability to persist through difficult periods without abandoning sound fundamentals is a learned skill — and understanding why it is so difficult is the first step toward mastering it.\n\nThe psychology of drawdown: during a drawdown, three forces simultaneously push a trader toward abandonment. (1) Recency bias: the recent losses feel more significant than the historical profits — the last 3 months of pain override the memory of 2 years of positive results. (2) Loss aversion: the emotional pain of losses is approximately twice the pleasure of equivalent gains — drawdowns feel much worse than equivalent bull runs feel good. (3) Identity threat: after extended losses, traders begin to question whether they have a genuine edge at all, or whether all previous profits were luck.\n\nThe evidence-based response to drawdown: the correct question during a drawdown is not "should I stop trading?" but "is the drawdown within the expected range for this strategy?" If a Monte Carlo simulation of the strategy\'s historical performance shows that a drawdown of the current magnitude occurs 15% of the time, the drawdown is statistically normal — uncomfortable but expected. Only if the drawdown exceeds the 95th percentile of expected outcomes is a fundamental review of the strategy justified.',
+      key_points: [
+        'Drawdown psychology: recency bias + loss aversion + identity threat combine to push toward premature abandonment',
+        'Recency bias: 3 months of losses override 2 years of profits in emotional salience',
+        'Loss aversion: losses hurt 2× as much as equivalent gains feel good — drawdowns are psychologically asymmetric',
+        'Evidence-based response: "is this within expected range?" not "should I stop?" — compare to Monte Carlo distribution',
+        'Strategy review justified only when drawdown exceeds 95th percentile of expected outcomes',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-2': {
+      intro_text: 'Professional development in trading follows a different path from most careers. There are no formal credentials that guarantee trading competence; no degree that certifies someone is a skilled systematic trader. Progress is measured in performance, and performance takes years to distinguish genuine skill from variance. Understanding the realistic timeline of trading development helps set appropriate expectations and prevents premature conclusion-drawing.\n\nThe realistic timeline: Year 1 — learning the mechanics. Position sizing, execution, journaling, and basic strategy development. Most year-1 traders lose money; this is expected and appropriate if it is contained to manageable losses. Year 2–3 — developing a genuine edge. The strategy has been backtested, forward-tested, and is in early live deployment. Performance is erratic but the process is improving. Years 3–5 — edge refinement. The core strategy is producing consistent results; systematic improvement through attribution analysis is ongoing. Years 5–10 — professional-level consistency. The strategy has been stress-tested through multiple market regimes; the trader has identified which conditions they excel in and which they should avoid.\n\nThe comparison trap: comparing performance to traders who seem to be generating extraordinary returns in a short period leads to one of two errors. Either the comparison is false (the extraordinarily performing trader has taken outsized risk, is reporting selectively, or is in a sustained lucky streak), or the comparison triggers abandonment of a sound strategy in favour of the currently-performing approach (which typically underperforms after the comparison period).',
+      key_points: [
+        'Year 1: mechanics and fundamentals; losses expected and appropriate if contained',
+        'Years 2–3: genuine edge development; strategy backtested, forward-tested, early live deployment',
+        'Years 3–5: edge refinement; consistent results emerging; systematic improvement via attribution',
+        'Years 5–10: professional consistency; multiple market regime experience; clear knowledge of optimal conditions',
+        'Comparison trap: extraordinary short-term returns usually mean outsized risk, selective reporting, or luck — not replicable',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-3': {
+      intro_text: 'Mentorship and community accelerate development in ways that self-directed study cannot replicate. A skilled mentor provides two things that are nearly impossible to get from books or courses alone: real-time feedback on specific decisions, and the lived experience of having survived the exact situations you are navigating for the first time.\n\nWhat to look for in a trading mentor: (1) A verifiable, long track record — not a 12-month run during a bull market. (2) A process orientation — a mentor who can explain their edge in objective terms, not just "I have good instincts." (3) A willingness to discuss their failures as well as their successes — the most valuable mentoring discussions are often about what went wrong and why. (4) Alignment between their trading style and your target style — a mentor who trades high-frequency macro is poorly suited to mentor a discretionary swing trader in equities.\n\nThe trading community benefit: being part of a community of serious traders provides real-time market intelligence, accountability, diverse perspectives on market conditions, and emotional support during drawdowns. The critical requirement: the community must have a high signal-to-noise ratio. A community dominated by traders sharing P&L screenshots and debating short-term price movements is noise. A community that shares systematic backtests, discusses attribution analysis, and holds members accountable to their stated strategy is signal.',
+      key_points: [
+        'Mentor value: real-time feedback on specific decisions + survived experience of situations you are facing for the first time',
+        'Mentor selection: verifiable long track record, process orientation, willingness to discuss failures, style alignment',
+        'Beware 12-month mentors: a bull-market track record is not evidence of edge across multiple regimes',
+        'Community value: market intelligence, accountability, diverse perspectives, drawdown emotional support',
+        'Community quality filter: systematic discussion (backtests, attribution) = signal; P&L screenshots = noise',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
+    'lesson-4': {
+      intro_text: 'The transition from retail trading to professional asset management — managing other people\'s money — represents the most significant career inflection point available to a successful trader. It multiplies the opportunity (more capital = more absolute returns) while fundamentally changing the psychological, legal, and operational demands.\n\nThe psychological shift: trading your own money allows a degree of flexibility and risk tolerance that is impossible when managing client capital. A trader who can tolerate a personal 30% drawdown because they trust their own process cannot apply the same standard to clients, who may withdraw capital or suffer genuine financial harm. Client capital requires a more conservative risk framework, even if this means lower absolute returns during bull markets.\n\nThe legal and regulatory requirements: managing client assets in the UK requires FCA authorisation (or exemption) and compliance with AIFMD (if a fund) or Conduct of Business rules (if a managed account). The requirements are extensive: governance, risk management, record-keeping, client reporting, and regulatory filing. New professional managers consistently underestimate the compliance burden — it is not unusual for the first 6–12 months to spend as much time on compliance as on portfolio management.\n\nThe business model: a professional asset manager is simultaneously a portfolio manager, a compliance officer, an operations manager, an investor relations professional, and a marketer. Building a team or a network of specialist service providers to cover each role is essential for scaling beyond the early stages.',
+      key_points: [
+        'Client capital requires more conservative risk framework than own capital — clients cannot tolerate your personal drawdown tolerance',
+        'FCA authorisation required to manage UK client assets — process takes 6–12 months before launching',
+        'Compliance burden is underestimated: first 6–12 months often split equally between PM and compliance work',
+        'Business model: portfolio manager + compliance officer + ops manager + IR professional + marketer — build a team',
+        'Team or specialist network essential: no single person can cover all roles effectively at scale',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
+    },
     'lesson-5': {
+      intro_text: 'This exercise tests the most defining characteristic of elite long-term systematic traders: the commitment to continuous process improvement rather than the pursuit of a single static strategy that works forever.',
+      key_points: [
+        'Elite systematic traders define their edge by the process of improvement, not by any single strategy',
+        'No strategy works forever — market microstructure evolves, edges get arbitraged, regimes change',
+        'The infrastructure for continuous improvement (journals, backtesting, attribution) is the durable edge',
+      ],
       activity_type: 'multi_choice',
       question: 'After 10 years of systematic trading and continuous improvement, which characteristic most distinguishes elite systematic traders from merely competent ones?',
       options: [
@@ -1925,6 +5299,17 @@ export const LESSON_ACTIVITIES: Record<string, Record<string, LessonContent>> = 
       correct_index: 1,
       explanation: 'The most durable edge in systematic trading is the process itself: the ability to measure objectively, learn from data rather than emotions, and continuously improve systems as market microstructure evolves. No strategy works forever — market regimes change, edges get arbitraged away, and conditions shift. Elite traders who last 10+ years do so by building infrastructure (journals, backtesting frameworks, performance attribution) that allows continuous adaptation. The traders who fail are those who found a strategy that worked for 2 years and stopped improving.',
       steps: [{ id: '1', label: 'Read the question', completed: false }, { id: '2', label: 'Select your answer', completed: false }, { id: '3', label: 'Review explanation', completed: false }],
+    },
+    'lesson-6': {
+      intro_text: 'The legacy of a successful trading career is not measured in peak account balance or a single exceptional year. It is measured in the durability of the process, the quality of the capital built over decades, and the knowledge and systems created that can outlast any individual strategy or market cycle.\n\nDefining your legacy: professional traders who build lasting legacies share three characteristics. (1) System documentation — they have documented their strategies, processes, and learnings in sufficient detail that the knowledge can be transferred to others or revisited years later. A trading system that lives entirely in one person\'s head dies when that person stops trading. (2) Capital discipline — they have maintained their risk management discipline through every bull market temptation to over-leverage, and their account has compounded reliably rather than experiencing catastrophic resets. (3) Continuous contribution — they have shared learnings with a community, mentored others, or contributed to the systematic documentation of market behaviour in some form.\n\nThe compounding of knowledge: a trader who improves their expectancy by 10% per year for 10 years has a strategy that produces 2.6× the per-trade profit it did at the start. A trader who documents every insight, builds systematic tests for every hypothesis, and applies the full Tradecuity curriculum has a knowledge base that grows in value every year they trade. The most powerful insight from Level 10: the ceiling of your trading performance is not set by the current market conditions, your capital level, or the strategies available to you. It is set by the quality of your learning system — how quickly you identify what is working, improve what is not, and build on what has been proven.',
+      key_points: [
+        'Trading legacy = durability of process + capital discipline over decades + knowledge transfer to others',
+        'System documentation: knowledge in a trader\'s head dies when they stop trading — write it down',
+        'Capital discipline: maintained risk management through every bull market temptation = compound growth without catastrophic resets',
+        'Knowledge compounding: 10% expectancy improvement per year × 10 years = 2.6× per-trade profit at year 10',
+        'Your ceiling is your learning system quality — not market conditions, capital level, or available strategies',
+      ],
+      steps: [{ id: '1', label: 'Read lesson content', completed: false }, { id: '2', label: 'Mark as complete', completed: false }],
     },
   },
 }

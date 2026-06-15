@@ -5,6 +5,7 @@ export type ActivityType =
   | 'draw_horizontal'
   | 'multi_choice'
   | 'calculation'
+  | 'free_text'
 
 export interface Lesson {
   id: string
@@ -22,6 +23,9 @@ export interface LessonContent {
   intro_text?: string      // paragraphs separated by \n\n
   key_points?: string[]    // 3–6 takeaway bullets
   activity_type?: ActivityType
+  // video
+  video_url?: string
+  video_provider?: 'youtube' | 'vimeo' | 'direct'
   // canvas drawing fields
   ticker?: string
   timeframe?: string
@@ -39,6 +43,8 @@ export interface LessonContent {
   unit?: string
   hint?: string
   solution_steps?: string[]
+  // free-text reflection
+  reflection_prompt?: string
   // common
   steps?: LessonStep[]
 }
