@@ -51,7 +51,7 @@ export default async function CoursesPage() {
   return (
     <>
       <Navbar />
-      <main className="px-6 md:px-16 py-12">
+      <main className="px-6 sm:px-8 md:px-16 py-12">
         <div className="mb-2">
           <h1 className="font-display font-bold text-4xl text-chalk mb-1">All courses</h1>
           <p className="text-ghost font-body text-sm">

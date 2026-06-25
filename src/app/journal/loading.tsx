@@ -5,8 +5,8 @@ export default function JournalLoading() {
       <div className="h-4 w-72 bg-steel rounded mb-8" />
 
       {/* Summary bar */}
-      <div className="grid grid-cols-3 gap-4 mb-8">
-        {[1, 2, 3].map((i) => (
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+        {[1, 2, 3, 4].map((i) => (
           <div key={i} className="bg-slate border border-steel rounded-xl p-4">
             <div className="h-3 w-16 bg-steel rounded mb-3" />
             <div className="h-6 w-20 bg-steel rounded" />

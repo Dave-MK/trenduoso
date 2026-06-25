@@ -25,7 +25,7 @@ export default async function AdminDashboard() {
       <p className="text-sm text-ghost font-body mb-8">Platform overview</p>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+      <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 mb-10">
         <StatCard label="Total users" value={totalUsers ?? 0} />
         <StatCard label="New this week" value={newUsers7d ?? 0} />
         <StatCard label="Lesson completions" value={totalCompletions ?? 0} />
@@ -36,11 +36,11 @@ export default async function AdminDashboard() {
         {/* Recent signups */}
         <section>
           <h2 className="font-display font-semibold text-sm text-chalk mb-3 uppercase tracking-wider">Recent signups</h2>
-          <div className="bg-slate border border-steel rounded-xl overflow-hidden">
+          <div className="bg-slate border border-steel rounded-xl overflow-hidden overflow-x-auto">
             {(recentUsers ?? []).length === 0 ? (
               <p className="text-ghost text-sm p-4">No users yet.</p>
             ) : (
-              <table className="w-full text-sm">
+              <table className="w-full text-sm min-w-[380px]">
                 <thead>
                   <tr className="border-b border-steel">
                     <th className="text-left px-4 py-2.5 text-[10px] font-display font-semibold text-ghost uppercase tracking-wider">Name</th>
@@ -75,11 +75,11 @@ export default async function AdminDashboard() {
         {/* Courses overview */}
         <section>
           <h2 className="font-display font-semibold text-sm text-chalk mb-3 uppercase tracking-wider">Courses</h2>
-          <div className="bg-slate border border-steel rounded-xl overflow-hidden">
+          <div className="bg-slate border border-steel rounded-xl overflow-hidden overflow-x-auto">
             {(topCourses ?? []).length === 0 ? (
               <p className="text-ghost text-sm p-4">No courses yet.</p>
             ) : (
-              <table className="w-full text-sm">
+              <table className="w-full text-sm min-w-[280px]">
                 <thead>
                   <tr className="border-b border-steel">
                     <th className="text-left px-4 py-2.5 text-[10px] font-display font-semibold text-ghost uppercase tracking-wider">Course</th>

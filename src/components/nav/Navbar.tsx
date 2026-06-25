@@ -43,7 +43,7 @@ export async function Navbar() {
           <>
             <Link
               href="/dashboard"
-              className="w-8 h-8 rounded-full bg-acuity-blue flex items-center justify-center text-white text-xs font-display font-bold hover:bg-acuity-blue/90 transition-colors"
+              className="w-10 h-10 rounded-full bg-acuity-blue flex items-center justify-center text-white text-xs font-display font-bold hover:bg-acuity-blue/90 transition-colors"
               title="Dashboard"
             >
               {initials}

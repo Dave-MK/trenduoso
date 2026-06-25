@@ -97,7 +97,7 @@ export default async function LandingPage() {
           <img src="/logo-black.webp" alt="" style={{ width: 920, height: 920, opacity: 0.45 }} />
         </div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
 
           {/* Left: copy + CTA */}
           <div>
@@ -106,7 +106,7 @@ export default async function LandingPage() {
               <span className="text-[11px] font-display font-medium tracking-widest text-acuity-teal uppercase">Now in early access</span>
             </div>
 
-            <h1 className="font-display font-bold text-5xl md:text-6xl leading-[1.1] text-chalk mb-6">
+            <h1 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl leading-[1.1] text-chalk mb-6">
               Develop real<br />
               <span className="text-acuity-blue">trading acuity.</span><br />
               Not luck.
@@ -151,7 +151,7 @@ export default async function LandingPage() {
             { value: '48', unit: 'hrs', label: 'Of content',        color: 'text-acuity-teal' },
             { value: '5',  unit: 'K+',  label: 'Exercises graded',  color: 'text-acuity-blue' },
           ].map((s) => (
-            <div key={s.label} className="px-8 py-6">
+            <div key={s.label} className="px-4 sm:px-8 py-5 sm:py-6">
               <div className="font-mono text-3xl font-medium text-chalk">
                 {s.value}<span className={s.color}>{s.unit}</span>
               </div>

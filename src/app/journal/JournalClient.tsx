@@ -244,7 +244,7 @@ export function JournalClient({ initialEntries }: { initialEntries: Entry[] }) {
                     </span>
                   )}
                   <button onClick={() => handleDelete(e.id)}
-                    className="text-ghost hover:text-bear-red text-[11px] font-body transition-colors">
+                    className="text-ghost hover:text-bear-red text-sm font-body transition-colors p-2 -mr-2 min-w-[44px] min-h-[44px] flex items-center justify-center">
                     ×
                   </button>
                 </div>

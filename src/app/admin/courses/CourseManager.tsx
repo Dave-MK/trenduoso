@@ -11,7 +11,6 @@ type Course = {
   title: string
   track: string
   level: number
-  level_name: string | null
   order_index: number
   is_free: boolean
   lesson_count: number
@@ -83,7 +82,7 @@ export function CourseManager({ initialCourses }: { initialCourses: Course[] }) 
         {message && <span className="text-xs text-acuity-teal font-body">{message}</span>}
       </div>
 
-      <div className="bg-slate border border-steel rounded-xl overflow-hidden">
+      <div className="bg-slate border border-steel rounded-xl overflow-hidden overflow-x-auto">
         <div className="grid grid-cols-[2rem_1fr_6rem_5rem_5rem_4rem_5rem] gap-2 px-4 py-2.5 border-b border-steel text-[10px] font-display font-semibold text-ghost uppercase tracking-wider">
           <span></span>
           <span>Title</span>

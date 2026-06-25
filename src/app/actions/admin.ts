@@ -54,7 +54,7 @@ export async function getAllCourses() {
   const supabase = await requireAdmin()
   const { data, error } = await supabase
     .from('courses')
-    .select('id, slug, title, track, level, level_name, order_index, is_free, lesson_count, description')
+    .select('id, slug, title, track, level, order_index, is_free, lesson_count, description')
     .order('level').order('order_index')
   if (error) throw error
   return data ?? []

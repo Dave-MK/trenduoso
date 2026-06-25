@@ -74,7 +74,7 @@ export function SettingsClient({ displayName, email, plan, hasStripeCustomer, av
       {/* Avatar */}
       <section className="bg-slate border border-steel rounded-xl p-6">
         <h2 className="font-display font-semibold text-chalk text-base mb-4">Profile photo</h2>
-        <div className="flex items-center gap-5">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
           <div
             className="w-16 h-16 rounded-full bg-acuity-blue/20 border-2 border-steel flex items-center justify-center overflow-hidden flex-shrink-0 cursor-pointer hover:border-acuity-blue transition-colors"
             onClick={() => fileRef.current?.click()}

@@ -82,7 +82,7 @@ export function LessonManager({ courseSlug, courseId, initialLessons }: Props) {
         {message && <span className="text-xs text-acuity-teal font-body">{message}</span>}
       </div>
 
-      <div className="bg-slate border border-steel rounded-xl overflow-hidden">
+      <div className="bg-slate border border-steel rounded-xl overflow-hidden overflow-x-auto">
         <div className="grid grid-cols-[2rem_0.5fr_1fr_5rem_4rem_5rem] gap-2 px-4 py-2.5 border-b border-steel text-[10px] font-display font-semibold text-ghost uppercase tracking-wider">
           <span></span>
           <span>#</span>

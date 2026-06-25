@@ -117,7 +117,7 @@ export function BillingToggle() {
         <p className="text-center text-bear-red text-sm font-body mb-6">{checkoutError}</p>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {PLANS.map((plan) => {
           const planKey = plan.planKey ? plan.planKey[billing] : null
           const isLoading = planKey !== null && loadingPlan === planKey

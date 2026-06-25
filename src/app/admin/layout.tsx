@@ -15,8 +15,8 @@ export default async function AdminLayout({ children }: { children: ReactNode })
 
   return (
     <div className="flex h-screen bg-obsidian text-chalk overflow-hidden">
-      {/* Sidebar */}
-      <aside className="w-52 flex-shrink-0 bg-slate border-r border-steel flex flex-col">
+      {/* Sidebar — hidden on small screens */}
+      <aside className="hidden md:flex w-52 flex-shrink-0 bg-slate border-r border-steel flex-col">
         <div className="px-4 py-4 border-b border-steel">
           <span className="text-[10px] font-display font-semibold tracking-widest text-ghost uppercase">Tradecuity</span>
           <p className="text-sm font-display font-bold text-chalk mt-0.5">Admin</p>
@@ -37,6 +37,15 @@ export default async function AdminLayout({ children }: { children: ReactNode })
 
       {/* Main */}
       <main className="flex-1 overflow-y-auto">
+        {/* Mobile top bar */}
+        <div className="md:hidden flex items-center justify-between px-4 py-3 border-b border-steel bg-slate sticky top-0 z-10">
+          <span className="text-sm font-display font-bold text-chalk">Admin</span>
+          <div className="flex items-center gap-4 text-xs font-body">
+            <Link href="/admin" className="text-ghost hover:text-chalk">Dashboard</Link>
+            <Link href="/admin/courses" className="text-ghost hover:text-chalk">Courses</Link>
+            <Link href="/" className="text-ghost hover:text-chalk">← App</Link>
+          </div>
+        </div>
         {children}
       </main>
     </div>
