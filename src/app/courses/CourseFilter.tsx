@@ -41,7 +41,6 @@ type EnrichedCourse = {
 
 type Props = {
   courses: EnrichedCourse[]
-  userPlan: string
 }
 
 const LEVEL_TABS = [
@@ -60,8 +59,7 @@ const LEVEL_TABS = [
 
 const TRACK_FILTERS = ['All', 'Foundations', 'Technical', 'Fundamental', 'Risk', 'Strategy'] as const
 
-function CourseCard({ c, userPlan }: { c: EnrichedCourse; userPlan: string }) {
-  const isLocked = !c.is_free && userPlan === 'free'
+function CourseCard({ c }: { c: EnrichedCourse }) {
   const pct = c.lesson_count > 0
     ? Math.round((c.completed_lessons / c.lesson_count) * 100)
     : 0
@@ -71,10 +69,9 @@ function CourseCard({ c, userPlan }: { c: EnrichedCourse; userPlan: string }) {
 
   return (
     <Link
-      href={isLocked ? '/pricing' : `/courses/${c.slug}`}
-      className={`bg-slate border rounded-xl p-5 flex flex-col gap-3 transition-colors
-        ${isInProgress ? 'border-acuity-blue' : 'border-steel'}
-        ${isLocked ? 'opacity-60' : 'hover:border-acuity-blue'}`}
+      href={`/courses/${c.slug}`}
+      className={`bg-slate border rounded-xl p-5 flex flex-col gap-3 transition-colors hover:border-acuity-blue
+        ${isInProgress ? 'border-acuity-blue' : 'border-steel'}`}
     >
       <div className="flex items-center justify-between gap-2 flex-wrap">
         <div className="flex items-center gap-2 flex-wrap">
@@ -106,9 +103,8 @@ function CourseCard({ c, userPlan }: { c: EnrichedCourse; userPlan: string }) {
           <span className="text-[11px] text-ghost font-body">{c.lesson_count} lessons</span>
           <span className={`text-[11px] font-display font-medium
             ${isComplete    ? 'text-acuity-teal' :
-              isInProgress  ? 'text-acuity-blue' :
-              isLocked      ? 'text-muted'       : 'text-ghost'}`}>
-            {isComplete ? 'Complete' : isInProgress ? `${pct}% done` : isLocked ? '🔒 Pro' : 'Not started'}
+              isInProgress  ? 'text-acuity-blue' : 'text-ghost'}`}>
+            {isComplete ? 'Complete' : isInProgress ? `${pct}% done` : 'Not started'}
           </span>
         </div>
         <div className="h-0.5 bg-steel rounded-full overflow-hidden">
@@ -122,7 +118,7 @@ function CourseCard({ c, userPlan }: { c: EnrichedCourse; userPlan: string }) {
   )
 }
 
-export function CourseFilter({ courses, userPlan }: Props) {
+export function CourseFilter({ courses }: Props) {
   const [activeLevel, setActiveLevel] = useState<number>(0)
   const [activeTrack, setActiveTrack] = useState<string>('All')
 
@@ -222,7 +218,7 @@ export function CourseFilter({ courses, userPlan }: Props) {
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {lvlCourses.map((c) => <CourseCard key={c.slug} c={c} userPlan={userPlan} />)}
+                  {lvlCourses.map((c) => <CourseCard key={c.slug} c={c} />)}
                 </div>
               </section>
             )
@@ -235,7 +231,7 @@ export function CourseFilter({ courses, userPlan }: Props) {
               No courses match this filter.
             </p>
           ) : (
-            filtered.map((c) => <CourseCard key={c.slug} c={c} userPlan={userPlan} />)
+            filtered.map((c) => <CourseCard key={c.slug} c={c} />)
           )}
         </div>
       )}

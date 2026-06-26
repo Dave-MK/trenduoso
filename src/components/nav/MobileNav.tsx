@@ -40,7 +40,6 @@ export function MobileNav({ isLoggedIn }: Props) {
               { href: '/practice',  label: 'Practice',  icon: '🎯' },
               { href: '/journal',   label: 'Journal',   icon: '📓' },
               { href: '/community', label: 'Community', icon: '👥' },
-              { href: '/pricing',   label: 'Pricing',   icon: '💳' },
             ].map((item) => (
               <Link
                 key={item.label}

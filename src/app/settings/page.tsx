@@ -12,7 +12,7 @@ export default async function SettingsPage() {
 
   const { data: profile } = await supabase
     .from('profiles')
-    .select('display_name, plan, stripe_customer_id, avatar_url')
+    .select('display_name, avatar_url')
     .eq('id', user.id)
     .single()
 
@@ -24,8 +24,6 @@ export default async function SettingsPage() {
         <SettingsClient
           displayName={profile?.display_name ?? user.email?.split('@')[0] ?? 'Learner'}
           email={user.email ?? ''}
-          plan={profile?.plan ?? 'free'}
-          hasStripeCustomer={!!profile?.stripe_customer_id}
           avatarUrl={profile?.avatar_url}
         />
       </main>

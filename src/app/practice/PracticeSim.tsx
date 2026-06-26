@@ -56,7 +56,7 @@ function calcPnl(pos: Position, currentPrice: number): number {
   return parseFloat((diff * pos.size * 1000).toFixed(2))
 }
 
-export function PracticeSim({ plan, isLoggedIn }: { plan: string; isLoggedIn: boolean }) {
+export function PracticeSim({ isLoggedIn }: { isLoggedIn: boolean }) {
   const [balance, setBalance]       = useState(STARTING_BALANCE)
   const [positions, setPositions]   = useState<Position[]>([])
   const [history, setHistory]       = useState<TradeHistory[]>([])

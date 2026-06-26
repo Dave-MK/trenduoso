@@ -34,7 +34,6 @@ export async function Navbar() {
         <Link href="/courses"   className="hover:text-chalk transition-colors">Courses</Link>
         <Link href="/practice"  className="hover:text-chalk transition-colors">Practice</Link>
         <Link href="/community" className="hover:text-chalk transition-colors">Community</Link>
-        <Link href="/pricing"   className="hover:text-chalk transition-colors">Pricing</Link>
       </div>
 
       {/* Right: user actions + mobile menu */}

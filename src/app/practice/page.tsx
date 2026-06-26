@@ -11,20 +11,10 @@ export default async function PracticePage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
-  let plan = 'free'
-  if (user) {
-    const { data: profile } = await supabase
-      .from('profiles')
-      .select('plan')
-      .eq('id', user.id)
-      .single()
-    plan = profile?.plan ?? 'free'
-  }
-
   return (
     <>
       <Navbar />
-      <PracticeSim plan={plan} isLoggedIn={!!user} />
+      <PracticeSim isLoggedIn={!!user} />
     </>
   )
 }

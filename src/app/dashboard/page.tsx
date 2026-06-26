@@ -2,10 +2,8 @@ import Image from 'next/image'
 import { TrenduosoWordmark } from '@/components/TrenduosoWordmark'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
-import { Suspense } from 'react'
 import { createClient } from '@/lib/supabase/server'
 import { levelFromXp } from '@/lib/xp'
-import { UpgradeToast } from '@/components/UpgradeToast'
 
 const DAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
 
@@ -126,7 +124,6 @@ export default async function DashboardPage() {
 
   return (
     <div className="flex h-screen bg-obsidian overflow-hidden">
-      <Suspense><UpgradeToast /></Suspense>
       {/* Left sidebar — hidden on mobile */}
       <aside className="hidden lg:flex w-52 bg-slate border-r border-steel flex-col flex-shrink-0">
         <div className="px-4 py-4 border-b border-steel">

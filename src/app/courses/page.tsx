@@ -7,12 +7,7 @@ export default async function CoursesPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
-  const [{ data: courses }, { data: profile }] = await Promise.all([
-    supabase.from('courses').select('*').order('order_index'),
-    user
-      ? supabase.from('profiles').select('plan').eq('id', user.id).single()
-      : Promise.resolve({ data: null }),
-  ])
+  const { data: courses } = await supabase.from('courses').select('*').order('order_index')
 
   // Build completed-lesson count per course from user_progress
   let progressMap: Record<string, number> = {}
@@ -46,7 +41,6 @@ export default async function CoursesPage() {
   }))
 
   const totalHours = enriched.reduce((s, c) => s + c.hours, 0)
-  const userPlan = (profile?.plan ?? 'free') as string
 
   return (
     <>
@@ -60,7 +54,7 @@ export default async function CoursesPage() {
               : 'Structured trading education'}
           </p>
         </div>
-        <CourseFilter courses={enriched} userPlan={userPlan} />
+        <CourseFilter courses={enriched} />
       </main>
     </>
   )

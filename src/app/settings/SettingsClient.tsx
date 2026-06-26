@@ -7,12 +7,10 @@ import { updateDisplayName, deleteAccount, uploadAvatar } from '@/app/actions/se
 interface Props {
   displayName: string
   email: string
-  plan: string
-  hasStripeCustomer: boolean
   avatarUrl?: string | null
 }
 
-export function SettingsClient({ displayName, email, plan, hasStripeCustomer, avatarUrl }: Props) {
+export function SettingsClient({ displayName, email, avatarUrl }: Props) {
   const [nameValue, setNameValue] = useState(displayName)
   const [nameFeedback, setNameFeedback] = useState<{ ok?: boolean; msg: string } | null>(null)
   const [isPending, startTransition] = useTransition()
@@ -143,15 +141,9 @@ export function SettingsClient({ displayName, email, plan, hasStripeCustomer, av
       <section className="bg-slate border border-steel rounded-xl p-6">
         <h2 className="font-display font-semibold text-chalk text-base mb-4">Account</h2>
         <div className="space-y-3">
-          <div className="flex items-center justify-between py-3 border-b border-steel/50">
+          <div className="flex items-center justify-between py-3">
             <span className="text-ghost text-[12px] font-display font-medium tracking-widest uppercase">Email</span>
             <span className="text-chalk text-sm font-body">{email}</span>
-          </div>
-          <div className="flex items-center justify-between py-3">
-            <span className="text-ghost text-[12px] font-display font-medium tracking-widest uppercase">Plan</span>
-            <span className={`text-sm font-display font-medium capitalize ${plan === 'pro' ? 'text-acuity-teal' : 'text-chalk'}`}>
-              {plan}
-            </span>
           </div>
         </div>
       </section>
@@ -166,34 +158,6 @@ export function SettingsClient({ displayName, email, plan, hasStripeCustomer, av
         >
           Send reset email
         </Link>
-      </section>
-
-      {/* Subscription */}
-      <section className="bg-slate border border-steel rounded-xl p-6">
-        <h2 className="font-display font-semibold text-chalk text-base mb-2">Subscription</h2>
-        {plan === 'free' ? (
-          <div>
-            <p className="text-ghost text-[13px] font-body mb-4">You&apos;re on the free plan. Upgrade to unlock all courses.</p>
-            <Link
-              href="/pricing"
-              className="inline-block bg-acuity-blue text-white font-display font-medium text-sm px-4 py-2 rounded-lg hover:bg-acuity-blue/90 transition-colors"
-            >
-              Upgrade to Pro
-            </Link>
-          </div>
-        ) : hasStripeCustomer ? (
-          <div>
-            <p className="text-ghost text-[13px] font-body mb-4">Manage billing, view invoices, or cancel your subscription.</p>
-            <a
-              href="/api/portal"
-              className="inline-block border border-steel text-chalk font-display font-medium text-sm px-4 py-2 rounded-lg hover:border-acuity-blue transition-colors"
-            >
-              Manage billing →
-            </a>
-          </div>
-        ) : (
-          <p className="text-ghost text-[13px] font-body">Pro plan active. Contact support to manage your subscription.</p>
-        )}
       </section>
 
       {/* Danger zone */}
