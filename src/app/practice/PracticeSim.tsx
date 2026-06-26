@@ -1,6 +1,21 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { PriceChart } from './PriceChart'
+
+const HISTORY_LEN = 90
+
+// Seed a plausible recent price series so the chart isn't empty on load
+function seedSeries(base: number, pip: number, isJpy: boolean): number[] {
+  const series: number[] = []
+  let p = base - pip * 30
+  for (let i = 0; i < HISTORY_LEN; i++) {
+    p += (Math.random() - 0.5) * pip * 8
+    series.push(parseFloat(p.toFixed(isJpy ? 2 : 5)))
+  }
+  series[series.length - 1] = base
+  return series
+}
 
 const INSTRUMENTS = [
   { symbol: 'EURUSD', price: 1.0847, pip: 0.0001, spread: 0.2 },
@@ -48,6 +63,9 @@ export function PracticeSim({ plan, isLoggedIn }: { plan: string; isLoggedIn: bo
   const [selectedIdx, setSelectedIdx] = useState(0)
   const [sizeInput, setSizeInput]   = useState('0.1')
   const [prices, setPrices]         = useState(INSTRUMENTS.map((i) => i.price))
+  const [histories, setHistories]   = useState<number[][]>(
+    () => INSTRUMENTS.map((i) => seedSeries(i.price, i.pip, i.symbol.includes('JPY')))
+  )
   const [nextId, setNextId]         = useState(1)
 
   const instrument = INSTRUMENTS[selectedIdx]
@@ -55,17 +73,22 @@ export function PracticeSim({ plan, isLoggedIn }: { plan: string; isLoggedIn: bo
   // Simulate price movement every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setPrices((prev) =>
-        prev.map((p, i) => {
+      setPrices((prev) => {
+        const next = prev.map((p, i) => {
           const inst = INSTRUMENTS[i]
           const move = (Math.random() - 0.5) * inst.pip * 8
           return parseFloat((p + move).toFixed(inst.symbol.includes('JPY') ? 2 : 5))
         })
-      )
+        setHistories((hist) =>
+          hist.map((series, i) => [...series, next[i]].slice(-HISTORY_LEN))
+        )
+        return next
+      })
     }, 2000)
     return () => clearInterval(interval)
   }, [])
 
+  const decimals = instrument.symbol.includes('JPY') ? 2 : instrument.pip < 0.1 ? 5 : 1
   const currentPrice = prices[selectedIdx]
   const askPrice = currentPrice + instrument.spread * instrument.pip
   const bidPrice = currentPrice - instrument.spread * instrument.pip
@@ -151,15 +174,14 @@ export function PracticeSim({ plan, isLoggedIn }: { plan: string; isLoggedIn: bo
           })}
         </div>
 
-        {/* Chart placeholder */}
-        <div className="flex-1 bg-obsidian flex items-center justify-center min-h-[300px] lg:min-h-0 relative">
-          <div className="text-center text-ghost">
-            <p className="text-3xl mb-3">📈</p>
-            <p className="font-display font-semibold text-chalk text-sm mb-1">{instrument.symbol}</p>
-            <p className="font-mono text-2xl text-chalk mb-1">
-              {currentPrice.toFixed(instrument.symbol.includes('JPY') ? 2 : instrument.pip < 0.1 ? 5 : 1)}
-            </p>
-            <p className="text-ghost text-[11px] font-body">Live chart requires Polygon.io API key</p>
+        {/* Live chart */}
+        <div className="flex-1 bg-obsidian min-h-[300px] lg:min-h-0 relative">
+          <PriceChart prices={histories[selectedIdx]} decimals={decimals} />
+
+          {/* Symbol + price overlay */}
+          <div className="absolute top-4 left-4 pointer-events-none">
+            <p className="font-display font-semibold text-chalk text-sm">{instrument.symbol}</p>
+            <p className="font-mono text-xl text-chalk">{currentPrice.toFixed(decimals)}</p>
           </div>
 
           {/* Floating P&L badge */}
