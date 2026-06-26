@@ -52,7 +52,7 @@ export function SettingsClient({ displayName, email, plan, hasStripeCustomer, av
       fd.set('avatar', file)
       const result = await uploadAvatar(fd)
       if (result && 'error' in result) {
-        setAvatarFeedback({ ok: false, msg: result.error })
+        setAvatarFeedback({ ok: false, msg: result.error ?? 'Upload failed.' })
       } else {
         setAvatarFeedback({ ok: true, msg: 'Avatar updated.' })
       }
